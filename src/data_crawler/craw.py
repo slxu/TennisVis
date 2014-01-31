@@ -6,7 +6,7 @@ import time
 
 baseURL = "http://www.atpworldtour.com/handlers/GetDrawFilter.ajax"
 drawURL = "http://www.atpworldtour.com/Share/Event-Draws.aspx"
-outputFolder = "../../dataset"
+outputFolder = "../../dataset/raw"
 
 def insure_output(outputDir):
   if not os.path.exists(outputDir):
@@ -30,22 +30,23 @@ def get_events(year):
 
 
 
-insure_output(outputFolder)
-for year in get_year_list():
-  events = get_events(year)
-  for event in events:
-    eventID = event["id"]
-    eventName = event["lbl"].encode('utf-8')
-    filename = str(year)+"_"+str(eventID)
-    if os.path.exists(outputFolder+"/"+filename):
-      print year,eventID,eventName,"exists"
-    else:
-      print "Downloading",year,eventName
-      try:
-        url=drawURL + "?Year=" + str(year) + "&EventId=" + str(eventID) + "&Draw=ms"
-        download(url, outputFolder, filename)
-      except:
-        sys.stderr.write("Error occured: "+str(year)+","+str(eventID)+","+str(eventName))
-      time.sleep(1)
+if __name__ == "__main__":
+  insure_output(outputFolder)
+  for year in get_year_list():
+    events = get_events(year)
+    for event in events:
+      eventID = event["id"]
+      eventName = event["lbl"].encode('utf-8')
+      filename = str(year)+"_"+str(eventID)
+      if os.path.exists(outputFolder+"/"+filename):
+        print year,eventID,eventName,"exists"
+      else:
+        print "Downloading",year,eventName
+        try:
+          url=drawURL + "?Year=" + str(year) + "&EventId=" + str(eventID) + "&Draw=ms"
+          download(url, outputFolder, filename)
+        except:
+          sys.stderr.write("Error occured: "+str(year)+","+str(eventID)+","+str(eventName))
+        time.sleep(1)
 
-print "Finish all downloads"
+  print "Finish all downloads"
