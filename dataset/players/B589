@@ -1,0 +1,850 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en-US" lang="en-US"  > <![endif]-->
+<!--[if IE 7]>    <html class="lt-ie9 lt-ie8" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en-US" lang="en-US"  ><![endif]-->
+<!--[if IE 8]>    <html class="lt-ie9" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en-US" lang="en-US"  ><![endif]-->
+<!--[if gt IE 8]><!--> <html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en-US" lang="en-US"  > <!--<![endif]-->
+
+<head><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"beacon-6.newrelic.com","errorBeacon:":"jserror.newrelic.com","licenseKey":"2d2d3e5431","applicationID":"1469318","transactionName":"NlBQYhFVXxVWABAKXg8ac2UzG10HTgwRF0JOWFNfDRpQFUcb","queueTime":"0","applicationTime":"140","ttGuid":"F79E5A6323CCAA38","agent":"js-agent.newrelic.com/nr-292.min.js"}</script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function a(b,c,d){function e(f){if(!c[f]){var g=c[f]={exports:{}};b[f][0].call(g.exports,function(a){var c=b[f][1][a];return e(c?c:a)},g,g.exports,a,b,c,d)}return c[f].exports}for(var f=0;f<d.length;f++)e(d[f]);return e}({"4O2Y62":[function(a,b){function c(a,b){var c=d[a];return c?c.apply(this,b):(e[a]||(e[a]=[]),void e[a].push(b))}var d={},e={};b.exports=c,c.queues=e,c.handlers=d},{}],handle:[function(a,b){b.exports=a("4O2Y62")},{}],"SvQ0B+":[function(a,b){function c(a){if(a===window)return 0;if(e.call(a,"__nr"))return a.__nr;try{return Object.defineProperty(a,"__nr",{value:d,writable:!1,configurable:!1,enumerable:!1}),d}catch(b){return a.__nr=d,d}finally{d+=1}}var d=1,e=Object.prototype.hasOwnProperty;b.exports=c},{}],id:[function(a,b){b.exports=a("SvQ0B+")},{}],YLUGVp:[function(a,b){function c(){var a=m.info=NREUM.info,b=m.proto="https"===l.split(":")[0]||a.sslForHttp?"https://":"http://";if(a&&a.agent&&a.licenseKey&&a.applicationID){f("mark",["onload",e()]);var c=h.createElement("script");c.src=b+a.agent,h.body.appendChild(c)}}function d(){"complete"===h.readyState&&f("mark",["domContent",e()])}function e(){return(new Date).getTime()}var f=a("handle"),g=window,h=g.document,i="readystatechange",j="addEventListener",k="attachEvent",l=(""+location).split("?")[0],m=b.exports={offset:e(),origin:l};h[j]?(h[j](i,d,!1),g[j]("load",c,!1)):(h[k]("on"+i,d),g[k]("onload",c)),f("mark",["firstbyte",e()])},{handle:"4O2Y62"}],loader:[function(a,b){b.exports=a("YLUGVp")},{}]},{},["YLUGVp"]);</script>
+    <title>Mike Bryan – Tennis Players - Tennis - ATP World Tour</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Copyright" content="Copyright 1994 - 2014 ATP Tour, Inc.  All Rights Reserved.  No part of this site may be reproduced, stored in a retrieval system or transmitted in any way or by any means (including photocopying, recording or storing it in any medium by electronic means), without the written permission of ATP Tour, Inc." />
+    <meta name="description" content="Official tennis profile for Mike Bryan. View news & features, match and rankings history, stats and bio, video, photos, links and more." />
+    <meta name="keywords" content="Mike Bryan , Mike Bryan bio, Mike Bryan news, Mike Bryan stats, Mike Bryan videos, Mike Bryan pictures, Mike Bryan ranking" />
+    <meta name="msvalidate.01" content="2D5B2841B30EAD15F93CC1B86725003C" />
+    
+    
+    
+    <meta property="fb:app_id" content="132901818553"/>
+    <meta name="verify-v1" content="v5JlbGsk2WBWr7ThQSNBT8LClhEGVMbfHm1K6LDx7Ws=" />
+    <meta name="X-UA-Compatible" content="IE=EmulateIE7" />
+    
+    <meta http-equiv="imagetoolbar" content="false" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta property="og:title" content="Mike Bryan Profile" />
+    <meta property="og:site_name" content="ATP World Tour" />
+    <meta property="og:image" content="http://www.atpworldtour.com/~/media/863B7CF3769C40C198475EB697D605FB.ashx?w=148&h=198" />
+    
+    <link rel="icon" type="image/vnd.microsoft.icon" href="/Media/favicon.ico" />
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/Media/favicon.ico" />
+    <link rel="alternate" type="application/rss+xml" href="http://feeds2.feedburner.com/Tennis-AtpWorldTourHeadlineNews" title="ATP World Tour Tennis Headlines" />
+    <link rel="stylesheet" type="text/css" href="/includes/cssbin/common.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="/includes/cssbin/atp_print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="/includes/cssbin/atp.css?v6" media="all" />
+    
+    
+    <!-- <link rel="stylesheet" type="text/css" href="/includes/cssbin/TopTeaser.css" media="all" /> File created by client (Ben) 7.29.2012 -->
+     
+    
+    
+         <script type="text/javascript" src="/Includes/JsBin/jquery-1.9.1.min.js"></script>
+    <!-- Ooyala api is not async unfortunately?? -->
+    <script type="text/javascript" src='http://player.ooyala.com/v3/NDU0YmRlYWM3NWFlMGU5OGI0YmYyZTBj?platform=html5-fallback'></script>
+    <script type="text/javascript" src="/includes/JsBin/Video/VideoPlayer.js"></script>   
+    
+    
+    <script type="text/javascript" src="/Tennis/Javascript/showhidediv.aspx"></script>
+<script type="text/javascript" src="/Tennis/Javascript/AC_RunActiveContent.aspx"></script>
+<script type="text/javascript" src="/Tennis/Javascript/Live-Streaming-Tracking-Disable.aspx"></script>
+<script type="text/javascript" src="/Tennis/Javascript/rotateTopImage.aspx"></script>
+<script type="text/javascript" src="/Tennis/Javascript/Live-Scores-Permanent-Challenger.aspx"></script>
+<script type="text/javascript" src="/Tennis/Javascript/Live-Scores-Permanent-Tour.aspx"></script>
+<script type="text/javascript" src="/Tennis/Javascript/Age-Gate.aspx"></script>
+<script type="text/javascript" src="/Tennis/Javascript/CookieUtility.aspx"></script>
+<script type="text/javascript" src="/Tennis/Javascript/Live-Scores-2013.aspx"></script>
+<script type="text/javascript" src="/Tennis/Javascript/Davis-Cup-Live-Scores.aspx"></script>
+
+       
+    <script language="JavaScript" type="text/javascript">
+        var shareURL = "http%3a%2f%2fwww.atpworldtour.com%2fTennis%2fPlayers%2fTop-Players%2fMike-Bryan.aspx";
+        var shareTitle = "";
+        var ord = Math.random() * 10000000000000000;
+        ord = Math.round(ord);
+    </script>
+     <!--[if IE 6]>
+    <script type="text/javascript" src="/includes/jsbin/DD_belatedPNG_0.0.6a.js"></script>
+    <script type="text/javascript">
+            DD_belatedPNG.fix('.IE6pngFix');
+    </script>
+    <![endif]-->
+
+
+    
+   
+    
+   
+</head>
+   
+<body id="atpBody" class="layoutG " style="background-image:url(/~/media/2EB343030CAE497C867DB742CF818968.ashx); background-color: #143058;">
+    
+    <div id="atpNavBar">
+            <div id="atpNavBarInner">
+            <p id="atpNetworkTitle">Pro Tennis Internet Network</p>
+            <ul id="atpNavNetwork">
+                    <li id="atpNetworkNavMens"><a id="atpNetworkNavMensLink" href="#">Mens Tour</a>
+                        
+<ul class="globalBarRibbonWrap">
+	<li>
+		<div class="globalBarRibbon clear">			
+			<div class="globalBarRibbonTitle clear" >
+                <a id="menTourLink" href="http://www.atpworldtour.com/" title="" onclick="javascript:_gaq.push(['ptn._trackEvent', 'PTN','atp logo click'],['ptn._link','http://www.atpworldtour.com/']);"></a>
+                <span>ATP World Tour 2014 Season
+</span>
+                <div class="floatRight">
+                    <a href="javascript:openLSHDWindow(2014,'99','','1','en','http://www.atpworldtour.com/ptn') " title="" class="genericButton" onclick="javascript:newLinker('http://www.protennislive.com/atp', 'atp', 'live scores');javascript:openLSHDWindow(2014,'99','','1','en','http://www.atpworldtour.com/ptn') ;return false;"><span>Live Scores</span></a><a href="http://www.atpworldtour.tennistv.com/?WT.mc_id=atp8" title="" target="_blank" class="genericButton"><span>Watch Live</span></a><a href="/Players/Player-Landing.aspx" title="" target="_blank" class="genericButton" onclick="javascript:newLinker('/Players/Player-Landing.aspx', 'atp', 'player sites general');return false;"><span>Player Sites</span></a>
+                </div>
+			</div>
+			<div class="worldTourDatesCols clear">
+				<ul class="worldTourDatesCol"><li class="wt250">29/12 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.brisbaneinternational.com.au/', 'atp', 'tournament');return false;">Brisbane *</a></li><li class="wt250">30/12 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.qatartennis.org', 'atp', 'tournament');return false;">Doha </a></li><li class="wt250">30/12 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.aircelchennaiopen.org/2014/', 'atp', 'tournament');return false;">Chennai </a></li><li class="wt250">06/01 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.apiainternational.com.au/', 'atp', 'tournament');return false;">Sydney *</a></li><li class="wt250">06/01 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.heinekenopen.co.nz/', 'atp', 'tournament');return false;">Auckland </a></li><li class="wtGrandSlam">13/01 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.australianopen.com/en_AU/index.html', 'atp', 'tournament');return false;">Aus. Open ^</a></li><li class="wtDavis">31/01 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.daviscup.com/', 'atp', 'tournament');return false;">Davis Cup R1 ^</a></li><li class="wt250">03/02 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.opensuddefrance.com/', 'atp', 'tournament');return false;">Montpellier </a></li><li class="wt250">03/02 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.zagrebindoors.com/', 'atp', 'tournament');return false;">Zagreb </a></li><li class="wt250">03/02 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.royalguardopen.cl/', 'atp', 'tournament');return false;">Viña del Mar </a></li></ul><ul class="worldTourDatesCol"><li class="wt500">10/02 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.abnamrowtt.nl/', 'atp', 'tournament');return false;">Rotterdam </a></li><li class="wt250">10/02 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.memphistennis.com/home', 'atp', 'tournament');return false;">Memphis </a></li><li class="wt250">10/02 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.copaclaro.com/', 'atp', 'tournament');return false;">Buenos Aires </a></li><li class="wt500">17/02 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.rioopen.com/', 'atp', 'tournament');return false;">Rio de Janeiro *</a></li><li class="wt250">17/02 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.open13.fr/', 'atp', 'tournament');return false;">Marseille </a></li><li class="wt250">17/02 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.yellowtennisball.com/', 'atp', 'tournament');return false;">Delray Beach </a></li><li class="wt500">24/02 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.dubaidutyfreetennischampionships.com/', 'atp', 'tournament');return false;">Dubai </a></li><li class="wt500">24/02 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.abiertomexicanodetenis.com/', 'atp', 'tournament');return false;">Acapulco *</a></li><li class="wt250">24/02 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.brasilopen.com.br/', 'atp', 'tournament');return false;">São Paulo </a></li><li class="wt1000">06/03 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.bnpparibasopen.com/', 'atp', 'tournament');return false;">Indian Wells *</a></li></ul><ul class="worldTourDatesCol"><li class="wt1000">19/03 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.sonyericssonopen.com/', 'atp', 'tournament');return false;">Miami </a></li><li class="wtDavis">04/04 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.daviscup.com/', 'atp', 'tournament');return false;">Davis Cup QF ^</a></li><li class="wt250">07/04 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.frmt.ma/', 'atp', 'tournament');return false;">Casablanca </a></li><li class="wt250">07/04 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.mensclaycourt.com/index.php', 'atp', 'tournament');return false;">Houston </a></li><li class="wt1000">13/04 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.montecarlotennismasters.com/', 'atp', 'tournament');return false;">Monte-Carlo </a></li><li class="wt500">21/04 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.barcelonaopenbancsabadell.com/', 'atp', 'tournament');return false;">Barcelona </a></li><li class="wt250">21/04 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.brd-nastase-tiriac-trophy.ro/', 'atp', 'tournament');return false;">Bucharest </a></li><li class="wt250">28/04 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.portugalopen.pt', 'atp', 'tournament');return false;">Oeiras *</a></li><li class="wt250">28/04 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.bmwopen.de/', 'atp', 'tournament');return false;">Munich </a></li><li class="wt1000">04/05 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.madrid-open.com/', 'atp', 'tournament');return false;">Madrid *</a></li></ul><ul class="worldTourDatesCol"><li class="wt1000">11/05 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.internazionalibnlditalia.com/', 'atp', 'tournament');return false;">Rome *</a></li><li class="wt250">18/05 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.world-team-cup.com/?ref=atp', 'atp', 'tournament');return false;">D&#252sseldorf </a></li><li class="wt250">18/05 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.opennicecotedazur.com', 'atp', 'tournament');return false;">Nice </a></li><li class="wtGrandSlam">25/05 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.rolandgarros.com/en_FR/index.html', 'atp', 'tournament');return false;">Roland Garros *^</a></li><li class="wt250">09/06 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.gerryweber-open.com/?ref=atp', 'atp', 'tournament');return false;">Halle </a></li><li class="wt250">09/06 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.lta.org.uk/fans-major-events/LTA-summer-grass-court-events/Aegon-Championships/', 'atp', 'tournament');return false;">London </a></li><li class="wt250">15/06 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.topshelfopen.nl/en/', 'atp', 'tournament');return false;">Den Bosch *</a></li><li class="wt250">16/06 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.lta.org.uk/fans-major-events/LTA-summer-grass-court-events/AEGON-International/', 'atp', 'tournament');return false;">Eastbourne *</a></li><li>23/06 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.wimbledon.org/en_GB/index.html', 'atp', 'tournament');return false;">Wimbledon </a></li><li class="wt250">07/07 <a href="#" target="_blank" onclick="javascript:newLinker('http://men.swedishopen.org/', 'atp', 'tournament');return false;">B&#229;stad </a></li></ul><ul class="worldTourDatesCol"><li class="wt250">07/07 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.mercedescup.de', 'atp', 'tournament');return false;">Stuttgart </a></li><li class="wt250">07/07 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.halloffametennischampionships.com/', 'atp', 'tournament');return false;">Newport </a></li><li class="wt500">14/07 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.german-open-hamburg.de/', 'atp', 'tournament');return false;">Hamburg </a></li><li class="wt250">14/07 <a href="#" target="_blank" onclick="javascript:newLinker('/Tennis/Tournaments/Bogota.aspx', 'atp', 'tournament');return false;">Bogota </a></li><li class="wt250">21/07 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.atlantatennischampionships.com', 'atp', 'tournament');return false;">Atlanta </a></li><li class="wt250">21/07 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.creditagricolesuisseopengstaad.ch/en', 'atp', 'tournament');return false;">Gstaad </a></li><li class="wt250">21/07 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.croatiaopen.hr/tenis/home.aspx', 'atp', 'tournament');return false;">Umag </a></li><li class="wt250">27/07 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.austrianopentennis.com', 'atp', 'tournament');return false;">Kitzb&#252hel </a></li><li class="wt500">28/07 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.citiopentennis.com', 'atp', 'tournament');return false;">Washington *</a></li><li class="wt1000">04/08 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.rogerscup.com/men/english/home.php', 'atp', 'tournament');return false;">Toronto </a></li></ul><ul class="worldTourDatesCol"><li class="wt1000">10/08 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.cincytennis.com/', 'atp', 'tournament');return false;">Cincinnati *</a></li><li class="wt250">17/08 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.winstonsalemopen.com/', 'atp', 'tournament');return false;">Winston Salem *</a></li><li class="wtGrandSlam">25/08 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.usopen.org/', 'atp', 'tournament');return false;">US Open ^</a></li><li class="wtDavis">12/09 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.daviscup.com/', 'atp', 'tournament');return false;">Davis Cup SF ^</a></li><li class="wt250">15/09 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.spbopen.ru/eng/index.html', 'atp', 'tournament');return false;">St. Petersburg </a></li><li class="wt250">15/09 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.moselle-open.com/', 'atp', 'tournament');return false;">Metz </a></li><li class="wt250">22/09 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.malaysianopentennis.com', 'atp', 'tournament');return false;">Kuala Lumpur </a></li><li class="wt250">22/09 <a href="#" target="_blank" onclick="javascript:newLinker('/Tennis/Tournaments/Shenzhen.aspx', 'atp', 'tournament');return false;">Shenzhen </a></li><li class="wt500">29/09 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.chinaopen.com.cn/en/index.shtml', 'atp', 'tournament');return false;">Beijing *</a></li><li class="wt500">29/09 <a href="#" target="_blank" onclick="javascript:newLinker('http://rakutenopen.rakuten.co.jp/', 'atp', 'tournament');return false;">Tokyo </a></li></ul><ul class="worldTourDatesCol"><li class="wt1000">05/10 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.shanghairolexmasters.com/index.aspx', 'atp', 'tournament');return false;">Shanghai </a></li><li class="wt250">13/10 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.kremlincup.ru/index-eng.html', 'atp', 'tournament');return false;">Moscow *</a></li><li class="wt250">13/10 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.stockholmopen.se/en-GB', 'atp', 'tournament');return false;">Stockholm </a></li><li class="wt250">13/10 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.erstebank-open.com', 'atp', 'tournament');return false;">Vienna </a></li><li class="wt500">20/10 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.valenciaopen500.com/', 'atp', 'tournament');return false;">Valencia </a></li><li class="wt500">20/10 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.davidoffswissindoors.ch/', 'atp', 'tournament');return false;">Basel </a></li><li class="wt1000">27/10 <a href="#" target="_blank" onclick="javascript:newLinker('http://bnpparibasmasters.billetterie.fft.fr/', 'atp', 'tournament');return false;">Paris </a></li><li class="wt1500">09/11 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.barclaysatpworldtourfinals.com/en/', 'atp', 'tournament');return false;">London </a></li><li class="wtDavis">21/11 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.daviscup.com/', 'atp', 'tournament');return false;">Davis Cup Finals ^</a></li>
+			</div>
+			
+			<div class="globalBarRibbonKey clear">
+				<div>
+                    <span class="wt_250">ATP World Tour 250</span>
+                    <span class="wt_500">ATP World Tour 500</span>
+                    <span class="wt_1000">ATP World Tour Masters 1000</span>
+                    <span class="wt_1500">Barclays ATP World Tour Finals 1500</span>
+                    <span class="wt_GrandSlam">Grand Slam 2000*<span>^</span></span>
+                    <span class="wt_davis">Davis Cup 625<span>^</span></span>
+					
+				</div>
+			</div>
+			<div class="globalBarRibbonKey clear">
+				<p>
+				* Combined Men/Women
+				<span class="footnote">^ Grand Slams and Davis Cup are not ATP events.</span>
+				</p>
+			</div>
+		</div>
+	</li>
+</ul>
+                    </li>
+                <li id="atpNetworkNavWomens"><a id="atpNetworkNavWomensLink" href="#">Womens Tour</a>
+                    
+<ul class="globalBarRibbonWrap">
+	<li>
+		<div class="globalBarRibbon clear">			
+			<div class="globalBarRibbonTitle clear" style="background:url(/~/media/4DFE6974709145609099FE48A9AB7E57.ashx) no-repeat 0 0;">
+		    	<a id="womenTourLink" href="#" title="" onclick="javascript:newLinker('http://www.wtatennis.com', 'http://www.wtatennis.com', 'atp logo click');return false;"></a>
+		    	
+                <span>WTA 2014 Season
+</span>
+                <div class="floatRight">
+                    <a href="javascript:openLSHDWindow(2014,'99','','2','en','http://www.atpworldtour.com/wptn')" title="" class="genericButton" onclick="javascript:newLinker('http://www.protennislive.com/wta', 'wta', 'live scores');javascript:openLSHDWindow(2014,'99','','2','en','http://www.atpworldtour.com/wptn');return false;"><span>Live Scores</span></a><a href="http://www.wtatennis.tennistv.com/live?WT.mc_id=sewta8" title="" target="_blank" class="genericButton"><span>Watch Live</span></a><a href="http://www.wtatennis.com/page/Players/0,,12781,00.html" title="" target="_blank" class="genericButton" onclick="javascript:newLinker('http://www.wtatennis.com/page/Players/0,,12781,00.html', 'wta', 'player sites general');return false;"><span>Player Sites</span></a>
+                </div>
+			</div>
+			<div class="worldTourDatesCols clear">
+				<ul class="worldTourDatesCol"><li>29/12 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.brisbaneinternational.com.au', 'wta', 'tournament');return false;">Brisbane *</a></li><li>29/12 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.shenzhenopentennis.com/', 'wta', 'tournament');return false;">Shenzhen </a></li><li>30/12 <a href="#" target="_blank" onclick="javascript:newLinker(' http://www.festivaloftennis.co.nz/asbclassic/', 'wta', 'tournament');return false;">Auckland </a></li><li>05/01 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.apiainternational.com.au/', 'wta', 'tournament');return false;">Sydney *</a></li><li>05/01 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.hobartinternational.com.au', 'wta', 'tournament');return false;">Hobart </a></li><li>13/01 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.australianopen.com/en_AU/index.html ', 'wta', 'tournament');return false;">Aus. Open *^</a></li><li>27/01 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.opengdfsuez.com/', 'wta', 'tournament');return false;">Paris </a></li><li>27/01 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.pentanglepromotions.com/Ptt-Pattaya-Open/Ptt-Pattaya-Open-2014/en/index.php', 'wta', 'tournament');return false;">Pattaya City </a></li><li>10/02 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.qatartennis.org/tournaments/index/64', 'wta', 'tournament');return false;">Doha </a></li></ul><ul class="worldTourDatesCol"><li>17/02 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.dubaidutyfreetennischampionships.com/', 'wta', 'tournament');return false;">Dubai </a></li><li>17/02 <a href="#" target="_blank" onclick="javascript:newLinker('http://rioopen.com/', 'wta', 'tournament');return false;">Rio de Janeiro *</a></li><li>23/02 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.brasiltenniscup.com.br/', 'wta', 'tournament');return false;">Florianopolis </a></li><li>24/02 <a href="#" target="_blank" onclick="javascript:newLinker('http://abiertomextenis.com.mx/', 'wta', 'tournament');return false;">Acapulco *</a></li><li>05/03 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.bnpparibasopen.com/', 'wta', 'tournament');return false;">Indian Wells *</a></li><li>18/03 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.sonyopentennis.com/', 'wta', 'tournament');return false;">Miami *</a></li><li>31/03 <a href="#" target="_blank" onclick="javascript:newLinker('http://abiertomonterrey.com/2014/', 'wta', 'tournament');return false;">Monterrey </a></li><li>31/03 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.familycirclecup.com', 'wta', 'tournament');return false;">Charleston </a></li><li>07/04 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.copaclarocolsanitas.com/', 'wta', 'tournament');return false;">Bogota </a></li></ul><ul class="worldTourDatesCol"><li>07/04 <a href="#" target="_blank" onclick="javascript:newLinker('http://katowiceopen.bnpparibas.com/', 'wta', 'tournament');return false;">Katowice </a></li><li>14/04 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.bmwmalaysianopen.com', 'wta', 'tournament');return false;">Kuala Lumpur </a></li><li>21/04 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.lallameryemtennis.com/', 'wta', 'tournament');return false;">Marrakech </a></li><li>21/04 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.porsche-tennis.de/prod/pag/tennis.nsf/web/english-home', 'wta', 'tournament');return false;">Stuttgart </a></li><li>28/04 <a href="#" target="_blank" onclick="javascript:newLinker('http://en.portugalopen.pt/', 'wta', 'tournament');return false;">Oeiras *</a></li><li>03/05 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.madrid-open.com/', 'wta', 'tournament');return false;">Madrid *</a></li><li>12/05 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.internazionalibnlditalia.com/', 'wta', 'tournament');return false;">Rome *</a></li><li>19/05 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.nuernberger-versicherungscup.de/', 'wta', 'tournament');return false;">Nurnberg </a></li><li>19/05 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.internationaux-strasbourg.fr/', 'wta', 'tournament');return false;">Strasbourg </a></li></ul><ul class="worldTourDatesCol"><li>25/05 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.rolandgarros.com/en_FR/index.html', 'wta', 'tournament');return false;">Roland Garros *^</a></li><li>09/06 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.lta.org.uk/fans-major-events/LTA-summer-grass-court-events/AEGON-Classic/', 'wta', 'tournament');return false;">Birmingham </a></li><li>15/06 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.topshelfopen.nl/nl/', 'wta', 'tournament');return false;">Den Bosch *</a></li><li>16/06 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.lta.org.uk/fans-major-events/LTA-summer-grass-court-events/AEGON-International/', 'wta', 'tournament');return false;">Eastbourne *</a></li><li>23/06 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.wimbledon.org/en_GB/index.html', 'wta', 'tournament');return false;">Wimbledon *^</a></li><li>07/07 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.gastein-ladies.at/', 'wta', 'tournament');return false;">Bad Gastein </a></li><li>07/07 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.budapestgrandprix.hu/', 'wta', 'tournament');return false;">Budapest </a></li><li>14/07 <a href="http://www.wtachampionships.com/" target="_blank">Istanbul </a></li><li>14/07 <a href="#" target="_blank" onclick="javascript:newLinker('http://women.swedishopen.org/', 'wta', 'tournament');return false;">Bastad </a></li></ul><ul class="worldTourDatesCol"><li>21/07 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.bakucup.az', 'wta', 'tournament');return false;">Baku </a></li><li>28/07 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.bankofthewestclassic.com', 'wta', 'tournament');return false;">Stanford </a></li><li>28/07 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.citiopentennis.com/', 'wta', 'tournament');return false;">Washington DC </a></li><li>04/08 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.rogerscup.com/women/english/home.php', 'wta', 'tournament');return false;">Montreal </a></li><li>11/08 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.cincytennis.com/', 'wta', 'tournament');return false;">Cincinnati *</a></li><li>17/08 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.newhavenopen.com/', 'wta', 'tournament');return false;">New Haven </a></li><li>25/08 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.usopen.org/', 'wta', 'tournament');return false;">US Open *^</a></li><li>08/09 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.wtatennis.com', 'wta', 'tournament');return false;">Hong Kong </a></li><li>08/09 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.tashkentopen.uz/', 'wta', 'tournament');return false;">Tashkent </a></li></ul><ul class="worldTourDatesCol"><li>08/09 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.challengebell.com/', 'wta', 'tournament');return false;">Quebec City </a></li><li>15/09 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.gztennis.com/', 'wta', 'tournament');return false;">Guangzhou </a></li><li>15/09 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.kdbkoreaopen.com/', 'wta', 'tournament');return false;">Seoul </a></li><li>15/09 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.toray-ppo.co.jp/', 'wta', 'tournament');return false;">Tokyo </a></li><li>21/09 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.wuhanopen.org/', 'wta', 'tournament');return false;">Wuhan </a></li><li>27/09 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.chinaopen.com.cn/en/index.shtml', 'wta', 'tournament');return false;">Beijing *</a></li><li>06/10 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.hp-open.jp/', 'wta', 'tournament');return false;">Osaka </a></li><li>06/10 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.wtatennis.com/tournaments/tournamentId/3783/title/tianjin-open-2014--tianjin-china', 'wta', 'tournament');return false;">Tianjin </a></li><li>06/10 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.generali-ladies.at/', 'wta', 'tournament');return false;">Linz </a></li></ul><ul class="worldTourDatesCol"><li>13/10 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.bgl-bnp-paribas-open.lu/', 'wta', 'tournament');return false;">Luxembourg </a></li><li>13/10 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.kremlincup.ru/', 'wta', 'tournament');return false;">Moscow *</a></li><li>20/10 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.wtatennis.com', 'wta', 'tournament');return false;">Singapore </a></li><li>28/10 <a href="#" target="_blank" onclick="javascript:newLinker('http://sofia-tennis.bg/en/home', 'wta', 'tournament');return false;">Sofia </a></li>
+			</div>
+			<div class="globalBarRibbonKey clear">
+				<p>* Combined Men/Women
+				<span class="footnote">^ Grand Slams and Fed Cup are not WTA events</span>
+				</p>
+			</div>
+		</div>
+	</li>
+</ul>
+                </li>
+            </ul>
+            <div id="atpNavBarCredentials">
+                
+                <a href="http://credential.atpworldtour.com/credential/default.aspx" id="atpNavBarLogin">Login</a>
+                <a href="http://credential.atpworldtour.com/credential/default.aspx" id="atpNavBarSignup">Sign Up</a>
+            </div>
+            <ul id="globalBarLanguage">
+                <li><a id="languageEnglish" href="http://www.atpworldtour.com">English</a></li><li><a id="languageChinese" href="http://cn.atpworldtour.com">中文</a></li><li><a id="languageSpanish" href="http://es.atpworldtour.com">Español</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="siteHeader">
+            <div id="siteHeaderOuter">
+            <div id="siteHeaderInner" class="clear">
+                <div id="headerTop" >
+                    <a id="siteLogo" href="/" title="Tennis - ATP World Tour"><img class="IE6pngFix" src="/media/main_logo.png" alt="Tennis - ATP World Tour" /></a>
+                    
+                    <div id="headerTopLinks">
+                                            <span id="this-week">2014 SEASON</span><ul id="headerLinkList"><li><a href="javascript:openLSHDWindow(2014,'99','en','','','http://www.atpworldtour.com/')" title="">Live ATP Scoreboard</a></li>
+<li><a href="/Scores/Daily-Scores.aspx" title="">Results</a></li>
+<li><a href="/Scores/Schedules.aspx" title="">Draws & Schedule</a></li>
+<li><a href="http://www.atpworldtour.com/News/Tennis/2014/TV-Schedule/Broadcast-Schedule.aspx" title="">TV</a></li>
+<li><a href="http://www.atpworldtour.tennistv.com/?WT.mc_id=atp27" title="" target="_blank">Watch Live</a></li>
+<li><a href="http://www.atpworldtour.com/Fans/Mobile.aspx" title="">Mobile</a></li>
+</ul>                                          
+                                    </div>
+                                    
+<a class="headerPromo" id="headerPromo1" href="http://credential.atpworldtour.com/" target="_self" title="Newsletter Signup"><img src="/~/media/852EC091AB4A4EA68A0EA9960E724B9C.ashx" /></a>    
+                                    <div id="divIsLoaded"></div>        
+                                    <div id="headerTopScoreboardsEmpty">
+                                        
+                                        
+                                        
+                    </div>                      
+                                    <div id="headerSponsor">
+                                    <center>
+                            <a href="http://www.corona.com/?from=atpmast" title="" target="_blank"><img src="http://geo.atpworldtour.com/media/atp_corona.png?lang=en" /></a>
+                        
+                    </center>
+                    </div>
+                            </div>           
+                <div id="headerBottom">                     
+                    <ul id="siteNavMain">
+                        
+<li ><a href="/" title="" id="nav_home" class="mainNavLink">Home</a>
+        
+</li>
+<li ><a href="/Scores/Daily-Scores.aspx" title="" id="nav_scores" class="mainNavLink">Scores & Stats</a>
+    <ul class="subNavDrop"><li><a href="/Scores/Daily-Scores.aspx" title="Davis Cup Results" target="_self">Davis Cup Results</a></li><li><a href="javascript:openLSHDWindow(2014,'99','en','','','http://www.atpworldtour.com/')" title="ATP Live Scoreboard" target="_self">ATP Live Scoreboard</a></li><li><a href="/Scores/Schedules.aspx" title="Draws & Schedule" target="_self">Draws & Schedule</a></li><li><a href="/Scores/Archive-Event-Calendar.aspx" title="Results Archive" target="_self">Results Archive</a></li><li><a href="/Reliability-Zone/Reliability-Zone-Landing.aspx" title="FedEx ATP Performance Zone" target="_self">FedEx ATP Performance Zone</a></li><li><a href="/Matchfacts/Matchfacts-Landing.aspx" title="ATP MatchFacts" target="_self">ATP MatchFacts</a></li></ul>    
+</li>
+<li ><a href="/Tournaments/Tournament-Landing.aspx" title="" id="nav_tournaments" class="mainNavLink">Tournaments</a>
+    <ul class="subNavDrop"><li><a href="/Tournaments/Tournament-Landing.aspx" title="Tournament Profiles" target="_self">Tournament Profiles</a></li><li><a href="/Tournaments/Event-Calendar.aspx" title="2014 Calendar" target="_self">2014 Calendar</a></li><li><a href="http://www.barclaysatpworldtourfinals.com/en/" title="Barclays ATP World Tour Finals" target="_blank">Barclays ATP World Tour Finals</a></li><li><a href="/Tournaments/Challenger-Tour.aspx" title="ATP Challenger Tour" target="_self">ATP Challenger Tour</a></li><li><a href="http://www.atpchampionstour.com/" title="ATP Champions Tour" target="_blank">ATP Champions Tour</a></li></ul>    
+</li>
+<li ><a href="http://atpworldtour.gootickets.com/tickets/" title="" id="nav_tickets" class="mainNavLink">Tickets</a>
+        
+</li>
+<li  class="activeNav"><a href="/Players/Player-Landing.aspx" title="" id="nav_players" class="mainNavLink">Players</a>
+    <ul class="subNavDrop"><li><a href="/Players/Player-Landing.aspx" title="Player Profiles" target="_self">Player Profiles</a></li><li><a href="/Players/Coach-Landing.aspx" title="ATP Coaches" target="_self">ATP Coaches</a></li></ul>    
+</li>
+<li ><a href="/Rankings/Rankings-Home.aspx" title="" id="nav_rankings" class="mainNavLink">RANKINGS</a>
+        
+</li>
+<li ><a href="/News/News-Landing.aspx" title="" id="nav_news" class="mainNavLink">News</a>
+    <ul class="subNavDrop"><li><a href="/News/News-Landing.aspx" title="Latest News" target="_self">Latest News</a></li><li><a href="/Heritage/Heritage.aspx" title="ATP Heritage" target="_self">ATP Heritage</a></li><li><a href="/News/Form-And-Fitness.aspx" title="Form & Fitness" target="_self">Form & Fitness</a></li><li><a href="/Tecnifibre/default.aspx" title="Tecnifibre On The Road" target="_self">Tecnifibre On The Road</a></li><li><a href="http://www.atpworldtour.com/moetatpawards" title="Moët & Chandon Awards" target="_self">Moët & Chandon Awards</a></li></ul>    
+</li>
+<li ><a href="/Media/Photo-Landing.aspx" title="" id="nav_photos" class="mainNavLink">Photos</a>
+        
+</li>
+<li ><a href="/Media/Video-Landing.aspx" title="" id="nav_video" class="mainNavLink">Video</a>
+    <ul class="subNavDrop"><li><a href="http://www.atpworldtour.tennistv.com/?WT.mc_id=atp16" title="Watch Live Matches" target="_blank">Watch Live Matches</a></li><li><a href="/Media/Uncovered.aspx" title="ATP World Tour Uncovered" target="_self">ATP World Tour Uncovered</a></li></ul>    
+</li>
+<li ><a href="http://www.tennis-warehouse.com/atpworldtourstore/?from=atp" title="" target="_blank" id="nav_shop" class="mainNavLink">Shop</a>
+        
+</li>
+                    </ul>
+                    
+                    <form id="headerSearch" name="searchForm" method="get" action="/Search/Site.aspx">
+                            <input type="text" id="headerSearchField" class="autocomplete" name="q" value="" />
+                            
+                            <input type="hidden" class="autoCompId" />
+                        
+                        <button type="submit">Go</button>
+                    </form>
+                                    
+                </div>
+                    </div>
+            </div>
+    </div>
+    
+
+<!-- Begin: main content area -->
+<div id="wrapper" class="clear">
+    <div id="navAdCol">
+    		
+    </div>
+    
+    <div id="mainContentColWrap">
+        
+        <div id="breadCrumbTitleArea"></div>
+        
+        <div id="mainContentColExtra">
+            
+            
+
+<div id="playerBioInfoCard">
+    
+    <div id="playerBioInfoCardHeader">
+	    
+<div class="moduleSharebar">
+    <div class="shareBarPrint"><a class="articlePrintLink" href="#">Print</a></div>
+    
+    <div class="shareBarSocial"><a href="#">Email</a></div>
+
+    
+	
+	
+    
+</div>
+
+
+	    
+        <h1>Mike Bryan</h1>
+    </div>
+    
+    <div id="playerBioInfoCardMain">
+	    <div id="playerBioHeadShot">
+    	    <p id="playerBioHeadShotCopy" class="IE6pngFix">© Getty Images</p>
+    	    <img src="/~/media/863B7CF3769C40C198475EB697D605FB.ashx?w=148&h=198" width="148" height="198"  title="Mike Bryan" alt="Mike Bryan" />
+        </div>
+
+	    <ul id="playerBioInfoList">
+		    
+		    <li><span>Age:</span> 35 (29.04.1978)</li>
+		    
+		    <li><span>Birthplace:</span> Camarillo, California, USA</li>
+		    <li><span>Residence:</span> Wesley Chapel, Florida, USA</li>
+		    <li><span>Height:</span> 6'3" (190 cm)</li>
+		    <li><span>Weight:</span> 185 lbs (84 kg)</li>
+		    <li><span>Plays:</span> Right-handed</li>
+		    <li><span>Turned Pro:</span> 1998</li>
+		    <li><span>Coach:</span> David Macpherson</li>
+		    <li><span>Website:</span> <a href="http://www.bryanbros.com/" target="_blank">http://www.bryanbros.com/</a></li>
+	    </ul>
+
+	    <div id="playerBioInfoExtra">
+
+            
+    	    <div id="playerBioInfoRank">
+        	    <span>1</span>
+                Doubles Ranking
+            </div>
+            
+            
+            <div id="playerBioInfoFlag">
+        	    <img src="/~/media/DFD9C6EA356546CABF0824CF0C279106.ashx?w=48&h=48" width="48" height="48"  title="United States" alt="United States" />
+                <p>United States</p>
+            </div>
+        
+    	    
+                    
+        </div>
+        
+    </div>
+    
+    <ul id="playerBioNav" class="normalBioNav">
+    	<li id="playerBionav_profile" class="active"><a href="/Tennis/Players/Top-Players/Mike-Bryan.aspx">Profile</a></li>
+        <li id="playerBionav_activity"><a href="/Tennis/Players/Top-Players/Mike-Bryan.aspx?t=pa">Playing Activity</a></li>
+        <li id="playerBionav_record"><a href="/Tennis/Players/Top-Players/Mike-Bryan.aspx?t=mr">Match Record</a></li>
+        <li id="playerBionav_finals"><a href="/Tennis/Players/Top-Players/Mike-Bryan.aspx?t=tf">Titles/Finals</a></li>
+        <li id="playerBionav_matchfacts"><a href="/Tennis/Players/Top-Players/Mike-Bryan.aspx?t=mf"> ATP MatchFacts</a></li>
+        <li id="playerBionav_history"><a href="/Tennis/Players/Top-Players/Mike-Bryan.aspx?t=rh">Rankings History</a></li>
+        <li id="playerBionav_breakdown"><a href="/Tennis/Players/Top-Players/Mike-Bryan.aspx?t=rb">Rankings Breakdown</a></li>
+    </ul>
+    
+</div>
+
+<div id="playerBioContentMain">
+    
+<div id="playerBioProfileGraphs" class="clear">
+
+    <div id="playerBioGraphsGrid">
+	    <h5 id="bioGridHeader">As of 27.01.2014</h5>
+	    <table id="bioGridHeadTabs" cellpadding="0" cellspacing="0">
+	        <tr>
+		    <td class="bioGridTabsCell" width="57">
+		        <div id="bioGridTabs">
+			    <a href="#bioGridSingles" rel="bioGridSingles" class=" bioGridTab">S</a>
+			    <a href="#bioGridDoubles" rel="bioGridDoubles" class="active bioGridTab">D</a>
+		        </div>
+		    </td>
+		    
+		    <td width="44"><span>Ranking</span></td>
+		    <td width="46"><span>Week Change</span></td>
+		    
+		    <td width="52"><span>W-L</span></td>
+		    <td width="33"><span>Titles</span></td>
+		    <td width="87"><span>Prize Money*</span></td>
+	        </tr>
+	    </table>
+	    <div id="bioGridTabContent">
+	        <table id="bioGridSingles" class="bioGridTable"  cellpadding="0" cellspacing="0">
+		    
+		    
+		    <tr>
+		        <td class="bioGridRowTitle" width="57">2014</td>
+		        <td width="44"><p>Current</p><span class="bioGridRank">-</span></td>
+		        <td width="46"><span >-</span></td>
+		        <td width="52">0-0</td>
+		        <td width="33">0</td>
+		        <td width="87">$18,217</td>
+		    </tr>
+		    
+		    
+		    <tr>
+		        <td width="57">Career</td>
+		        <td width="90" colspan="2"><p>High</p><span class="bioGridRank">246</span><p><em>16.10.2000</em></p></td>
+		        <td width="52">5-11</td>
+		        <td width="33">0</td>
+		        <td width="87">$10,894,156<p class="bioGridTablePrizeDesc">*Singles & Doubles combined</p></td>
+		    </tr>
+	        </table>
+
+	        <table id="bioGridDoubles" class="bioGridTable" style="display:block;" cellpadding="0" cellspacing="0">
+	        
+		    
+		    <tr>
+		        <td class="bioGridRowTitle" width="57">2014</td>
+		        <td width="44"><p>Current</p><span class="bioGridRank">1</span></td>
+		        <td width="46"><span >-</span></td>
+		        <td width="52">3-2</td>
+		        <td width="33">0</td>
+		        <td width="87">$18,217</td>
+		    </tr>
+		    
+		    
+		    <tr>
+		        <td width="57">Career</td>
+		        <td width="90" colspan="2"><p>High</p><span class="bioGridRank">1</span><p><em>08.09.2003</em></p></td>
+		        <td width="52">865-267</td>
+		        <td width="33">95</td>
+		        <td width="87">$10,894,156<p class="bioGridTablePrizeDesc">*Singles & Doubles combined</p></td>
+		    </tr>
+	        </table>
+	    </div>
+    </div>
+
+    <div class="flashGraph">
+        
+
+<div >
+    <!-- Flash swf should be here -->
+    <div id="flashcontent09d95a46d277478ab4da5af48d3df814">
+		<a href="http://www.adobe.com/go/getflashplayer">
+			<img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
+		</a>   
+    </div>
+</div>
+<script type="text/javascript">
+	var pp_flashvars = {};
+		pp_flashvars.xmlPath = "%2fHandlers%2fRankHistory.aspx%3fseed%3d635269626084592391%26pId%3dB589";
+		pp_flashvars.flashId = "flashcontent09d95a46d277478ab4da5af48d3df814";
+		pp_flashvars.c = "0x00AFF0";
+	    
+	var pp_params = {};
+		pp_params.menu = "false";
+		pp_params.scale = "noscale";
+		pp_params.bgcolor = "#ffffff";
+		pp_params.quality = "best";
+		pp_params.allowScriptAccess = "always";
+		pp_params.wmode = "transparent";
+		
+		var pp_attributes = {};
+		pp_attributes.id = "flashcontent09d95a46d277478ab4da5af48d3df814";
+		swfobject.embedSWF("/media/flash/atpPlayerBio.swf", "flashcontent09d95a46d277478ab4da5af48d3df814", "311", "162", "9.0.124", "/media/flash/expressInstall.swf", pp_flashvars, pp_params, pp_attributes);
+</script>
+
+
+    </div>    
+
+</div>
+
+
+
+
+<div id="liveScoreContainer" class="moduleWrap liveScoresModule">
+    <div class="genericModuleHeader">
+        
+        
+        
+        <h4 id="livescores"></h4>
+    </div>
+    <div class="moduleContentOuter">
+        <div class="moduleContentInner">
+            <div class="tabsAndLinks">
+            	<ul id="ulTabs">
+                	<li id="match" class="active"><a href="#"></a></li>
+                    <li id="stats"><a href="#"></a></li>
+                    <li id="h2h"><a href="#"></a></li>
+                </ul>
+                
+                <div class="liveScoreButtonLinks" id="liveScoreButtonLinks">
+                    <a id="watchliveLink" href="#" class="genericButton"><span id="watchlive"></span></a>
+                    <a id="tvscheduleLink" href="#" class="genericButton"><span id="tvschedule"></span></a>
+                    <a id="completeh2hLink" href="#" class="genericButton"><span id="completeh2h"></span></a>
+                </div>
+            </div>
+            <div class="liveScoresMain">
+                <div id="matchContainer" class="tabActive"></div>
+                <div id="statsContainer"></div>
+                <div id="h2hContainer"></div>
+                <div class="showleft navbuttons"><a id="previousmatch" href="#">Previous</a></div>
+                <div class="showright navbuttons"><a id="nextmatch" href="#">Next</a></div>
+                <div class="liveScoreMainLoading"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="staticTabModule clear">
+    <ul class="staticTabsList clear">
+        <li class="active"><a rel="personal" href="#personal"><span>Personal</span></a></li><li><a rel="careerHighlights" href="#careerHighlights"><span>Career Highlights</span></a></li><li><a rel="review" href="#review"><span>Year In Review</span></a></li>
+    </ul>
+    <div class="staticTabContent">
+        <div class="staticTabSingle" id="personal" style="display: block;"><p>Full name is Michael Carl Bryan...Two minutes older than twin brother Bob...Parents, Wayne and Kathy, both teach tennis and they began teaching their sons at age two...Wayne is a lawyer, musician and tennis instructor who is involved in various ATP Kids&rsquo; Days and clinics on tour...Kathy (formerly Blake) was a former player on women&rsquo;s circuit and she played at Wimbledon four times, reaching mixed doubles QF in 1965.</p>
+<p>During early days as a junior player, brothers forbidden to play each other in tournament play by his parents (if they were to play each other, they would alternate defaulting to each other)...Was No. 3 in U.S. Boys&rsquo; 18s in 1995 and No. 4 in &rsquo;96...Won well over 100 junior doubles titles, including US Open and U.S. National Boys&rsquo; 18s in 1996...Played at Stanford University from 1997-98 and helped team to NCAA team titles both years...In &lsquo;98, won NCAA doubles (w/Bob) and team titles.</p>
+<p>Enjoys playing basketball...Has formed Bryan Brothers Band, with Bob on keyboards and Mike on drums...Provided music for ATP Doubles Revolution TV commercial and all original music for Tennis Channel program &ldquo;No Strings&rdquo; that they were profiled on...Have held concerts at tournaments around the world...Performed at 2010 Arthur Ashe Kid's Day at the US Open...In November 2006, featured among the twins in &ldquo;Doubly Delicious&rdquo; section of &ldquo;Sexiest Man Alive&rdquo; issue of People Magazine...They participate in an annual charity fund raiser for abused children at their club in Camarillo...In September 2012, the USTA presented the Bryans with the first US Open Sportsmanship Award&hellip;Voted ATPWorldTour.com Fans' Favorite Team from 2005-13 and ATP Doubles Team of Year in 2003, '05-07, '09-13...Coached by former ATP pro David Macpherson (since August 2005).</p>
+<p>Married Lucille Williams on 25 November 2012 at the Four Seasons Montecito, California.&nbsp;</p>
+<p class="deuceLinks"><a href="/News/DEUCE-Tennis/DEUCE-Finals-2008/Bryans-Dynamic-Duo.aspx">Bryans DEUCE Feature</a>&nbsp;(Nov. 2008)<br />
+<a href="/News/DEUCE-Tennis/DEUCE-May-2010/Bryans-Twitter.aspx">Bryans DEUCE Feature</a>&nbsp;(May 2010)<br />
+<a href="http://www.atpworldtour.com/News/DEUCE-Tennis/Bryans-Doubles-Teams-Record.aspx">Special Tribute: Bryans' Team Titles Record</a>&nbsp;(1 Aug. 2010)<br />
+<a href="/News/DEUCE-Tennis/DEUCE-Australian-Open-2011/Last-Time-Bryans.aspx">Bryans DEUCE Feature</a>&nbsp;(Jan. 2011)<br />
+<a href="http://www.atpworldtour.com/News/Tennis/2012/05/21/Nice-Q-And-A-Bryan-Brothers.aspx">Bryans Q&amp;A Feature</a> (May 2012)</p></div><div class="staticTabSingle" id="careerHighlights" style="display: none;"><p><strong>2013</strong> -- The twins finished as No. 1 team for a record 9th time in 11 years, compiling a 70-13 match record and 11-4 in finals (also won 11 titles in 2007 and &rsquo;10). Mike has ranked No. 1 in individual doubles rankings a record 360 weeks, Bob 344 weeks (as of Dec. 30)&hellip;Became 1st team to hold all 4 Grand Slam doubles titles at same time in Open Era after winning their 3rd Wimbledon title (15th Grand Slam crown) in July. They also completed a &lsquo;Golden Bryan Slam&rsquo; as they won gold medal at London &lsquo;12 Olympics and then 4 Slam titles in a row. Fell in SF at US Open (l. to Paes-Stepanek) and were attempting to become 1st team to win calendar year Grand Slam since McGregor/Sedgman in &rsquo;51&hellip;</p>
+<p>Only team to win a Slam title for 9 straight years&hellip;Compiled a 26-4 match record in ATP Masters 1000 tournaments with 5 titles, capturing their 26th career title in Paris. Also won 4 other ATP Masters 1000 titles: Indian Wells (1st in 15 attempts), Madrid, Rome and Cincinnati. Other titles were London/Queen&rsquo;s Club, Memphis and Sydney&hellip;They had a career-best 25-match winning streak snapped in QF at ATP Masters 1000 Montr&eacute;al by Lindstedt-Nestor&hellip;Qualified 12th year in a row at Barclays ATP World Tour Finals in London and reached final (l. to Marrero-Verdasco)&hellip;</p>
+<p><strong>2012</strong> -- The American twins finished as No. 1 team for a record 8th time in past 10 years, compiling a 60-13 match record and 7-3 in finals. It was 7th straight year they have won at least 60 matches (and 8th in last 9). Mike has ranked No.1 in individual doubles ranking a record 308 weeks, Bob 299 weeks (as of Dec. 31)...Earned record-tying 12th Grand Slam title at US Open (d. Paes-Stepanek), giving them at least 1 Grand Slam title in 8 straight years, tying with John Newcombe and Tony Roche for Slam titles. Had 20-3 record in Grand Slams, reaching finals at Australian Open and Roland Garros and SF at Wimbledon...Titles included Gold Medal at London Olympics, Monte-Carlo and Toronto (16-6 overall at ATP Masters 1000 events)...With Beijing title, Mike became all-time doubles titles leader in Open Era with his 84th crown, eclipsing Todd Woodbridge&rsquo;s 83...&nbsp;</p>
+<p><strong>2011 </strong>-- The American twins finished at No. 1 team for a record 7th time in past 9 years, highlighted by an 8-3 mark in finals&hellip;They have won a team record 75 titles together and they are only team in Open Era (since 1968) to win 700 matches&hellip;They have a career mark of 75-41 in finals together...The brothers have co-held the No. 1 ATP doubles ranking for a record 273 weeks (through Dec. 26, 2011), surpassing John McEnroe&rsquo;s record of 270 weeks...They earned their 10th and 11th career Grand Slam titles, respectively, at Australian Open (d. Bhupathi-Paes) and Wimbledon (d. Lindstedt-Tecau)&hellip;They have won at least 1 Grand Slam title in 7 straight years&hellip;It was their 5th crown Down Under and 2nd at All England Club...In ATP World Tour Masters 1000 play, they went 16-7, capturing titles in Monte-Carlo and Madrid while reaching final in Montr&eacute;al...After a 12-4 start in 1st 3 months of season, they reached 4 straight clay finals, winning titles in Houston (d. Isner-Querrey), Monte-Carlo (d. Chela-Soares), runner-up in Barcelona (l. to S. Gonzalez-Lipsky) and winning in Madrid (l. to Llodra-Zimonjic)&hellip;Went 14-1 during that stretch...After a SF at Roland Garros (l. to Cabal-Schwank), collected back-to-back grass court titles at Queen&rsquo;s Club in London (d. Bhupathi-Paes) and Wimbledon&hellip;Then won Davis Cup QF rubber over Spain&rsquo;s Granollers-Verdasco...During North American summer circuit, runner-up in Montr&eacute;al and SF in Cincinnati&hellip;Suffered their 1st opening round loss at US Open since 1999 (l. to Karlovic-Moser)...In European indoor season, won back-to-back titles in Vienna (d. Mirnyi-Nestor) and Valencia (d. Butorac-Rojer)...</p>
+<p><strong>2010</strong> -- The American twins finished No. 1 for a record sixth time in past eight years, highlighted by an 11-0 mark in finals&hellip;In January at Australian Open, defeated rivals Nestor-Zimonjic in three sets to clinch their fourth title in Melbourne&hellip;In February, they repeated title in Delray Beach (d. Marx-Zelenay) and became first team in Open Era to register 600 match wins&hellip;During spring clay-court swing, repeated Houston title (d. Huss-Moodie), then lifted Rome* trophy (d. Nestor-Zimonjic) to draw level with Woodbridge-Woodforde&rsquo;s 61 tour-level titles&hellip;Won all three doubles rubbers for U.S. at ATP World Team Championships in D&uuml;sseldorf&hellip;In next two Grand Slam tournaments, lost in 2nd Rd. at Roland Garros and QF at Wimbledon&hellip;On August 1, picked up their sixth Los Angeles title and a record-breaking 62nd team title in their 100th final (62-38 record) with three-set win over Butorac-Rojer&hellip;Following week reached QF in Washington (l. to Bopanna-Qureshi) before winning Toronto* (d. Benneteau-Llodra)&hellip;Their fine run of form continued at Cincinnati* with a title over Bhupathi-Mirnyi&hellip;At US Open, picked up their ninth Grand Slam title and third US Open trophy without dropping a set, capping off with two tie-breaks win over No. 16 seeds Bopanna-Qureshi&hellip;Bob became first player to win mixed (w/Huber) and men's doubles title at the US Open since Kevin Curren in &lsquo;82&hellip;They donated $10,000 from their Foundation to Qureshi's Foundation to help the victims of the Pakistan floods&hellip;Then repeated title in Beijing (d. Fyrstenberg-Matkowski) and their career-best 20-match winning streak came to an end in SFs in Shanghai* (l. to Melzer-Paes)&hellip;Won fourth career title in Basel&hellip;Closed with SF at Barclays ATP World Tour Finals in London.</p>
+<p><strong>2009 -- </strong>The Americans finished No. 1 and as ATP World Tour Doubles Champions for fifth time in seven years (2003, &rsquo;05-07, &lsquo;09)&hellip;Tied Woodbridge-Woodforde for most year-end No. 1 finishes with five&hellip;Clinched No. 1 with seventh title of season at Barclays ATP World Tour Finals in London (d. Mirnyi-A. Ram)&hellip;Won seventh Grand Slam crown at Australian Open (d. Bhupathi-Knowles)&hellip;Have won at least five titles in eight straight seasons&hellip;Started 15-1, winning titles in Sydney (d. Nestor-Zimonjic) and Delray Beach (d. Melo-Sa)&hellip;In Davis Cup play, they won 1st RD and QF matches to improve to 16-2, the winningest team in US Davis Cup history&hellip; Began clay court campaign in April with Houston title (d. Levine-Sweeting)&hellip;Reached finals at Monte Carlo* and Rome* (l. to Nestor-Zimonjic in both)&hellip;Advanced to SF at Roland Garros and final at Wimbledon (l. to Nestor-Zimonjic)&hellip;Won fifth career title in Los Angeles (d. Becker-Moser)&hellip;Runner-up at Cincinnati* (l. to Nestor-Zimonjic), SF at US Open (l. to Dlouhy-Paes) and won title in Beijing (d. Knowles-Roddick)&hellip;Also runner-up in Basel (l. to Nestor-Zimonjic)&hellip;Went 7-5 in finals to move to 56-38 lifetime.</p>
+<p><strong>2008</strong> -- The American twins finished No. 2 in ATP Doubles Race after winning an ATP-best five titles (tied w/Nestor-Zimonjic), highlighted by sixth Grand Slam title at US Open. Came within one match win in Tennis Masters Cup final against Nestor-Zimonjic of finishing as No. 1 doubles team for fourth consecutive season. Claimed at least five titles for a seventh straight year. Went 5-7 in finals and are 49-33 lifetime. Reached finals in four of their first five appearances at Sydney, Delray Beach, San Jose and Las Vegas. Lost in QF as defending champions at Australian Open (l. to Bhupathi-Knowles). Following QF at AMS Indian Wells, broke through in April to defend AMS Miami title (d. Bhupathi-Knowles). Reached three successive clay finals, titling at Barcelona and AMS Rome and finishing as runners-up at AMS Hamburg (l. to Nestor-Zimonjic). Advanced to QF at Roland Garros (l. to Cuevas-Horna) and SF at Wimbledon (l. to Bjorkman-Ullyett). Compiled a 17-1 record during North American summer circuit, reaching the final in all three appearances. Fell in Match Tie-Break of AMS Toronto final (l. to Nestor-Zimonjic), then reached their 80th ATP final the next week at AMS Cincinnati (d. Erlich-Ram). It was their 13th ATP Masters Series title. At Beijing Olympics, captured bronze medal (d. Clement-Llodra) after a SF loss to eventual gold medalists Federer-Wawrinka of Switzerland. Won second US Open title (d. Dlouhy-Paes). Afterwards, reclaimed and held No. 1 position in ATP Doubles Race for 10 weeks. With Bob nursing a shoulder injury in September, Mike partnered Mardy Fish in Davis Cup SF vs. Spain and won the doubles rubber in five sets but the U.S. lost 4-1. Closed regular season with 1-2 record in two AMS appearances. Qualified for sixth straight Tennis Masters Cup, and reached their third final at the circuit finale. Nestor-Zimonjic went on to win the title, thereby claiming the year-end No. 1 team finish and Zimonjic the No. 1 doubles ranking. Played against each other in Wimbledon mixed doubles final with Bob and Samantha Stosur defeating Mike and Katarina Srebotnik. Bob also won mixed doubles title at Roland Garros with Victoria Azarenka (d. Zimonjic-Srebotnik). </p>
+<p><strong>2007</strong> -- First team to finish No. 1 four times in five years&hellip;Compiled a career-best 77-9 record&hellip;Won ATP-high and personal-best 11 titles in 15 finals&hellip;First team to win at least 10 titles in a season since Woodbridge-Woodforde (12 in 1996)&hellip;Helped U.S. win Davis Cup title by posting 4-0 record together and clinched final vs. Russia with straight-sets win&hellip;Defended Australian Open title and advanced to Wimbledon final&hellip;Won a career-best five Masters 1000 titles at Miami, Monte Carlo, Hamburg, Madrid, Paris&hellip;Captured other titles at Las Vegas, Houston, L.A., Washington and Basel&hellip;Qualified for fifth straight Tennis Masters Cup, but withdrew due to Mike&rsquo;s elbow injury&hellip;.Both ranked No. 1 individually every week throughout season&hellip;</p>
+<p><strong>2006 --</strong> The American teamed with twin brother Bob to finish as No. 1 team in Stanford ATP Doubles Race for third time in four years.Tallied most match wins together with a 66-14 record, winning an ATP-high seven titles in 10 finals. Pair claimed at least five titles for a fifth consecutive year. Opened campaign by reaching third consecutive Australian Open final and claiming title for first time (d. Damm-Paes). Reached final at Roland Garros for second straight year (l. to Bjorkman-Mirnyi) and completed a career Grand Slam with Wimbledon crown (d. Santoro-Zimonjic). They became first team in Open Era to appear in seven consecutive Grand Slam finals (previous record was five set by Woodbridge-Woodforde). Other titles included: Las Vegas, Los Angeles, Washington, AMS Toronto, AMS Madrid. They were finalists at AMS events in Indian Wells, Miami, and Cincinnati. Duo went on a 21-match win streak beginning at Wimbledon until reaching Cincinnati final. Run included titles at Wimbledon, Los Angeles, Washington and Toronto. Qualified for their fourth consecutive Tennis Masters Cup and went 1-2 in round-robin play. They have a career record of 33-22 in finals, including 4-6 in Grand Slam title matches. Both ranked No. 1 individually every week throughout season and first players to accomplish feat since Todd Woodbridge in 1996-97. Posted a 3-0 Davis Cup record in helping U.S. to SF. Earned a career-high $810,930. </p>
+<p><strong>2005 --</strong> Teamed with twin brother Bob to finish as No. 1 team for second time in three years in ATP Doubles Race. Won at least five titles for a fourth straight season. They compiled a 58-18 match record and captured five titles in an ATP-best 11 finals, highlighted by their second Grand Slam crown at US Open. Became second team in 50 years to reach final in all four Grand Slams in a season (Bhupathi-Paes in 1999). Their other titles included Scottsdale, Queen's Club, Washington (won 300th match together) and AMS Paris. They were finalists at Australian Open, Roland Garros and Wimbledon along with Memphis, AMS Mont-Carlo and AMS Roma. Qualified for third straight Tennis Masters Cup and lost in SF. They have a career record of 26-18 in finals.</p>
+<p><strong>2004 --</strong> Won an ATP-best seven titles (w/brother Bob) in 11 finals.&nbsp;Capped year by defending Tennis Masters Cup title in Houston (d. Black-Ullyett) and finished No. 2 in ATP Doubles Race. Their 64 match wins were a team-best and ATP season-best. Reached first Australian Open final (l. to Llodra-Santoro). Helped U.S. to first Davis Cup final (l. to Spain 3-2) since 1997 and went 4-0 together. Played in Olympics and reached QF. Finished tied for No. 4 individually. </p>
+<p><strong>2003 --</strong> Teamed with brother Bob to become first brothers duo to finish No. 1 in ATP Doubles Race with five titles in eight finals. Combined for a 53-21 match record and five titles for second straight year. They captured their first Grand Slam crown at Roland Garros without dropping a set and closed season by winning title at Tennis Masters Cup in Houston, saving six match points in two round robin matches.&nbsp;Set record for most doubles titles by a brothers team, breaking Tim and Tom Gullikson's mark of 10. Made successful Davis Cup debut in World Group playoff tie in Slovakia. In Europe, won titles in Barcelona, Roland Garros and Nottingham. Continued strong play during North American summer hard court circuit with title at AMS Cincinnati (d. Arthurs-Hanley) and runner-up at US Open (l. to Bjorkman-Woodbridge). </p>
+<p><strong>2002 --</strong> Co-leader (w/Knowles) on ATP circuit with seven doubles titles in 11 finals. Also won a career-high 67 matches. Teamed with Bob to combine for a 54-19 record. Had a 13-2 mark with four other partners. Captured first AMS title in Toronto, along with Long Island and Basel. Captured first Grand Slam title in mixed doubles at US Open (w/Raymond).&nbsp;&nbsp;</p>
+<p><strong>2001 --</strong> Teamed with brother to capture four ATP doubles titles (Memphis, Queen's, Newport, L.A.) in five finals. </p>
+<p><strong>2000 --</strong> In singles, reached his second Challenger SF in Armonk (d. Bob in 1st RD).&nbsp;Won his first ATP singles match in Delray Beach (d. Gaudenzi). On ATP circuit, reached doubles three SF and QF at US Open. Captured Aptos Challenger final and reached four other finals.&nbsp; </p>
+<p><strong>1999 --</strong> Advanced to first Challenger singles SF in Hong Kong (d. Bob).&nbsp;In doubles, brothers reached first ATP final in Orlando. Won Challenger titles in Birmingham, Amarillo and Burbank.&nbsp; </p>
+<p><strong>1998 --</strong> Brothers captured two Challenger titles (Burbank and Aptos) and four Futures.&nbsp;Reached first ATP SF in Washington.&nbsp; </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p></div><div class="staticTabSingle" id="review" style="display: none;"><p><strong>2014</strong></p>
+<p>As six-time Australian Open champions, fell in 3R (l. to Butorac-Klaasen)&hellip;</p></div>
+    </div>
+</div>  
+</div>
+        </div>
+        
+        <div id="mainTripleColWrap">
+        
+            <div id="mainContentCol1">
+                
+                
+
+<div class="moduleWrap playerSearchModule clear">
+    <div class="genericModuleHeader">
+        <h4>Find a Player
+</h4>
+    </div>
+    <div class="moduleContentOuter">
+        <div class="moduleContentInner">
+            <form class="findPlayer" method="get" action="/Tennis/Players/">
+                <input type="text" id="autoCompSearch" value="" />
+                <input type="hidden" class="autoCompId" />
+                <button type="submit">Go</button>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="moduleWrap get-closer-module clear">
+    <div class="genericModuleHeader">
+        <h4>Get Closer To Mike</h4>
+    </div>
+    <div class="moduleContentOuter">
+        <div class="moduleContentInner">
+            <ul><li><a title="" href="https://www.facebook.com/BryanBros" target="_blank"><img src="/~/media/59991D188AFD41718EDEC42BD5C1C57D.ashx" width="56" height="51"  title="" alt="" /></a></li><li><a title="" href="https://twitter.com/Bryanbrothers" target="_blank"><img src="/~/media/538CE2A193D84C6BBD7C5766D4853914.ashx" width="56" height="51"  title="Twitter" alt="Twitter" /></a></li><li><a title="" href="http://www.bryanbros.com/" target="_blank"><img src="/~/media/F82FBFA0E16144E1A3C3C9D2F1B05264.ashx" width="56" height="51"  title="Web" alt="Web" /></a></li><li><a title="" href="http://www.atpworldtour.com/Tennis/Features/Players/Bryan-Brothers.aspx" target="_blank"><img src="/~/media/DCE7AD91465D42FF8B535B146741471B.ashx" width="56" height="51"  title="" alt="" /></a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+<!-- begin side rail media -->
+<div class="mediaModule">
+
+	<!-- swfobject.js should already be embeded somehwere in integrated version -->
+	<script type="text/javascript" src="/includes/jsbin/swfobject.js"></script>
+
+	<!-- begin flash embed script -->
+	<script type="text/javascript">
+        var rm_flashvars = {};
+            rm_flashvars.xmlPath = "%2fTennis%2fDefault-Modules%2fTemplates%2fPlayer%2fColumn-One%2fRelated-Photos.aspx%3fseed%3d635269626084592391%26pt%3d1%26fallback%3dfalse%26max%3d50%26q%3dMike%2bBryan";
+            rm_flashvars.timerLength = "6";
+            rm_flashvars.flashId = "flashcontentbdec957096a14fcaae6f8afac114e320";
+            rm_flashvars.c = "0x00AFF0";
+    	    
+        var rm_params = {};
+	        rm_params.menu = "false";
+	        rm_params.scale = "noscale";
+	        rm_params.bgcolor = "#ffffff";
+	        rm_params.quality = "best";
+	        rm_params.allowScriptAccess = "always";
+	        rm_params.allowfullscreen = "true";
+	        rm_params.wmode = "transparent";
+    		
+	        var rm_attributes = {};
+	        rm_attributes.id = "flashcontentbdec957096a14fcaae6f8afac114e320";
+	        swfobject.embedSWF("/media/flash/atpMediaRail.swf?v10a", "relatedMediaFallback", "300", "266", "10.0.0", "/media/flash/expressInstall.swf", rm_flashvars, rm_params, rm_attributes);
+    </script>
+	<!-- end flash embed script -->
+					
+    <!-- begin non-flash fallback content -->
+    <!-- note: #relatedMediaFallback div gets either ".relatedVideo" or ".relatedPhoto class" -->
+    <div id="relatedMediaFallback" class="relatedPhoto">
+	    <div class="mediaContent">
+		    <a href="/Tennis/Media/Images/Photo-Galleries/2014/Davis-Cup/DC-2014-1R-USA-Bryans-768.aspx">
+			    <!-- images should be 167px tall and 300px OR less wide -->
+			    <img src="/~/media/177863C3B9194E8FAC23FF3C32B6B025.ashx" height="167"/>
+			    <!-- .playButton div only needs to exist for .relatedVideo,
+				     but won't hurt anything if always present -->
+			    <div class="playButton"></div>
+		    </a>
+	    </div>
+	    <div class="mediaInfo">
+		    <p class="copyrightRelated">© Getty Images</p>
+	    </div>
+    </div>
+    <!-- end non-flash fallback content -->
+
+</div>
+<div class="adModule ad300x250">
+<script language="JavaScript" type="text/javascript">
+    document.write('<scr' + 'ipt src="http://adserver.adtechus.com/addyn/3.0/5184.1/1245492/0/170/alias=atp_mike_bryan_300x250;loc=100;target=_blank;grp=' + ord + ';misc='+new Date().getTime()+'" language="JavaScript1.1" type="text/javascript"></scr' + 'ipt>');
+</script><noscript>
+<a href="http://adserver.adtechus.com/adlink/3.0/5184.1/1245492/0/170/alias=atp_mike_bryan_300x250;loc=300;grp=123456789" target="_blank">
+<img src="http://adserver.adtechus.com/adserv/3.0/5184.1/1245492/0/170/alias=atp_mike_bryan_300x250;loc=300;grp=123456789" border="0" width="300" height="250"></a>
+</noscript>
+</div>
+
+
+<div class="moduleWrap listModule clear">
+    <div class="genericModuleHeader">
+        
+        
+        <h4>Related Articles
+</h4>
+    </div>
+    <div class="moduleContentOuter">
+        <div class="moduleContentInner">
+            <ul>
+                
+<li><a href="/News/Tennis/2013/11/48/Doubles-Season-Review.aspx">Bryan Brothers Top Doubles Storylines In 2013</a></li>
+
+<li><a href="/News/Tennis/2013/11/48/Tennis-On-Facebook-QA-Bryans.aspx">A Season To Be Thankful For</a></li>
+
+<li><a href="/News/Tennis/2013/11/45/London-Finale-Monday-Doubles-Final-Marrero-Verdasco-Bryans.aspx">Marrero/Verdasco Beat Bryans For Trophy</a></li>
+
+<li><a href="/News/Tennis/2013/11/45/London-Finale-Sunday-Doubles-Bryans.aspx">Bryans Aim For Fourth Final Showdown Title</a></li>
+
+            </ul> 
+            
+            
+          
+        </div>
+    </div>
+</div>
+<div class="moduleWrap head2headModule  miniHead2headModule  clear">
+    <div class="genericModuleHeader">
+        
+        <h2>FEDEX ATP HEAD 2 HEAD
+</h2>
+        
+    </div>
+    <div class="moduleContentOuter">
+        <div class="moduleContentInner">
+            
+            
+            <p>Compare <strong>BRYAN</strong> with:</p>
+            <form class="head2headEntryFields" method="get" action="/Players/Head-To-Head.aspx">
+            	<div class="head2headEntryField1"  style="display:none;">
+                	<input type="text" id="autoComp1" value="Mike Bryan" />
+                    <input type="hidden" class="autoCompId" name="pId"  value="B589" />
+                </div>
+                
+                <div class="head2headEntryField2">
+                	<input type="text" id="autoComp2" value="Enter Player 2" />
+                    <input type="hidden" class="autoCompId" name="oId" />
+                </div>
+                <div class="genericButton">
+                	<button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+            </div>
+            
+            <div id="mainContentCol2">
+                
+                
+            </div>
+            
+            <div id="mainContentCol3">
+                
+                
+            </div>
+            
+            <div id="mainContentCol4">
+                
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!-- End: main content area -->
+    
+
+        <style type="text/css">
+    .footerPartners 
+{ 
+width: 985px;
+margin: auto;
+background-color:#dfdfdf;
+padding-bottom:10px;
+}
+    .footerPartners h4 {color:#969696; width:100%; font-family:Arial, Helvetica, sans-serif; font-weight:bold; font-size:11px; border-bottom:1px solid #969696; padding-bottom:4px; margin:0; }
+    .footerPartners img {margin:0 15px 0 15px}
+</style>
+<div class="footerPartners" id="footerPartners" style="text-align: center; width: 985px;
+margin: auto;
+background-color:#dfdfdf;
+padding-bottom:10px;">
+<h4 style="color:#969696; width:100%; font-family:Arial, Helvetica, sans-serif; font-weight:bold; font-size:11px; border-bottom:1px solid #969696; padding-bottom:4px; margin:0;">PLATINUM PARTNERS</h4>
+<br />
+<a href="http://www.ricoh-europe.com" target="_blank"><img alt="" width="100" height="50" src="~/media/2FFD4096620B4FD6A4C96FB5A2150C9F.ashx" border="0"></a><a href="http://www.fedex.com" target="_blank"><img alt="" width="100" height="50" src="~/media/03D15CAD639D4E61ABFA63E481501931.ashx" border="0"></a><!--<a href="http://marcarj.com.br/" target="_blank"><img alt="" width="100" height="50" src="~/media/C267F5445B194BC19A9664C2C06F21ED.ashx" border="0"></a>--><a href="http://www.emirates.com" target="_blank"><img alt="" width="100" height="50" src="~/media/D6A512D268BE42E8AAED6F5259E6C9DF.ashx" border="0"></a>
+</div>
+    <div id="mainFooter">
+        <div id="mainFooterInner" class="clear">
+            
+<div class="footerLinkList">
+    <h4>Corporate
+</h4>
+    <ul><li><a href="/Corporate/Rulebook.aspx" title="">Rulebook</a></li><li><a href="/Corporate/Jobs.aspx" title="">Careers</a></li><li><a href="/News/Charity/ATP-Aces-Charity.aspx" title="">ATP ACES For Charity</a></li><li><a href="/Corporate/About.aspx" title="">About</a></li><li><a href="/Corporate/History.aspx" title="">History</a></li><li><a href="/Corporate/Management.aspx" title="">Management</a></li><li><a href="/Corporate/Structure.aspx" title="">Structure</a></li></ul>    
+</div>
+<div class="footerLinkList">
+    <h4>Media
+</h4>
+    <ul><li><a href="/Press/Daily-Media-Notes.aspx" title="">Daily Media Notes</a></li><li><a href="/Press/News-Releases.aspx" title="">News Releases</a></li><li><a href="http://www.atpworldtour.com/Press/Media-Guide.aspx" title="">2014 Media Guide</a></li><li><a href="/Press/Rankings-and-Stats.aspx" title="">Rankings and Statistics</a></li><li><a href="/Scores/Archive-Event-Calendar.aspx" title="">Results Archive</a></li><li><a href="/Press/rss-news-feeds.aspx" title="">RSS Feeds</a></li></ul>    
+</div>
+<div class="footerLinkList">
+    <h4>Partnerships
+</h4>
+    <ul><li><a href="/Corporate/Partnerships/Partners.aspx" title="">ATP Partners</a></li><li><a href="/Corporate/Partnerships/Official-Tennis-Club.aspx" title="">Official ATP Tennis Club</a></li><li><a href="/Corporate/Partnerships/Advertise-with-us.aspx" title="">Partnership Opportunities</a></li></ul>    
+</div>
+<div class="footerLinkList">
+    <h4>Affiliates
+</h4>
+    <ul><li><a href="http://www.tennisfame.com/" title="" target="_blank">Intl. Tennis Hall of Fame</a></li><li><a href="http://www.itftennis.com/" title="" target="_blank">Intl. Tennis Federation</a></li><li><a href="http://www.wtatennis.com" title="" target="_blank">Women's Tennis Association</a></li></ul>    
+</div>
+<div class="footerLinkList">
+    <h4>Communities
+</h4>
+    <ul><li><a href="/Fans/Fanzone.aspx" title="">Fan Zone</a></li><li><a href="http://www.facebook.com/ATPWorldTour" title="Facebook" target="_blank">Facebook</a></li><li><a href="http://www.twitter.com/atpworldtour" title="" target="_blank">Twitter</a></li><li><a href="https://plus.google.com/+ATPWorldTour" title="" target="_blank">Google+</a></li><li><a href="http://instagram.com/atpworldtour" title="" target="_blank">Instagram</a></li><li><a href="http://www.youtube.com/atpworldtour" title="" target="_blank">YouTube</a></li></ul>    
+</div>
+             <div id="footerSignup">
+                <h4>Get Your ATP<br />Fan Credential<br /></h4>
+<ul>
+      <li>Insider News</li>
+      <li>Daily Results </li>
+      <li>Mobile Alerts </li>
+      <li>Ticket Offers</li>
+    </ul>
+<a href="http://credential.atpworldtour.com/">
+<div class="genericButton"><button>Register</button></div></a>
+            </div>
+            <div id="footerBottom">
+                    <a href="/" title=""><img class="atpFooterLogo" src="/~/media/C8E0C5C072C54DD780B2EB574F75E43D.ashx" width="28" height="31"  title="ATP" alt="ATP" /></a>
+                <a href="/" title=""><img class="digiFooterLogo" src="/~/media/9EA628D51AF84E09AF39E8A01A2AD73E.ashx" width="69" height="34"  title="site by ATP" alt="site by ATP" /></a>
+                    <p>&copy; Copyright 1994 - 2014 ATP Tour, Inc.  All Rights Reserved.  No part of this site may be reproduced, stored in a retrieval system or transmitted in any way or by any means (including photocopying, recording or storing it in any medium by electronic means), without the written permission of ATP Tour, Inc.</p>
+                <p><a href="/Corporate/Terms/termsandconditions.aspx" title="">Terms & Conditions</a> | <a href="/Corporate/Terms/Privacy-Policy.aspx" title="">Privacy Policy</a> | <a href="/Corporate/Contact/Contact-Form.aspx" title="">Contact Us</a> | <a href="http://www.atpworldtour.com/handlers/MobileSwitch.aspx?mode=0&path=http%3A%2F%2Fm.atpworldtour.com%2FTennis%2FPlayers%2FTop-Players%2FMike-Bryan.aspx">Enable Mobile</a></p>
+                    </div>
+                
+        </div>   
+    </div>
+    
+    
+    
+    <script type="text/javascript" src="/includes/jsbin/mini/atp.bottom.635168626151.js"></script>
+    
+    
+    <script type="text/javascript" src="/includes/jsbin/hoverintentjs/jquery.hoverintent.minified.js"></script>
+    
+    <script type="text/javascript" src="/includes/jsbin/gaJQAddon.js"></script>
+    
+    <script type="text/javascript" src="/includes/jsbin/atp-en.js"></script>
+  
+    <script type="text/javascript">
+        jCoreInit("http%3a%2f%2fwww.atpworldtour.com%2fTennis%2fPlayers%2fTop-Players%2fMike-Bryan.aspx", "", "09d95a46-d277-478a-b4da-5af48d3df814", []);
+        initPlayerLiveScoreParams('B589');
+        
+    </script>
+    
+    <div id="shareBox">
+        <a id="emailLink" onclick="openWin('/Share/Send-to-a-Friend.aspx?url='+shareURL+'&t='+shareTitle+'','emailFriend',{width:400,height:495,scrollbars:0}); return false;" href="#">Email</a><a target="_blank" href="http://del.icio.us/post?url=http%3a%2f%2fwww.atpworldtour.com%2fTennis%2fPlayers%2fTop-Players%2fMike-Bryan.aspx&title=" id="deliciousLink"><img width="22" height="22" alt="Delicious" src="/media/icons/delicious_icon.gif"/>Delicious</a><a target="_blank" href="http://digg.com/submit?phase=2&url=http%3a%2f%2fwww.atpworldtour.com%2fTennis%2fPlayers%2fTop-Players%2fMike-Bryan.aspx&title=" id="diggLink"><img width="21" height="22" alt="Digg" src="/media/icons/digg_icon.gif"/>Digg</a><a target="_blank" href="http://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.atpworldtour.com%2fTennis%2fPlayers%2fTop-Players%2fMike-Bryan.aspx&t=" id="facebookLink"><img width="19" height="22" alt="Facebook" src="/media/icons/facebook_icon.gif"/>Facebook</a><a target="_blank" href="http://www.mixx.com/submit?page_url=http%3a%2f%2fwww.atpworldtour.com%2fTennis%2fPlayers%2fTop-Players%2fMike-Bryan.aspx" id="mixxLink"><img width="21" height="22" alt="Mixx" src="/media/icons/mixx-button.gif"/>Mixx</a><a target="_blank" href="http://reddit.com/submit?url=http%3a%2f%2fwww.atpworldtour.com%2fTennis%2fPlayers%2fTop-Players%2fMike-Bryan.aspx&title=" id="redditLink"><img width="21" height="22" alt="Reddit" src="/media/icons/reddit_icon.gif"/>Reddit</a><a target="_blank" href="http://www.stumbleupon.com/submit?url=http%3a%2f%2fwww.atpworldtour.com%2fTennis%2fPlayers%2fTop-Players%2fMike-Bryan.aspx&title=" id="stumbleLink"><img width="21" height="22" alt="StumbleUpon" src="/media/icons/stumble_icon.gif"/>StumbleUpon</a>
+    </div>
+    <script type="text/javascript">
+        
+        setTimeout(function () {
+            var a = document.createElement("script");
+            var b = document.getElementsByTagName("script")[0];
+            a.src = document.location.protocol + "//dnn506yrbagrg.cloudfront.net/pages/scripts/0014/0351.js?" + Math.floor(new Date().getTime() / 3600000);
+            a.async = true; a.type = "text/javascript"; b.parentNode.insertBefore(a, b)
+        }, 1);
+    </script>
+    <div id="fb-root"></div>
+    <script>var langChk = $('html').prop('lang');
+        if(langChk != "zh-CN"){
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '111585108883246',
+                channelUrl: 'http://www.atpworldtour.com/channel.html',  // custom channel
+                status: true,
+                cookie: true,
+                xfbml: true
+            });
+        };
+            (function () {
+                var e = document.createElement('script'); e.async = true;
+                e.src = document.location.protocol +
+              '//connect.facebook.net/en_US/all.js';
+                document.getElementById('fb-root').appendChild(e);
+            }());
+        }
+    </script>
+    
+</body>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-4616629-2']);
+        _gaq.push(['_setDomainName', 'atpworldtour.com']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <script type="text/javascript">
+        // used by atp.js for more event tracking
+        function trackEvent(_GAcategory, _GAaction, _GAlabel, _GAvalue) {
+            if (_GAvalue == "")
+                _gaq.push(['_trackEvent', _GAcategory, _GAaction, _GAlabel]);
+            else
+                _gaq.push(['_trackEvent', _GAcategory, _GAaction, _GAlabel, _GAvalue]);
+        }
+    </script>
+    
+    <script type="text/javascript">
+        if (typeof (_gaq) == 'undefined') var _gaq = _gaq || [];
+        _gaq.push(['ptn._setAccount', 'UA-4616629-17']); //Per Adam Rosenberg 9.30.2011
+        _gaq.push(['ptn._setDomainName', 'none']);
+        _gaq.push(['ptn._setAllowLinker', true]);
+        // This Event is bogus (not real user interaction) and it's wrongly used in PTN metrics
+        // but it's easier to leave this than redo the GA reports (per Jean and Rachel)
+        _gaq.push(['ptn._trackEvent', 'PTN', 'impression', location.href]);
+        _gaq.push(['ptn._trackPageview']);
+        if (typeof (_gaq) != 'undefined') {
+            (function () {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        }
+    </script>
+    
+    <!-- Begin comScore Tag -->
+    <script>
+        var _comscore = _comscore || [];
+        _comscore.push({ c1: "2", c2: "17223859" });
+        (function () {
+            var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+            s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+            el.parentNode.insertBefore(s, el);
+        })();
+    </script>
+    <noscript>
+      <img src="http://b.scorecardresearch.com/p?c1=2&c2=17223859&cv=2.0&cj=1" />
+    </noscript>
+    <!-- End comScore Tag -->
+
+</html>
+<!--2/2/2014 11:39:09 PM-->

@@ -1,0 +1,966 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en-US" lang="en-US"  > <![endif]-->
+<!--[if IE 7]>    <html class="lt-ie9 lt-ie8" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en-US" lang="en-US"  ><![endif]-->
+<!--[if IE 8]>    <html class="lt-ie9" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en-US" lang="en-US"  ><![endif]-->
+<!--[if gt IE 8]><!--> <html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en-US" lang="en-US"  > <!--<![endif]-->
+
+<head><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"beacon-6.newrelic.com","errorBeacon:":"jserror.newrelic.com","licenseKey":"2d2d3e5431","applicationID":"1469318","transactionName":"NlBQYhFVXxVWABAKXg8ac2UzG10HTgwRF0JOWFNfDRpQFUcb","queueTime":"0","applicationTime":"408","ttGuid":"4B4B013571CB139F","agent":"js-agent.newrelic.com/nr-292.min.js"}</script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function a(b,c,d){function e(f){if(!c[f]){var g=c[f]={exports:{}};b[f][0].call(g.exports,function(a){var c=b[f][1][a];return e(c?c:a)},g,g.exports,a,b,c,d)}return c[f].exports}for(var f=0;f<d.length;f++)e(d[f]);return e}({"4O2Y62":[function(a,b){function c(a,b){var c=d[a];return c?c.apply(this,b):(e[a]||(e[a]=[]),void e[a].push(b))}var d={},e={};b.exports=c,c.queues=e,c.handlers=d},{}],handle:[function(a,b){b.exports=a("4O2Y62")},{}],"SvQ0B+":[function(a,b){function c(a){if(a===window)return 0;if(e.call(a,"__nr"))return a.__nr;try{return Object.defineProperty(a,"__nr",{value:d,writable:!1,configurable:!1,enumerable:!1}),d}catch(b){return a.__nr=d,d}finally{d+=1}}var d=1,e=Object.prototype.hasOwnProperty;b.exports=c},{}],id:[function(a,b){b.exports=a("SvQ0B+")},{}],YLUGVp:[function(a,b){function c(){var a=m.info=NREUM.info,b=m.proto="https"===l.split(":")[0]||a.sslForHttp?"https://":"http://";if(a&&a.agent&&a.licenseKey&&a.applicationID){f("mark",["onload",e()]);var c=h.createElement("script");c.src=b+a.agent,h.body.appendChild(c)}}function d(){"complete"===h.readyState&&f("mark",["domContent",e()])}function e(){return(new Date).getTime()}var f=a("handle"),g=window,h=g.document,i="readystatechange",j="addEventListener",k="attachEvent",l=(""+location).split("?")[0],m=b.exports={offset:e(),origin:l};h[j]?(h[j](i,d,!1),g[j]("load",c,!1)):(h[k]("on"+i,d),g[k]("onload",c)),f("mark",["firstbyte",e()])},{handle:"4O2Y62"}],loader:[function(a,b){b.exports=a("YLUGVp")},{}]},{},["YLUGVp"]);</script>
+    <title>Roger Federer – Tennis Players - Tennis - ATP World Tour</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Copyright" content="Copyright 1994 - 2014 ATP Tour, Inc.  All Rights Reserved.  No part of this site may be reproduced, stored in a retrieval system or transmitted in any way or by any means (including photocopying, recording or storing it in any medium by electronic means), without the written permission of ATP Tour, Inc." />
+    <meta name="description" content="Official tennis profile for Roger Federer. View news & features, match and rankings history, stats and bio, video, photos, links and more." />
+    <meta name="keywords" content="Roger Federer , Roger Federer bio, Roger Federer news, Roger Federer stats, Roger Federer videos, Roger Federer pictures, Roger Federer ranking" />
+    <meta name="msvalidate.01" content="2D5B2841B30EAD15F93CC1B86725003C" />
+    
+    
+    
+    <meta property="fb:app_id" content="132901818553"/>
+    <meta name="verify-v1" content="v5JlbGsk2WBWr7ThQSNBT8LClhEGVMbfHm1K6LDx7Ws=" />
+    <meta name="X-UA-Compatible" content="IE=EmulateIE7" />
+    
+    <meta http-equiv="imagetoolbar" content="false" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta property="og:title" content="Roger Federer Profile" />
+    <meta property="og:site_name" content="ATP World Tour" />
+    <meta property="og:image" content="http://www.atpworldtour.com/~/media/8BBAF09B49004330870234315C28ED4C.ashx?w=148&h=198" />
+    
+    <link rel="icon" type="image/vnd.microsoft.icon" href="/Media/favicon.ico" />
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/Media/favicon.ico" />
+    <link rel="alternate" type="application/rss+xml" href="http://feeds2.feedburner.com/Tennis-AtpWorldTourHeadlineNews" title="ATP World Tour Tennis Headlines" />
+    <link rel="stylesheet" type="text/css" href="/includes/cssbin/common.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="/includes/cssbin/atp_print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="/includes/cssbin/atp.css?v6" media="all" />
+    
+    
+    <!-- <link rel="stylesheet" type="text/css" href="/includes/cssbin/TopTeaser.css" media="all" /> File created by client (Ben) 7.29.2012 -->
+     
+    
+    
+         <script type="text/javascript" src="/Includes/JsBin/jquery-1.9.1.min.js"></script>
+    <!-- Ooyala api is not async unfortunately?? -->
+    <script type="text/javascript" src='http://player.ooyala.com/v3/NDU0YmRlYWM3NWFlMGU5OGI0YmYyZTBj?platform=html5-fallback'></script>
+    <script type="text/javascript" src="/includes/JsBin/Video/VideoPlayer.js"></script>   
+    
+    
+    <script type="text/javascript" src="/Tennis/Javascript/showhidediv.aspx"></script>
+<script type="text/javascript" src="/Tennis/Javascript/AC_RunActiveContent.aspx"></script>
+<script type="text/javascript" src="/Tennis/Javascript/Live-Streaming-Tracking-Disable.aspx"></script>
+<script type="text/javascript" src="/Tennis/Javascript/rotateTopImage.aspx"></script>
+<script type="text/javascript" src="/Tennis/Javascript/Live-Scores-Permanent-Challenger.aspx"></script>
+<script type="text/javascript" src="/Tennis/Javascript/Live-Scores-Permanent-Tour.aspx"></script>
+<script type="text/javascript" src="/Tennis/Javascript/Age-Gate.aspx"></script>
+<script type="text/javascript" src="/Tennis/Javascript/CookieUtility.aspx"></script>
+<script type="text/javascript" src="/Tennis/Javascript/Live-Scores-2013.aspx"></script>
+<script type="text/javascript" src="/Tennis/Javascript/Davis-Cup-Live-Scores.aspx"></script>
+
+       
+    <script language="JavaScript" type="text/javascript">
+        var shareURL = "http%3a%2f%2fwww.atpworldtour.com%2fTennis%2fPlayers%2fTop-Players%2fRoger-Federer.aspx";
+        var shareTitle = "";
+        var ord = Math.random() * 10000000000000000;
+        ord = Math.round(ord);
+    </script>
+     <!--[if IE 6]>
+    <script type="text/javascript" src="/includes/jsbin/DD_belatedPNG_0.0.6a.js"></script>
+    <script type="text/javascript">
+            DD_belatedPNG.fix('.IE6pngFix');
+    </script>
+    <![endif]-->
+
+
+    
+   
+    
+   
+</head>
+   
+<body id="atpBody" class="layoutG " style="background-image:url(/~/media/2EB343030CAE497C867DB742CF818968.ashx); background-color: #143058;">
+    
+    <div id="atpNavBar">
+            <div id="atpNavBarInner">
+            <p id="atpNetworkTitle">Pro Tennis Internet Network</p>
+            <ul id="atpNavNetwork">
+                    <li id="atpNetworkNavMens"><a id="atpNetworkNavMensLink" href="#">Mens Tour</a>
+                        
+<ul class="globalBarRibbonWrap">
+	<li>
+		<div class="globalBarRibbon clear">			
+			<div class="globalBarRibbonTitle clear" >
+                <a id="menTourLink" href="http://www.atpworldtour.com/" title="" onclick="javascript:_gaq.push(['ptn._trackEvent', 'PTN','atp logo click'],['ptn._link','http://www.atpworldtour.com/']);"></a>
+                <span>ATP World Tour 2014 Season
+</span>
+                <div class="floatRight">
+                    <a href="javascript:openLSHDWindow(2014,'99','','1','en','http://www.atpworldtour.com/ptn') " title="" class="genericButton" onclick="javascript:newLinker('http://www.protennislive.com/atp', 'atp', 'live scores');javascript:openLSHDWindow(2014,'99','','1','en','http://www.atpworldtour.com/ptn') ;return false;"><span>Live Scores</span></a><a href="http://www.atpworldtour.tennistv.com/?WT.mc_id=atp8" title="" target="_blank" class="genericButton"><span>Watch Live</span></a><a href="/Players/Player-Landing.aspx" title="" target="_blank" class="genericButton" onclick="javascript:newLinker('/Players/Player-Landing.aspx', 'atp', 'player sites general');return false;"><span>Player Sites</span></a>
+                </div>
+			</div>
+			<div class="worldTourDatesCols clear">
+				<ul class="worldTourDatesCol"><li class="wt250">29/12 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.brisbaneinternational.com.au/', 'atp', 'tournament');return false;">Brisbane *</a></li><li class="wt250">30/12 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.qatartennis.org', 'atp', 'tournament');return false;">Doha </a></li><li class="wt250">30/12 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.aircelchennaiopen.org/2014/', 'atp', 'tournament');return false;">Chennai </a></li><li class="wt250">06/01 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.apiainternational.com.au/', 'atp', 'tournament');return false;">Sydney *</a></li><li class="wt250">06/01 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.heinekenopen.co.nz/', 'atp', 'tournament');return false;">Auckland </a></li><li class="wtGrandSlam">13/01 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.australianopen.com/en_AU/index.html', 'atp', 'tournament');return false;">Aus. Open ^</a></li><li class="wtDavis">31/01 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.daviscup.com/', 'atp', 'tournament');return false;">Davis Cup R1 ^</a></li><li class="wt250">03/02 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.opensuddefrance.com/', 'atp', 'tournament');return false;">Montpellier </a></li><li class="wt250">03/02 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.zagrebindoors.com/', 'atp', 'tournament');return false;">Zagreb </a></li><li class="wt250">03/02 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.royalguardopen.cl/', 'atp', 'tournament');return false;">Viña del Mar </a></li></ul><ul class="worldTourDatesCol"><li class="wt500">10/02 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.abnamrowtt.nl/', 'atp', 'tournament');return false;">Rotterdam </a></li><li class="wt250">10/02 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.memphistennis.com/home', 'atp', 'tournament');return false;">Memphis </a></li><li class="wt250">10/02 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.copaclaro.com/', 'atp', 'tournament');return false;">Buenos Aires </a></li><li class="wt500">17/02 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.rioopen.com/', 'atp', 'tournament');return false;">Rio de Janeiro *</a></li><li class="wt250">17/02 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.open13.fr/', 'atp', 'tournament');return false;">Marseille </a></li><li class="wt250">17/02 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.yellowtennisball.com/', 'atp', 'tournament');return false;">Delray Beach </a></li><li class="wt500">24/02 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.dubaidutyfreetennischampionships.com/', 'atp', 'tournament');return false;">Dubai </a></li><li class="wt500">24/02 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.abiertomexicanodetenis.com/', 'atp', 'tournament');return false;">Acapulco *</a></li><li class="wt250">24/02 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.brasilopen.com.br/', 'atp', 'tournament');return false;">São Paulo </a></li><li class="wt1000">06/03 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.bnpparibasopen.com/', 'atp', 'tournament');return false;">Indian Wells *</a></li></ul><ul class="worldTourDatesCol"><li class="wt1000">19/03 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.sonyericssonopen.com/', 'atp', 'tournament');return false;">Miami </a></li><li class="wtDavis">04/04 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.daviscup.com/', 'atp', 'tournament');return false;">Davis Cup QF ^</a></li><li class="wt250">07/04 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.frmt.ma/', 'atp', 'tournament');return false;">Casablanca </a></li><li class="wt250">07/04 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.mensclaycourt.com/index.php', 'atp', 'tournament');return false;">Houston </a></li><li class="wt1000">13/04 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.montecarlotennismasters.com/', 'atp', 'tournament');return false;">Monte-Carlo </a></li><li class="wt500">21/04 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.barcelonaopenbancsabadell.com/', 'atp', 'tournament');return false;">Barcelona </a></li><li class="wt250">21/04 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.brd-nastase-tiriac-trophy.ro/', 'atp', 'tournament');return false;">Bucharest </a></li><li class="wt250">28/04 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.portugalopen.pt', 'atp', 'tournament');return false;">Oeiras *</a></li><li class="wt250">28/04 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.bmwopen.de/', 'atp', 'tournament');return false;">Munich </a></li><li class="wt1000">04/05 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.madrid-open.com/', 'atp', 'tournament');return false;">Madrid *</a></li></ul><ul class="worldTourDatesCol"><li class="wt1000">11/05 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.internazionalibnlditalia.com/', 'atp', 'tournament');return false;">Rome *</a></li><li class="wt250">18/05 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.world-team-cup.com/?ref=atp', 'atp', 'tournament');return false;">D&#252sseldorf </a></li><li class="wt250">18/05 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.opennicecotedazur.com', 'atp', 'tournament');return false;">Nice </a></li><li class="wtGrandSlam">25/05 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.rolandgarros.com/en_FR/index.html', 'atp', 'tournament');return false;">Roland Garros *^</a></li><li class="wt250">09/06 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.gerryweber-open.com/?ref=atp', 'atp', 'tournament');return false;">Halle </a></li><li class="wt250">09/06 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.lta.org.uk/fans-major-events/LTA-summer-grass-court-events/Aegon-Championships/', 'atp', 'tournament');return false;">London </a></li><li class="wt250">15/06 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.topshelfopen.nl/en/', 'atp', 'tournament');return false;">Den Bosch *</a></li><li class="wt250">16/06 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.lta.org.uk/fans-major-events/LTA-summer-grass-court-events/AEGON-International/', 'atp', 'tournament');return false;">Eastbourne *</a></li><li>23/06 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.wimbledon.org/en_GB/index.html', 'atp', 'tournament');return false;">Wimbledon </a></li><li class="wt250">07/07 <a href="#" target="_blank" onclick="javascript:newLinker('http://men.swedishopen.org/', 'atp', 'tournament');return false;">B&#229;stad </a></li></ul><ul class="worldTourDatesCol"><li class="wt250">07/07 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.mercedescup.de', 'atp', 'tournament');return false;">Stuttgart </a></li><li class="wt250">07/07 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.halloffametennischampionships.com/', 'atp', 'tournament');return false;">Newport </a></li><li class="wt500">14/07 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.german-open-hamburg.de/', 'atp', 'tournament');return false;">Hamburg </a></li><li class="wt250">14/07 <a href="#" target="_blank" onclick="javascript:newLinker('/Tennis/Tournaments/Bogota.aspx', 'atp', 'tournament');return false;">Bogota </a></li><li class="wt250">21/07 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.atlantatennischampionships.com', 'atp', 'tournament');return false;">Atlanta </a></li><li class="wt250">21/07 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.creditagricolesuisseopengstaad.ch/en', 'atp', 'tournament');return false;">Gstaad </a></li><li class="wt250">21/07 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.croatiaopen.hr/tenis/home.aspx', 'atp', 'tournament');return false;">Umag </a></li><li class="wt250">27/07 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.austrianopentennis.com', 'atp', 'tournament');return false;">Kitzb&#252hel </a></li><li class="wt500">28/07 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.citiopentennis.com', 'atp', 'tournament');return false;">Washington *</a></li><li class="wt1000">04/08 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.rogerscup.com/men/english/home.php', 'atp', 'tournament');return false;">Toronto </a></li></ul><ul class="worldTourDatesCol"><li class="wt1000">10/08 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.cincytennis.com/', 'atp', 'tournament');return false;">Cincinnati *</a></li><li class="wt250">17/08 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.winstonsalemopen.com/', 'atp', 'tournament');return false;">Winston Salem *</a></li><li class="wtGrandSlam">25/08 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.usopen.org/', 'atp', 'tournament');return false;">US Open ^</a></li><li class="wtDavis">12/09 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.daviscup.com/', 'atp', 'tournament');return false;">Davis Cup SF ^</a></li><li class="wt250">15/09 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.spbopen.ru/eng/index.html', 'atp', 'tournament');return false;">St. Petersburg </a></li><li class="wt250">15/09 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.moselle-open.com/', 'atp', 'tournament');return false;">Metz </a></li><li class="wt250">22/09 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.malaysianopentennis.com', 'atp', 'tournament');return false;">Kuala Lumpur </a></li><li class="wt250">22/09 <a href="#" target="_blank" onclick="javascript:newLinker('/Tennis/Tournaments/Shenzhen.aspx', 'atp', 'tournament');return false;">Shenzhen </a></li><li class="wt500">29/09 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.chinaopen.com.cn/en/index.shtml', 'atp', 'tournament');return false;">Beijing *</a></li><li class="wt500">29/09 <a href="#" target="_blank" onclick="javascript:newLinker('http://rakutenopen.rakuten.co.jp/', 'atp', 'tournament');return false;">Tokyo </a></li></ul><ul class="worldTourDatesCol"><li class="wt1000">05/10 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.shanghairolexmasters.com/index.aspx', 'atp', 'tournament');return false;">Shanghai </a></li><li class="wt250">13/10 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.kremlincup.ru/index-eng.html', 'atp', 'tournament');return false;">Moscow *</a></li><li class="wt250">13/10 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.stockholmopen.se/en-GB', 'atp', 'tournament');return false;">Stockholm </a></li><li class="wt250">13/10 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.erstebank-open.com', 'atp', 'tournament');return false;">Vienna </a></li><li class="wt500">20/10 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.valenciaopen500.com/', 'atp', 'tournament');return false;">Valencia </a></li><li class="wt500">20/10 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.davidoffswissindoors.ch/', 'atp', 'tournament');return false;">Basel </a></li><li class="wt1000">27/10 <a href="#" target="_blank" onclick="javascript:newLinker('http://bnpparibasmasters.billetterie.fft.fr/', 'atp', 'tournament');return false;">Paris </a></li><li class="wt1500">09/11 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.barclaysatpworldtourfinals.com/en/', 'atp', 'tournament');return false;">London </a></li><li class="wtDavis">21/11 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.daviscup.com/', 'atp', 'tournament');return false;">Davis Cup Finals ^</a></li>
+			</div>
+			
+			<div class="globalBarRibbonKey clear">
+				<div>
+                    <span class="wt_250">ATP World Tour 250</span>
+                    <span class="wt_500">ATP World Tour 500</span>
+                    <span class="wt_1000">ATP World Tour Masters 1000</span>
+                    <span class="wt_1500">Barclays ATP World Tour Finals 1500</span>
+                    <span class="wt_GrandSlam">Grand Slam 2000*<span>^</span></span>
+                    <span class="wt_davis">Davis Cup 625<span>^</span></span>
+					
+				</div>
+			</div>
+			<div class="globalBarRibbonKey clear">
+				<p>
+				* Combined Men/Women
+				<span class="footnote">^ Grand Slams and Davis Cup are not ATP events.</span>
+				</p>
+			</div>
+		</div>
+	</li>
+</ul>
+                    </li>
+                <li id="atpNetworkNavWomens"><a id="atpNetworkNavWomensLink" href="#">Womens Tour</a>
+                    
+<ul class="globalBarRibbonWrap">
+	<li>
+		<div class="globalBarRibbon clear">			
+			<div class="globalBarRibbonTitle clear" style="background:url(/~/media/4DFE6974709145609099FE48A9AB7E57.ashx) no-repeat 0 0;">
+		    	<a id="womenTourLink" href="#" title="" onclick="javascript:newLinker('http://www.wtatennis.com', 'http://www.wtatennis.com', 'atp logo click');return false;"></a>
+		    	
+                <span>WTA 2014 Season
+</span>
+                <div class="floatRight">
+                    <a href="javascript:openLSHDWindow(2014,'99','','2','en','http://www.atpworldtour.com/wptn')" title="" class="genericButton" onclick="javascript:newLinker('http://www.protennislive.com/wta', 'wta', 'live scores');javascript:openLSHDWindow(2014,'99','','2','en','http://www.atpworldtour.com/wptn');return false;"><span>Live Scores</span></a><a href="http://www.wtatennis.tennistv.com/live?WT.mc_id=sewta8" title="" target="_blank" class="genericButton"><span>Watch Live</span></a><a href="http://www.wtatennis.com/page/Players/0,,12781,00.html" title="" target="_blank" class="genericButton" onclick="javascript:newLinker('http://www.wtatennis.com/page/Players/0,,12781,00.html', 'wta', 'player sites general');return false;"><span>Player Sites</span></a>
+                </div>
+			</div>
+			<div class="worldTourDatesCols clear">
+				<ul class="worldTourDatesCol"><li>29/12 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.brisbaneinternational.com.au', 'wta', 'tournament');return false;">Brisbane *</a></li><li>29/12 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.shenzhenopentennis.com/', 'wta', 'tournament');return false;">Shenzhen </a></li><li>30/12 <a href="#" target="_blank" onclick="javascript:newLinker(' http://www.festivaloftennis.co.nz/asbclassic/', 'wta', 'tournament');return false;">Auckland </a></li><li>05/01 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.apiainternational.com.au/', 'wta', 'tournament');return false;">Sydney *</a></li><li>05/01 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.hobartinternational.com.au', 'wta', 'tournament');return false;">Hobart </a></li><li>13/01 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.australianopen.com/en_AU/index.html ', 'wta', 'tournament');return false;">Aus. Open *^</a></li><li>27/01 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.opengdfsuez.com/', 'wta', 'tournament');return false;">Paris </a></li><li>27/01 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.pentanglepromotions.com/Ptt-Pattaya-Open/Ptt-Pattaya-Open-2014/en/index.php', 'wta', 'tournament');return false;">Pattaya City </a></li><li>10/02 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.qatartennis.org/tournaments/index/64', 'wta', 'tournament');return false;">Doha </a></li></ul><ul class="worldTourDatesCol"><li>17/02 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.dubaidutyfreetennischampionships.com/', 'wta', 'tournament');return false;">Dubai </a></li><li>17/02 <a href="#" target="_blank" onclick="javascript:newLinker('http://rioopen.com/', 'wta', 'tournament');return false;">Rio de Janeiro *</a></li><li>23/02 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.brasiltenniscup.com.br/', 'wta', 'tournament');return false;">Florianopolis </a></li><li>24/02 <a href="#" target="_blank" onclick="javascript:newLinker('http://abiertomextenis.com.mx/', 'wta', 'tournament');return false;">Acapulco *</a></li><li>05/03 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.bnpparibasopen.com/', 'wta', 'tournament');return false;">Indian Wells *</a></li><li>18/03 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.sonyopentennis.com/', 'wta', 'tournament');return false;">Miami *</a></li><li>31/03 <a href="#" target="_blank" onclick="javascript:newLinker('http://abiertomonterrey.com/2014/', 'wta', 'tournament');return false;">Monterrey </a></li><li>31/03 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.familycirclecup.com', 'wta', 'tournament');return false;">Charleston </a></li><li>07/04 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.copaclarocolsanitas.com/', 'wta', 'tournament');return false;">Bogota </a></li></ul><ul class="worldTourDatesCol"><li>07/04 <a href="#" target="_blank" onclick="javascript:newLinker('http://katowiceopen.bnpparibas.com/', 'wta', 'tournament');return false;">Katowice </a></li><li>14/04 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.bmwmalaysianopen.com', 'wta', 'tournament');return false;">Kuala Lumpur </a></li><li>21/04 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.lallameryemtennis.com/', 'wta', 'tournament');return false;">Marrakech </a></li><li>21/04 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.porsche-tennis.de/prod/pag/tennis.nsf/web/english-home', 'wta', 'tournament');return false;">Stuttgart </a></li><li>28/04 <a href="#" target="_blank" onclick="javascript:newLinker('http://en.portugalopen.pt/', 'wta', 'tournament');return false;">Oeiras *</a></li><li>03/05 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.madrid-open.com/', 'wta', 'tournament');return false;">Madrid *</a></li><li>12/05 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.internazionalibnlditalia.com/', 'wta', 'tournament');return false;">Rome *</a></li><li>19/05 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.nuernberger-versicherungscup.de/', 'wta', 'tournament');return false;">Nurnberg </a></li><li>19/05 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.internationaux-strasbourg.fr/', 'wta', 'tournament');return false;">Strasbourg </a></li></ul><ul class="worldTourDatesCol"><li>25/05 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.rolandgarros.com/en_FR/index.html', 'wta', 'tournament');return false;">Roland Garros *^</a></li><li>09/06 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.lta.org.uk/fans-major-events/LTA-summer-grass-court-events/AEGON-Classic/', 'wta', 'tournament');return false;">Birmingham </a></li><li>15/06 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.topshelfopen.nl/nl/', 'wta', 'tournament');return false;">Den Bosch *</a></li><li>16/06 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.lta.org.uk/fans-major-events/LTA-summer-grass-court-events/AEGON-International/', 'wta', 'tournament');return false;">Eastbourne *</a></li><li>23/06 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.wimbledon.org/en_GB/index.html', 'wta', 'tournament');return false;">Wimbledon *^</a></li><li>07/07 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.gastein-ladies.at/', 'wta', 'tournament');return false;">Bad Gastein </a></li><li>07/07 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.budapestgrandprix.hu/', 'wta', 'tournament');return false;">Budapest </a></li><li>14/07 <a href="http://www.wtachampionships.com/" target="_blank">Istanbul </a></li><li>14/07 <a href="#" target="_blank" onclick="javascript:newLinker('http://women.swedishopen.org/', 'wta', 'tournament');return false;">Bastad </a></li></ul><ul class="worldTourDatesCol"><li>21/07 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.bakucup.az', 'wta', 'tournament');return false;">Baku </a></li><li>28/07 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.bankofthewestclassic.com', 'wta', 'tournament');return false;">Stanford </a></li><li>28/07 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.citiopentennis.com/', 'wta', 'tournament');return false;">Washington DC </a></li><li>04/08 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.rogerscup.com/women/english/home.php', 'wta', 'tournament');return false;">Montreal </a></li><li>11/08 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.cincytennis.com/', 'wta', 'tournament');return false;">Cincinnati *</a></li><li>17/08 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.newhavenopen.com/', 'wta', 'tournament');return false;">New Haven </a></li><li>25/08 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.usopen.org/', 'wta', 'tournament');return false;">US Open *^</a></li><li>08/09 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.wtatennis.com', 'wta', 'tournament');return false;">Hong Kong </a></li><li>08/09 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.tashkentopen.uz/', 'wta', 'tournament');return false;">Tashkent </a></li></ul><ul class="worldTourDatesCol"><li>08/09 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.challengebell.com/', 'wta', 'tournament');return false;">Quebec City </a></li><li>15/09 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.gztennis.com/', 'wta', 'tournament');return false;">Guangzhou </a></li><li>15/09 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.kdbkoreaopen.com/', 'wta', 'tournament');return false;">Seoul </a></li><li>15/09 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.toray-ppo.co.jp/', 'wta', 'tournament');return false;">Tokyo </a></li><li>21/09 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.wuhanopen.org/', 'wta', 'tournament');return false;">Wuhan </a></li><li>27/09 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.chinaopen.com.cn/en/index.shtml', 'wta', 'tournament');return false;">Beijing *</a></li><li>06/10 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.hp-open.jp/', 'wta', 'tournament');return false;">Osaka </a></li><li>06/10 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.wtatennis.com/tournaments/tournamentId/3783/title/tianjin-open-2014--tianjin-china', 'wta', 'tournament');return false;">Tianjin </a></li><li>06/10 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.generali-ladies.at/', 'wta', 'tournament');return false;">Linz </a></li></ul><ul class="worldTourDatesCol"><li>13/10 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.bgl-bnp-paribas-open.lu/', 'wta', 'tournament');return false;">Luxembourg </a></li><li>13/10 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.kremlincup.ru/', 'wta', 'tournament');return false;">Moscow *</a></li><li>20/10 <a href="#" target="_blank" onclick="javascript:newLinker('http://www.wtatennis.com', 'wta', 'tournament');return false;">Singapore </a></li><li>28/10 <a href="#" target="_blank" onclick="javascript:newLinker('http://sofia-tennis.bg/en/home', 'wta', 'tournament');return false;">Sofia </a></li>
+			</div>
+			<div class="globalBarRibbonKey clear">
+				<p>* Combined Men/Women
+				<span class="footnote">^ Grand Slams and Fed Cup are not WTA events</span>
+				</p>
+			</div>
+		</div>
+	</li>
+</ul>
+                </li>
+            </ul>
+            <div id="atpNavBarCredentials">
+                
+                <a href="http://credential.atpworldtour.com/credential/default.aspx" id="atpNavBarLogin">Login</a>
+                <a href="http://credential.atpworldtour.com/credential/default.aspx" id="atpNavBarSignup">Sign Up</a>
+            </div>
+            <ul id="globalBarLanguage">
+                <li><a id="languageEnglish" href="http://www.atpworldtour.com">English</a></li><li><a id="languageChinese" href="http://cn.atpworldtour.com">中文</a></li><li><a id="languageSpanish" href="http://es.atpworldtour.com">Español</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="siteHeader">
+            <div id="siteHeaderOuter">
+            <div id="siteHeaderInner" class="clear">
+                <div id="headerTop" >
+                    <a id="siteLogo" href="/" title="Tennis - ATP World Tour"><img class="IE6pngFix" src="/media/main_logo.png" alt="Tennis - ATP World Tour" /></a>
+                    
+                    <div id="headerTopLinks">
+                                            <span id="this-week">2014 SEASON</span><ul id="headerLinkList"><li><a href="javascript:openLSHDWindow(2014,'99','en','','','http://www.atpworldtour.com/')" title="">Live ATP Scoreboard</a></li>
+<li><a href="/Scores/Daily-Scores.aspx" title="">Results</a></li>
+<li><a href="/Scores/Schedules.aspx" title="">Draws & Schedule</a></li>
+<li><a href="http://www.atpworldtour.com/News/Tennis/2014/TV-Schedule/Broadcast-Schedule.aspx" title="">TV</a></li>
+<li><a href="http://www.atpworldtour.tennistv.com/?WT.mc_id=atp27" title="" target="_blank">Watch Live</a></li>
+<li><a href="http://www.atpworldtour.com/Fans/Mobile.aspx" title="">Mobile</a></li>
+</ul>                                          
+                                    </div>
+                                    
+<a class="headerPromo" id="headerPromo1" href="http://credential.atpworldtour.com/" target="_self" title="Newsletter Signup"><img src="/~/media/852EC091AB4A4EA68A0EA9960E724B9C.ashx" /></a>    
+                                    <div id="divIsLoaded"></div>        
+                                    <div id="headerTopScoreboardsEmpty">
+                                        
+                                        
+                                        
+                    </div>                      
+                                    <div id="headerSponsor">
+                                    <center>
+                            <a href="http://www.corona.com/?from=atpmast" title="" target="_blank"><img src="http://geo.atpworldtour.com/media/atp_corona.png?lang=en" /></a>
+                        
+                    </center>
+                    </div>
+                            </div>           
+                <div id="headerBottom">                     
+                    <ul id="siteNavMain">
+                        
+<li ><a href="/" title="" id="nav_home" class="mainNavLink">Home</a>
+        
+</li>
+<li ><a href="/Scores/Daily-Scores.aspx" title="" id="nav_scores" class="mainNavLink">Scores & Stats</a>
+    <ul class="subNavDrop"><li><a href="/Scores/Daily-Scores.aspx" title="Davis Cup Results" target="_self">Davis Cup Results</a></li><li><a href="javascript:openLSHDWindow(2014,'99','en','','','http://www.atpworldtour.com/')" title="ATP Live Scoreboard" target="_self">ATP Live Scoreboard</a></li><li><a href="/Scores/Schedules.aspx" title="Draws & Schedule" target="_self">Draws & Schedule</a></li><li><a href="/Scores/Archive-Event-Calendar.aspx" title="Results Archive" target="_self">Results Archive</a></li><li><a href="/Reliability-Zone/Reliability-Zone-Landing.aspx" title="FedEx ATP Performance Zone" target="_self">FedEx ATP Performance Zone</a></li><li><a href="/Matchfacts/Matchfacts-Landing.aspx" title="ATP MatchFacts" target="_self">ATP MatchFacts</a></li></ul>    
+</li>
+<li ><a href="/Tournaments/Tournament-Landing.aspx" title="" id="nav_tournaments" class="mainNavLink">Tournaments</a>
+    <ul class="subNavDrop"><li><a href="/Tournaments/Tournament-Landing.aspx" title="Tournament Profiles" target="_self">Tournament Profiles</a></li><li><a href="/Tournaments/Event-Calendar.aspx" title="2014 Calendar" target="_self">2014 Calendar</a></li><li><a href="http://www.barclaysatpworldtourfinals.com/en/" title="Barclays ATP World Tour Finals" target="_blank">Barclays ATP World Tour Finals</a></li><li><a href="/Tournaments/Challenger-Tour.aspx" title="ATP Challenger Tour" target="_self">ATP Challenger Tour</a></li><li><a href="http://www.atpchampionstour.com/" title="ATP Champions Tour" target="_blank">ATP Champions Tour</a></li></ul>    
+</li>
+<li ><a href="http://atpworldtour.gootickets.com/tickets/" title="" id="nav_tickets" class="mainNavLink">Tickets</a>
+        
+</li>
+<li  class="activeNav"><a href="/Players/Player-Landing.aspx" title="" id="nav_players" class="mainNavLink">Players</a>
+    <ul class="subNavDrop"><li><a href="/Players/Player-Landing.aspx" title="Player Profiles" target="_self">Player Profiles</a></li><li><a href="/Players/Coach-Landing.aspx" title="ATP Coaches" target="_self">ATP Coaches</a></li></ul>    
+</li>
+<li ><a href="/Rankings/Rankings-Home.aspx" title="" id="nav_rankings" class="mainNavLink">RANKINGS</a>
+        
+</li>
+<li ><a href="/News/News-Landing.aspx" title="" id="nav_news" class="mainNavLink">News</a>
+    <ul class="subNavDrop"><li><a href="/News/News-Landing.aspx" title="Latest News" target="_self">Latest News</a></li><li><a href="/Heritage/Heritage.aspx" title="ATP Heritage" target="_self">ATP Heritage</a></li><li><a href="/News/Form-And-Fitness.aspx" title="Form & Fitness" target="_self">Form & Fitness</a></li><li><a href="/Tecnifibre/default.aspx" title="Tecnifibre On The Road" target="_self">Tecnifibre On The Road</a></li><li><a href="http://www.atpworldtour.com/moetatpawards" title="Moët & Chandon Awards" target="_self">Moët & Chandon Awards</a></li></ul>    
+</li>
+<li ><a href="/Media/Photo-Landing.aspx" title="" id="nav_photos" class="mainNavLink">Photos</a>
+        
+</li>
+<li ><a href="/Media/Video-Landing.aspx" title="" id="nav_video" class="mainNavLink">Video</a>
+    <ul class="subNavDrop"><li><a href="http://www.atpworldtour.tennistv.com/?WT.mc_id=atp16" title="Watch Live Matches" target="_blank">Watch Live Matches</a></li><li><a href="/Media/Uncovered.aspx" title="ATP World Tour Uncovered" target="_self">ATP World Tour Uncovered</a></li></ul>    
+</li>
+<li ><a href="http://www.tennis-warehouse.com/atpworldtourstore/?from=atp" title="" target="_blank" id="nav_shop" class="mainNavLink">Shop</a>
+        
+</li>
+                    </ul>
+                    
+                    <form id="headerSearch" name="searchForm" method="get" action="/Search/Site.aspx">
+                            <input type="text" id="headerSearchField" class="autocomplete" name="q" value="" />
+                            
+                            <input type="hidden" class="autoCompId" />
+                        
+                        <button type="submit">Go</button>
+                    </form>
+                                    
+                </div>
+                    </div>
+            </div>
+    </div>
+    
+
+<!-- Begin: main content area -->
+<div id="wrapper" class="clear">
+    <div id="navAdCol">
+    		
+    </div>
+    
+    <div id="mainContentColWrap">
+        
+        <div id="breadCrumbTitleArea"></div>
+        
+        <div id="mainContentColExtra">
+            
+            
+
+<div id="playerBioInfoCard">
+    
+    <div id="playerBioInfoCardHeader">
+	    
+<div class="moduleSharebar">
+    <div class="shareBarPrint"><a class="articlePrintLink" href="#">Print</a></div>
+    
+    <div class="shareBarSocial"><a href="#">Email</a></div>
+
+    
+	
+	
+    
+</div>
+
+
+	    
+        <h1>Roger Federer</h1>
+    </div>
+    
+    <div id="playerBioInfoCardMain">
+	    <div id="playerBioHeadShot">
+    	    <p id="playerBioHeadShotCopy" class="IE6pngFix">© Getty Images</p>
+    	    <img src="/~/media/8BBAF09B49004330870234315C28ED4C.ashx?w=148&h=198" width="148" height="198"  title="Federer" alt="Federer" />
+        </div>
+
+	    <ul id="playerBioInfoList">
+		    
+		    <li><span>Age:</span> 32 (08.08.1981)</li>
+		    
+		    <li><span>Birthplace:</span> Basel, Switzerland</li>
+		    <li><span>Residence:</span> Bottmingen, Switzerland</li>
+		    <li><span>Height:</span> 6'1" (185 cm)</li>
+		    <li><span>Weight:</span> 187 lbs (85 kg)</li>
+		    <li><span>Plays:</span> Right-handed</li>
+		    <li><span>Turned Pro:</span> 1998</li>
+		    <li><span>Coach:</span> Severin Luthi and Stefan Edberg</li>
+		    <li><span>Website:</span> <a href="http://www.rogerfederer.com" target="_blank">http://www.rogerfederer.com</a></li>
+	    </ul>
+
+	    <div id="playerBioInfoExtra">
+
+            
+    	    <div id="playerBioInfoRank">
+        	    <span>8</span>
+                Singles Ranking
+            </div>
+            
+            
+            <div id="playerBioInfoFlag">
+        	    <img src="/~/media/FE93717EE4B54D6CB244460B2720FD1F.ashx?w=48&h=48" width="48" height="48"  title="Switzerland" alt="Switzerland" />
+                <p>Switzerland</p>
+            </div>
+        
+    	    
+                    
+        </div>
+        
+    </div>
+    
+    <ul id="playerBioNav" class="normalBioNav">
+    	<li id="playerBionav_profile" class="active"><a href="/Tennis/Players/Top-Players/Roger-Federer.aspx">Profile</a></li>
+        <li id="playerBionav_activity"><a href="/Tennis/Players/Top-Players/Roger-Federer.aspx?t=pa">Playing Activity</a></li>
+        <li id="playerBionav_record"><a href="/Tennis/Players/Top-Players/Roger-Federer.aspx?t=mr">Match Record</a></li>
+        <li id="playerBionav_finals"><a href="/Tennis/Players/Top-Players/Roger-Federer.aspx?t=tf">Titles/Finals</a></li>
+        <li id="playerBionav_matchfacts"><a href="/Tennis/Players/Top-Players/Roger-Federer.aspx?t=mf"> ATP MatchFacts</a></li>
+        <li id="playerBionav_history"><a href="/Tennis/Players/Top-Players/Roger-Federer.aspx?t=rh">Rankings History</a></li>
+        <li id="playerBionav_breakdown"><a href="/Tennis/Players/Top-Players/Roger-Federer.aspx?t=rb">Rankings Breakdown</a></li>
+    </ul>
+    
+</div>
+
+<div id="playerBioContentMain">
+    
+<div id="playerBioProfileGraphs" class="clear">
+
+    <div id="playerBioGraphsGrid">
+	    <h5 id="bioGridHeader">As of 27.01.2014</h5>
+	    <table id="bioGridHeadTabs" cellpadding="0" cellspacing="0">
+	        <tr>
+		    <td class="bioGridTabsCell" width="57">
+		        <div id="bioGridTabs">
+			    <a href="#bioGridSingles" rel="bioGridSingles" class="active bioGridTab">S</a>
+			    <a href="#bioGridDoubles" rel="bioGridDoubles" class=" bioGridTab">D</a>
+		        </div>
+		    </td>
+		    
+		    <td width="44"><span>Ranking</span></td>
+		    <td width="46"><span>Week Change</span></td>
+		    
+		    <td width="52"><span>W-L</span></td>
+		    <td width="33"><span>Titles</span></td>
+		    <td width="87"><span>Prize Money*</span></td>
+	        </tr>
+	    </table>
+	    <div id="bioGridTabContent">
+	        <table id="bioGridSingles" class="bioGridTable" style="display:block;" cellpadding="0" cellspacing="0">
+		    
+		    
+		    <tr>
+		        <td class="bioGridRowTitle" width="57">2014</td>
+		        <td width="44"><p>Current</p><span class="bioGridRank">8</span></td>
+		        <td width="46"><span  class="playerGridWeekDown">2</span></td>
+		        <td width="52">8-2</td>
+		        <td width="33">0</td>
+		        <td width="87">$532,382</td>
+		    </tr>
+		    
+		    
+		    <tr>
+		        <td width="57">Career</td>
+		        <td width="90" colspan="2"><p>High</p><span class="bioGridRank">1</span><p><em>02.02.2004</em></p></td>
+		        <td width="52">931-217</td>
+		        <td width="33">77</td>
+		        <td width="87">$79,750,797<p class="bioGridTablePrizeDesc">*Singles & Doubles combined</p></td>
+		    </tr>
+	        </table>
+
+	        <table id="bioGridDoubles" class="bioGridTable"  cellpadding="0" cellspacing="0">
+	        
+		    
+		    <tr>
+		        <td class="bioGridRowTitle" width="57">2014</td>
+		        <td width="44"><p>Current</p><span class="bioGridRank">348</span></td>
+		        <td width="46"><span  class="playerGridWeekUp">3</span></td>
+		        <td width="52">2-1</td>
+		        <td width="33">0</td>
+		        <td width="87">$532,382</td>
+		    </tr>
+		    
+		    
+		    <tr>
+		        <td width="57">Career</td>
+		        <td width="90" colspan="2"><p>High</p><span class="bioGridRank">24</span><p><em>09.06.2003</em></p></td>
+		        <td width="52">123-83</td>
+		        <td width="33">8</td>
+		        <td width="87">$79,750,797<p class="bioGridTablePrizeDesc">*Singles & Doubles combined</p></td>
+		    </tr>
+	        </table>
+	    </div>
+    </div>
+
+    <div class="flashGraph">
+        
+
+<div >
+    <!-- Flash swf should be here -->
+    <div id="flashcontent08213bdb54714c0bbb3ec819d13fdd02">
+		<a href="http://www.adobe.com/go/getflashplayer">
+			<img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
+		</a>   
+    </div>
+</div>
+<script type="text/javascript">
+	var pp_flashvars = {};
+		pp_flashvars.xmlPath = "%2fHandlers%2fRankHistory.aspx%3fseed%3d635269536007382179%26pId%3dF324";
+		pp_flashvars.flashId = "flashcontent08213bdb54714c0bbb3ec819d13fdd02";
+		pp_flashvars.c = "0x00AFF0";
+	    
+	var pp_params = {};
+		pp_params.menu = "false";
+		pp_params.scale = "noscale";
+		pp_params.bgcolor = "#ffffff";
+		pp_params.quality = "best";
+		pp_params.allowScriptAccess = "always";
+		pp_params.wmode = "transparent";
+		
+		var pp_attributes = {};
+		pp_attributes.id = "flashcontent08213bdb54714c0bbb3ec819d13fdd02";
+		swfobject.embedSWF("/media/flash/atpPlayerBio.swf", "flashcontent08213bdb54714c0bbb3ec819d13fdd02", "311", "162", "9.0.124", "/media/flash/expressInstall.swf", pp_flashvars, pp_params, pp_attributes);
+</script>
+
+
+    </div>    
+
+</div>
+
+
+
+
+<div id="liveScoreContainer" class="moduleWrap liveScoresModule">
+    <div class="genericModuleHeader">
+        
+        
+        
+        <h4 id="livescores"></h4>
+    </div>
+    <div class="moduleContentOuter">
+        <div class="moduleContentInner">
+            <div class="tabsAndLinks">
+            	<ul id="ulTabs">
+                	<li id="match" class="active"><a href="#"></a></li>
+                    <li id="stats"><a href="#"></a></li>
+                    <li id="h2h"><a href="#"></a></li>
+                </ul>
+                
+                <div class="liveScoreButtonLinks" id="liveScoreButtonLinks">
+                    <a id="watchliveLink" href="#" class="genericButton"><span id="watchlive"></span></a>
+                    <a id="tvscheduleLink" href="#" class="genericButton"><span id="tvschedule"></span></a>
+                    <a id="completeh2hLink" href="#" class="genericButton"><span id="completeh2h"></span></a>
+                </div>
+            </div>
+            <div class="liveScoresMain">
+                <div id="matchContainer" class="tabActive"></div>
+                <div id="statsContainer"></div>
+                <div id="h2hContainer"></div>
+                <div class="showleft navbuttons"><a id="previousmatch" href="#">Previous</a></div>
+                <div class="showright navbuttons"><a id="nextmatch" href="#">Next</a></div>
+                <div class="liveScoreMainLoading"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="staticTabModule clear">
+    <ul class="staticTabsList clear">
+        <li class="active"><a rel="personal" href="#personal"><span>Personal</span></a></li><li><a rel="careerHighlights" href="#careerHighlights"><span>Career Highlights</span></a></li><li><a rel="review" href="#review"><span>Year In Review</span></a></li>
+    </ul>
+    <div class="staticTabContent">
+        <div class="staticTabSingle" id="personal" style="display: block;"><p>Began playing tennis at age eight...Mother, Lynette, is South African and father, Robert, is Swiss and they met on a business trip (they both worked for a pharmaceutical company)...Has one sister Diana, who is two years older...Idol growing up was Boris Becker and favorite player was Pete Sampras...Compiled outstanding junior results, finishing as No. 1 junior in the world in 1998...Won Wimbledon junior singles (d. Labadze) and doubles titles (w/O. Rochus) that year...One of four players (Edberg, Cash, Borg) to win junior and men&rsquo;s title at Wimbledon...Also reached final at US Open (l. to Nalbandian) and SF at Australian Open in &lsquo;98...Closed junior career with title at Orange Bowl in Miami (d. Coria).</p>
+<p>Enjoys sitting on the beach, playing cards and table tennis, is a fervent fan of hometown&nbsp;football team FC Basel...Has a flair for aesthetics and class...In 2003, initiated Roger Federer Foundation which supports disadvantaged children in South Africa and promotes sport for young people...Enjoys being an ambassador for global promotion of tennis and is inspired by the cultural diversity of the world...Donated several autographed items to various fundraising auctions and made a personal donation to tsunami relief efforts in January 2005...In addition, helped organise All-Star Rally for Relief, an exhibition event in Indian Wells, Calif., with proceeds to benefit UNICEF&rsquo;s tsunami efforts.</p>
+<p>In March 2005, he made a surprise visit to children in townships near Port Elizabeth, South Africa and in November 2005, his parents opened a multipurpose sports site that consists of two tennis courts, a basketball and netball court as well as a football ground in small municipality of Zwide...In September 2005, autographed racquet used in US Open final to ATP&rsquo;s TennisKatrina.com on-line auction for the American Red Cross&rsquo; Hurricane Katrina relief efforts and it fetched a winning bid of $25,665...In November 2004, was on hand at United Nations in New York to announce 2005 as &ldquo;International Year of Sport and Physical Education&rdquo; with U.N. Secretary General Kofi Annan...In April 2006, named UNICEF Goodwill Ambassador.</p>
+<p>Carried Swiss flag in opening ceremonies of Athens Olympics in 2004 and Beijing Olympics in 2008 (on his birthday)...Named ATP Player of Year and earned Stefan Edberg Sportsmanship award from 2004-10, '12&nbsp;and ATPWorldTour.com fans&rsquo; favourite from 2003-12...I.T.W.A. Player of the Year and Ambassador for Tennis award winner in 2004-06...Named 2003 "Swiss of the Year" by his country&rsquo;s TV audience...Won Laureus World Sportsman of Year from 2004-07...Close friend of Vogue Editor-In-Chief Anna Wintour...She has attended his matches at Wimbledon and the US Open and he accompanied her to Fashion Week in New York City following 2006 US Open...Named GQ&rsquo;s "International Man of the Year" for 2005 in Germany...Speaks English, German, Swiss German, French and some Swedish and Italian...Fitness trainer is Pierre Paganini...Golf superstar Tiger Woods attended &rsquo;06 US Open final and both athletes met for first time.</p>
+<p>Received 2006 Arthur Ashe Humanitarian of Year award and named 2006-07 BBC Sports Overseas Personality of Year (also in '04)...In October 2007, voted No. 30 in a list of "the 100 most influential people in the world of sports" in BusinessWeek Magazine in U.S. (one of six athletes in Top 30)...Named in Time Magazine's "100 Most Influential People in World" in May 14, 2007 issue...Recipient of U.S. Academy Outstanding Athlete in 2005-06 presented by USA Today and MSNBC (voted by fans)...Had a stamp of him released by Swiss Post on April 10, 2007 in his birthplace of Basel.</p>
+<p>Elected to ATP Player Council in June 2008, serving as President...Wife, Mirka (Vavrinec) is a former WTA Tour player and they met at 2000 Sydney Olympic Games...They married on Apr. 11, 2009 in Basel...Twin daughters, Charlene Riva and Myla Rose (born July 23, 2009)...</p>
+<p>In 2013, he&nbsp;received Stefan Edberg Sportsmanship Award for the ninth time and selected as ATPWorldTour.com Fans&rsquo; Favourite presented by Mo&euml;t &amp; Chandon for a record 11th consecutive year...Has won a record<br />
+<br />
+Works with Swiss Davis Cup captain Severin Luthi (since 2008) and Stefan Edberg (for 10 weeks in 2014)&hellip;Physiotherapist is former ATP World Tour trainer Stephane Vivier (since October 2009), and fitness trainer is Pierre Paganini.</p>
+<hr />
+<br />
+<p>Roger Federer is a genius at winning matches, with aesthetic beauty, in the power era of tennis. Over the course of his career, he has left an indelible mark on the sport&rsquo;s record books.&nbsp;<a href="http://www.atpworldtour.com/News/DEUCE-Tennis/Federer-No1/Federer-No1-Tribute.aspx">Read More...</a></p>
+<p><a href="/News/DEUCE-Tennis/DEUCE-US-Open-2007/Last-Time-Federer.aspx">Federer DEUCE Feature</a> (Aug. 2007)<br />
+<a href="/News/DEUCE-Tennis/DEUCE-US-Open-2008/Roger-vs-Rafa.aspx">Federer-Nadal Rivalry DEUCE Feature</a> (Aug. 2008)<br />
+<a href="/News/DEUCE-Tennis/DEUCE-Australian-Open-2009/DEUCE-Federer.aspx">Federer DEUCE Feature</a> (Jan. 2009)<br />
+<a href="/News/DEUCE-Tennis/DEUCE-Roland-Garros-Wimbledon-2009/Roger-Federer.aspx">Federer DEUCE Feature</a> (May 2009)<br />
+<a href="/News/DEUCE-Tennis/Federer-15-Quest.aspx">Special Tribute: Federer 15 Grand Slams Titles Section</a> (May 2009)<br />
+<a href="/News/DEUCE-Tennis/DEUCE-Australian-Open-2010/Roger-Federer.aspx">Federer DEUCE Feature</a> (Jan. 2010)<br />
+<a href="/News/DEUCE-Tennis/DEUCE-US-Open-2011/Roger-Federer.aspx">Federer DEUCE Feature</a> (Aug. 2011)<br />
+<a href="/News/DEUCE-Tennis/DEUCE-Australian-Open-2012/Roger-Federer.aspx">Federer DEUCE Feature</a> (Jan. 2012)<br />
+<a href="http://www.atpworldtour.com/News/DEUCE-Tennis/Federer-No1.aspx">Special Tribute: Federer Record Reign At No. 1</a>&nbsp;(July 2012)<br />
+<a href="/News/Tennis/2013/07/29/Heritage-No-1-Ranking-Federer.aspx">ATP Heritage: Federer Breaks No. 1 Milestone</a> (July 2013)<br />
+<a href="/News/Tennis/2013/08/33/Heritage-2004-2009-No-1-Federer.aspx">ATP Heritage: Roger Federer, 2004-07, '09</a> (Aug. 2013)</p></div><div class="staticTabSingle" id="careerHighlights" style="display: none;"><p><strong>2013</strong> -- The oldest player to finish in Top 10 since Andre Agassi (35) in 2005 and 1st to finish in Top 10 for 12 years in a row since Pete Sampras from 1990-2001. Streak of 11 Top 5 finishes in a row came to an end with No. 6 finish&hellip;Captured lone title in June at Halle (d. Youzhny), his 13th career grass court title (13-5 in grass court finals) and 77th career title (tied J. McEnroe for No. 3 in Open Era titles list)&hellip;</p>
+<p>Opened year by reaching SF at Australian Open for 10th straight year (l. to Murray in 5 sets) after defeating Tsonga in QF in 5 sets (1st time in career played back-to-back 5-set matches). With win over Tomic in 3R, became 1st player to win 250 Grand Slam matches&hellip; Then reached QF in Rotterdam (l. to Benneteau), SF in Dubai (l. to Berdych in 3 sets) and QF in Indian Wells (l. to Nadal)&hellip;Best clay-court result was runner-up at ATP Masters 1000 Rome (l. to Nadal) in May. Also QF at Roland Garros (l. to Tsonga) and won his 900th career tour level win (923) in 4R (d. Simon in 5 sets). Only 3 players have won more matches in Open Era: Connors (1,253), Lendl (1,071) and Vilas (929)&hellip;</p>
+<p>At Wimbledon lost in 2R to No. 116 Sergiy Stakhovsky. It was his earliest Grand Slam loss since losing in 1R at &lsquo;03 Roland Garros and marked end of 36 straight major QF appearances (starting at &lsquo;04 Wimbledon). It was his lowest-ranked loss in a Slam event since falling to No. 154 Ancic in &lsquo;02 Wimbledon 1R&hellip;Then played on clay and lost to No. 114 qualifier Federico Delbonis in SF at Hamburg. It marked the second time during year he lost to an opponent outside Top 100. Then lost following week to No. 55 Brands in opening match (after bye) in Gstaad&hellip;Returned to hard courts and lost in QF in Cincinnati (l. to Nadal in 3 sets) and followed with 4R at US Open (l. to Robredo), his earliest exit since 4R in &lsquo;03. Streak of 10 years with Slam final ended&hellip;Going into 2014, has played in record 56 straight Grand Slam tournaments (along w/Wayne Ferreira)&hellip;</p>
+<p>Closed season with runner-up in Basel (l. to del Potro), 8th straight year in hometown final (10th overall) and SF at ATP Masters 1000 Paris (l. to Djokovic) and Barclays ATP World Tour Finals in London (l. to Nadal), 11th SF in season finals&hellip;Compiled records of 28-11 on hard, 12-5 on clay and 5-1 on grass and went 4-10 vs. Top 10 opponents&hellip; </p>
+<p><strong>2012</strong> -- The Swiss won 6 titles in 10 finals, plus silver medal at London Olympics, and returned to No. 1 before finishing in Top 2 for 9th time in 10 years. Oldest at No. 2 since Agassi (32) in &lsquo;02...Broke Sampras&rsquo; record of 286 weeks at No. 1 on July 16, 1 week after record-tying 7th Wimbledon title (d. Murray), his all-time best 17th Grand Slam crown. Held No. 1 for 17 weeks (302 in career) before Djokovic took over on Nov. 5...</p>
+<p>Extended longest active streak with at least 1 title to 12 straight years, winning consecutive titles in Rotterdam (d. del Potro), Dubai (d. Murray) and Indian Wells (d. No. 9 del Potro, No. 2 Nadal, No. 11 Isner, all in straight sets)...Won in Madrid (d. Berdych) and a record 5th Cincinnati title (d. Djokovic, held serve for all 47 games during week) for record-tying 21st career ATP Masters 1000 crown (w/Nadal)...Won silver medal at London Olympics (l. to Murray), beating del Potro 19-17 in 3rd set in record 4h26m in SF (had 15-3 record on British soil). Closed season with back-to-back finals in hometown Basel (l. to del Potro) and Barclays ATP World Tour Finals in London (l. to Djokovic)...</p>
+<p>His 71 match wins most since a career-high 92 in &rsquo;06. Compiled records of 41-7 on hard, 15-2 on grass and 15-3 on clay and went 16-9 vs. Top 10 opponents. Had a 12-10 record after losing 1st set and 14-3 in decisive-set matches...Has played in 52 straight Grand Slam events (Ferreira record holder with 56)...Continued his serving success by leading in 2nd serve pts. won (60%) and No. 3 in service games won (91%), No. 4 in aces (665, 8.2 avg.) and 1st serve pts. won (78%)...&nbsp;</p>
+<p><strong>2011</strong> -- The Swiss native finished in Top 3 for 9th straight year&hellip;Compiling a 4-2 record in finals during year, capping season with 17-match winning streak and 3 titles, including a record 6th Barclays ATP World Tour Finals crown...His 70 career titles are No. 4 on Open Era titles list and 807 match wins is No. 6 in Open Era... </p>
+<p>Opened season with title in Doha where he defeated Davydenko&hellip;It extended his streak to 11 years with at least 1 ATP World Tour title, tied with Andy Roddick for longest streak among active players...Reached QF or better in 14 of 16 tournaments, including at all 4 Grand Slam events&hellip;</p>
+<p>Has advanced to QF or better in a record 30 consecutive Slams going back to &lsquo;04 Wimbledon&hellip;His streak of at least 1 Slam title for 8 consecutive years came to an end...In Roland Garros SF, he snapped Djokovic&rsquo;s 43-match winning streak with 4-set victory&hellip;Then followed with QF at Wimbledon (l. to Tsonga in 5 sets after holding 2-set lead)&hellip;It was 1st time in a Slam he lost 2-0 set lead (was 178-0)&hellip;At US Open, lost to Djokovic in SF for 2nd year in a row (held 2 MPs and 2-0 set lead)...</p>
+<p>Following US Open, traveled to Australia for Davis Cup World Group playoff tie and posted 4-set wins over Hewitt and Tomic as Switzerland prevailed 3-2...Returned after break and closed season with titles in Basel (d. Nishikori), Paris (d. Tsonga) and Barclays ATP World Tour Finals in London (d. Tsonga)...Compiled marks of 46-7 on hard, 12-4 on clay and 6-1 on grass and was 20-9 in TBs&hellip;Also 16-0 indoors&hellip;Went 10-9 vs. Top 10 opponents, winning last 7...</p>
+<p><strong>2010 -- </strong>The Swiss native finshed in Top 2 for a record eighth straight year&hellip;He captured five titles in nine finals during season (has won at least three titles for nine straight years)&hellip;</p>
+<p>In first month of action, reached SF in Doha (l. to Davydenko) and followed with his 16th career Grand Slam crown at Australian Open (d. Murray)&hellip;Became first father to win a Slam title since Agassi at &rsquo;03 Australian Open&hellip;Has won at least one Slam title for eight consecutive years, tying mark of Borg and Sampras&hellip;His 66 career titles is No. 4 on Open Era titles list&hellip;In first two ATP World Tour Masters 1000 tournaments, reached 3rd RD in Indian Wells* (losing to Baghdatis in a third set tie-break after holding three match points) and followed with 4th RD exit in Miami*, (falling to Berdych in a third set tie-break after holding match point on Mar. 30&hellip;</p>
+<p>During clay court circuit in May, lost in opening round to Gulbis in Rome*, reached SF in Estoril (l. to Montanes) and final in Madrid* (l. to Nadal)&hellip;At Roland Garros, fell in QF to Soderling in four sets, ending his record of reaching 23 straight Grand Slam SFs (since &rsquo;04 Wimbledon)&hellip;On June 7, dropped to No. 2, having been No. 1 for 285 weeks (one week shy of equalling Sampras' all-time record)&hellip;On grass in Halle reached final, falling to Hewitt, which ended a 15-match winning streak against his long-time rival&hellip;It also ended a 29-match winning streak in Halle&hellip;Returned as defending champion at Wimbledon, where he lost to Berdych in QFs&hellip;It was first time since &lsquo;02 he had not reached final at All England Club&hellip;Since his QF loss at Wimbledon, won 29 of 33 matches during a seven tournament span, reaching five finals&hellip;On July 5, he dropped to No. 3 ranking for first time since Nov. 10, &lsquo;03&hellip;</p>
+<p>In mid-August, returned at Toronto* where he beat Berdych (QF) and Djokovic (SF) in three-setters before falling to No. 4 Murray in rain-interrupted final&hellip;Returned to No. 2 on Aug. 16&hellip;The following week he snapped a seven month title drought by winning Cincinnati* for fourth time (d. Fish) in his 90th tour-level final&hellip;Became first player to win back-to-back titles in Cincinnati since Agassi in &lsquo;95-96&hellip;It was also his 17th ATP World Tour Masters 1000 trophy, tying him with Agassi and one short of Nadal&rsquo;s record&hellip;</p>
+<p>At US Open, advanced to SF although he squandered two match points in fifth set loss to Djokovic in 3:44&hellip;Afterwards fell to No. 3 on Sept. 13&hellip;Went a career-best 21-2 after US Open&hellip;Returned following month at Shanghai* where he lost to Murray in final&hellip;Returned to No. 2 on Oct. 18&hellip; Then made his first appearance in Stockholm in 10 years and won his 64th tour-level title over F. Mayer&hellip;It was 18th different country he has won a tour level title&hellip;In addition, became first active player to reach 900 career singles matches played&hellip;Two weeks later he won his fourth career title in his hometown of Basel (d. Djokovic)&hellip;In Paris*, his season-high 12-match winning streak came to an end in SF against Monfils as he lost in three tie-breaks (after holding five match points)&hellip;It was his fourth loss during year after holding match point&hellip;Closed season with his fifth year-end title at Barclays ATP World Tour in London (d. Nadal)&hellip;Compiled marks of&nbsp; 47-7 on hard, 10-4 on clay and 8-2 on grass&hellip;Went tour best 16-6 vs. Top 10 opponents (most wins during year).</p>
+<p><strong>2009 -- </strong>The Swiss finished as ATP World Tour Champion for fifth time in six years and became third player in history of ATP Rankings (since 1973) to rank year-end No. 1 at least five times, joining Sampras (six) and Connors (five)&hellip;He is only second player (Lendl in &lsquo;89) to reclaim year-end top spot after losing it for a year&hellip;He is also first player to finish in Top 2 for seven straight years&hellip;Became all-time leader in men&rsquo;s tennis with 15 Grand Slam singles titles (winning at least one for seven straight years)&hellip;He captured four titles in seven finals on season and for third time in past four years (2006-07, &lsquo;09) he reached all four Grand Slam finals in same year&hellip;He became first player to take part in three five-set Slam finals in a season&hellip;</p>
+<p>In June, he captured Roland Garros in his 11th attempt and became sixth man in history to win all four Grand Slam titles in his career&hellip;One month later, he won a record-breaking 15th Grand Slam title at Wimbledon, where he collected his sixth crown at the All England Club&hellip;In the process he reclaimed top ranking (on July 6) after Nadal&rsquo;s run of 46 consecutive weeks at No. 1&hellip;Has been No. 1 for a total of 264 weeks (as of Jan. 5, &lsquo;10)&hellip;</p>
+<p>Opened first month with a SF in Doha (l. to Murray) and followed with runner-up at Australian Open, falling to Nadal in five sets&hellip;It was his first loss in a Grand Slam hard court final (8-1)&hellip;He then withdrew from Dubai and 1st RD Davis Cup tie vs. the U.S. with a back injury&hellip;Returned from a six-week layoff and advanced to SF in Indian Wells* (l. to Murray for fourth straight time)...Followed with a three-set loss to No. 3 Djokovic in SF in Miami*&hellip; Prior to clay court campaign, he married long-time girlfriend Mirka Vavrinec in his hometown of Basel on Apr. 11&hellip;</p>
+<p>In first clay appearance at Monte-Carlo* lost in 3rd Rd. to countryman Wawrinka&hellip;It was his first loss to a countryman since Marc Rosset in 2000&hellip;After putting together a 21-6 mark through May 9, went on a 26-1 run in next three months, breaking nearly a seven-month title drought by earning his 15th ATP World Tour Masters 1000 crown in Madrid (d. Nadal)&hellip;Broke a five-match losing streak to Spaniard in his 80th career final&hellip;Has won at least one ATP World Tour title for nine straight years&hellip;En route he also beat No. 16 Blake, No. 6 Roddick and No. 5 del Potro&hellip;Only lost his serve twice in 55 games&hellip;Followed by completing a career Grand Slam at Roland Garros by defeating Soderling in straight sets final&hellip;It was his 14th Grand Slam crown, tying Sampras for most in men&rsquo;s tennis&hellip; Lost six sets en route to title, most of any Grand Slam title run and was pushed to five sets by Haas in 4th RD (lost first two sets) and del Potro in SF&hellip;</p>
+<p>Nearly one month later he rewrote tennis history at Wimbledon, where he earned his 15th Grand Slam title&hellip;He only dropped one set (vs. Kohlschreiber) en route to a record seventh straight Wimbledon final as he outlasted Roddick 16-14 in fifth set, breaking him for first time in final game<br />
+after 37 service holds from Roddick&hellip;It was longest fifth set in a final in Grand Slam history&hellip;He served a personal-best 50 aces and earned his 60th tour-level title&hellip;Took five weeks off following Wimbledon, his twin daughters, Myla Rose and Charlene Riva were born on July 23&hellip;</p>
+<p>Made his return to action in Montreal* and reached QFs&hellip;Held a 5-1 advantage in final set over Tsonga before falling in a tie-break&hellip;Following week he captured his third Cincinnati* title, capping it off with wins over No. 2 Murray in SF and No. 4 Djokovic in final&hellip;It was his 16th ATP World Tour Masters 1000 title, second all-time behind Agassi (17)&hellip;At US Open, he became first player to surpass $50 million in career prize money and he went on to advance to his sixth consecutive final, only to fall in five sets to No. 6 del Potro, ending a 40-match winning streak at Flushing Meadows&hellip;Played six five-set matches (4-2), a career high&hellip;One week later, helped his country return to Davis Cup World Group in 2010 with two wins in playoff tie in Italy&hellip;</p>
+<p>Returned from a six-week break to his hometown tournament in Basel and lost in three-set final to Djokovic&hellip;Had a 19-match winning streak in Basel come to an end&hellip;Following week in Paris*, lost in opening round to Benneteau in three sets&hellip;Closed season with SF at Barclays ATP World Tour Finals in London (l. to Davydenko)&hellip;Went 15-10 vs. Top 10 opponents and compiled marks of 36-10 on hard, 18-2 on clay and&nbsp;7-0 on grass&hellip;Also 26-11 in tie-breaks&hellip;Finished No. 2 in second<br />
+serve points won (57%), No. 3 in service games won (90%), break points saved (69%), first serve points won (79%) and No. 5 in aces (657)&hellip;Has reached SF or better in a record 22 straight Grand Slam tournaments and has played in 40 consecutive Slams going into 2010.</p>
+<p><strong>2008 --</strong> The Swiss native's four year run at No. 1 came to an end but he extended his streak of winning at least one Grand Slam title to six straight years...Captured four titles in eight finals, including his fifth straight US Open crown...Each of his runner-up showings came to rival Rafael Nadal, at AMS Monte Carlo, AMS Hamburg, Roland Garros (for third straight year) and Wimbledon...</p>
+<p>Began year with a SF at Australian Open (l. to Djokovic) where he was coming off lingering affects with a bout of mononucleosis that went back to latter part of 2007...Hit a career-high 39 aces in a 3rd RD win 10-8 in fifth set over Tipsarevic in Melbourne...In March, reached SF at AMS Indian Wells (l. to Fish) and QF at AMS Miami (l. to Roddick)...Opened clay court circuit with title in Estoril (d. Davydenko, ret. with leg injury) and followed with runner-up in Monte Carlo...Then reached QF at AMS Rome (l. to Stepanek) and finals in Hamburg and Roland Garros...Won a career-best 21 of 25 matches on clay...</p>
+<p>Then moved to grass and won Halle title (d. Kohlschreiber) without dropping serve in 49 games...Fell short of winning a sixth straight Wimbledon title as Nadal prevailed in a 4:48 marathon (9-7 in fifth set) in longest final in tournament history...It also ended a record 65-match winning streak on grass and it was his first loss in a grass court final (10-1)...</p>
+<p>Returned to hard courts and lost in 2nd RD to Simon in Toronto, 3rd RD to Karlovic in Cincinnati and QF in Beijing Olympics (l. to Blake)...He did win gold medal in doubles (w/Wawrinka)...His record streak of 237 consecutive weeks at No. 1 came to an end on Aug. 18 after holding top spot since Feb. 2, 2004...At US Open, became first player to win five straight titles since Bill Tilden captured six in a row from 1920-25...Beat Djokovic in SF and Murray in F to collect his 13th Grand Slam title, one short of record by Pete Sampras...Led his native country into '09 Davis Cup World Group by accounting for two points in playoff win over Belgium...During indoor circuit, reached SF at AMS Madrid (l. to Murray) and won third straight title in Basel (d. Nalbandian)...Withdrew from QF (vs. Blake) at AMS Paris due to back injury for first time in a tournament after 763 matches...At Tennis Masters Cup in Shanghai, went 1-2 in round robin play...</p>
+<p>Has advanced to SF or better in a record 18 straight Grand Slam tournaments and has played in 36 consecutive Slams since 2000 Australian Open (going into '09)...Compiled marks of 34-10 on hard, 21-4 on clay and 11-1 on grass...Went 25-13 in tiebreaks and 7-10 vs. Top 10 opponents...In Ricoh ATP MatchFacts, ranked No. 2 in service games won (90%), break points saved (68%), 2nd serve points won (58%) and No. 3 in aces (675)...Became all-time leader in career prize money (surpassing Sampras) with over $44 million. </p>
+<p><strong>2007 --</strong> Finished No. 1 for a fourth straight year...Captured an ATP-best eight titles (in 12 finals) for fourth consecutive season, including three Grand Slam crowns for third time in four years and at least two ATP Masters Series shields...Became only fourth player since 1973 to end year at No. 1 at least four consecutive years, joining Pete Sampras (6), Jimmy Connors (5) and John McEnroe (4)...Also first player in history to reach all four Grand Slam finals in back-to-back years and advanced to an all-time record 10 consecutive Slam finals...Competed in 12 finals (8-4) in 16 tournaments...Since beginning of 2004, compiled a match record of 315-24 (.929) with Nadal, Nalbandian and Canas only players to beat him more than once during that stretch...Ranked No. 1 every week since first taking over on Feb. 2, 2004, and has ranked No. 1 for 205 weeks (as of Dec. 31, 2007) and broke record of Connors (160) for most consecutive weeks at No. 1 on Feb. 26, 2007...</p>
+<p>Began year with a repeat title at Australian Open (d. Gonzalez) without dropping a set (first Slam title without losing a set) and first player to win a Slam title in such fashion since Bjorn Borg at Roland Garros in 1980 (fourth player in Open Era to do so)...Returned to action in Dubai and won title for fourth time in five years (d. Youzhny)...In March, his career-best 41-match winning streak (going back to &lsquo;06 US Open) came to an end with his opening round loss to Ca&plusmn;as...Then lost to Ca&plusmn;as again in 4th RD in Miami...Made clay court debut in Monte Carlo and did not drop a set en route to a repeat final effort (d. Ferrer in QF, Ferrero in SF) before losing to Nadal in straight sets...In his next clay court showing in Rome, lost in 3rd RD to Volandri and afterwards parted ways with coach Tony Roche...</p>
+<p>At Hamburg, defeated Nadal in final for first time on clay (1-6) to break his rival&rsquo;s 81-match winning streak on clay...Went into Paris and dropped one set en route to final, only to fall in four sets for second straight year to Nadal...Withdrew from Halle and entered Wimbledon without a grass court pre-tournament for first time in his career...At All England Club dropped only one set en route to title match before defeating Nadal in five sets to capture his fifth consecutive Wimbledon title and join Bjorn Borg as only players to win at least five straight crowns in Open Era...Compiled an undefeated grass court record (6-0) for fifth straight year and owns longest grass court winning streak (54) going into &lsquo;08...</p>
+<p>Returned to play in August and reached final at ATP Masters Series Montreal (l. to Djokovic)...Followed with title at AMS Cincinnati (d. Blake), his 50th career championship...Then became the first player since Bill Tilden in 1920s to capture four straight US Open titles with straight-sets win over Djokovic...It was his 12th career Grand Slam crown, leaving him two away from all-time record of Sampras...Posted an outstanding 15-1 mark in Grand Slam tie-breaks during year...In Davis Cup World Group playoff tie vs. Czech Republic, won both of his singles matches (vs. Stepanek, Berdych) but Switzerland lost 3-2...In October, reached final at AMS Madrid (l. to Nalbandian) and repeated title in Basel (d. Nieminen)... Lost to Nalbandiain in 3rd RD at AMS Paris to break streak of eight consecutive finals reached (going back to May in Hamburg)...Closed with fourth Tennis Masters Cup title in last five years (d.Ferrer)...</p>
+<p>Since 2004, won 42 of 51 singles finals he appeared in, losing to Djokovic, Nalbandian twice and Nadal six times...Went 17-4 vs. Top 10 opponents and compiled marks of 44-6 on hard, 16-3 on clay and 6-0 on grass... Also had a 30-10 tie-break record...Led Ricoh ATP MatchFacts in 2nd serve points won (59%), No. 3 in service games won (89%) and No. 4 in aces (597)...Earned a record $10,130,620 and is No. 2 all-time in career prize money (behind Sampras&rsquo; $43,280,489). </p>
+<p><strong>2006 &ndash;</strong> Finished No. 1 for third straight year highlighted by an ATP-best 12 titles, including three Grand Slam crowns for second time in three years and four AMS shields for second straight season...His 12 titles were most in a season since Thomas Muster in &lsquo;95...Became first player in Open Era (since 1968) to win at least 10 titles three straight years...Also first player to reach all four Grand Slam finals in a year since Rod Laver in &lsquo;69...Advanced to six straight Grand Slam finals going back to 2005 Wimbledon, first player to accomplish that feat since Laver in 1961-62...Joined Laver as only players to win at least three Grand Slam titles in two different seasons (Laver won Grand Slam in 1962, &lsquo;69)...Competed in 16 finals in 17 tournaments played and won a career-high 92 matches, most by a player since Ivan Lendl compiled a 106-9 mark in &lsquo;82...Also first player since Lendl in 1981-82 to win at least 80 matches in back-to-back seasons...From 2004-06, compiled a match record of 247-15 (.943) with Nadal only player to beat him more than once during that stretch...</p>
+<p>Ranked No. 1 for 153 consecutive weeks (as of Jan. 1, 2007)...Going back to June 2005-Aug. 2006, advanced to 17 consecutive finals, second-best behind Lendl&rsquo;s 18 straight final appearances in 1981-82...His five losses came to two players -- No. 2 Nadal in finals of Dubai, AMS Monte Carlo, AMS Rome and Roland Garros and to Andy Murray in 2nd RD of Cincinnati...His loss to Murray ended a 55-match winning streak in North America...He also won a record 29 consecutive AMS matches since Hamburg in May 2005 (along with &lsquo;05 Cincinnati, &rsquo;06 Indian Wells, Miami) before Nadal ended streak with his four-set win in Monte Carlo... Also had won nine consecutive AMS finals since 2004...Began year with a repeat title in Doha (d. Monfils) without dropping a set, followed with his third straight Grand Slam crown at Australian Open where he defeated Haas (4th RD) in five sets, No. 5 Davydenko (QF), Kiefer (SF) and Baghdatis (F), last three in four sets...Became first player since Pete Sampras in 1993-94 to win three straight Slam titles...</p>
+<p>Returned to action in Dubai and reached final (l. to Nadal in three sets)...The loss broke his Open Era record 56-match hard court winning streak going back to &lsquo;05 Australian Open. (l. to Safin in SF)...Moved on to AMS Indian Wells and became first player to win three straight tournament titles (d. Blake)...Then at AMS Miami, defeated Ljubicic in three tie-breaks to repeat his title...Made clay court debut in Monte Carlo and lost only one set en route to his first final (d. Ferrer in QF, Gonzalez in SF) before losing to Nadal in 3 hrs., 50 mins...In Rome, held 2 M.P. against Nadal before falling in a fifth set tie-break in a five hour and five minute marathon...At Roland Garros dropped only two sets en route to his first final in Paris, only to fall in four sets to defending champion Nadal...</p>
+<p>Then in Halle won four of his five matches in three sets to capture fourth straight title there and tie Bjorn Borg&rsquo;s grass court record of 41 consecutive matches won...Saved 4 M.P. in his QF victory over O. Rochus...At All England Club dropped his only set to Nadal in title match to capture his fourth consecutive Wimbledon title and join Sampras (7 overall) and Borg (5) as only players to win at least four straight crowns in Open Era...Undefeated on grass (12-0) for fourth straight year and owns longest grass court winning streak (48)...Captured AMS Toronto title (d. Gasquet)...</p>
+<p>At US Open, became first player to win three straight US Open titles since Lendl in 1985-87 with his four-set win over Roddick...Then helped his country to &lsquo;07 Davis Cup World Group with three wins against Serbia...Returned to tour play in Tokyo and captured title (d. Henman) before heading into European indoor circuit...Captured his sixth different AMS title in Madrid and followed with his first title in his birthplace of Basel (d. Gonzalez at both)...Closed season by winning third Tennis Masters Cup in four years (d. Nadal in SF, Blake in F)...Ended 2006 with a 29-match winning streak...Compiled records of 59-2 on hard, 16-3 on clay, 12-0 on grass and 5-0 on carpet...Also won most tie-breaks during year, compiling a 37-14 mark, winning last 11...Also was 17-0 indoors... Became first player in history to surpass $8 million... </p>
+<p><strong>2005 &ndash;</strong> Finished No. 1 for second straight year highlighted by an ATP-best 11 titles (along with Nadal), including two Grand Slam and a record four AMS crowns...Clinched No. 1 on Oct. 3 after Bangkok title and became only fifth player in history of ATP Rankings (since 1973) to rank No. 1 every week during calendar year (Connors, Lendl, Sampras, Hewitt)...As of Dec. 26, 2005, ranked No. 1 for 100 consecutive weeks and only fourth player to reach century mark in successive weeks (Connors-160, Lendl-157, Sampras-102)...Compiled best match winning percentage in a season (.953, 81-4) since John McEnroe (.965, 82-3) in 1984...His record unbeaten streak in finals of 24 came to an end with his five-set loss to Nalbandian in Tennis Masters Cup final in Shanghai...His 35-match winning streak also came to an end...</p>
+<p>By capturing five Grand Slam titles within last two years, became first player since Rod Laver in 1968-69 to win five in back-to-back seasons...His 6-0 record in Grand Slam finals is best showing since Tony Wilding compiled same mark between 1906-13...Also became first player since Don Budge in 1937-38 to win Wimbledon and US Open in same season back-to-back years...His 22 titles in last two years is most since Ivan Lendl in 1982-83...In two of his four losses, held at least one match point (in Australian Open SF vs. Safin, 1 M.P.; Monte Carlo QF vs. Gasquet, 3 M.P.)...His other losses came to Nadal in SF at Roland Garros on June 3 and to Nalbandian in fifth set tie-break on Nov. 20...</p>
+<p>After Nadal loss, compiled a 35-match winning streak with titles in Halle (d. Safin), Wimbledon (d. Roddick), AMS Cincinnati (d. Roddick), US Open (d. Agassi) and Bangkok (d. Murray)...The streak was longest on ATP circuit since Thomas Muster won 35 in a row in &lsquo;95...Also compiled a then Open Era record 40-match winning streak on hard courts and went 50-1 for the season with his only loss to Safin...Began season with title in Doha (d. Ljubicic) and did not lose serve in 43 games...After falling in SF to Safin 9-7 in fifth set at Australian Open, compiled a 25-match winning streak with titles in Rotterdam (d. Ljubicic), Dubai (d. Ljubicic) and back-to-back AMS in Indian Wells (d. Hewitt) and Miami (d. Nadal), rallying from two sets down to win in five...Streak ended on clay in Monte Carlo where French teen Gasquet rallied to win in a third set tie-break (10-8)...Rebounded in next tournament at AMS Hamburg and won title for third time in four years (d. Gasquet)...At Roland Garros, reached his first SF (l to eventual champion Nadal)...</p>
+<p>Then began his winning streak on grass with titles in Halle and Wimbledon for third straight year and went into &lsquo;06 undefeated (36-0) on grass since &lsquo;03...Continued success on hard courts with titles at AMS Cincinnati, US Open and Bangkok...Moved from No. 28 to tied No. 15 in Open Era Career Title Leaders list with 33...Sprained his right ankle while practicing on Oct. 11 in Basel and withdrew from Madrid, Basel and Paris before returning in Shanghai for Tennis Masters Cup...Went 15-2 vs. Top 10 opponents...Also had a 27-11 mark in tie-breaks...Surpassed $6 million mark for second straight year and $20 million in his career... </p>
+<p><strong>2004 &ndash;</strong> Compiled one of best seasons in nearly two decades, capturing an ATP-best 11 titles in as many finals, including three Grand Slam and three AMS victories...His 11 titles were most by a year-end No. 1 since Ivan Lendl won 11 in &lsquo;85 and his .925 match winning percentage was highest since Lendl compiled same mark in &lsquo;86...In last two years has compiled an 18-2 record in finals after going 4-6 previous three years...Became first player since Mats Wilander in &lsquo;88 to win three Grand Slam titles in a season and fourth player overall in Open Era to win at least three in a year (Connors won three in 1974, Laver won four in 1969)...Became first player in Open Era to win his first four Grand Slam finals...</p>
+<p>His statistics included an 18-0 record against Top 10 foes (23-0 going back to &lsquo;03 TMC in Houston), defeating every member of year-end Top 10...Also established an Open Era record by winning 13 straight finals (going back to 2003), surpassing mark held by Hall-of-Famers Borg and McEnroe, who won 12 straight..Became first player to win multiple titles on clay, grass and hard courts in a season and first since Borg in &lsquo;79 to win consecutive titles on those surfaces...Compiled winning streaks of 10-more four different times, including a career-best 23 in a row from June 7-Aug. 1...</p>
+<p>Opened year at Australian Open and dropped only two sets while posting wins over Hewitt (4th), Nalbandian (QF), Ferrero (SF) and Safin (F)...Became No. 1 afterwards for first time on Feb. 2 and clinched top spot earliest ever on Sept. 13 after winning first US Open crown (d. Hewitt)...Lost first match of year to Henman in QF of Rotterdam on Feb. 20...Won next two outings in Dubai (d. Lopez) and AMS Indian Wells (d. Henman)...In May at AMS Hamburg, he defeated Gaudio (1st), Gonzalez (3rd), Moya (QF), Hewitt (SF) and Coria (F)...His only Grand Slam loss came to Kuerten in 3rd RD at Roland Garros...Then reeled off four consecutive titles &ucirc; repeat efforts in Halle (d. Fish) and Wimbledon (d. Roddick), his first Swiss title in Gstaad (d. Andreev) and AMS Toronto (d. Roddick)...His streak ended with his lone 1st RD loss of year to Hrbaty at AMS Cincinnati...Then lost to Berdych in 2nd RD at Athens Olympics on Aug. 17, his last loss of year...</p>
+<p>Made his fifth US Open appearance and won title, defeating Agassi in five sets (QF), Henman (SF) and Hewitt (F)...After a two-week break, titled in Bangkok (d. Roddick) to become first player since Muster (12) in 1995 to win at least 10 titles...Went 21-5 in tie-breaks, including winning the longest tie-break in Tennis Masters Cup history, defeating Safin 20-18 in SF...Earned $6,357,547, just short of then record set by Sampras in 1997 ($6,498,311)...Entered &lsquo;05 season with a 17-match winning streak... </p>
+<p><strong>2003 &ndash;</strong> Captured an ATP-high seven titles in nine finals, including his first Grand Slam crown at Wimbledon...Capped year with first U.S. title at Tennis Masters Cup in Houston where he went undefeated (5-0)...Claimed titles on three different surfaces (clay, grass, hard) and also won indoors for first time en route to an ATP circuit-best 78 match wins...Won titles in Marseille (d. Bjorkman) and Dubai (d. Novak), while leading his country to Davis Cup SF...Led Switzerland to a 3-2 Davis Cup victory over France by accounting for all three points, including wins over Escude and Santoro...Opened clay court circuit with title in Munich (d. Nieminen) without dropping a set and followed with runner-up effort at AMS Rome (l. to Mantilla)...Put together undefeated grass court season (12-0) with back-to-back titles in Halle (d. Kiefer) and Wimbledon (d. Roddick in SF, Philippoussis in F)...Lost only one set during fortnight, and in his last two wins, did not lose serve (in 35 games)...Two days later, proceeded to Gstaad and continued success, this time on clay...Only lost one set en route to final before falling in five sets to Jiri Novak, ending his 15-match winning streak...</p>
+<p>Returned to action in August at AMS Montreal and advanced to SF (l. to Roddick in third-set tie-break)...Following week in Cincinnati, saved a personal-best 7 M.P. in his 1st RD win over Draper (l. to Nalbandian in 2nd RD)...At US Open, reached 4th RD for third straight year (l. to Nalbandian)...In Davis Cup SF tie in Australia, defeated Philippoussis in 2nd match and led Hewitt by two sets and 5-3 in third set, only to lose in five sets in 4th match...Played well during European indoor circuit with singles (d. Moya) and doubles titles in Vienna, lone double winner during year, and advanced to SF at AMS Madrid (l. to Ferrero) and QF at AMS Paris (l. to Henman)...</p>
+<p>Closed season by capturing first title on U.S. soil at Tennis Masters Cup in Houston with wins over Agassi (twice), Nalbandian, Ferrero and No. 1 Roddick...For second year in a row, only player in year-end Top 10 to win multiple singles and doubles titles during year...Won doubles titles at AMS Miami (w/Mirnyi) and Vienna (w/Allegro)...Led ATP in earnings with $4,000,680... </p>
+<p><strong>2002 &ndash;</strong> Became first Swiss player to finish in Top 10 (at No. 6) and appear in year-end championship since Jakob Hlasek was No. 8 in 1988...Opened season with title in Sydney (d. Chela) and earned first AMS title in Hamburg (d. Safin) and later in Vienna (d. Novak)...Lost 8-6 in fifth set to Haas (held 1 M.P.) in 4th RD at Australian Open...Reached finals in Milan (l. to Sanguinetti) and at AMS Miami (l. to Agassi)...In Davis Cup play, went 4-0 in singles during year...Posted straight-set wins over Safin and Kafelnikov in 1st RD tie in Moscow but Russia prevailed 3-2...Lifted his country back into &lsquo;03 Davis Cup World Group with wins over Arazi and El Aynaoui in Morocco...</p>
+<p>Dedicated his Vienna title to his first coach Peter Carter, who died in a car accident two months earlier...&ldquo;This title is for him. I miss him a lot,&rdquo; he said...In his first Tennis Masters Cup appearance in Shanghai, went 3-0 in round robin play before losing in SF to eventual champion and No. 1 Hewitt 7-5 in third set...Had most indoor match wins (24) during year...Won multiple singles and doubles titles for first time, capturing doubles crowns in Rotterdam and Moscow (w/Mirnyi)... </p>
+<p><strong>2001 &ndash;</strong> Finished as his country&rsquo;s No. 1 player for first time and won first ATP title in Milan (d. Ivanisevic in QF, Kafelnikov in SF, Boutter in F)...Then led his country to a 3-2 Davis Cup 1st RD win over U.S. by accounting for all three points...Reached final in Rotterdam (l. to Escude 7-6 in third set)...At Roland Garros, advanced to first Grand Slam QF (l. to Corretja)...Defeated Sampras 7-5 in fifth on Centre Court in Wimbledon 4th RD, ending Sampras&rsquo; 31-match winning streak at All England Club (l. to Henman)...Pulled left groin in his 3rd RD win over Bjorkman, then missed six weeks due to injury after Gstaad...Reached final in Basel (l. to Henman)...In doubles, won first ATP title in Rotterdam (w/Bjorkman) and later in Gstaad (w/Safin)... </p>
+<p><strong>2000 &ndash;</strong> Reached first ATP final in Marseille (l. to Rosset in third set tie-break) and also in native Basel (l. to Enqvist in five sets)...Lost in bronze medal match to Di Pasquale at Sydney Olympics...</p>
+<p><strong>1999 &ndash;</strong> Youngest player (18 yrs., 4 mos.) to finish in Top 100 and advanced to his first ATP SF in Vienna and QF in Marseille (d. No. 5 Moya), Rotterdam and hometown Basel...Won first Challenger title in Brest (d. Mirnyi)...</p>
+<p><strong>1998 &ndash;</strong> Reached Toulouse QF in second ATP World Tour event...</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p></div><div class="staticTabSingle" id="review" style="display: none;"><p><strong>2014</strong></p>
+<p>The Swiss opened his season with a runner-up finish at Brisbane (l. to Hewitt in three sets)&hellip;</p></div>
+    </div>
+</div>  
+</div>
+        </div>
+        
+        <div id="mainTripleColWrap">
+        
+            <div id="mainContentCol1">
+                
+                
+
+<div class="moduleWrap playerSearchModule clear">
+    <div class="genericModuleHeader">
+        <h4>Find a Player
+</h4>
+    </div>
+    <div class="moduleContentOuter">
+        <div class="moduleContentInner">
+            <form class="findPlayer" method="get" action="/Tennis/Players/">
+                <input type="text" id="autoCompSearch" value="" />
+                <input type="hidden" class="autoCompId" />
+                <button type="submit">Go</button>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="moduleWrap get-closer-module clear">
+    <div class="genericModuleHeader">
+        <h4>Get Closer To Roger</h4>
+    </div>
+    <div class="moduleContentOuter">
+        <div class="moduleContentInner">
+            <ul><li><a title="Facebook" href="https://www.facebook.com/Federer" target="_blank"><img src="/~/media/59991D188AFD41718EDEC42BD5C1C57D.ashx" width="56" height="51"  title="" alt="" /></a></li><li><a title="" href="https://twitter.com/rogerfederer" target="_blank"><img src="/~/media/538CE2A193D84C6BBD7C5766D4853914.ashx" width="56" height="51"  title="Twitter" alt="Twitter" /></a></li><li><a title="" href="http://www.rogerfederer.com" target="_blank"><img src="/~/media/F82FBFA0E16144E1A3C3C9D2F1B05264.ashx" width="56" height="51"  title="Web" alt="Web" /></a></li><li><a title="" href="http://www.atpworldtour.com/Tennis/Features/Players/Roger%20Federer.aspx" target="_blank"><img src="/~/media/DCE7AD91465D42FF8B535B146741471B.ashx" width="56" height="51"  title="" alt="" /></a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+<!-- begin side rail media -->
+<div class="mediaModule">
+
+	<!-- swfobject.js should already be embeded somehwere in integrated version -->
+	<script type="text/javascript" src="/includes/jsbin/swfobject.js"></script>
+
+	<!-- begin flash embed script -->
+	<script type="text/javascript">
+        var rm_flashvars = {};
+            rm_flashvars.xmlPath = "%2fTennis%2fDefault-Modules%2fTemplates%2fPlayer%2fColumn-One%2fRelated-Photos.aspx%3fseed%3d635269536007382179%26pt%3d1%26fallback%3dfalse%26max%3d50%26q%3dRoger%2bFederer";
+            rm_flashvars.timerLength = "6";
+            rm_flashvars.flashId = "flashcontentbdec957096a14fcaae6f8afac114e320";
+            rm_flashvars.c = "0x00AFF0";
+    	    
+        var rm_params = {};
+	        rm_params.menu = "false";
+	        rm_params.scale = "noscale";
+	        rm_params.bgcolor = "#ffffff";
+	        rm_params.quality = "best";
+	        rm_params.allowScriptAccess = "always";
+	        rm_params.allowfullscreen = "true";
+	        rm_params.wmode = "transparent";
+    		
+	        var rm_attributes = {};
+	        rm_attributes.id = "flashcontentbdec957096a14fcaae6f8afac114e320";
+	        swfobject.embedSWF("/media/flash/atpMediaRail.swf?v10a", "relatedMediaFallback", "300", "266", "10.0.0", "/media/flash/expressInstall.swf", rm_flashvars, rm_params, rm_attributes);
+    </script>
+	<!-- end flash embed script -->
+					
+    <!-- begin non-flash fallback content -->
+    <!-- note: #relatedMediaFallback div gets either ".relatedVideo" or ".relatedPhoto class" -->
+    <div id="relatedMediaFallback" class="relatedPhoto">
+	    <div class="mediaContent">
+		    <a href="/Tennis/Media/Images/Photo-Galleries/2014/Davis-Cup/Davis-Cup-2014-1R-Federer-Wawrinka.aspx">
+			    <!-- images should be 167px tall and 300px OR less wide -->
+			    <img src="/~/media/88432F0B85324F46965246AA4AFAB9AD.ashx" height="167"/>
+			    <!-- .playButton div only needs to exist for .relatedVideo,
+				     but won't hurt anything if always present -->
+			    <div class="playButton"></div>
+		    </a>
+	    </div>
+	    <div class="mediaInfo">
+		    <p class="copyrightRelated">© Getty Images</p>
+	    </div>
+    </div>
+    <!-- end non-flash fallback content -->
+
+</div>
+<div class="adModule ad300x250">
+<script language="JavaScript" type="text/javascript">
+    document.write('<scr' + 'ipt src="http://adserver.adtechus.com/addyn/3.0/5184.1/1245492/0/170/alias=atp_roger_federer_300x250;loc=100;target=_blank;grp=' + ord + ';misc='+new Date().getTime()+'" language="JavaScript1.1" type="text/javascript"></scr' + 'ipt>');
+</script><noscript>
+<a href="http://adserver.adtechus.com/adlink/3.0/5184.1/1245492/0/170/alias=atp_roger_federer_300x250;loc=300;grp=123456789" target="_blank">
+<img src="http://adserver.adtechus.com/adserv/3.0/5184.1/1245492/0/170/alias=atp_roger_federer_300x250;loc=300;grp=123456789" border="0" width="300" height="250"></a>
+</noscript>
+</div>
+
+
+<div class="moduleWrap listModule clear">
+    <div class="genericModuleHeader">
+        
+        
+        <h4>Related Articles
+</h4>
+    </div>
+    <div class="moduleContentOuter">
+        <div class="moduleContentInner">
+            <ul>
+                
+<li><a href="/News/Tennis/2014/01/5/Federer-10-Year-Anniversary-No-1.aspx">Federer Marks 10 Years Since Rising To No. 1</a></li>
+
+<li><a href="/News/Tennis/2014/01/5/Davis-Cup-2014-Friday-Wawrinka-Federer-Nishikori.aspx">Federer, Wawrinka Give Switzerland Advantage; Defending Champion Level</a></li>
+
+<li><a href="/News/Tennis/2014/01/5/Davis-Cup-2014-Federer-Joins-Wawrinka.aspx">Federer Joins Wawrinka For Swiss Davis Cup Tie</a></li>
+
+<li><a href="/News/Tennis/2014/01/4/Australian-Open-2014-Day-12-Semifinal-Federer-Nadal.aspx">Ruthless Nadal Takes Down Federer To Reach Final</a></li>
+
+            </ul> 
+            
+            
+          
+        </div>
+    </div>
+</div>
+<div class="moduleWrap playerEquipmentModule clear">
+    <div class="genericModuleHeader">
+                                
+        <div class="moduleAd">
+            <div>
+                <div><a href="http://www.tennis-warehouse.com?from=atp" rel="sponsor_HIS EQUIPMENT_22c2f91019ac48a99c817934d66ec211" target=" target="_blank""><img src="/~/media/2C2AEC7C4288431499FDF1CECD3ED0C8.ashx" width="88" height="31"  title="Powered by Tennis Warehouse" alt="Powered by Tennis Warehouse" /></a></div>
+            </div>
+            <p>sponsored By:
+</p>
+        </div>
+        
+            
+        <h4>HIS EQUIPMENT
+</h4>
+    </div>
+    
+    <div class="moduleContentOuter">
+    	<div class="moduleContentInner"> 
+    	           
+            <p class="playerEquipmentName"></p>
+                            
+                <div class="equipmentScrollHide">
+                    <ul class="equipmentScrollContent">
+                    
+                        
+<li>
+	<a href="http://www.tennis-warehouse.com/Wilson_BLX_Pro_Staff_SixOne_90/descpageRCWILSON-WPS90.html?from=atp" target="_blank">
+    	<img src="/~/media/54C07718D05D4CA1BA7DBC14425952B0.ashx?w=88&h=88" width="88" height="88"  title="" alt="" />
+        <span>Wilson BLX Pro Staff Six.One 90
+</span>
+    </a>
+    <a href="http://www.tennis-warehouse.com/Wilson_BLX_Pro_Staff_SixOne_90/descpageRCWILSON-WPS90.html?from=atp" class="genericButton" target="_blank"><span>Buy Now</span></a>
+</li>
+<li>
+	<a href="http://www.tennis-warehouse.com/MANIKE.html?from=atp" target="_blank">
+    	<img src="/~/media/197B0B78D0F541E193C507E126118F0A.ashx?w=88&h=88" width="88" height="88"  title="" alt="" />
+        <span>Nike Spring RF Polo
+</span>
+    </a>
+    <a href="http://www.tennis-warehouse.com/MANIKE.html?from=atp" class="genericButton" target="_blank"><span>Buy Now</span></a>
+</li>
+<li>
+	<a href="http://www.tennis-warehouse.com/catpage-MSNIKE.html?from=atp" target="_blank">
+    	<img src="/~/media/D1BFC48BFF6D4F6A9392D3ED337429DF.ashx?w=88&h=88" width="88" height="88"  title="" alt="" />
+        <span>Nike Zoom Vapor 9.5 Tour
+</span>
+    </a>
+    <a href="http://www.tennis-warehouse.com/catpage-MSNIKE.html?from=atp" class="genericButton" target="_blank"><span>Buy Now</span></a>
+</li>
+                        
+                    </ul>
+                </div>                
+                                	
+                <div class="equipScrollNav">
+                    <div class="equipmentScrollIndicators"></div>
+                    <a href="#" class="equipScrollLeft" title="Previous">&nbsp;</a>
+                	<a href="#" class="equipScrollRight" title="Next">&nbsp;</a>
+                </div>
+                                    
+        </div>
+    </div>
+</div>
+<div class="moduleWrap head2headModule  miniHead2headModule  clear">
+    <div class="genericModuleHeader">
+        
+        <h2>FEDEX ATP HEAD 2 HEAD
+</h2>
+        
+    </div>
+    <div class="moduleContentOuter">
+        <div class="moduleContentInner">
+            
+            
+            <p>Compare <strong>FEDERER</strong> with:</p>
+            <form class="head2headEntryFields" method="get" action="/Players/Head-To-Head.aspx">
+            	<div class="head2headEntryField1"  style="display:none;">
+                	<input type="text" id="autoComp1" value="Roger Federer" />
+                    <input type="hidden" class="autoCompId" name="pId"  value="F324" />
+                </div>
+                
+                <div class="head2headEntryField2">
+                	<input type="text" id="autoComp2" value="Enter Player 2" />
+                    <input type="hidden" class="autoCompId" name="oId" />
+                </div>
+                <div class="genericButton">
+                	<button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+            </div>
+            
+            <div id="mainContentCol2">
+                
+                
+            </div>
+            
+            <div id="mainContentCol3">
+                
+                
+            </div>
+            
+            <div id="mainContentCol4">
+                
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!-- End: main content area -->
+    
+
+        <style type="text/css">
+    .footerPartners 
+{ 
+width: 985px;
+margin: auto;
+background-color:#dfdfdf;
+padding-bottom:10px;
+}
+    .footerPartners h4 {color:#969696; width:100%; font-family:Arial, Helvetica, sans-serif; font-weight:bold; font-size:11px; border-bottom:1px solid #969696; padding-bottom:4px; margin:0; }
+    .footerPartners img {margin:0 15px 0 15px}
+</style>
+<div class="footerPartners" id="footerPartners" style="text-align: center; width: 985px;
+margin: auto;
+background-color:#dfdfdf;
+padding-bottom:10px;">
+<h4 style="color:#969696; width:100%; font-family:Arial, Helvetica, sans-serif; font-weight:bold; font-size:11px; border-bottom:1px solid #969696; padding-bottom:4px; margin:0;">PLATINUM PARTNERS</h4>
+<br />
+<a href="http://www.ricoh-europe.com" target="_blank"><img alt="" width="100" height="50" src="~/media/2FFD4096620B4FD6A4C96FB5A2150C9F.ashx" border="0"></a><a href="http://www.fedex.com" target="_blank"><img alt="" width="100" height="50" src="~/media/03D15CAD639D4E61ABFA63E481501931.ashx" border="0"></a><!--<a href="http://marcarj.com.br/" target="_blank"><img alt="" width="100" height="50" src="~/media/C267F5445B194BC19A9664C2C06F21ED.ashx" border="0"></a>--><a href="http://www.emirates.com" target="_blank"><img alt="" width="100" height="50" src="~/media/D6A512D268BE42E8AAED6F5259E6C9DF.ashx" border="0"></a>
+</div>
+    <div id="mainFooter">
+        <div id="mainFooterInner" class="clear">
+            
+<div class="footerLinkList">
+    <h4>Corporate
+</h4>
+    <ul><li><a href="/Corporate/Rulebook.aspx" title="">Rulebook</a></li><li><a href="/Corporate/Jobs.aspx" title="">Careers</a></li><li><a href="/News/Charity/ATP-Aces-Charity.aspx" title="">ATP ACES For Charity</a></li><li><a href="/Corporate/About.aspx" title="">About</a></li><li><a href="/Corporate/History.aspx" title="">History</a></li><li><a href="/Corporate/Management.aspx" title="">Management</a></li><li><a href="/Corporate/Structure.aspx" title="">Structure</a></li></ul>    
+</div>
+<div class="footerLinkList">
+    <h4>Media
+</h4>
+    <ul><li><a href="/Press/Daily-Media-Notes.aspx" title="">Daily Media Notes</a></li><li><a href="/Press/News-Releases.aspx" title="">News Releases</a></li><li><a href="http://www.atpworldtour.com/Press/Media-Guide.aspx" title="">2014 Media Guide</a></li><li><a href="/Press/Rankings-and-Stats.aspx" title="">Rankings and Statistics</a></li><li><a href="/Scores/Archive-Event-Calendar.aspx" title="">Results Archive</a></li><li><a href="/Press/rss-news-feeds.aspx" title="">RSS Feeds</a></li></ul>    
+</div>
+<div class="footerLinkList">
+    <h4>Partnerships
+</h4>
+    <ul><li><a href="/Corporate/Partnerships/Partners.aspx" title="">ATP Partners</a></li><li><a href="/Corporate/Partnerships/Official-Tennis-Club.aspx" title="">Official ATP Tennis Club</a></li><li><a href="/Corporate/Partnerships/Advertise-with-us.aspx" title="">Partnership Opportunities</a></li></ul>    
+</div>
+<div class="footerLinkList">
+    <h4>Affiliates
+</h4>
+    <ul><li><a href="http://www.tennisfame.com/" title="" target="_blank">Intl. Tennis Hall of Fame</a></li><li><a href="http://www.itftennis.com/" title="" target="_blank">Intl. Tennis Federation</a></li><li><a href="http://www.wtatennis.com" title="" target="_blank">Women's Tennis Association</a></li></ul>    
+</div>
+<div class="footerLinkList">
+    <h4>Communities
+</h4>
+    <ul><li><a href="/Fans/Fanzone.aspx" title="">Fan Zone</a></li><li><a href="http://www.facebook.com/ATPWorldTour" title="Facebook" target="_blank">Facebook</a></li><li><a href="http://www.twitter.com/atpworldtour" title="" target="_blank">Twitter</a></li><li><a href="https://plus.google.com/+ATPWorldTour" title="" target="_blank">Google+</a></li><li><a href="http://instagram.com/atpworldtour" title="" target="_blank">Instagram</a></li><li><a href="http://www.youtube.com/atpworldtour" title="" target="_blank">YouTube</a></li></ul>    
+</div>
+             <div id="footerSignup">
+                <h4>Get Your ATP<br />Fan Credential<br /></h4>
+<ul>
+      <li>Insider News</li>
+      <li>Daily Results </li>
+      <li>Mobile Alerts </li>
+      <li>Ticket Offers</li>
+    </ul>
+<a href="http://credential.atpworldtour.com/">
+<div class="genericButton"><button>Register</button></div></a>
+            </div>
+            <div id="footerBottom">
+                    <a href="/" title=""><img class="atpFooterLogo" src="/~/media/C8E0C5C072C54DD780B2EB574F75E43D.ashx" width="28" height="31"  title="ATP" alt="ATP" /></a>
+                <a href="/" title=""><img class="digiFooterLogo" src="/~/media/9EA628D51AF84E09AF39E8A01A2AD73E.ashx" width="69" height="34"  title="site by ATP" alt="site by ATP" /></a>
+                    <p>&copy; Copyright 1994 - 2014 ATP Tour, Inc.  All Rights Reserved.  No part of this site may be reproduced, stored in a retrieval system or transmitted in any way or by any means (including photocopying, recording or storing it in any medium by electronic means), without the written permission of ATP Tour, Inc.</p>
+                <p><a href="/Corporate/Terms/termsandconditions.aspx" title="">Terms & Conditions</a> | <a href="/Corporate/Terms/Privacy-Policy.aspx" title="">Privacy Policy</a> | <a href="/Corporate/Contact/Contact-Form.aspx" title="">Contact Us</a> | <a href="http://www.atpworldtour.com/handlers/MobileSwitch.aspx?mode=0&path=http%3A%2F%2Fm.atpworldtour.com%2FTennis%2FPlayers%2FTop-Players%2FRoger-Federer.aspx">Enable Mobile</a></p>
+                    </div>
+                
+        </div>   
+    </div>
+    
+    
+    
+    <script type="text/javascript" src="/includes/jsbin/mini/atp.bottom.635168626151.js"></script>
+    
+    
+    <script type="text/javascript" src="/includes/jsbin/hoverintentjs/jquery.hoverintent.minified.js"></script>
+    
+    <script type="text/javascript" src="/includes/jsbin/gaJQAddon.js"></script>
+    
+    <script type="text/javascript" src="/includes/jsbin/atp-en.js"></script>
+  
+    <script type="text/javascript">
+        jCoreInit("http%3a%2f%2fwww.atpworldtour.com%2fTennis%2fPlayers%2fTop-Players%2fRoger-Federer.aspx", "", "08213bdb-5471-4c0b-bb3e-c819d13fdd02", []);
+        initPlayerLiveScoreParams('F324');
+        
+    </script>
+    
+    <div id="shareBox">
+        <a id="emailLink" onclick="openWin('/Share/Send-to-a-Friend.aspx?url='+shareURL+'&t='+shareTitle+'','emailFriend',{width:400,height:495,scrollbars:0}); return false;" href="#">Email</a><a target="_blank" href="http://del.icio.us/post?url=http%3a%2f%2fwww.atpworldtour.com%2fTennis%2fPlayers%2fTop-Players%2fRoger-Federer.aspx&title=" id="deliciousLink"><img width="22" height="22" alt="Delicious" src="/media/icons/delicious_icon.gif"/>Delicious</a><a target="_blank" href="http://digg.com/submit?phase=2&url=http%3a%2f%2fwww.atpworldtour.com%2fTennis%2fPlayers%2fTop-Players%2fRoger-Federer.aspx&title=" id="diggLink"><img width="21" height="22" alt="Digg" src="/media/icons/digg_icon.gif"/>Digg</a><a target="_blank" href="http://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.atpworldtour.com%2fTennis%2fPlayers%2fTop-Players%2fRoger-Federer.aspx&t=" id="facebookLink"><img width="19" height="22" alt="Facebook" src="/media/icons/facebook_icon.gif"/>Facebook</a><a target="_blank" href="http://www.mixx.com/submit?page_url=http%3a%2f%2fwww.atpworldtour.com%2fTennis%2fPlayers%2fTop-Players%2fRoger-Federer.aspx" id="mixxLink"><img width="21" height="22" alt="Mixx" src="/media/icons/mixx-button.gif"/>Mixx</a><a target="_blank" href="http://reddit.com/submit?url=http%3a%2f%2fwww.atpworldtour.com%2fTennis%2fPlayers%2fTop-Players%2fRoger-Federer.aspx&title=" id="redditLink"><img width="21" height="22" alt="Reddit" src="/media/icons/reddit_icon.gif"/>Reddit</a><a target="_blank" href="http://www.stumbleupon.com/submit?url=http%3a%2f%2fwww.atpworldtour.com%2fTennis%2fPlayers%2fTop-Players%2fRoger-Federer.aspx&title=" id="stumbleLink"><img width="21" height="22" alt="StumbleUpon" src="/media/icons/stumble_icon.gif"/>StumbleUpon</a>
+    </div>
+    <script type="text/javascript">
+        
+        setTimeout(function () {
+            var a = document.createElement("script");
+            var b = document.getElementsByTagName("script")[0];
+            a.src = document.location.protocol + "//dnn506yrbagrg.cloudfront.net/pages/scripts/0014/0351.js?" + Math.floor(new Date().getTime() / 3600000);
+            a.async = true; a.type = "text/javascript"; b.parentNode.insertBefore(a, b)
+        }, 1);
+    </script>
+    <div id="fb-root"></div>
+    <script>var langChk = $('html').prop('lang');
+        if(langChk != "zh-CN"){
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '111585108883246',
+                channelUrl: 'http://www.atpworldtour.com/channel.html',  // custom channel
+                status: true,
+                cookie: true,
+                xfbml: true
+            });
+        };
+            (function () {
+                var e = document.createElement('script'); e.async = true;
+                e.src = document.location.protocol +
+              '//connect.facebook.net/en_US/all.js';
+                document.getElementById('fb-root').appendChild(e);
+            }());
+        }
+    </script>
+    
+</body>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-4616629-2']);
+        _gaq.push(['_setDomainName', 'atpworldtour.com']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <script type="text/javascript">
+        // used by atp.js for more event tracking
+        function trackEvent(_GAcategory, _GAaction, _GAlabel, _GAvalue) {
+            if (_GAvalue == "")
+                _gaq.push(['_trackEvent', _GAcategory, _GAaction, _GAlabel]);
+            else
+                _gaq.push(['_trackEvent', _GAcategory, _GAaction, _GAlabel, _GAvalue]);
+        }
+    </script>
+    
+    <script type="text/javascript">
+        if (typeof (_gaq) == 'undefined') var _gaq = _gaq || [];
+        _gaq.push(['ptn._setAccount', 'UA-4616629-17']); //Per Adam Rosenberg 9.30.2011
+        _gaq.push(['ptn._setDomainName', 'none']);
+        _gaq.push(['ptn._setAllowLinker', true]);
+        // This Event is bogus (not real user interaction) and it's wrongly used in PTN metrics
+        // but it's easier to leave this than redo the GA reports (per Jean and Rachel)
+        _gaq.push(['ptn._trackEvent', 'PTN', 'impression', location.href]);
+        _gaq.push(['ptn._trackPageview']);
+        if (typeof (_gaq) != 'undefined') {
+            (function () {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        }
+    </script>
+    
+    <!-- Begin comScore Tag -->
+    <script>
+        var _comscore = _comscore || [];
+        _comscore.push({ c1: "2", c2: "17223859" });
+        (function () {
+            var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+            s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+            el.parentNode.insertBefore(s, el);
+        })();
+    </script>
+    <noscript>
+      <img src="http://b.scorecardresearch.com/p?c1=2&c2=17223859&cv=2.0&cj=1" />
+    </noscript>
+    <!-- End comScore Tag -->
+
+</html>
+<!--2/2/2014 9:04:08 PM-->
