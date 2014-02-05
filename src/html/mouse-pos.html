@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html class="ocks-org do-not-copy"><head class="datamaps-style-block">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta charset="utf-8">
+<title>Sankey Diagram</title>
+<style>.datamap path {stroke: #FFFFFF; stroke-width: 1px;} .datamaps-legend dt, .datamaps-legend dd { float: left; margin: 0 3px 0 0;} .datamaps-legend dd {width: 20px; margin-right: 6px; border-radius: 3px;} .datamaps-legend {padding-bottom: 20px; z-index: 1001; position: absolute; left: 4px; font-size: 12px; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;} .datamaps-hoverover {display: none; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; } .hoverinfo {padding: 4px; border-radius: 1px; background-color: #FFF; box-shadow: 1px 1px 5px #CCC; font-size: 12px; border: 1px solid #CCC; } .hoverinfo hr {border:1px dotted #CCC; }</style></head><body>
+
+<h1>Sankey Diagrams</h1>
+<script src="js/d3.js"></script>
+<script src="js/topojson.js"></script>
+<script src="js/datamaps.js"></script>
+<div id="container" style="position: relative; width: 960px; height: 960px;"></div>
+<script>
+  var map = new Datamap({
+    element: document.getElementById('container'),
+    projection: 'mercator',
+    fills: {
+      defaultFill: 'steelblue'
+    }
+  });
+
+  svg = d3.select('svg');
+  svg.append('circle')
+    .attr('cx', 30)
+    .attr('cy', 30)
+    .attr('r', 20)
+    .attr('fill', 'red');
+  svg.on("mousemove", function() { console.log(d3.mouse(this)); })
+</script>
+
+
+</body></html>
