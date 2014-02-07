@@ -10,6 +10,13 @@
   fill-opacity: .9;
   shape-rendering: crispEdges;
 }
+
+
+.eventMy rect {
+  cursor: move;
+  fill-opacity: .9;
+  shape-rendering: crispEdges;
+}
  
 .node text {
   pointer-events: none;
@@ -79,6 +86,8 @@ var sankey = d3.sankey()
     .size([width, height]);
  
 var path = sankey.link();
+
+var eventMyPath=null;
  
 // load the data
 d3.json("data.json", function(error, graph) {
@@ -92,6 +101,8 @@ d3.json("data.json", function(error, graph) {
         value: x.value
       };
     });
+  var events = [];
+  graph.nodes.forEach(function(x) { if (x.type=="event") events.push(x);});
  
   sankey
       .nodes(graph.nodes)
@@ -143,20 +154,20 @@ d3.json("data.json", function(error, graph) {
 
   //var events = node.filter(function(d) { return d.type == "event"; });
 
-  graph.nodes.forEach(function (e) {
-    if (e.mapX)
-    {
-      svg = d3.select('svg');
-      svg.append('circle')
-      .attr('cx', e.mapX)
-      .attr('cy', e.mapY)
-      .attr('r', 20)
-      .attr('fill', e.color);
-      svg.append('path')
-      .attr("class", "maplink")
-      .style("stroke", function(d) { return e.color; })
-      .style("stroke-width", function(d) { return 10; })
-      .attr('d', function() {
+
+// add in the nodes
+  var eventMy = svg.append("g").selectAll(".eventMy")
+      .data(events)
+    .enter()
+    .append("g")
+      .attr("class", "eventMy");
+ 
+    eventMyPath = eventMy.append("path");
+    // .filter(function(d) { return d.type == "event"; })
+    eventMyPath  .attr("class", "maplink")
+      .style("stroke", function(d) { return d.color; })
+      .style("stroke-width", function(d) { return 3; })
+          .attr('d',function(e){ 
         var curvature = .5;
           var x0 = e.mapX,
               x1 = e.x,
@@ -169,11 +180,46 @@ d3.json("data.json", function(error, graph) {
                + "C" + x2 + "," + y0
                + " " + x3 + "," + y1
                + " " + x1 + "," + y1;
-      }
-      )
-    }
-    }
-  )
+    });
+
+    eventMy.append("circle")
+    // .filter(function(d) { return d.type == "event"; })
+      .attr('cx', function(e){return e.mapX;})
+      .attr('cy', function(e){return e.mapY;})
+      .attr('r', 20)
+      .attr('fill', function(e){return e.color;});   
+
+    // graph.nodes.forEach(function (e) {
+    // if (e.mapX)
+    // {
+    //   svg = d3.select('svg');
+    //   svg.append('circle')
+    //   .attr('cx', e.mapX)
+    //   .attr('cy', e.mapY)
+    //   .attr('r', 20)
+    //   .attr('fill', e.color);
+    //   svg.append('path')
+    //   .attr("class", "maplink")
+    //   .style("stroke", function(d) { return e.color; })
+    //   .style("stroke-width", function(d) { return 3; })
+      // .attr('d', function() {
+      //   var curvature = .5;
+      //     var x0 = e.mapX,
+      //         x1 = e.x,
+      //         xi = d3.interpolateNumber(x0, x1),
+      //         x2 = xi(curvature),
+      //         x3 = xi(1 - curvature),
+      //         y0 = e.mapY,
+      //         y1 = e.y+e.dy/2;
+      //     return "M" + x0 + "," + y0
+      //          + "C" + x2 + "," + y0
+      //          + " " + x3 + "," + y1
+      //          + " " + x1 + "," + y1;
+      // }
+      // )
+    // }
+    // }
+  // )
  
 // add in the title for the nodes
   node.append("text")
@@ -200,12 +246,28 @@ d3.json("data.json", function(error, graph) {
   function dragmove(d) {
     d3.select(this).attr("transform", 
         "translate(" + (
-             d.x = Math.max(0, Math.min(width - d.dx+1060, d3.event.x))
+             d.x = Math.max(1060, Math.min(width - d.dx+1060, d3.event.x))
           ) + "," + (
                    d.y = Math.max(0, Math.min(height - d.dy, d3.event.y))
             ) + ")");
     sankey.relayout();
     link.attr("d", path);
+
+    eventMyPath.attr('d',function(e){
+        var curvature = .5;
+          var x0 = e.mapX,
+              x1 = e.x,
+              xi = d3.interpolateNumber(x0, x1),
+              x2 = xi(curvature),
+              x3 = xi(1 - curvature),
+              y0 = e.mapY,
+              y1 = e.y+e.dy/2;
+          return "M" + x0 + "," + y0
+               + "C" + x2 + "," + y0
+               + " " + x3 + "," + y1
+               + " " + x1 + "," + y1;
+    });
+
   }
 });
 </script>
