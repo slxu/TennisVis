@@ -2,7 +2,7 @@
 <html class="ocks-org do-not-copy"><head class="datamaps-style-block">
 <meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta charset="utf-8">
 <title>Sankey Diagram</title>
-<style>.datamap path {stroke: #FFFFFF; stroke-width: 1px;} .datamaps-legend dt, .datamaps-legend dd { float: left; margin: 0 3px 0 0;} .datamaps-legend dd {width: 20px; margin-right: 6px; border-radius: 3px;} .datamaps-legend {padding-bottom: 20px; z-index: 1001; position: absolute; left: 4px; font-size: 12px; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;} .datamaps-hoverover {display: none; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; } .hoverinfo {padding: 4px; border-radius: 1px; background-color: #FFF; box-shadow: 1px 1px 5px #CCC; font-size: 12px; border: 1px solid #CCC; } .hoverinfo hr {border:1px dotted #CCC; }</style>
+<style>.datamap path {stroke: #000; stroke-width: 1px;} .datamaps-legend dt, .datamaps-legend dd { float: left; margin: 0 3px 0 0;} .datamaps-legend dd {width: 20px; margin-right: 6px; border-radius: 3px;} .datamaps-legend {padding-bottom: 20px; z-index: 1001; position: absolute; left: 4px; font-size: 12px; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;} .datamaps-hoverover {display: none; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; } .hoverinfo {padding: 4px; border-radius: 1px; background-color: #FFF; box-shadow: 1px 1px 5px #CCC; font-size: 12px; border: 1px solid #CCC; } .hoverinfo hr {border:1px dotted #CCC; }</style>
 <style>
  
 .node rect {
@@ -19,20 +19,26 @@
 .link {
   fill: none;
   stroke: #000;
+  stroke-opacity: .2;
+}
+
+.maplink {
+  fill: none;
   stroke-opacity: .5;
 }
  
 .link:hover {
-  stroke-opacity: .8;
+  stroke-opacity: .5;
 }
  
 </style>
 </head><body>
+Hello
 <script src="js/d3.js"></script>
 <script src="js/topojson.js"></script>
 <script src="js/datamaps.js"></script>
-<script src="js/newSankey.js"></script>
-<div id="container" style="position: relative; width: 960px; height: 960px;"></div>
+<script src="sankey/sankey.js"></script>
+<div id="container" style="position: relative; width: 1600px; height: 960px;"></div>
 <script>
   var map = new Datamap({
     element: document.getElementById('container'),
@@ -42,12 +48,7 @@
     }
   });
 
-  // svg = d3.select('svg');
-  // svg.append('circle')
-  //   .attr('cx', 790)
-  //   .attr('cy', 547.125)
-  //   .attr('r', 20)
-  //   .attr('fill', 'red');
+
 </script>
 
 <script>
@@ -55,8 +56,8 @@
 var units = "Widgets";
  
  var margin = {top: 0, right: 0, bottom: 0, left: 0},
-     width = 960 - margin.left - margin.right,
-     height = 960 - margin.top - margin.bottom;
+     width = 1600 - 1060,
+     height = 600;//960 - margin.top - margin.bottom;
  
 var formatNumber = d3.format(",.0f"),    // zero decimal places
     format = function(d) { return formatNumber(d) + " " + units; },
@@ -68,12 +69,13 @@ var formatNumber = d3.format(",.0f"),    // zero decimal places
 //     .attr("height", height + margin.top + margin.bottom)
    .append("g")
      .attr("transform", 
-           "translate(" + margin.left + "," + margin.top + ")");
+           "translate(" + 0 + "," + 0 + ")");
  
 // Set the sankey diagram properties
 var sankey = d3.sankey()
-    .nodeWidth(36)
+    .nodeWidth(10)
     .nodePadding(10)
+    .marginLeft(1060)
     .size([width, height]);
  
 var path = sankey.link();
@@ -126,6 +128,7 @@ d3.json("data.json", function(error, graph) {
  
 // add the rectangles for the nodes
   node.append("rect")
+    .filter(function(d) { return d.type == "event"; })
       .attr("height", function(d) { return d.dy; })
       //.attr("height", function(d) { return 4; })
       .attr("width", sankey.nodeWidth())
@@ -136,11 +139,46 @@ d3.json("data.json", function(error, graph) {
     .append("title")
       .text(function(d) { 
       return d.name + "\n" + format(d.value); });
+
+
+  //var events = node.filter(function(d) { return d.type == "event"; });
+
+  graph.nodes.forEach(function (e) {
+    if (e.mapX)
+    {
+      svg = d3.select('svg');
+      svg.append('circle')
+      .attr('cx', e.mapX)
+      .attr('cy', e.mapY)
+      .attr('r', 20)
+      .attr('fill', e.color);
+      svg.append('path')
+      .attr("class", "maplink")
+      .style("stroke", function(d) { return e.color; })
+      .style("stroke-width", function(d) { return 10; })
+      .attr('d', function() {
+        var curvature = .5;
+          var x0 = e.mapX,
+              x1 = e.x,
+              xi = d3.interpolateNumber(x0, x1),
+              x2 = xi(curvature),
+              x3 = xi(1 - curvature),
+              y0 = e.mapY,
+              y1 = e.y+e.dy/2;
+          return "M" + x0 + "," + y0
+               + "C" + x2 + "," + y0
+               + " " + x3 + "," + y1
+               + " " + x1 + "," + y1;
+      }
+      )
+    }
+    }
+  )
  
 // add in the title for the nodes
   node.append("text")
-      .attr("x", -sankey.nodeWidth())
-      .attr("y", function(d) { return d.dy;  })
+      .attr("x", -6)
+      .attr("y", function(d) { return d.dy / 2; })
       .attr("dy", ".35em")
       .attr("text-anchor", "end")
       .attr("transform", null)
@@ -149,11 +187,20 @@ d3.json("data.json", function(error, graph) {
       .attr("x", 6 + sankey.nodeWidth())
       .attr("text-anchor", "start");
  
+   node.append("image")
+       .filter(function(d) { return d.type == "player"; })
+      //.attr("xlink:href", "photos/D643.jpg")
+      .attr("xlink:href", function(d){ return d.photo;})
+      .attr("x", 0)
+      .attr("y", 0)
+      .attr("width", function(d){ return d.dy/5.0*3;})
+      .attr("height", function(d){ return d.dy;});
+
 // the function for moving the nodes
   function dragmove(d) {
     d3.select(this).attr("transform", 
         "translate(" + (
-             d.x = Math.max(0, Math.min(width - d.dx, d3.event.x))
+             d.x = Math.max(0, Math.min(width - d.dx+1060, d3.event.x))
           ) + "," + (
                    d.y = Math.max(0, Math.min(height - d.dy, d3.event.y))
             ) + ")");

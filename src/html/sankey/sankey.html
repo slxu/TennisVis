@@ -1,8 +1,6 @@
 <!DOCTYPE html>
-<html class="ocks-org do-not-copy"><head class="datamaps-style-block">
-<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta charset="utf-8">
-<title>Sankey Diagram</title>
-<style>.datamap path {stroke: #FFFFFF; stroke-width: 1px;} .datamaps-legend dt, .datamaps-legend dd { float: left; margin: 0 3px 0 0;} .datamaps-legend dd {width: 20px; margin-right: 6px; border-radius: 3px;} .datamaps-legend {padding-bottom: 20px; z-index: 1001; position: absolute; left: 4px; font-size: 12px; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;} .datamaps-hoverover {display: none; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; } .hoverinfo {padding: 4px; border-radius: 1px; background-color: #FFF; box-shadow: 1px 1px 5px #CCC; font-size: 12px; border: 1px solid #CCC; } .hoverinfo hr {border:1px dotted #CCC; }</style>
+<meta charset="utf-8">
+<title>SANKEY Experiment</title>
 <style>
  
 .node rect {
@@ -19,56 +17,39 @@
 .link {
   fill: none;
   stroke: #000;
-  stroke-opacity: .5;
+  stroke-opacity: .2;
 }
  
 .link:hover {
-  stroke-opacity: .8;
+  stroke-opacity: .5;
 }
  
 </style>
-</head><body>
-<script src="js/d3.js"></script>
-<script src="js/topojson.js"></script>
-<script src="js/datamaps.js"></script>
-<script src="js/newSankey.js"></script>
-<div id="container" style="position: relative; width: 960px; height: 960px;"></div>
-<script>
-  var map = new Datamap({
-    element: document.getElementById('container'),
-    projection: 'mercator',
-    fills: {
-      defaultFill: 'steelblue'
-    }
-  });
-
-  // svg = d3.select('svg');
-  // svg.append('circle')
-  //   .attr('cx', 790)
-  //   .attr('cy', 547.125)
-  //   .attr('r', 20)
-  //   .attr('fill', 'red');
-</script>
-
+<body>
+ 
+<p id="chart">
+ 
+<script src="http://d3js.org/d3.v3.js"></script>
+<script src="sankey.js"></script>
 <script>
   
 var units = "Widgets";
  
- var margin = {top: 0, right: 0, bottom: 0, left: 0},
-     width = 960 - margin.left - margin.right,
-     height = 960 - margin.top - margin.bottom;
+var margin = {top: 10, right: 10, bottom: 10, left: 10},
+    width = 1200 - margin.left - margin.right,
+    height = 740 - margin.top - margin.bottom;
  
 var formatNumber = d3.format(",.0f"),    // zero decimal places
     format = function(d) { return formatNumber(d) + " " + units; },
     color = d3.scale.category20();
  
 // append the svg canvas to the page
- var svg = d3.select("svg")
-//     .attr("width", width + margin.left + margin.right)
-//     .attr("height", height + margin.top + margin.bottom)
-   .append("g")
-     .attr("transform", 
-           "translate(" + margin.left + "," + margin.top + ")");
+var svg = d3.select("#chart").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", 
+          "translate(" + margin.left + "," + margin.top + ")");
  
 // Set the sankey diagram properties
 var sankey = d3.sankey()
@@ -79,7 +60,7 @@ var sankey = d3.sankey()
 var path = sankey.link();
  
 // load the data
-d3.json("data.json", function(error, graph) {
+d3.json("sankeygreenhouse.json", function(error, graph) {
  
     var nodeMap = {};
     graph.nodes.forEach(function(x) { nodeMap[x.name] = x; });
@@ -108,7 +89,7 @@ d3.json("data.json", function(error, graph) {
 // add the link titles
   link.append("title")
         .text(function(d) {
-        return d.source.name + " → " + 
+      	return d.source.name + " → " + 
                 d.target.name + "\n" + format(d.value); });
  
 // add in the nodes
@@ -117,30 +98,29 @@ d3.json("data.json", function(error, graph) {
     .enter().append("g")
       .attr("class", "node")
       .attr("transform", function(d) { 
-      return "translate(" + d.x + "," + d.y + ")"; })
+		  return "translate(" + d.x + "," + d.y + ")"; })
     .call(d3.behavior.drag()
       .origin(function(d) { return d; })
       .on("dragstart", function() { 
-      this.parentNode.appendChild(this); })
+		  this.parentNode.appendChild(this); })
       .on("drag", dragmove));
  
 // add the rectangles for the nodes
   node.append("rect")
       .attr("height", function(d) { return d.dy; })
-      //.attr("height", function(d) { return 4; })
       .attr("width", sankey.nodeWidth())
       .style("fill", function(d) { 
-      return d.color = color(d.name.replace(/ .*/, "")); })
+		  return d.color = color(d.name.replace(/ .*/, "")); })
       .style("stroke", function(d) { 
-      return d3.rgb(d.color).darker(2); })
+		  return d3.rgb(d.color).darker(2); })
     .append("title")
       .text(function(d) { 
-      return d.name + "\n" + format(d.value); });
+		  return d.name + "\n" + format(d.value); });
  
 // add in the title for the nodes
   node.append("text")
-      .attr("x", -sankey.nodeWidth())
-      .attr("y", function(d) { return d.dy;  })
+      .attr("x", -6)
+      .attr("y", function(d) { return d.dy / 2; })
       .attr("dy", ".35em")
       .attr("text-anchor", "end")
       .attr("transform", null)
@@ -153,14 +133,16 @@ d3.json("data.json", function(error, graph) {
   function dragmove(d) {
     d3.select(this).attr("transform", 
         "translate(" + (
-             d.x = Math.max(0, Math.min(width - d.dx, d3.event.x))
-          ) + "," + (
+        	   d.x = Math.max(0, Math.min(width - d.dx, d3.event.x))
+        	) + "," + (
                    d.y = Math.max(0, Math.min(height - d.dy, d3.event.y))
             ) + ")");
     sankey.relayout();
     link.attr("d", path);
   }
 });
+ 
 </script>
-
-</body></html>
+ 
+</body>
+</html>
