@@ -5,16 +5,16 @@
 {"name":"US Open", "type":"event","mapX":283, "mapY":544.125, "score":2000}
 ],
 "players":[
-{"name":"Rafael Nadal", "type":"player", "photo":"photos/N409.jpg"},
-{"name":"Novak Djokovic", "type":"player", "photo":"photos/D643.jpg"},
-{"name":"Stanislas Wawrinka", "type":"player", "photo":"photos/W367.jpg"},
-{"name":"Juan Martin Del Potro", "type":"player", "photo":"photos/D683.jpg"},
-{"name":"David Ferrer", "type":"player", "photo":"photos/F401.jpg"},
-{"name":"Andy Murray", "type":"player", "photo":"photos/MC10.jpg"},
-{"name":"Tomas Berdych", "type":"player", "photo":"photos/BA47.jpg"},
-{"name":"Roger Federer", "type":"player", "photo":"photos/F324.jpg"},
-{"name":"Richard Gasquet", "type":"player", "photo":"photos/G628.jpg"},
-{"name":"Jo-Wilfried Tsonga", "type":"player", "photo":"photos/T786.jpg"}
+{"name":"Rafael Nadal", "id": "N409", "type":"player", "photo":"photos/N409.jpg"},
+{"name":"Novak Djokovic", "id": "D643", "type":"player", "photo":"photos/D643.jpg"},
+{"name":"Stanislas Wawrinka", "id": "W367", "type":"player", "photo":"photos/W367.jpg"},
+{"name":"Juan Martin Del Potro", "id": "D683", "type":"player", "photo":"photos/D683.jpg"},
+{"name":"David Ferrer", "id": "F401", "type":"player", "photo":"photos/F401.jpg"},
+{"name":"Andy Murray", "id": "MC10", "type":"player", "photo":"photos/MC10.jpg"},
+{"name":"Tomas Berdych", "id": "BA47", "type":"player", "photo":"photos/BA47.jpg"},
+{"name":"Roger Federer", "id": "F324", "type":"player", "photo":"photos/F324.jpg"},
+{"name":"Richard Gasquet", "id": "G628", "type":"player", "photo":"photos/G628.jpg"},
+{"name":"Jo-Wilfried Tsonga", "id": "T786", "type":"player", "photo":"photos/T786.jpg"}
 ],
 "links":[
 {"source":"AusOpen","target":"Rafael Nadal","value":124.729,"dy":21},
