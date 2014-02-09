@@ -51,8 +51,8 @@ d3.sankey = function() {
     computeLinkDepths();
     var maxDX = 0;
     nodes.forEach(function(node) {
-      if(maxDX < node.dy*3.0/5)
-        maxDX = node.dy*3.0/5;
+      if(maxDX < node.dy/198.0*148)
+        maxDX = node.dy/198.0*148;
     });
    nodes.forEach(function(node) {
       if (!node.sourceLinks.length) {
@@ -269,7 +269,22 @@ d3.sankey = function() {
     }
  
     function ascendingDepth(a, b) {
-      return a.y - b.y;
+      if (a.type=="event" )
+      {
+        if (b.type=="event")
+          return a.y - b.y;
+        else 
+          return 1;
+      }
+      else
+      {
+          if (b.type == "event")
+            return -1;
+          else
+          {
+            return 0;
+          }
+      }
     }
   }
  

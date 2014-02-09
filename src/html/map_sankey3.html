@@ -60,7 +60,7 @@ Hello
 
 <script>
   
-var units = "Widgets";
+var units = "Points";
  
  var margin = {top: 0, right: 0, bottom: 0, left: 0},
      width = 1600 - 1060,
@@ -187,7 +187,10 @@ d3.json("data.json", function(error, graph) {
       .attr('cx', function(e){return e.mapX;})
       .attr('cy', function(e){return e.mapY;})
       .attr('r', 20)
-      .attr('fill', function(e){return e.color;});   
+      .attr('fill', function(e){return e.color;})
+          .append("title")
+      .text(function(d) { 
+      return d.name + "\n" + format(d.value); });  
 
     // graph.nodes.forEach(function (e) {
     // if (e.mapX)
@@ -239,7 +242,7 @@ d3.json("data.json", function(error, graph) {
       .attr("xlink:href", function(d){ return d.photo;})
       .attr("x", 0)
       .attr("y", 0)
-      .attr("width", function(d){ return d.dy/5.0*3;})
+      .attr("width", function(d){ return d.dy/198.0*148;})
       .attr("height", function(d){ return d.dy;});
 
 // the function for moving the nodes
