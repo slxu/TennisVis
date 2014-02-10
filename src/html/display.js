@@ -23,6 +23,9 @@ var newPath = function(d) {
        + " " + x1 + "," + y1;
 };
 
+var selectPlayer = null,
+    selectTour = null;
+
 function tourMouseover(d) {
   svg.selectAll('path.eventlink.source-' + d.id)
     .style('display', 'inline');
@@ -30,6 +33,9 @@ function tourMouseover(d) {
 
 function tourMouseout(d) {
   svg.selectAll('path.eventlink.source-' + d.id)
+    .filter(function(d) { 
+      return (d.source != selectTour && d.target != selectPlayer)
+    })
     .style('display', 'none');
 };
 
@@ -40,15 +46,66 @@ function playerMouseover(d) {
 
 function playerMouseout(d) {
   svg.selectAll('path.eventlink.target-' + d.id)
+    .filter(function(d) { 
+      return (d.source != selectTour && d.target != selectPlayer)
+    })
     .style('display', 'none');
 };
+
+//TODO: select both player and tour
+
+function playerMousedown(d) {
+  if (selectPlayer == null) {
+    selectPlayer = d;
+    svg.selectAll('path.eventlink.target-' + d.id)
+      .style('display', 'inline');
+    svg.select('#' + d.id)
+      .style('stroke-width', 3);
+  } else {
+    svg.selectAll('path.eventlink.target-' + selectPlayer.id)
+      .style('display', 'none');
+    svg.select('#' + selectPlayer.id)
+      .style('stroke-width', 0);
+    if (d != selectPlayer) {
+      selectPlayer = d;
+      svg.selectAll('path.eventlink.target-' + d.id)
+        .style('display', 'inline');
+      svg.select('#' + d.id)
+        .style('stroke-width', 3);
+    } else
+      selectPlayer = null;
+  }
+}
+
+function tourMousedown(d) {
+  if (selectTour == null) {
+    selectTour = d;
+    svg.selectAll('path.eventlink.source-' + d.id)
+      .style('display', 'inline');
+    svg.select('#' + d.id)
+      .style('stroke-width', 3);
+  } else {
+    svg.selectAll('path.eventlink.source-' + selectTour.id)
+      .style('display', 'none');
+    svg.select('#' + selectTour.id)
+      .style('stroke-width', 0);
+    if (d != selectTour) {
+      selectTour = d;
+      svg.selectAll('path.eventlink.source-' + d.id)
+        .style('display', 'inline');
+      svg.select('#' + d.id)
+        .style('stroke-width', 3);
+    } else
+      selectTour = null;
+  }
+}
 
 d3.json("data1.json", function(error, graph) {
 
   var tours = graph.tournaments;
   var players = graph.players;
   var links = graph.links;
-  var selectLinks = [];
+  
   var nameToTour = {}
   var nameToPlayer = {}
 
@@ -72,6 +129,7 @@ d3.json("data1.json", function(error, graph) {
     player = nameToPlayer[link.target];
     link.source = tour;
     link.target = player;
+    link.display = 'none';
 
     tour.links.push(link)
     player.links.push(link)
@@ -98,24 +156,24 @@ d3.json("data1.json", function(error, graph) {
       .attr('d', newPath)
       .style('stroke-width', function(d) { return d.value/10; });
 
-  
-
-
   // add tournaments on the map
   svg.append('g')
       .selectAll('.tour')
       .data(tours)
     .enter().append('circle')
       .attr('class', 'tour')
-      .attr('cx', function(d) { return d.cx; })
-      .attr('cy', function(d) { return d.cy; })
-      .attr('r', function(d) { return d.r; })
-      .attr('fill', function (d) {
-        return d.color = color(d.type.replace(/ .*/, "")); })
+      .attr('id', function(d){ return d.id; })
+      .attr('cx', function(d){ return d.cx; })
+      .attr('cy', function(d){ return d.cy; })
+      .attr('r', function(d){ return d.r; })
+      .attr('fill', function(d) {
+        return d.color = color(d.type.replace(/ .*/, "")); 
+      })
       //.attr('fill', 'steelblue')
       .attr('stroke', 'none')
       .on('mouseover', tourMouseover)
-      .on('mouseout', tourMouseout);
+      .on('mouseout', tourMouseout)
+      .on('mousedown', tourMousedown);
   
   
   // include photos
@@ -123,7 +181,7 @@ d3.json("data1.json", function(error, graph) {
       .selectAll('pattern')
       .data(players)
     .enter().append('pattern')
-      .attr("id", function(d){ return d.id; })
+      .attr("id", function(d){ return 'photo-' + d.id; })
       .attr("patternUnits", "userSpaceOnUse")
       .attr("x", function(d){ return d.cx - d.r; })
       .attr("y", function(d){ return d.cy - d.r; })
@@ -142,12 +200,14 @@ d3.json("data1.json", function(error, graph) {
       .data(players)
     .enter().append('circle')
       .attr('class', 'player')
-      .attr('cx', function(d) { return d.cx; })
-      .attr('cy', function(d) { return d.cy; })
-      .attr('r', function(d) { return d.r; })
-      .attr('fill', function(d) { return "url(#" + d.id + ")"; })
+      .attr('id', function(d){ return d.id; })
+      .attr('cx', function(d){ return d.cx; })
+      .attr('cy', function(d){ return d.cy; })
+      .attr('r', function(d){ return d.r; })
+      .attr('fill', function(d){ return "url(#photo-" + d.id + ")"; })
       .attr('stroke', 'none')
       .on('mouseover', playerMouseover)
-      .on('mouseout', playerMouseout);
+      .on('mouseout', playerMouseout)
+      .on('mousedown', playerMousedown);
 
-});
+}); 
