@@ -23,11 +23,32 @@ var newPath = function(d) {
        + " " + x1 + "," + y1;
 };
 
+function tourMouseover(d) {
+  svg.selectAll('path.eventlink.source-' + d.id)
+    .style('display', 'inline');
+};
+
+function tourMouseout(d) {
+  svg.selectAll('path.eventlink.source-' + d.id)
+    .style('display', 'none');
+};
+
+function playerMouseover(d) {
+  svg.selectAll('path.eventlink.target-' + d.id)
+    .style('display', 'inline');
+};
+
+function playerMouseout(d) {
+  svg.selectAll('path.eventlink.target-' + d.id)
+    .style('display', 'none');
+};
+
 d3.json("data1.json", function(error, graph) {
 
   var tours = graph.tournaments;
   var players = graph.players;
   var links = graph.links;
+  var selectLinks = [];
   var nameToTour = {}
   var nameToPlayer = {}
 
@@ -35,16 +56,25 @@ d3.json("data1.json", function(error, graph) {
     tour.cx = tour.mapX;
     tour.cy = tour.mapY;
     tour.r = tour.score / 250 * 3;
+    tour.links = []
     nameToTour[tour.name] = tour;
   });
 
   players.forEach(function(player) {
     player.score = 0;
+    player.links = []
     nameToPlayer[player.name] = player;
   });
 
   links.forEach(function(link) {
     nameToPlayer[link.target].score += link.value;
+    tour = nameToTour[link.source];
+    player = nameToPlayer[link.target];
+    link.source = tour;
+    link.target = player;
+
+    tour.links.push(link)
+    player.links.push(link)
   });
 
   players.sort(function(a, b) { return b.score - a.score; });
@@ -60,12 +90,16 @@ d3.json("data1.json", function(error, graph) {
     }
   });
 
-  links.forEach(function(link) {
-    tour = nameToTour[link.source];
-    player = nameToPlayer[link.target];
-    link.source = tour;
-    link.target = player;
-  });
+
+  svg.selectAll('.eventlink')
+      .data(links)
+    .enter().append('path')
+      .attr('class', function(d) { return 'eventlink source-' + d.source.id + ' target-' + d.target.id; })
+      .attr('d', newPath)
+      .style('stroke-width', function(d) { return d.value/10; });
+
+  
+
 
   // add tournaments on the map
   svg.append('g')
@@ -77,10 +111,13 @@ d3.json("data1.json", function(error, graph) {
       .attr('cy', function(d) { return d.cy; })
       .attr('r', function(d) { return d.r; })
       .attr('fill', function (d) {
-        return d.color = color(d.name.replace(/ .*/, "")); })
+        return d.color = color(d.type.replace(/ .*/, "")); })
       //.attr('fill', 'steelblue')
-      .attr('stroke', 'none');
-
+      .attr('stroke', 'none')
+      .on('mouseover', tourMouseover)
+      .on('mouseout', tourMouseout);
+  
+  
   // include photos
   svg.append('defs')
       .selectAll('pattern')
@@ -108,19 +145,9 @@ d3.json("data1.json", function(error, graph) {
       .attr('cx', function(d) { return d.cx; })
       .attr('cy', function(d) { return d.cy; })
       .attr('r', function(d) { return d.r; })
-      //.attr('fill', function (d) {
-      //  return d.color = color(d.name.replace(/ .*/, "")); })
-      .attr('fill', function(d) { photo = "url(#" + d.id + ")"; console.log(photo); return photo;})
-      .attr('stroke', 'none');
-
-
-  // add links
-  svg.append('g')
-      .selectAll('.eventlink')
-      .data(links)
-    .enter().append('path')
-      .attr('class', 'eventlink')
-      .attr('d', newPath)
-      .style('stroke-width', function(d) { return d.value/10; });
+      .attr('fill', function(d) { return "url(#" + d.id + ")"; })
+      .attr('stroke', 'none')
+      .on('mouseover', playerMouseover)
+      .on('mouseout', playerMouseout);
 
 });

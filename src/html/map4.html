@@ -10,11 +10,15 @@ body {
 
 .tour {
   fill-opacity: .95;
-  z-index: 1
 }
 
 .player {
   box-shadow: 5px 5px 5px #000;
+}
+
+.player:hover {
+  stroke: orange;
+  stroke-width: 3;
 }
 
 .node text {
@@ -26,10 +30,10 @@ body {
   fill: none;
   stroke: #fff;
   stroke-opacity: .2;
-  z-index: 0
+  display: none;
 }
- 
-.link:hover {
+
+.eventlink:hover {
   stroke-opacity: .5;
 }
  

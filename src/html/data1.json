@@ -1,8 +1,8 @@
 {"tournaments":[
-{"name":"AusOpen", "type":"event","mapX":867,"mapY":771.125,"score":2000},
-{"name":"Shanghai Masters", "type":"event","mapX":805, "mapY":575.125, "score":1000},
-{"name":"China Open", "type":"event","mapX":790, "mapY":547.125, "score":500},
-{"name":"US Open", "type":"event","mapX":283, "mapY":544.125, "score":2000}
+{"name":"AusOpen", "id": "338", "type":"Hard","mapX":867,"mapY":771.125,"score":2000},
+{"name":"Shanghai Masters", "id": "5014", "type":"Hard","mapX":805, "mapY":575.125, "score":1000},
+{"name":"China Open", "id": "747", "type":"Hard","mapX":790, "mapY":547.125, "score":500},
+{"name":"US Open", "id": "560", "type":"Hard","mapX":283, "mapY":544.125, "score":2000}
 ],
 "players":[
 {"name":"Rafael Nadal", "id": "N409", "type":"player", "photo":"photos/N409.jpg"},
