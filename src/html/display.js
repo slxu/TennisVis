@@ -53,7 +53,6 @@ function playerMouseout(d) {
 };
 
 //TODO: select both player and tour
-
 function playerMousedown(d) {
   if (selectPlayer == null) {
     selectPlayer = d;
@@ -173,7 +172,7 @@ d3.json("data1.json", function(error, graph) {
       .attr('stroke', 'none')
       .on('mouseover', tourMouseover)
       .on('mouseout', tourMouseout)
-      .on('mousedown', tourMousedown);
+      .on('click', tourMousedown);
   
   
   // include photos
@@ -208,6 +207,6 @@ d3.json("data1.json", function(error, graph) {
       .attr('stroke', 'none')
       .on('mouseover', playerMouseover)
       .on('mouseout', playerMouseout)
-      .on('mousedown', playerMousedown);
+      .on('click', playerMousedown);
 
 }); 
