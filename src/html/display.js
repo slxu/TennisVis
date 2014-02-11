@@ -23,13 +23,44 @@ var newPath = function(d) {
        + " " + x1 + "," + y1;
 };
 
+//function wrap(text, width) {
+function wrap(d) {
+  text = d.name;
+  width = d.r*2;
+  text.each(function() {
+    var text = d3.select(this),
+        words = text.text().split(/\s+/).reverse(),
+        word,
+        line = [],
+        lineNumber = 0,
+        lineHeight = 1.1, // ems
+        y = text.attr("y"),
+        dy = parseFloat(text.attr("dy")),
+        tspan = text.text(null).append("tspan").attr("x", 0).attr("y", y).attr("dy", dy + "em");
+    while (word = words.pop()) {
+      line.push(word);
+      tspan.text(line.join(" "));
+      if (tspan.node().getComputedTextLength() > width) {
+        line.pop();
+        tspan.text(line.join(" "));
+        line = [word];
+        tspan = text.append("tspan").attr("x", 0).attr("y", y).attr("dy", ++lineNumber * lineHeight + dy + "em").text(word);
+      }
+    }
+  });
+}
+
 var selectPlayer = null,
     selectTour = null;
 
+var tours = [];
+
 function tourMouseover(d) {
+  console.log(d.id);
   svg.selectAll('path.eventlink.source-' + d.id)
     .style('display', 'inline');
-  svg.select('#' + d.id)
+  tours
+    .selectAll(d.id)
     .style('stroke-width', 3);
 };
 
@@ -63,7 +94,7 @@ function playerMouseout(d) {
 };
 
 //TODO: select both player and tour
-function playerMousedown(d) {
+function playerClick(d) {
   if (selectPlayer == null) {
     selectPlayer = d;
     svg.selectAll('path.eventlink.target-' + d.id)
@@ -86,7 +117,7 @@ function playerMousedown(d) {
   }
 }
 
-function tourMousedown(d) {
+function tourClick(d) {
   if (selectTour == null) {
     selectTour = d;
     svg.selectAll('path.eventlink.source-' + d.id)
@@ -111,28 +142,29 @@ function tourMousedown(d) {
 
 d3.json("data1.json", function(error, graph) {
 
-  var tours = graph.tournaments;
-  var players = graph.players;
-  var links = graph.links;
+  var toursData = graph.tournaments;
+  var playersData = graph.players;
+  var linksData = graph.links;
   
   var nameToTour = {}
   var nameToPlayer = {}
 
-  tours.forEach(function(tour) {
-    tour.cx = tour.mapX;
-    tour.cy = tour.mapY;
+  toursData.forEach(function(tour) {
+    prj = latLngToXY(tour.lat, tour.lng);
+    tour.cx = prj[0];
+    tour.cy = prj[1];
     tour.r = tour.score / 250 * 3;
     tour.links = []
     nameToTour[tour.name] = tour;
   });
 
-  players.forEach(function(player) {
+  playersData.forEach(function(player) {
     player.score = 0;
     player.links = []
     nameToPlayer[player.name] = player;
   });
 
-  links.forEach(function(link) {
+  linksData.forEach(function(link) {
     nameToPlayer[link.target].score += link.value;
     tour = nameToTour[link.source];
     player = nameToPlayer[link.target];
@@ -144,56 +176,57 @@ d3.json("data1.json", function(error, graph) {
     player.links.push(link)
   });
 
-  players.sort(function(a, b) { return b.score - a.score; });
+  playersData.sort(function(a, b) { return b.score - a.score; });
 
-  players.forEach(function(player, index) {
+  playersData.forEach(function(player, index) {
     player.r = Math.max(15, player.score / 8);
     if (index == 0) {
       player.cx = 10 + player.r;
       player.cy = 100;//10 + player.r;
     } else {
-      player.cx = players[index-1].cx + players[index-1].r + 10 + player.r;
+      player.cx = playersData[index-1].cx + playersData[index-1].r + 20 + player.r;
       player.cy = 100; //10 + player.r;
     }
   });
 
 
-  svg.selectAll('.eventlink')
-      .data(links)
+  svg.append('g').selectAll('.eventlink')
+      .data(linksData)
     .enter().append('path')
       .attr('class', function(d) { return 'eventlink source-' + d.source.id + ' target-' + d.target.id; })
       .attr('d', newPath)
       .style('stroke-width', function(d) { return d.value/10; });
 
   // add tournaments on the map
-  svg.append('g')
-      .selectAll('.tour')
-      .data(tours)
-    .enter().append('circle')
+  tours = svg.selectAll('.tour')
+      .data(toursData)
+    .enter().append('g')
       .attr('class', 'tour')
-      .attr('id', function(d){ return d.id; })
-      .attr('cx', function(d){ return d.cx; })
-      .attr('cy', function(d){ return d.cy; })
-      .attr('r', function(d){ return d.r; })
-      .attr('fill', function(d) {
-        return d.color = color(d.type.replace(/ .*/, "")); 
-      })
-      //.attr('fill', 'steelblue')
-      .attr('stroke', 'none')
-      .on('mouseover', tourMouseover)
-      .on('mouseout', tourMouseout)
-      .on('click', tourMousedown);
+      .attr('transform', function(d) {
+        return 'translate(' + d.cx + ',' + d.cy + ')';
+      });
+
+  tours.append('circle')
+    .attr('class', function(d){ return d.id; })
+    .attr('r', function(d){ return d.r; })
+    .attr('fill', function(d) {
+      return d.color = color(d.type.replace(/ .*/, "")); 
+    })
+    //.attr('fill', 'steelblue')
+    .attr('stroke', 'none')
+    .on('mouseover', tourMouseover)
+    .on('mouseout', tourMouseout)
+    .on('click', tourClick);
   
   
-  // include photos
-  svg.append('defs')
-      .selectAll('pattern')
-      .data(players)
+  // add photos
+  svg.append('defs').selectAll('pattern')
+      .data(playersData)
     .enter().append('pattern')
       .attr("id", function(d){ return 'photo-' + d.id; })
       .attr("patternUnits", "userSpaceOnUse")
-      .attr("x", function(d){ return d.cx - d.r; })
-      .attr("y", function(d){ return d.cy - d.r; })
+      .attr("x", function(d){ return -d.r; })
+      .attr("y", function(d){ return -d.r; })
       .attr("width", function(d){ return d.r*2; })
       .attr("height", function(d){ return d.r*2/148*198; })
       .append('image')
@@ -204,19 +237,52 @@ d3.json("data1.json", function(error, graph) {
         .attr("xlink:href", function(d){ return d.photo; });
 
   // add players
-  svg.append('g')
-      .selectAll('.player')
-      .data(players)
-    .enter().append('circle')
+  var players = svg.append('g').selectAll('.player')
+      .data(playersData)
+    .enter().append('g')
       .attr('class', 'player')
-      .attr('id', function(d){ return d.id; })
-      .attr('cx', function(d){ return d.cx; })
-      .attr('cy', function(d){ return d.cy; })
-      .attr('r', function(d){ return d.r; })
-      .attr('fill', function(d){ return "url(#photo-" + d.id + ")"; })
-      .attr('stroke', 'none')
-      .on('mouseover', playerMouseover)
-      .on('mouseout', playerMouseout)
-      .on('click', playerMousedown);
+      .attr('transform', function(d) {
+        return 'translate(' + d.cx + ',' + d.cy + ')';
+      });
 
+  players.append('circle')
+    .attr('id', function(d){ return d.id; })
+    .attr('r', function(d){ return d.r; })
+    .attr('fill', function(d){ return "url(#photo-" + d.id + ")"; })
+    .attr('stroke', 'none')
+    .on('mouseover', playerMouseover)
+    .on('mouseout', playerMouseout)
+    .on('click', playerClick);
+
+  players.append("text")
+    .attr("x", function(d){ return 0; })
+    .attr("y", function(d, i) { 
+      offset = (i % 2 == 0) ? 0 : 20;
+      return -d.r-25-offset; 
+    })
+    .attr("text-anchor", "middle")
+    .text(function(d) { 
+      str = d.name.split(' ');
+      return str[0]; 
+    });
+  players.append("text")
+    .attr("y", function(d, i){ 
+      offset = (i % 2 == 0) ? 0 : 20;
+      return -d.r-10-offset; 
+    })
+    .attr("text-anchor", "middle")
+    .text(function(d) { 
+      str = d.name.split(' ');
+      return str[1]; 
+    });
+
+  players.append("text")
+    .attr("y", function(d){ return d.r+25; })
+    .attr("text-anchor", "middle")
+    .text(function(d){ return Math.floor(d.score); });
+
+  tours.append("text")
+    .attr("x", function(d){ return d.r+5; })
+    .attr("y", 5)
+    .text(function(d){ return d.name; });
 }); 
