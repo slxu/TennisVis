@@ -1,113 +1,227 @@
-<!DOCTYPE html>
-<meta charset="utf-8">
-<title>Crossfilter</title>
-<style>
+var margin = {top: 0, right: 0, bottom: 0, left: 0},
+    width = 1600 - 1060,
+    height = 600;//960 - margin.top - margin.bottom;
+ 
+var formatNumber = d3.format(",.0f"),    // zero decimal places
+  format = function(d) { return formatNumber(d) + " " + units; },
+  color = d3.scale.category20();
 
-#charts {
-  padding: 10px 0;
+var svg = d3.select("svg");
+
+var newPath = function(d) {
+  var curvature = .5;
+  var x0 = d.source.cx,
+      x1 = d.target.cx,
+      y0 = d.source.cy,
+      y1 = d.target.cy,
+      yi = d3.interpolateNumber(y0, y1),
+      y2 = yi(curvature),
+      y3 = yi(1 - curvature);
+  return "M" + x0 + "," + y0
+       + "C" + x0 + "," + y2
+       + " " + x1 + "," + y3
+       + " " + x1 + "," + y1;
+};
+
+var selectPlayer = null,
+    selectTour = null;
+
+function tourMouseover(d) {
+  svg.selectAll('path.eventlink.source-' + d.id)
+    .style('display', 'inline');
+  svg.select('#' + d.id)
+    .style('stroke-width', 3);
+};
+
+function tourMouseout(d) {
+  svg.selectAll('path.eventlink.source-' + d.id)
+    .filter(function(d) { 
+      return (d.source != selectTour && d.target != selectPlayer)
+    })
+    .style('display', 'none');
+  if (selectTour != d)
+    svg.select('#' + d.id)
+      .style('stroke-width', 0);
+};
+
+function playerMouseover(d) {
+  svg.selectAll('path.eventlink.target-' + d.id)
+    .style('display', 'inline');
+  svg.select('#' + d.id)
+    .style('stroke-width', 3);
+};
+
+function playerMouseout(d) {
+  svg.selectAll('path.eventlink.target-' + d.id)
+    .filter(function(d) { 
+      return (d.source != selectTour && d.target != selectPlayer)
+    })
+    .style('display', 'none');
+  if (selectPlayer != d)
+    svg.select('#' + d.id)
+      .style('stroke-width', 0);
+};
+
+//TODO: select both player and tour
+function playerMousedown(d) {
+  if (selectPlayer == null) {
+    selectPlayer = d;
+    svg.selectAll('path.eventlink.target-' + d.id)
+      .style('display', 'inline');
+    svg.select('#' + d.id)
+      .style('stroke-width', 3);
+  } else {
+    svg.selectAll('path.eventlink.target-' + selectPlayer.id)
+      .style('display', 'none');
+    svg.select('#' + selectPlayer.id)
+      .style('stroke-width', 0);
+    if (d != selectPlayer) {
+      selectPlayer = d;
+      svg.selectAll('path.eventlink.target-' + d.id)
+        .style('display', 'inline');
+      svg.select('#' + d.id)
+        .style('stroke-width', 3);
+    } else
+      selectPlayer = null;
+  }
 }
 
-.chart {
-  display: inline-block;
-  height: 151px;
-  margin-bottom: 20px;
+function tourMousedown(d) {
+  if (selectTour == null) {
+    selectTour = d;
+    svg.selectAll('path.eventlink.source-' + d.id)
+      .style('display', 'inline');
+    svg.select('#' + d.id)
+      .style('stroke-width', 3);
+  } else {
+    svg.selectAll('path.eventlink.source-' + selectTour.id)
+      .style('display', 'none');
+    svg.select('#' + selectTour.id)
+      .style('stroke-width', 0);
+    if (d != selectTour) {
+      selectTour = d;
+      svg.selectAll('path.eventlink.source-' + d.id)
+        .style('display', 'inline');
+      svg.select('#' + d.id)
+        .style('stroke-width', 3);
+    } else
+      selectTour = null;
+  }
 }
 
-.reset {
-  padding-left: 1em;
-  font-size: smaller;
-  color: #ccc;
-}
+d3.json("data1.json", function(error, graph) {
 
-.background.bar {
-  fill: #ccc;
-}
+  var tours = graph.tournaments;
+  var players = graph.players;
+  var links = graph.links;
+  
+  var nameToTour = {}
+  var nameToPlayer = {}
 
-.foreground.bar {
-  fill: steelblue;
-}
+  tours.forEach(function(tour) {
+    tour.cx = tour.mapX;
+    tour.cy = tour.mapY;
+    tour.r = tour.score / 250 * 3;
+    tour.links = []
+    nameToTour[tour.name] = tour;
+  });
 
-.axis path, .axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
-}
+  players.forEach(function(player) {
+    player.score = 0;
+    player.links = []
+    nameToPlayer[player.name] = player;
+  });
 
-.axis text {
-  font: 10px sans-serif;
-}
+  links.forEach(function(link) {
+    nameToPlayer[link.target].score += link.value;
+    tour = nameToTour[link.source];
+    player = nameToPlayer[link.target];
+    link.source = tour;
+    link.target = player;
+    link.display = 'none';
 
-.brush rect.extent {
-  fill: steelblue;
-  fill-opacity: .125;
-}
+    tour.links.push(link)
+    player.links.push(link)
+  });
 
-.brush .resize path {
-  fill: #eee;
-  stroke: #666;
-}
+  players.sort(function(a, b) { return b.score - a.score; });
 
-#hour-chart {
-  width: 260px;
-}
-
-#delay-chart {
-  width: 230px;
-}
-
-#distance-chart {
-  width: 420px;
-}
-
-#date-chart {
-  width: 920px;
-}
-
-#event-list {
-  min-height: 1024px;
-}
-
-#event-list .beginDate,
-#event-list .endDate {
-  margin-bottom: .4em;
-}
-
-#event-list .eventID {
-  line-height: 1.5em;
-  background: #eee;
-  width: 640px;
-  margin-bottom: 1px;
-}
-
-#event-list .playerID {
-  color: #999;
-}
-
-#event-list div.point,
-#event-list div.eventID {
-  width: 160px;
-  padding-right: 10px;
-  text-align: right;
-}
-
-</style>
-
-<div id="body">
+  players.forEach(function(player, index) {
+    player.r = Math.max(15, player.score / 8);
+    if (index == 0) {
+      player.cx = 10 + player.r;
+      player.cy = 100;//10 + player.r;
+    } else {
+      player.cx = players[index-1].cx + players[index-1].r + 10 + player.r;
+      player.cy = 100; //10 + player.r;
+    }
+  });
 
 
-<div id="date-chart" class="chart">
-  <div class="title">Event Date</div>
-</div>
+  svg.selectAll('.eventlink')
+      .data(links)
+    .enter().append('path')
+      .attr('class', function(d) { return 'eventlink source-' + d.source.id + ' target-' + d.target.id; })
+      .attr('d', newPath)
+      .style('stroke-width', function(d) { return d.value/10; });
 
-<div id="lists">
-  <div id="event-list" class="list"></div>
-</div>
+  // add tournaments on the map
+  svg.append('g')
+      .selectAll('.tour')
+      .data(tours)
+    .enter().append('circle')
+      .attr('class', 'tour')
+      .attr('id', function(d){ return d.id; })
+      .attr('cx', function(d){ return d.cx; })
+      .attr('cy', function(d){ return d.cy; })
+      .attr('r', function(d){ return d.r; })
+      .attr('fill', function(d) {
+        return d.color = color(d.type.replace(/ .*/, "")); 
+      })
+      //.attr('fill', 'steelblue')
+      .attr('stroke', 'none')
+      .on('mouseover', tourMouseover)
+      .on('mouseout', tourMouseout)
+      .on('click', tourMousedown);
+  
+  
+  // include photos
+  svg.append('defs')
+      .selectAll('pattern')
+      .data(players)
+    .enter().append('pattern')
+      .attr("id", function(d){ return 'photo-' + d.id; })
+      .attr("patternUnits", "userSpaceOnUse")
+      .attr("x", function(d){ return d.cx - d.r; })
+      .attr("y", function(d){ return d.cy - d.r; })
+      .attr("width", function(d){ return d.r*2; })
+      .attr("height", function(d){ return d.r*2/148*198; })
+      .append('image')
+        //.attr("x", function(d){ return d.cx - d.r; })
+        //.attr("y", function(d){ return d.cy - d.r; })
+        .attr("width", function(d){ return d.r*2; })
+        .attr("height", function(d){ return d.r*2/148*198; })
+        .attr("xlink:href", function(d){ return d.photo; });
 
-</div>
+  // add players
+  svg.append('g')
+      .selectAll('.player')
+      .data(players)
+    .enter().append('circle')
+      .attr('class', 'player')
+      .attr('id', function(d){ return d.id; })
+      .attr('cx', function(d){ return d.cx; })
+      .attr('cy', function(d){ return d.cy; })
+      .attr('r', function(d){ return d.r; })
+      .attr('fill', function(d){ return "url(#photo-" + d.id + ")"; })
+      .attr('stroke', 'none')
+      .on('mouseover', playerMouseover)
+      .on('mouseout', playerMouseout)
+      .on('click', playerMousedown);
 
-<script src="js/crossfilter.v1.min.js"></script>
-<script src="js/d3.v3.min.js"></script>
-<script>
+}); 
+
+
 
 // (It's CSV, but GitHub Pages only gzip's JSON at the moment.)
 d3.csv("points.json", function(error, points) {
@@ -227,11 +341,6 @@ d3.csv("points.json", function(error, points) {
     renderAll();
   };
 
-  window.reset = function(i) {
-    charts[i].filter([new Date(2013, 0, 1), new Date(2013, 11, 31)]);
-    renderAll();
-  };
-
   function eventList(div) {
     //console.log("my object: %o", eventID.top(2));
     //var eventsByEvent = nestByEvent.entries(eventID.top(40000));
@@ -239,7 +348,6 @@ d3.csv("points.json", function(error, points) {
     var allPlayers=[]
     allGroupedPlayers.forEach (function(p)
       {
-        alert(p);
         if (p.value+0>0)
           allPlayers.push(p);
       }
@@ -284,11 +392,11 @@ d3.csv("points.json", function(error, points) {
 
         // Create the skeletal chart.
         if (g.empty()) {
-          div.select(".title").append("a")
-              .attr("href", "javascript:reset(" + id + ")")
-              .attr("class", "reset")
-              .text("reset")
-              .style("display", "none");
+//          div.select(".title").append("a")
+//              .attr("href", "javascript:reset(" + id + ")")
+//              .attr("class", "reset")
+//              .text("reset")
+//              .style("display", "none");
 
           g = div.append("svg")
               .attr("width", width + margin.left + margin.right)
@@ -450,6 +558,4 @@ d3.csv("points.json", function(error, points) {
     return d3.rebind(chart, brush, "on");
   }
 });
-
-</script>
 

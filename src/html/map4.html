@@ -6,6 +6,7 @@
 <style>
 body {
   background-color:#222;
+  color: #FFF;
 }
 
 .tour {
@@ -34,13 +35,108 @@ body {
 .eventlink:hover {
   stroke-opacity: .5;
 }
- 
+
+#charts {
+  padding: 10px 0;
+}
+
+.chart {
+  display: inline-block;
+  height: 151px;
+  margin-bottom: 20px;
+}
+
+.background.bar {
+  fill: #ccc;
+}
+
+.foreground.bar {
+  fill: steelblue;
+}
+
+.axis path, .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.axis text {
+  font: 10px sans-serif;
+  color: #FFF;
+}
+
+.brush rect.extent {
+  fill: steelblue;
+  fill-opacity: .125;
+}
+
+.brush .resize path {
+  fill: #eee;
+  stroke: #666;
+}
+
+#hour-chart {
+  width: 260px;
+}
+
+#delay-chart {
+  width: 230px;
+}
+
+#distance-chart {
+  width: 420px;
+}
+
+#date-chart {
+  width: 920px;
+}
+
+#event-list {
+  min-height: 1024px;
+}
+
+#event-list .beginDate,
+#event-list .endDate {
+  margin-bottom: .4em;
+}
+
+#event-list .eventID {
+  line-height: 1.5em;
+  background: #eee;
+  width: 640px;
+  margin-bottom: 1px;
+}
+
+#event-list div.point,
+#event-list div.eventID {
+  width: 160px;
+  padding-right: 10px;
+  text-align: right;
+}
+
 </style>
+
 </head><body style="fill: black;">
 <script src="js/d3.js"></script>
 <script src="js/topojson.js"></script>
 <script src="js/datamaps.js"></script>
+<script src="js/crossfilter.v1.min.js"></script>
+
 <div id="container" style="position: relative; width: 960px; height: 900px;"></div>
+
+<div id="body">
+
+
+<div id="date-chart" class="chart">
+</div>
+
+<div id="lists">
+  <div id="event-list" class="list"></div>
+</div>
+
+</div>
+
+
 <script>
   var map = new Datamap({
     element: document.getElementById('container'),
@@ -59,6 +155,7 @@ body {
   };
 </script>
 
-<script src="display.js"></script>
+
+<script src="js/display.js"></script>
 
 </body></html>
