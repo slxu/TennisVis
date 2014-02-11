@@ -9,6 +9,34 @@ var formatNumber = d3.format(",.0f"),    // zero decimal places
 var svg = d3.select("svg");
 var mapgraph = d3.mapgraph();
 
+var city2Geo=new Map;
+d3.csv("data/geodata.csv", function(error,cities){
+  cities.forEach(function(d, i) {
+    d.index = i;
+    d.x = +d.x;
+    d.y = +d.y;
+    city2Geo.put(d.city,d);
+  });
+});
+
+var eventID2Info =new Map;
+d3.csv("data/event_list.csv", function(error,events){
+  events.forEach(function(d, i) {
+    d.draws = +d.draws;
+    d.index = i;
+    eventID2Info.put(d.eventID,d);
+  });
+});
+
+var playerID2Info =new Map;
+d3.csv("data/players_info.csv", function(error,players){
+  players.forEach(function(d, i) {
+    d.age = +d.age;
+    d.index = i;
+    playerID2Info.put(d.playerID,d);
+  });
+});
+
 d3.json("data/data1.json", function(error, graph) {
 
   var toursData = graph.tournaments;
