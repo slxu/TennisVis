@@ -63,5 +63,5 @@ if __name__ == "__main__":
             prizeMoney = re.sub(htmlTagRE,"",prizeMoneyRE.search(contents,m.end()).group(1)).strip("\r\n")
           except:
             prizeMoney=""
-          print fname+","+name+","+dates+","+title+","+draws+","+surface+","+prizeMoney
+          print "T"+fname+","+name+","+dates+","+title+","+draws+","+surface+","+prizeMoney
 

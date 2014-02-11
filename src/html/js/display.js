@@ -1,10 +1,3 @@
-var margin = {top: 0, right: 0, bottom: 0, left: 0},
-    width = 1600 - 1060,
-    height = 600;//960 - margin.top - margin.bottom;
- 
-var formatNumber = d3.format(",.0f"),    // zero decimal places
-  format = function(d) { return formatNumber(d) + " " + units; },
-  color = d3.scale.category20();
 
 var svg = d3.select("svg");
 var mapgraph = d3.mapgraph();

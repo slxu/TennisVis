@@ -7,7 +7,8 @@ d3.mapgraph = function() {
       idToTour = {},
       selectPlayer = null,
       selectTour = null,
-      svg = d3.select("svg");
+      svg = d3.select("svg"),
+      color = d3.scale.category20();
 
   mapgraph.toursData = function(_) {
     if (!arguments.length) return toursData;
