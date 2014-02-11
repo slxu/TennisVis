@@ -29,6 +29,8 @@ var selectPlayer = null,
 function tourMouseover(d) {
   svg.selectAll('path.eventlink.source-' + d.id)
     .style('display', 'inline');
+  svg.select('#' + d.id)
+    .style('stroke-width', 3);
 };
 
 function tourMouseout(d) {
@@ -37,11 +39,16 @@ function tourMouseout(d) {
       return (d.source != selectTour && d.target != selectPlayer)
     })
     .style('display', 'none');
+  if (selectTour != d)
+    svg.select('#' + d.id)
+      .style('stroke-width', 0);
 };
 
 function playerMouseover(d) {
   svg.selectAll('path.eventlink.target-' + d.id)
     .style('display', 'inline');
+  svg.select('#' + d.id)
+    .style('stroke-width', 3);
 };
 
 function playerMouseout(d) {
@@ -50,6 +57,9 @@ function playerMouseout(d) {
       return (d.source != selectTour && d.target != selectPlayer)
     })
     .style('display', 'none');
+  if (selectPlayer != d)
+    svg.select('#' + d.id)
+      .style('stroke-width', 0);
 };
 
 //TODO: select both player and tour
