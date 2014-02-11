@@ -161,7 +161,7 @@ d3.mapgraph = function() {
           //.attr("y", function(d){ return d.cy - d.r; })
           .attr("width", function(d){ return d.r*2; })
           .attr("height", function(d){ return d.r*2/148*198; })
-          .attr("xlink:href", function(d){ return d.photo; });
+          .attr("xlink:href", function(d){ return "photos/"+d.id+".jpg"; });
 
     // add players
     var players = svg.append('g').selectAll('.player')

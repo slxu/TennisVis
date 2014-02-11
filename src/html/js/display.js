@@ -2,7 +2,7 @@
 var svg = d3.select("svg");
 var mapgraph = d3.mapgraph();
 
-d3.json("data1.json", function(error, graph) {
+d3.json("data/data1.json", function(error, graph) {
 
   var toursData = graph.tournaments;
   var playersData = graph.players;
@@ -15,8 +15,21 @@ d3.json("data1.json", function(error, graph) {
   mapgraph.update();
 }); 
 
+d3.json("data/data2.json", function(error, graph) {
+
+  var toursData = graph.tournaments;
+  var playersData = graph.players;
+  var linksData = graph.links;
+
+  mapgraph.toursData(toursData)
+    .playersData(playersData)
+    .linksData(linksData);
+
+  mapgraph.update();
+});
+
 // (It's CSV, but GitHub Pages only gzip's JSON at the moment.)
-d3.csv("points.json", function(error, points) {
+d3.csv("data/points.json", function(error, points) {
 
   // Various formatters.
   var formatNumber = d3.format(",d"),
