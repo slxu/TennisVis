@@ -1,21 +1,6 @@
-{"tournaments":[
-{"name":"AusOpen", "id": "T2013_338", "type":"Hard","lat":-37.814107,"lng":144.963280,"score":2000},
-{"name":"Shanghai Masters", "id": "T2013_5014", "type":"Hard","lat":31.230416, "lng":121.473701, "score":2000},
-{"name":"China Open", "id": "T2013_747", "type":"Hard","lat":39.904030, "lng":116.407526, "score":2000},
-{"name":"US Open", "id": "T2013_560", "type":"Hard","lat":40.714353, "lng":-74.005973, "score":2000}
-],
-"players":[
-{"name":"Rafael Nadal", "id": "N409"},
-{"name":"Novak Djokovic", "id": "D643"},
-{"name":"Stanislas Wawrinka", "id": "W367"},
-{"name":"Juan Martin Del Potro", "id": "D683"},
-{"name":"David Ferrer", "id": "F401"},
-{"name":"Andy Murray", "id": "MC10"},
-{"name":"Tomas Berdych", "id": "BA47"},
-{"name":"Roger Federer", "id": "F324"},
-{"name":"Richard Gasquet", "id": "G628"},
-{"name":"Jo-Wilfried Tsonga", "id": "T786"}
-],
+{
+"tournaments":[ "T2013_338", "T2013_5014", "T2013_747", "T2013_560" ],
+"players":[ "N409", "D643", "W367", "D683", "F401", "MC10", "BA47", "F324", "G628", "T786" ],
 "links":[
 {"source":"T2013_338","target":"N409","value":124.729},
 {"source":"T2013_338","target":"D643","value":40.597},

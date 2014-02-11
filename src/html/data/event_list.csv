@@ -1,0 +1,338 @@
+id,place,city,geoCoordinates,startEndDates,name,draws,type,prizeMoney,score
+T2009_1536,Spain,"Madrid, Spain","469, 545.125",11.05.2009-17.05.2009,"Mutua Madrid Open",64,Clay,"Ç2,835,000",1000
+T2010_1536,Spain,"Madrid, Spain","469, 545.125",10.05.2010-16.05.2010,"Mutua Madrid Open",64,Clay,"Ç2,835,000",1000
+T2011_1536,Spain,"Madrid, Spain","469, 545.125",02.05.2011-08.05.2011,"Mutua Madrid Open",64,Clay,"Ç2,835,000",1000
+T2012_1536,Spain,"Madrid, Spain","469, 545.125",07.05.2012-13.05.2012,"Mutua Madrid Open",64,Clay,"Ç3,090,150",1000
+T2013_1536,Spain,"Madrid, Spain","469, 545.125",06.05.2013-12.05.2013,"Mutua Madrid Open",64,Clay,"€3,368,265",1000
+T2009_1720,Thailand,"Bangkok, Thailand","748, 627.125",28.09.2009-04.10.2009,"PTT Thailand Open",32,Hard,"$551,000",250
+T2010_1720,Thailand,"Bangkok, Thailand","748, 627.125",27.09.2010-03.10.2010,"Thailand Open",32,Hard,"$551,000",250
+T2011_1720,Thailand,"Bangkok, Thailand","748, 627.125",26.09.2011-02.10.2011,"PTT Thailand Open",32,Hard,"$587,000",250
+T2012_1720,Thailand,"Bangkok, Thailand","748, 627.125",24.09.2012-30.09.2012,"Thailand Open",32,Hard,"$551,000",250
+T2013_1720,Thailand,"Bangkok, Thailand","748, 627.125",23.09.2013-29.09.2013,"Thailand Open",32,Hard,"$567,530",250
+T2009_2276,Croatia,"Zagreb, Croatia","523, 526.125",02.02.2009-08.02.2009,"PBZ Zagreb Indoors",32,Hard,"Ç398,250",250
+T2010_2276,Croatia,"Zagreb, Croatia","523, 526.125",01.02.2010-07.02.2010,"PBZ Zagreb Indoors",32,Hard,"Ç398,250",250
+T2011_2276,Croatia,"Zagreb, Croatia","523, 526.125",31.01.2011-06.02.2011,"PBZ Zagreb Indoors",32,Hard,"Ç398,250",250
+T2012_2276,Croatia,"Zagreb, Croatia","523, 526.125",30.01.2012-05.02.2012,"PBZ Zagreb Indoors",32,Hard,"Ç398,250",250
+T2013_2276,Croatia,"Zagreb, Croatia","523, 526.125",04.02.2013-10.02.2013,"PBZ Zagreb Indoors",32,Hard,"€410,200",250
+T2009_301,"New Zealand","Auckland, New Zealand","946, 766.125",12.01.2009-18.01.2009,"Heineken Open",32,Hard,"$429,000",250
+T2010_301,"New Zealand","Auckland, New Zealand","946, 766.125",11.01.2010-17.01.2010,"Heineken Open",32,Hard,"$355,500",250
+T2011_301,"New Zealand","Auckland, New Zealand","946, 766.125",10.01.2011-16.01.2011,"Heineken Open",32,Hard,"$398,250",250
+T2012_301,"New Zealand","Auckland, New Zealand","946, 766.125",09.01.2012-15.01.2012,"Heineken Open",32,Hard,"$398,250",250
+T2013_301,"New Zealand","Auckland, New Zealand","946, 766.125",07.01.2013-13.01.2013,"Heineken Open",32,Hard,"$433,400",250
+T2014_301,"New Zealand","Auckland, New Zealand","946, 766.125",06.01.2014-12.01.2014,"Heineken Open",32,Hard,"$455,190",250
+T2009_306,Austria,"Kitzbuehel, Austria","513, 518.125",18.05.2009-24.05.2009,"Interwetten Austrian Open Kitzbnhel",32,Clay,"Ç398,250",250
+T2009_308,Germany,"Munich, Germany","511, 514.125",04.05.2009-10.05.2009,"BMW Open by FWU AG",32,Clay,"Ç398,250",250
+T2010_308,Germany,"Munich, Germany","511, 514.125",03.05.2010-09.05.2010,"BMW Open by FWU AG",32,Clay,"Ç398,250",250
+T2011_308,Germany,"Munich, Germany","511, 514.125",25.04.2011-01.05.2011,"BMW Open by FWU AG",32,Clay,"Ç398,250",250
+T2012_308,Germany,"Munich, Germany","511, 514.125",30.04.2012-06.05.2012,"BMW Open by FWU AG",32,Clay,"Ç398,250",250
+T2013_308,Germany,"Munich, Germany","511, 514.125",29.04.2013-05.05.2013,"BMW Open by FWU AG",32,Clay,"€410,200",250
+T2009_311,"Great Britain","London, Great Britain","479, 499.125",08.06.2009-14.06.2009,"Aegon Championships",64,Grass,"Ç663,750",250
+T2010_311,"Great Britain","London, Great Britain","479, 499.125",07.06.2010-13.06.2010,"Aegon Championships",64,Grass,"Ç627,700",250
+T2011_311,"Great Britain","London, Great Britain","479, 499.125",06.06.2011-12.06.2011,"Aegon Championships",64,Grass,"Ç608,000",250
+T2012_311,"Great Britain","London, Great Britain","479, 499.125",11.06.2012-17.06.2012,"Aegon Championships",64,Grass,"Ç625,300",250
+T2013_311,"Great Britain","London, Great Britain","479, 499.125",10.06.2013-16.06.2013,"Aegon Championships",64,Grass,"€683,665",250
+T2009_314,Switzerland,"Gstaad, Switzerland","500, 523.125",27.07.2009-02.08.2009,"Crédit Agricole Suisse Open Gstaad",32,Clay,"Ç398,250",250
+T2010_314,Switzerland,"Gstaad, Switzerland","500, 523.125",26.07.2010-01.08.2010,"Crédit Agricole Suisse Open Gstaad",32,Clay,"Ç398,250",250
+T2011_314,Switzerland,"Gstaad, Switzerland","500, 523.125",25.07.2011-31.07.2011,"Crédit Agricole Suisse Open Gstaad",32,Clay,"Ç398,250",250
+T2012_314,Switzerland,"Gstaad, Switzerland","500, 523.125",16.07.2012-22.07.2012,"Crédit Agricole Suisse Open Gstaad",32,Clay,"Ç358,425",250
+T2013_314,Switzerland,"Gstaad, Switzerland","500, 523.125",22.07.2013-28.07.2013,"Crédit Agricole Suisse Open Gstaad",32,Clay,"€410,200",250
+T2009_315,"RI, U.S.A.","Newport, RI, USA","291, 538.125",06.07.2009-12.07.2009,"Hall of Fame Tennis Championships",32,Grass,"$442,500",250
+T2010_315,"RI, U.S.A.","Newport, RI, USA","291, 538.125",05.07.2010-11.07.2010,"Hall of Fame Tennis Championships",32,Grass,"$442,500",250
+T2011_315,"RI, U.S.A.","Newport, RI, USA","291, 538.125",04.07.2011-10.07.2011,"Hall of Fame Tennis Championships",32,Grass,"$442,500",250
+T2012_315,"RI, U.S.A.","Newport, RI, USA","291, 538.125",09.07.2012-15.07.2012,"Hall of Fame Tennis Championships",32,Grass,"$398,250",250
+T2013_315,"RI, U.S.A.","Newport, RI, USA","291, 538.125",08.07.2013-14.07.2013,"Hall of Fame Tennis Championships",32,Grass,"$455,775",250
+T2009_316,Sweden,"Bastad Sweden","515, 476.125",13.07.2009-19.07.2009,"SkiStar Swedish Open",32,Clay,"Ç398,250",250
+T2010_316,Sweden,"Bastad Sweden","515, 476.125",12.07.2010-18.07.2010,"SkiStar Swedish Open",32,Clay,"Ç398,250",250
+T2011_316,Sweden,"Bastad Sweden","515, 476.125",11.07.2011-17.07.2011,"SkiStar Swedish Open",32,Clay,"Ç398,250",250
+T2012_316,Sweden,"Bastad Sweden","515, 476.125",09.07.2012-15.07.2012,"SkiStar Swedish Open",32,Clay,"Ç358,425",250
+T2013_316,Sweden,"Bastad Sweden","515, 476.125",08.07.2013-14.07.2013,"SkiStar Swedish Open",32,Clay,"€433,770",250
+T2011_319,Austria,"Kitzbuhel Austria","513, 518.125",01.08.2011-07.08.2011,"bet-at-home Cup Kitzbühel",32,Clay,"Ç398,250",250
+T2012_319,Austria,"Kitzbuhel Austria","513, 518.125",23.07.2012-29.07.2012,"bet-at-home Cup Kitzbühel",32,Clay,"Ç358,425",250
+T2013_319,Austria,"Kitzbuhel Austria","513, 518.125",29.07.2013-04.08.2013,"bet-at-home Cup Kitzbühel",32,Clay,"€410,200",250
+T2009_321,Germany,"Stuttgart, Germany","505, 510.125",13.07.2009-19.07.2009,"MercedesCup",32,Clay,"Ç398,250",250
+T2010_321,Germany,"Stuttgart, Germany","505, 510.125",12.07.2010-18.07.2010,"MercedesCup",32,Clay,"Ç398,250",250
+T2011_321,Germany,"Stuttgart, Germany","505, 510.125",11.07.2011-17.07.2011,"MercedesCup",32,Clay,"Ç398,250",250
+T2012_321,Germany,"Stuttgart, Germany","505, 510.125",09.07.2012-15.07.2012,"MercedesCup",32,Clay,"Ç358,425",250
+T2013_321,Germany,"Stuttgart, Germany","505, 510.125",08.07.2013-14.07.2013,"MercedesCup",32,Clay,"€410,200",250
+T2009_328,Switzerland,"Basel, Switzerland","500, 519.125",02.11.2009-08.11.2009,"Swiss Indoors Basel",32,Hard,"Ç1,225,000",500
+T2010_328,Switzerland,"Basel, Switzerland","500, 519.125",01.11.2010-07.11.2010,"Swiss Indoors Basel",32,Hard,"Ç1,225,000",500
+T2011_328,Switzerland,"Basel, Switzerland","500, 519.125",31.10.2011-06.11.2011,"Swiss Indoors Basel",32,Hard,"Ç1,308,100",500
+T2012_328,Switzerland,"Basel, Switzerland","500, 519.125",22.10.2012-28.10.2012,"Swiss Indoors Basel",32,Hard,"Ç1,404,300",500
+T2013_328,Switzerland,"Basel, Switzerland","500, 519.125",21.10.2013-27.10.2013,"Swiss Indoors Basel",32,Hard,"€1,445,835",500
+T2009_329,Japan,"Tokyo, Japan","851, 562.125",05.10.2009-11.10.2009,"Rakuten Japan Open Tennis Championships",32,Hard,"$1,100,000",500
+T2010_329,Japan,"Tokyo, Japan","851, 562.125",04.10.2010-10.10.2010,"Rakuten Japan Open Tennis Championships",32,Hard,"$1,100,000",500
+T2011_329,Japan,"Tokyo, Japan","851, 562.125",03.10.2011-09.10.2011,"Rakuten Japan Open Tennis Championships",32,Hard,"$1,214,500",500
+T2012_329,Japan,"Tokyo, Japan","851, 562.125",01.10.2012-07.10.2012,"Rakuten Japan Open Tennis Championships",32,Hard,"$1,280,565",500
+T2013_329,Japan,"Tokyo, Japan","851, 562.125",30.09.2013-06.10.2013,"Rakuten Japan Open Tennis Championships",32,Hard,"$1,297,000",500
+T2009_3348,"CT, U.S.A.","New Haven, USA","285, 541.125",24.08.2009-30.08.2009,"Pilot Pen Tennis",64,Hard,"$663,750",250
+T2010_3348,"CT, U.S.A.","New Haven, USA","285, 541.125",23.08.2010-29.08.2010,"Pilot Pen Tennis",64,Hard,"$663,750",250
+T2009_337,Austria,"Vienna, Austria","523, 515.125",26.10.2009-01.11.2009,"Erste Bank Open",32,Hard,"Ç500,000",250
+T2010_337,Austria,"Vienna, Austria","523, 515.125",25.10.2010-31.10.2010,"Erste Bank Open",32,Hard,"Ç575,250",250
+T2011_337,Austria,"Vienna, Austria","523, 515.125",24.10.2011-30.10.2011,"Erste Bank Open",32,Hard,"Ç575,250",250
+T2012_337,Austria,"Vienna, Austria","523, 515.125",15.10.2012-21.10.2012,"Erste Bank Open",32,Hard,"Ç486,750",250
+T2013_337,Austria,"Vienna, Austria","523, 515.125",14.10.2013-20.10.2013,"Erste Bank Open",32,Hard,"€501,355",250
+T2009_338,Australia,"Sydney, Austria","883, 759.125",12.01.2009-18.01.2009,"Apia International Sydney",32,Hard,"$433,000",250
+T2010_338,Australia,"Sydney, Austria","883, 759.125",11.01.2010-17.01.2010,"Apia International Sydney",32,Hard,"$372,500",250
+T2011_338,Australia,"Sydney, Austria","883, 759.125",10.01.2011-16.01.2011,"Apia International Sydney",32,Hard,"$422,300",250
+T2012_338,Australia,"Sydney, Austria","883, 759.125",09.01.2012-15.01.2012,"Apia International Sydney",32,Hard,"$434,250",250
+T2013_338,Australia,"Sydney, Austria","883, 759.125",07.01.2013-13.01.2013,"Apia International Sydney",32,Hard,"$436,630",250
+T2014_338,Australia,"Sydney, Austria","883, 759.125",06.01.2014-12.01.2014,"Apia International Sydney",32,Hard,"$452,670",250
+T2009_339,Australia,"Brisbane, Australia","887, 739.125",05.01.2009-11.01.2009,"Brisbane International presented by Suncorp",32,Hard,"$433,000",250
+T2010_339,Australia,"Brisbane, Australia","887, 739.125",04.01.2010-10.01.2010,"Brisbane International presented by Suncorp",32,Hard,"$372,500",250
+T2011_339,Australia,"Brisbane, Australia","887, 739.125",03.01.2011-09.01.2011,"Brisbane International presented by Suncorp",32,Hard,"$422,300",250
+T2012_339,Australia,"Brisbane, Australia","887, 739.125",02.01.2012-08.01.2012,"Brisbane International presented by Suncorp",32,Hard,"$434,250",250
+T2013_339,Australia,"Brisbane, Australia","887, 739.125",31.12.2012-06.01.2013,"Brisbane International presented by Suncorp",32,Hard,"$436,630",250
+T2014_339,Australia,"Brisbane, Australia","887, 739.125",30.12.2013-05.01.2014,"Brisbane International presented by Suncorp",32,Hard,"$452,670",250
+T2009_341,France,"Metz, France","494, 510.125",21.09.2009-27.09.2009,"Moselle Open",32,Hard,"Ç398,250",250
+T2010_341,France,"Metz, France","494, 510.125",20.09.2010-26.09.2010,"Moselle Open",32,Hard,"Ç398,250",250
+T2011_341,France,"Metz, France","494, 510.125",19.09.2011-25.09.2011,"Moselle Open",32,Hard,"Ç398,250",250
+T2012_341,France,"Metz, France","494, 510.125",17.09.2012-23.09.2012,"Moselle Open",32,Hard,"Ç398,250",250
+T2013_341,France,"Metz, France","494, 510.125",16.09.2013-22.09.2013,"Moselle Open",32,Hard,"€410,200",250
+T2009_352,France,"Paris, France","488, 513.125",09.11.2009-15.11.2009,"BNP Paribas Masters",64,Hard,"Ç2,227,500",1000
+T2010_352,France,"Paris, France","488, 513.125",08.11.2010-14.11.2010,"BNP Paribas Masters",64,Hard,"Ç2,227,500",1000
+T2011_352,France,"Paris, France","488, 513.125",07.11.2011-13.11.2011,"BNP Paribas Masters",64,Hard,"Ç2,227,500",1000
+T2012_352,France,"Paris, France","488, 513.125",29.10.2012-04.11.2012,"BNP Paribas Masters",64,Hard,"Ç2,427,975",1000
+T2013_352,France,"Paris, France","488, 513.125",28.10.2013-03.11.2013,"BNP Paribas Masters",64,Hard,"€2,646,495",1000
+T2009_360,Morocco,"Casablanca Morocco","460, 568.125",06.04.2009-12.04.2009,"Grand Prix Hassan II",32,Clay,"Ç398,250",250
+T2010_360,Morocco,"Casablanca Morocco","460, 568.125",05.04.2010-11.04.2010,"Grand Prix Hassan II",32,Clay,"Ç398,250",250
+T2011_360,Morocco,"Casablanca Morocco","460, 568.125",04.04.2011-10.04.2011,"Grand Prix Hassan II",32,Clay,"Ç398,250",250
+T2012_360,Morocco,"Casablanca Morocco","460, 568.125",09.04.2012-15.04.2012,"Grand Prix Hassan II",32,Clay,"Ç398,250",250
+T2013_360,Morocco,"Casablanca Morocco","460, 568.125",08.04.2013-14.04.2013,"Grand Prix Hassan II",32,Clay,"€410,200",250
+T2009_375,France,"Montpellier, France","491, 534.125",26.10.2009-01.11.2009,"Open Sud de France",32,Hard,"Ç575,250",250
+T2010_375,France,"Montpellier, France","491, 534.125",25.10.2010-31.10.2010,"Open Sud de France",32,Hard,"Ç575,250",250
+T2012_375,France,"Montpellier, France","491, 534.125",30.01.2012-05.02.2012,"Open Sud de France",32,Hard,"Ç398,250",250
+T2013_375,France,"Montpellier, France","491, 534.125",04.02.2013-10.02.2013,"Open Sud de France",32,Hard,"€410,200",250
+T2009_402,"TN, U.S.A.","Memphis, USA","245, 561.125",16.02.2009-22.02.2009,"U.S. National Indoor Tennis Championships",32,Hard,"$1,100,000",500
+T2010_402,"TN, U.S.A.","Memphis, USA","245, 561.125",15.02.2010-21.02.2010,"U.S. National Indoor Tennis Championships",32,Hard,"$1,100,000",500
+T2011_402,"TN, U.S.A.","Memphis, USA","245, 561.125",14.02.2011-20.02.2011,"U.S. National Indoor Tennis Championships",32,Hard,"$1,100,000",500
+T2012_402,"TN, U.S.A.","Memphis, USA","245, 561.125",20.02.2012-26.02.2012,"U.S. National Indoor Tennis Championships",32,Hard,"$1,155,000",500
+T2013_402,"TN, U.S.A.","Memphis, USA","245, 561.125",18.02.2013-24.02.2013,"U.S. National Indoor Tennis Championships",32,Hard,"$1,212,750",500
+T2009_403,"FL, U.S.A.","Miami, USA","267, 591.125",23.03.2009-05.04.2009,"Sony Open Tennis",128,Hard,"$3,645,000",1000
+T2010_403,"FL, U.S.A.","Miami, USA","267, 591.125",22.03.2010-04.04.2010,"Sony Open Tennis",128,Hard,"$3,645,000",1000
+T2011_403,"FL, U.S.A.","Miami, USA","267, 591.125",21.03.2011-03.04.2011,"Sony Open Tennis",128,Hard,"$3,645,000",1000
+T2012_403,"FL, U.S.A.","Miami, USA","267, 591.125",19.03.2012-01.04.2012,"Sony Open Tennis",128,Hard,"$3,973,050",1000
+T2013_403,"FL, U.S.A.","Miami, USA","267, 591.125",18.03.2013-31.03.2013,"Sony Open Tennis",128,Hard,"$4,330,625",1000
+T2009_404,"CA, U.S.A.","Indian Wells, USA","170, 566.125",09.03.2009-22.03.2009,"BNP Paribas Open",128,Hard,"$3,645,000",1000
+T2010_404,"CA, U.S.A.","Indian Wells, USA","170, 566.125",08.03.2010-21.03.2010,"BNP Paribas Open",128,Hard,"$3,645,000",1000
+T2011_404,"CA, U.S.A.","Indian Wells, USA","170, 566.125",07.03.2011-20.03.2011,"BNP Paribas Open",128,Hard,"$3,645,000",1000
+T2012_404,"CA, U.S.A.","Indian Wells, USA","170, 566.125",05.03.2012-18.03.2012,"BNP Paribas Open",128,Hard,"$4,694,969",1000
+T2013_404,"CA, U.S.A.","Indian Wells, USA","170, 566.125",04.03.2013-17.03.2013,"BNP Paribas Open",128,Hard,"$5,191,943",1000
+T2009_407,"The Netherlands","Rotterdam, the NetherLands","493, 498.125",09.02.2009-15.02.2009,"ABN AMRO World Tennis Tournament",32,Hard,"Ç1,150,000",500
+T2010_407,"The Netherlands","Rotterdam, the NetherLands","493, 498.125",08.02.2010-14.02.2010,"ABN AMRO World Tennis Tournament",32,Hard,"Ç1,150,000",500
+T2011_407,"The Netherlands","Rotterdam, the NetherLands","493, 498.125",07.02.2011-13.02.2011,"ABN AMRO World Tennis Tournament",32,Hard,"Ç1,150,000",500
+T2012_407,"The Netherlands","Rotterdam, the NetherLands","493, 498.125",13.02.2012-19.02.2012,"ABN AMRO World Tennis Tournament",32,Hard,"Ç1,207,500",500
+T2013_407,"The Netherlands","Rotterdam, the NetherLands","493, 498.125",11.02.2013-17.02.2013,"ABN AMRO World Tennis Tournament",32,Hard,"€1,267,875",500
+T2009_410,Monaco,"Monte-Carlo, Monaco","499, 534.125",13.04.2009-19.04.2009,"Monte-Carlo Rolex Masters",64,Clay,"Ç2,227,500",1000
+T2010_410,Monaco,"Monte-Carlo, Monaco","499, 534.125",12.04.2010-18.04.2010,"Monte-Carlo Rolex Masters",64,Clay,"Ç2,227,500",1000
+T2011_410,Monaco,"Monte-Carlo, Monaco","499, 534.125",11.04.2011-17.04.2011,"Monte-Carlo Rolex Masters",64,Clay,"Ç2,227,500",1000
+T2012_410,Monaco,"Monte-Carlo, Monaco","499, 534.125",16.04.2012-22.04.2012,"Monte-Carlo Rolex Masters",64,Clay,"Ç2,427,975",1000
+T2013_410,Monaco,"Monte-Carlo, Monaco","499, 534.125",15.04.2013-21.04.2013,"Monte-Carlo Rolex Masters",64,Clay,"€2,646,495",1000
+T2009_414,Germany,"Hamburg, Germany","507, 494.125",20.07.2009-26.07.2009,"bet-at-home Open",64,Clay,"Ç1,000,000",500
+T2010_414,Germany,"Hamburg, Germany","507, 494.125",19.07.2010-25.07.2010,"bet-at-home Open",64,Clay,"Ç1,000,000",500
+T2011_414,Germany,"Hamburg, Germany","507, 494.125",18.07.2011-24.07.2011,"bet-at-home Open",64,Clay,"Ç1,000,000",500
+T2012_414,Germany,"Hamburg, Germany","507, 494.125",16.07.2012-22.07.2012,"bet-at-home Open",32,Clay,"Ç900,000",500
+T2013_414,Germany,"Hamburg, Germany","507, 494.125",15.07.2013-21.07.2013,"bet-at-home Open",64,Clay,"€1,102,500",500
+T2009_416,Italy,"Rome, Italy","512, 539.125",27.04.2009-03.05.2009,"Internazionali BNL d'Italia",64,Clay,"Ç2,227,500",1000
+T2010_416,Italy,"Rome, Italy","512, 539.125",26.04.2010-02.05.2010,"Internazionali BNL d'Italia",64,Clay,"Ç2,227,500",1000
+T2011_416,Italy,"Rome, Italy","512, 539.125",09.05.2011-15.05.2011,"Internazionali BNL d'Italia",64,Clay,"Ç2,227,500",1000
+T2012_416,Italy,"Rome, Italy","512, 539.125",14.05.2012-20.05.2012,"Internazionali BNL d'Italia",64,Clay,"Ç2,427,975",1000
+T2013_416,Italy,"Rome, Italy","512, 539.125",13.05.2013-19.05.2013,"Internazionali BNL d'Italia",64,Clay,"€2,646,495",1000
+T2009_418,"DC, USA","Washington D.C., USA","276, 551.125",03.08.2009-09.08.2009,"Citi Open",64,Hard,"$1,165,500",500
+T2010_418,"DC, USA","Washington D.C., USA","276, 551.125",02.08.2010-08.08.2010,"Citi Open",64,Hard,"$1,165,500",500
+T2011_418,"DC, USA","Washington D.C., USA","276, 551.125",01.08.2011-07.08.2011,"Citi Open",64,Hard,"$1,166,400",500
+T2012_418,"DC, USA","Washington D.C., USA","276, 551.125",30.07.2012-05.08.2012,"Citi Open",32,Hard,"$1,049,760",500
+T2013_418,"DC, USA","Washington D.C., USA","276, 551.125",29.07.2013-04.08.2013,"Citi Open",64,Hard,"$1,295,790",500
+T2009_419,"IN, U.S.A.","Indianapolis, USA","251, 544.125",20.07.2009-26.07.2009,"Indianapolis Tennis Championships",32,Hard,"$450,000",250
+T2009_421,"MontrTal, Canada","Montreal, Canada","280, 527.125",10.08.2009-16.08.2009,"Coupe Rogers",64,Hard,"$2,430,000",1000
+T2010_421,"Toronto, Canada","Toronto, Canada","270, 531.125",09.08.2010-15.08.2010,"Coupe Rogers",64,Hard,"$2,430,000",1000
+T2011_421,"Montreal, Canada","Montreal, Canada","280, 527.125",08.08.2011-14.08.2011,"Coupe Rogers",64,Hard,"$2,430,000",1000
+T2012_421,"Toronto, Ontario","Toronto, Canada","270, 531.125",06.08.2012-12.08.2012,"Coupe Rogers",64,Hard,"$2,648,700",1000
+T2013_421,"Montreal, Canada","Montreal, Canada","280, 527.125",05.08.2013-11.08.2013,"Coupe Rogers",64,Hard,"$2,887,085",1000
+T2009_422,"OH, U.S.A.","Cincinnati, USA","258, 548.125",17.08.2009-23.08.2009,"Western & Southern Open - Cincinnati",64,Hard,"$2,430,000",1000
+T2010_422,"OH, U.S.A.","Cincinnati, USA","258, 548.125",16.08.2010-22.08.2010,"Western & Southern Open - Cincinnati",64,Hard,"$2,430,000",1000
+T2011_422,"OH, U.S.A.","Cincinnati, USA","258, 548.125",15.08.2011-21.08.2011,"Western & Southern Open - Cincinnati",64,Hard,"$2,592,000",1000
+T2012_422,"OH, U.S.A.","Cincinnati, USA","258, 548.125",13.08.2012-19.08.2012,"Western & Southern Open - Cincinnati",64,Hard,"$2,825,280",1000
+T2013_422,"OH, U.S.A.","Cincinnati, USA","258, 548.125",12.08.2013-18.08.2013,"Western & Southern Open - Cincinnati",64,Hard,"$3,079,555",1000
+T2009_423,"CA, U.S.A.","Los Angeles, USA","162, 564.125",27.07.2009-02.08.2009,"Los Angeles",32,Hard,"$550,000",250
+T2010_423,"CA, U.S.A.","Los Angeles, USA","162, 564.125",26.07.2010-01.08.2010,"Farmers Classic",32,Hard,"$619,500",250
+T2011_423,"CA, U.S.A.","Los Angeles, USA","162, 564.125",25.07.2011-31.07.2011,"Farmers Classic",32,Hard,"$619,500",250
+T2012_423,"CA, U.S.A.","Los Angeles, USA","162, 564.125",23.07.2012-29.07.2012,"Farmers Classic",32,Hard,"$557,550",250
+T2009_424,"CA, U.S.A.","San Jose, USA","153, 551.125",09.02.2009-15.02.2009,"SAP Open",32,Hard,"$531,000",250
+T2010_424,"CA, U.S.A.","San Jose, USA","153, 551.125",08.02.2010-14.02.2010,"SAP Open",32,Hard,"$531,000",250
+T2011_424,"CA, U.S.A.","San Jose, USA","153, 551.125",07.02.2011-13.02.2011,"SAP Open",32,Hard,"$531,000",250
+T2012_424,"CA, U.S.A.","San Jose, USA","153, 551.125",13.02.2012-19.02.2012,"SAP Open",32,Hard,"$531,000",250
+T2013_424,"CA, U.S.A.","San Jose, USA","153, 551.125",11.02.2013-17.02.2013,"SAP Open",32,Hard,"$546,930",250
+T2009_425,Spain,"Barcelona, Spain","483, 541.125",20.04.2009-26.04.2009,"Barcelona Open Banc Sabadell",64,Clay,"Ç1,550,000",500
+T2010_425,Spain,"Barcelona, Spain","483, 541.125",19.04.2010-25.04.2010,"Barcelona Open Banc Sabadell",64,Clay,"Ç1,550,000",500
+T2011_425,Spain,"Barcelona, Spain","483, 541.125",18.04.2011-24.04.2011,"Barcelona Open Banc Sabadell",64,Clay,"Ç1,550,000",500
+T2012_425,Spain,"Barcelona, Spain","483, 541.125",23.04.2012-29.04.2012,"Barcelona Open Banc Sabadell",64,Clay,"Ç1,627,500",500
+T2013_425,Spain,"Barcelona, Spain","483, 541.125",22.04.2013-28.04.2013,"Barcelona Open Banc Sabadell",64,Clay,"€1,708,875",500
+T2009_429,Sweden,"Stockholm, Sweden","529, 463.125",19.10.2009-25.10.2009,"If Stockholm Open",32,Hard,"Ç531,000",250
+T2010_429,Sweden,"Stockholm, Sweden","529, 463.125",18.10.2010-24.10.2010,"If Stockholm Open",32,Hard,"Ç531,000",250
+T2011_429,Sweden,"Stockholm, Sweden","529, 463.125",17.10.2011-23.10.2011,"If Stockholm Open",32,Hard,"Ç531,000",250
+T2012_429,Sweden,"Stockholm, Sweden","529, 463.125",15.10.2012-21.10.2012,"If Stockholm Open",32,Hard,"Ç486,750",250
+T2013_429,Sweden,"Stockholm, Sweden","529, 463.125",14.10.2013-20.10.2013,"If Stockholm Open",32,Hard,"€530,165",250
+T2009_438,Russia,"Moscow, Russia","580, 424.125",19.10.2009-25.10.2009,"Kremlin Cup by Bank of Moscow",32,Hard,"$1,000,000",250
+T2010_438,Russia,"Moscow, Russia","580, 424.125",18.10.2010-24.10.2010,"Kremlin Cup by Bank of Moscow",32,Hard,"$1,000,000",250
+T2011_438,Russia,"Moscow, Russia","580, 424.125",17.10.2011-23.10.2011,"Kremlin Cup by Bank of Moscow",32,Hard,"$725,000",250
+T2012_438,Russia,"Moscow, Russia","580, 424.125",15.10.2012-21.10.2012,"Kremlin Cup by Bank of Moscow",32,Hard,"$673,150",250
+T2013_438,Russia,"Moscow, Russia","580, 424.125",14.10.2013-20.10.2013,"Kremlin Cup by Bank of Moscow",32,Hard,"$746,750",250
+T2009_439,Croatia,"Umag, Croatia","517, 528.125",27.07.2009-02.08.2009,"Vegeta Croatia Open Umag",32,Clay,"Ç398,250",250
+T2010_439,Croatia,"Umag, Croatia","517, 528.125",26.07.2010-01.08.2010,"Vegeta Croatia Open Umag",32,Clay,"Ç398,250",250
+T2011_439,Croatia,"Umag, Croatia","517, 528.125",25.07.2011-31.07.2011,"Vegeta Croatia Open Umag",32,Clay,"Ç398,250",250
+T2012_439,Croatia,"Umag, Croatia","517, 528.125",09.07.2012-15.07.2012,"Vegeta Croatia Open Umag",32,Clay,"Ç358,425",250
+T2013_439,Croatia,"Umag, Croatia","517, 528.125",22.07.2013-28.07.2013,"Vegeta Croatia Open Umag",32,Clay,"€410,200",250
+T2009_440,"The Netherlands","'s-Hertogenbosch, The Netherlands","495, 498.125",15.06.2009-21.06.2009,"Topshelf Open",32,Grass,"Ç398,250",250
+T2010_440,"The Netherlands","'s-Hertogenbosch, The Netherlands","495, 498.125",14.06.2010-20.06.2010,"Topshelf Open",32,Grass,"Ç398,250",250
+T2011_440,"The Netherlands","'s-Hertogenbosch, The Netherlands","495, 498.125",13.06.2011-19.06.2011,"Topshelf Open",32,Grass,"Ç398,250",250
+T2012_440,"The Netherlands","'s-Hertogenbosch, The Netherlands","495, 498.125",18.06.2012-24.06.2012,"Topshelf Open",32,Grass,"Ç398,250",250
+T2013_440,"The Netherlands","'s-Hertogenbosch, The Netherlands","495, 498.125",17.06.2013-23.06.2013,"Topshelf Open",32,Grass,"€410,200",250
+T2009_451,Qatar,"Doha Qatar","617, 592.125",05.01.2009-11.01.2009,"Qatar ExxonMobil Open",32,Hard,"$1,024,000",250
+T2010_451,Qatar,"Doha Qatar","617, 592.125",04.01.2010-10.01.2010,"Qatar ExxonMobil Open",32,Hard,"$1,024,000",250
+T2011_451,Qatar,"Doha Qatar","617, 592.125",03.01.2011-09.01.2011,"Qatar ExxonMobil Open",32,Hard,"$1,024,000",250
+T2012_451,Qatar,"Doha Qatar","617, 592.125",02.01.2012-08.01.2012,"Qatar ExxonMobil Open",32,Hard,"$1,024,000",250
+T2013_451,Qatar,"Doha Qatar","617, 592.125",31.12.2012-06.01.2013,"Qatar ExxonMobil Open",32,Hard,"$1,054,720",250
+T2014_451,Qatar,"Doha Qatar","617, 592.125",30.12.2013-05.01.2014,"Qatar ExxonMobil Open",32,Hard,"$1,096,910",250
+T2009_468,Portugal,"Oeiras Portugal","456, 551.125",04.05.2009-10.05.2009,"Portugal Open",32,Clay,"Ç398,250",250
+T2010_468,Portugal,"Oeiras Portugal","456, 551.125",03.05.2010-09.05.2010,"Portugal Open",32,Clay,"Ç398,250",250
+T2011_468,Portugal,"Oeiras Portugal","456, 551.125",25.04.2011-01.05.2011,"Portugal Open",32,Clay,"Ç398,250",250
+T2012_468,Portugal,"Oeiras Portugal","456, 551.125",30.04.2012-06.05.2012,"Portugal Open",32,Clay,"Ç398,250",250
+T2013_468,Portugal,"Oeiras Portugal","456, 551.125",29.04.2013-05.05.2013,"Portugal Open",32,Clay,"€410,200",250
+T2009_495,U.A.E.,"Dubai, UAE","628, 594.125",23.02.2009-01.03.2009,"Dubai Duty Free Tennis Championships",32,Hard,"$1,619,500",500
+T2010_495,U.A.E.,"Dubai, UAE","628, 594.125",22.02.2010-28.02.2010,"Dubai Duty Free Tennis Championships",32,Hard,"$1,619,500",500
+T2011_495,U.A.E.,"Dubai, UAE","628, 594.125",21.02.2011-27.02.2011,"Dubai Duty Free Tennis Championships",32,Hard,"$1,619,500",500
+T2012_495,U.A.E.,"Dubai, UAE","628, 594.125",27.02.2012-04.03.2012,"Dubai Duty Free Tennis Championships",32,Hard,"$1,700,475",500
+T2013_495,U.A.E.,"Dubai, UAE","628, 594.125",25.02.2013-03.03.2013,"Dubai Duty Free Tennis Championships",32,Hard,"$1,785,500",500
+T2009_496,France,"Marseille, France","494, 533.125",16.02.2009-22.02.2009,"Open 13",32,Hard,"Ç512,750",250
+T2010_496,France,"Marseille, France","494, 533.125",15.02.2010-21.02.2010,"Open 13",32,Hard,"Ç512,750",250
+T2011_496,France,"Marseille, France","494, 533.125",14.02.2011-20.02.2011,"Open 13",32,Hard,"Ç512,750",250
+T2012_496,France,"Marseille, France","494, 533.125",20.02.2012-26.02.2012,"Open 13",32,Hard,"Ç512,750",250
+T2013_496,France,"Marseille, France","494, 533.125",18.02.2013-24.02.2013,"Open 13",32,Hard,"€528,135",250
+T2009_499,"FL, U.S.A.","Delray Beach, USA","266, 590.125",23.02.2009-01.03.2009,"Delray Beach Open by The  Venetian® Las Vegas",32,Hard,"$442,500",250
+T2010_499,"FL, U.S.A.","Delray Beach, USA","266, 590.125",22.02.2010-28.02.2010,"Delray Beach Open by The  Venetian® Las Vegas",32,Hard,"$442,500",250
+T2011_499,"FL, U.S.A.","Delray Beach, USA","266, 590.125",21.02.2011-27.02.2011,"Delray Beach Open by The  Venetian® Las Vegas",32,Hard,"$442,500",250
+T2012_499,"FL, U.S.A.","Delray Beach, USA","266, 590.125",27.02.2012-04.03.2012,"Delray Beach Open by The  Venetian® Las Vegas",32,Hard,"$442,500",250
+T2013_499,"FL, U.S.A.","Delray Beach, USA","266, 590.125",25.02.2013-03.03.2013,"Delray Beach Open by The  Venetian® Las Vegas",32,Hard,"$455,775",250
+T2009_500,Germany,"Halle, Germany","513, 501.125",08.06.2009-14.06.2009,"Gerry Weber Open",32,Grass,"Ç663,750",250
+T2010_500,Germany,"Halle, Germany","513, 501.125",07.06.2010-13.06.2010,"Gerry Weber Open",32,Grass,"Ç663,750",250
+T2011_500,Germany,"Halle, Germany","513, 501.125",06.06.2011-12.06.2011,"Gerry Weber Open",32,Grass,"Ç663,750",250
+T2012_500,Germany,"Halle, Germany","513, 501.125",11.06.2012-17.06.2012,"Gerry Weber Open",32,Grass,"Ç663,750",250
+T2013_500,Germany,"Halle, Germany","513, 501.125",10.06.2013-16.06.2013,"Gerry Weber Open",32,Grass,"€683,665",250
+T2009_5012,"South Africa","Montecasino","555, 737.125",02.02.2009-08.02.2009,"SA Tennis Open",32,Hard,"$442,500",250
+T2010_5012,"South Africa","Montecasino","555, 737.125",01.02.2010-07.02.2010,"SA Tennis Open",32,Hard,"$442,500",250
+T2011_5012,"South Africa","Montecasino","555, 737.125",31.01.2011-06.02.2011,"SA Tennis Open",32,Hard,"$442,500",250
+T2009_5014,China,"Shanghai, China","805, 575.125",12.10.2009-18.10.2009,"Shanghai Rolex Masters",64,Hard,"$3,240,000",1000
+T2010_5014,China,"Shanghai, China","805, 575.125",11.10.2010-17.10.2010,"Shanghai Rolex Masters",64,Hard,"$3,240,000",1000
+T2011_5014,"Shanghai, China","Shanghai, China","805, 575.125",10.10.2011-16.10.2011,"Shanghai Rolex Masters",64,Hard,"$3,240,000",1000
+T2012_5014,"Shanghai, China","Shanghai, China","805, 575.125",08.10.2012-14.10.2012,"Shanghai Rolex Masters",64,Hard,"$3,531,600",1000
+T2013_5014,"Shanghai, China","Shanghai, China","805, 575.125",07.10.2013-13.10.2013,"Shanghai Rolex Masters",64,Hard,"$3,849,445",1000
+T2009_505,Chile,"Vina del Mar, Chile","290, 757.125",02.02.2009-08.02.2009,"Royal Guard Open Chile",32,Clay,"$445,000",250
+T2010_505,Chile,"Vina del Mar, Chile","290, 757.125",01.02.2010-07.02.2010,"Royal Guard Open Chile",32,Clay,"$398,250",250
+T2011_505,Chile,"Vina del Mar, Chile","290, 757.125",31.01.2011-06.02.2011,"Royal Guard Open Chile",32,Clay,"$398,250",250
+T2012_505,Chile,"Vina del Mar, Chile","290, 757.125",30.01.2012-05.02.2012,"Royal Guard Open Chile",32,Clay,"$398,250",250
+T2013_505,Chile,"Vina del Mar, Chile","290, 757.125",04.02.2013-10.02.2013,"Royal Guard Open Chile",32,Clay,"$410,200",250
+T2009_5053,Serbia,"Belgrade, Serbia","535, 530.125",04.05.2009-10.05.2009,"Serbia Open 2009",32,Clay,"Ç398,250",250
+T2010_5053,Serbia,"Belgrade, Serbia","535, 530.125",03.05.2010-09.05.2010,"Serbia Open",32,Clay,"Ç373,200",250
+T2011_5053,Serbia,"Belgrade, Serbia","535, 530.125",25.04.2011-01.05.2011,"Serbia Open",32,Clay,"Ç364,900",250
+T2012_5053,Serbia,"Belgrade, Serbia","535, 530.125",30.04.2012-06.05.2012,"Serbia Open",32,Clay,"Ç366,950",250
+T2009_506,Argentina,"Buenos Aires, Argentina","323, 762.125",16.02.2009-22.02.2009,"Copa Claro",32,Clay,"$531,000",250
+T2010_506,Argentina,"Buenos Aires, Argentina","323, 762.125",15.02.2010-21.02.2010,"Copa Claro",32,Clay,"$475,300",250
+T2011_506,Argentina,"Buenos Aires, Argentina","323, 762.125",14.02.2011-20.02.2011,"Copa Claro",32,Clay,"$478,900",250
+T2012_506,Argentina,"Buenos Aires, Argentina","323, 762.125",20.02.2012-26.02.2012,"Copa Claro",32,Clay,"$484,100",250
+T2013_506,Argentina,"Buenos Aires, Argentina","323, 762.125",18.02.2013-24.02.2013,"Copa Claro",32,Clay,"$493,670",250
+T2009_520,France,"Paris, France","488, 513.125",25.05.2009-07.06.2009,"Roland Garros",128,Clay,"Ç7,322,320",2000
+T2010_520,France,"Paris, France","488, 513.125",24.05.2010-06.06.2010,"Roland Garros",128,Clay,"Ç7,580,800",2000
+T2011_520,France,"Paris, France","488, 513.125",23.05.2011-05.06.2011,"Roland Garros",128,Clay,"Ç7,884,000",2000
+T2012_520,France,"Paris, France","488, 513.125",28.05.2012-10.06.2012,"Roland Garros",128,Clay,"Ç8,487,000",2000
+T2013_520,France,"Paris, France","488, 513.125",27.05.2013-09.06.2013,"Roland Garros",128,Clay,"€10,104,000",2000
+T2009_533,Brazil,"Sao Paulo, Brazil","357, 728.125",09.02.2009-15.02.2009,"Brasil Open 2014",32,Clay,"$505,000",250
+T2010_533,Brazil,"Sao Paulo, Brazil","357, 728.125",08.02.2010-14.02.2010,"Brasil Open 2014",32,Clay,"$442,500",250
+T2011_533,Brazil,"Sao Paulo, Brazil","357, 728.125",07.02.2011-13.02.2011,"Brasil Open 2014",32,Clay,"$470,200",250
+T2012_533,Brazil,"Sao Paulo, Brazil","357, 728.125",13.02.2012-19.02.2012,"Brasil Open 2014",32,Clay,"$475,300",250
+T2013_533,Brazil,"Sao Paulo, Brazil","357, 728.125",11.02.2013-17.02.2013,"Brasil Open 2014",32,Clay,"$455,775",250
+T2009_540,"Great Britain","London, Great Britain","479, 499.125",22.06.2009-05.07.2009,"Wimbledon",128,Grass,"ú5,616,600",2000
+T2010_540,"Great Britain","London, Great Britain","479, 499.125",21.06.2010-04.07.2010,"Wimbledon",128,Grass,"ú6,196,000",2000
+T2011_540,"Great Britain","London, Great Britain","479, 499.125",20.06.2011-03.07.2011,"Wimbledon",128,Grass,"ú6,631,000",2000
+T2012_540,"Great Britain","London, Great Britain","479, 499.125",25.06.2012-08.07.2012,"Wimbledon",128,Grass,"ú7,285,200",2000
+T2013_540,"Great Britain","London, Great Britain","479, 499.125",24.06.2013-07.07.2013,"Wimbledon",128,Grass,"£10,514,000",2000
+T2009_560,"NY, U.S.A.","New York, USA","283, 544.125",31.08.2009-13.09.2009,"US Open",128,Hard,"$9,756,000",2000
+T2010_560,"NY, U.S.A.","New York, USA","283, 544.125",30.08.2010-12.09.2010,"US Open",128,Hard,"$10,508,000",2000
+T2011_560,"NY, U.S.A.","New York, USA","283, 544.125",29.08.2011-11.09.2011,"US Open",128,Hard,"$10,768,000",2000
+T2012_560,"NY, U.S.A.","New York, USA","283, 544.125",27.08.2012-09.09.2012,"US Open",128,Hard,"$11,777,000",2000
+T2013_560,"NY, U.S.A.","New York, USA","283, 544.125",26.08.2013-08.09.2013,"US Open",128,Hard,"$16,102,000",2000
+T2009_568,Russia,"St. Petersburg, Russia","558, 462.125",26.10.2009-01.11.2009,"St. Petersburg Open",32,Hard,"$663,750",250
+T2010_568,Russia,"St. Petersburg, Russia","558, 462.125",25.10.2010-31.10.2010,"St. Petersburg Open",32,Hard,"$663,750",250
+T2011_568,Russia,"St. Petersburg, Russia","558, 462.125",24.10.2011-30.10.2011,"St. Petersburg Open",32,Hard,"$663,750",250
+T2012_568,Russia,"St. Petersburg, Russia","558, 462.125",17.09.2012-23.09.2012,"St. Petersburg Open",32,Hard,"$410,850",250
+T2013_568,Russia,"St. Petersburg, Russia","558, 462.125",16.09.2013-22.09.2013,"St. Petersburg Open",32,Hard,"$455,775",250
+T2009_573,Spain,"Valencia,Spain","479, 548.125",02.11.2009-08.11.2009,"Valencia Open 500",32,Hard,"Ç1,357,000",500
+T2010_573,Spain,"Valencia,Spain","479, 548.125",01.11.2010-07.11.2010,"Valencia Open 500",32,Hard,"Ç1,357,000",500
+T2011_573,Spain,"Valencia,Spain","479, 548.125",31.10.2011-06.11.2011,"Valencia Open 500",32,Hard,"Ç1,357,000",500
+T2012_573,Spain,"Valencia,Spain","479, 548.125",22.10.2012-28.10.2012,"Valencia Open 500",32,Hard,"Ç1,424,850",500
+T2013_573,Spain,"Valencia,Spain","479, 548.125",21.10.2013-27.10.2013,"Valencia Open 500",32,Hard,"€1,496,095",500
+T2009_580,Australia,"Melbourne, Australia","867, 771.125",19.01.2009-01.02.2009,"Australian Open",128,Hard,"A$10,712,240",2000
+T2010_580,Australia,"Melbourne, Australia","867, 771.125",18.01.2010-31.01.2010,"Australian Open",128,Hard,"A$11,048,640",2000
+T2011_580,Australia,"Melbourne, Australia","867, 771.125",17.01.2011-30.01.2011,"Australian Open",128,Hard,"A$11,414,950",2000
+T2012_580,Australia,"Melbourne, Australia","867, 771.125",16.01.2012-29.01.2012,"Australian Open",128,Hard,"A$11,806,550",2000
+T2013_580,Australia,"Melbourne, Australia","867, 771.125",14.01.2013-27.01.2013,"Australian Open",128,Hard,"A$13,803,160",2000
+T2014_580,Australia,"Melbourne, Australia","867, 771.125",13.01.2014-26.01.2014,"Australian Open",128,Hard,"A$33,000,000",2000
+T2009_6003,Malaysia,"Kuala Lumpur, Malaysian","754, 656.125",28.09.2009-04.10.2009,"Malaysian Open, Kuala Lumpur",32,Hard,"$850,000",250
+T2010_6003,Malaysia,"Kuala Lumpur, Malaysian","754, 656.125",27.09.2010-03.10.2010,"Malaysian Open, Kuala Lumpur",32,Hard,"$850,000",250
+T2011_6003,Malaysia,"Kuala Lumpur, Malaysian","754, 656.125",26.09.2011-02.10.2011,"Malaysian Open, Kuala Lumpur",32,Hard,"$850,000",250
+T2012_6003,Malaysia,"Kuala Lumpur, Malaysian","754, 656.125",24.09.2012-30.09.2012,"Malaysian Open, Kuala Lumpur",32,Hard,"$850,000",250
+T2013_6003,Malaysia,"Kuala Lumpur, Malaysian","754, 656.125",23.09.2013-29.09.2013,"Malaysian Open, Kuala Lumpur",32,Hard,"$875,500",250
+T2009_605,"London, England","London, Great Britain","479, 499.125",23.11.2009-29.11.2009,"Barclays ATP World Tour Finals",4,Hard,"$5,000,000",1500
+T2010_605,"London, England","London, Great Britain","479, 499.125",22.11.2010-28.11.2010,"Barclays ATP World Tour Finals",4,Hard,"$5,070,000",1500
+T2011_605,"Great Britain","London, Great Britain","479, 499.125",21.11.2011-27.11.2011,"Barclays ATP World Tour Finals",4,Hard,"$5,070,000",1500
+T2012_605,"Great Britain","London, Great Britain","479, 499.125",05.11.2012-11.11.2012,"Barclays ATP World Tour Finals",4,Hard,"$5,500,000",1500
+T2013_605,"Great Britain","London, Great Britain","479, 499.125",04.11.2013-10.11.2013,"Barclays ATP World Tour Finals",4,Hard,"$6,000,000",1500
+T2014_605,"Great Britain","London, Great Britain","479, 499.125",10.11.2014-16.11.2014,"Barclays ATP World Tour Finals",4,Hard,"$6,500,000",1500
+T2010_6116,"GA, USA","Atlanta, USA","254, 567.125",19.07.2010-25.07.2010,"BB&T Atlanta Open",32,Hard,"$531,000",250
+T2011_6116,"GA, USA","Atlanta, USA","254, 567.125",18.07.2011-24.07.2011,"BB&T Atlanta Open",32,Hard,"$531,000",250
+T2012_6116,"GA, USA","Atlanta, USA","254, 567.125",16.07.2012-22.07.2012,"BB&T Atlanta Open",32,Hard,"$477,900",250
+T2013_6116,"GA, USA","Atlanta, USA","254, 567.125",22.07.2013-28.07.2013,"BB&T Atlanta Open",32,Hard,"$546,930",250
+T2010_6120,France,"Nice, France","499, 532.125",17.05.2010-23.05.2010,"Open de Nice Côte d’Azur",32,Clay,"Ç398,250",250
+T2011_6120,France,"Nice, France","499, 532.125",16.05.2011-22.05.2011,"Open de Nice Côte d’Azur",32,Clay,"Ç398,250",250
+T2012_6120,France,"Nice, France","499, 532.125",21.05.2012-27.05.2012,"Open de Nice Côte d’Azur",32,Clay,"Ç398,250",250
+T2013_6120,France,"Nice, France","499, 532.125",20.05.2013-26.05.2013,"Open de Nice Côte d’Azur",32,Clay,"€410,200",250
+T2009_615,Dnsseldorf,"Dusseldorf, Germany","499, 501.125",18.05.2009-24.05.2009,"ARAG ATP World Team Championship",12,Clay,"Ç750,000",250
+T2010_615,Dnsseldorf,"Dusseldorf, Germany","499, 501.125",17.05.2010-23.05.2010,"Dnsseldorf World Team Cup",12,Clay,"Ç750,000",250
+T2011_615,Dnsseldorf,"Dusseldorf, Germany","499, 501.125",16.05.2011-22.05.2011,"Power Horse World Team Cup",8,Clay,"Ç800,000",250
+T2012_615,Dusseldorf,"Dusseldorf, Germany","499, 501.125",21.05.2012-27.05.2012,"Power Horse World Team Cup",10,Clay,"Ç800,000",250
+T2011_6242,"NC, U.S.A.","Winston Salem, USA","265, 560.125",22.08.2011-28.08.2011,"Winston-Salem Open",64,Hard,"$553,125",250
+T2012_6242,"NC, U.S.A.","Winston Salem, USA","265, 560.125",20.08.2012-26.08.2012,"Winston-Salem Open",64,Hard,"$553,125",250
+T2013_6242,"NC, U.S.A.","Winston Salem, USA","265, 560.125",19.08.2013-25.08.2013,"Winston-Salem Open",64,Hard,"$575,250",250
+T2013_6710,Germany,"Dusseldorf, Germany","499, 501.125",20.05.2013-26.05.2013,"Düsseldorf Open",32,Clay,"€410,200",250
+T2013_6718,Colombia,"Bogota, Colombia","283, 652.125",15.07.2013-21.07.2013,"Claro Open Colombia",32,Hard,"$638,085",250
+T2009_717,"TX, U.S.A.","Houston, USA","227, 581.125",06.04.2009-12.04.2009,"Fayez Sarofim & Co. US Men's Clay Court Championship",32,Clay,"$442,500",250
+T2010_717,"TX, U.S.A.","Houston, USA","227, 581.125",05.04.2010-11.04.2010,"Fayez Sarofim & Co. US Men's Clay Court Championship",32,Clay,"$442,500",250
+T2011_717,"TX, U.S.A.","Houston, USA","227, 581.125",04.04.2011-10.04.2011,"Fayez Sarofim & Co. US Men's Clay Court Championship",32,Clay,"$442,500",250
+T2012_717,"TX, U.S.A.","Houston, USA","227, 581.125",09.04.2012-15.04.2012,"Fayez Sarofim & Co. US Men's Clay Court Championship",32,Clay,"$442,500",250
+T2013_717,"TX, U.S.A.","Houston, USA","227, 581.125",08.04.2013-14.04.2013,"Fayez Sarofim & Co. US Men's Clay Court Championship",32,Clay,"$455,775",250
+T2009_741,"Great Britain","Eastbourne, Great Britain","481, 504.125",15.06.2009-21.06.2009,"Aegon International",32,Grass,"Ç398,250",250
+T2010_741,"Great Britain","Eastbourne, Great Britain","481, 504.125",14.06.2010-20.06.2010,"Aegon International",32,Grass,"Ç405,000",250
+T2011_741,"Great Britain","Eastbourne, Great Britain","481, 504.125",13.06.2011-19.06.2011,"Aegon International",32,Grass,"Ç410,925",250
+T2012_741,"Great Britain","Eastbourne, Great Britain","481, 504.125",18.06.2012-24.06.2012,"Aegon International",32,Grass,"Ç403,950",250
+T2013_741,"Great Britain","Eastbourne, Great Britain","481, 504.125",17.06.2013-23.06.2013,"Aegon International",32,Grass,"€468,460",250
+T2009_747,China,"Beijing, China","790, 547.125",05.10.2009-11.10.2009,"China Open",32,Hard,"$2,100,500",500
+T2010_747,China,"Beijing, China","790, 547.125",04.10.2010-10.10.2010,"China Open",32,Hard,"$2,100,000",500
+T2011_747,China,"Beijing, China","790, 547.125",03.10.2011-09.10.2011,"China Open",32,Hard,"$2,100,000",500
+T2012_747,China,"Beijing, China","790, 547.125",01.10.2012-07.10.2012,"China Open",32,Hard,"$2,205,000",500
+T2013_747,China,"Beijing, China","790, 547.125",30.09.2013-06.10.2013,"China Open",32,Hard,"$2,315,250",500
+T2009_773,Romania,"Bucharest, Romania","548, 529.125",21.09.2009-27.09.2009,"BRD Nastase Tiriac Trophy",32,Clay,"Ç398,250",250
+T2010_773,Romania,"Bucharest, Romania","548, 529.125",20.09.2010-26.09.2010,"BRD Nastase Tiriac Trophy",32,Clay,"Ç368,450",250
+T2011_773,Romania,"Bucharest, Romania","548, 529.125",19.09.2011-25.09.2011,"BRD Nastase Tiriac Trophy",32,Clay,"Ç371,200",250
+T2012_773,Romania,"Bucharest, Romania","548, 529.125",23.04.2012-29.04.2012,"BRD Nastase Tiriac Trophy",32,Clay,"Ç398,250",250
+T2013_773,Romania,"Bucharest, Romania","548, 529.125",22.04.2013-28.04.2013,"BRD Nastase Tiriac Trophy",32,Clay,"€410,200",250
+T2009_807,Mexico,"Acapulco, Mexico","213, 616.125",23.02.2009-01.03.2009,"Abierto Mexicano Telcel",32,Clay,"$1,100,000",500
+T2010_807,Mexico,"Acapulco, Mexico","213, 616.125",22.02.2010-28.02.2010,"Abierto Mexicano Telcel",32,Clay,"$955,000",500
+T2011_807,Mexico,"Acapulco, Mexico","213, 616.125",21.02.2011-27.02.2011,"Abierto Mexicano Telcel",32,Clay,"$1,100,000",500
+T2012_807,Mexico,"Acapulco, Mexico","213, 616.125",27.02.2012-04.03.2012,"Abierto Mexicano Telcel",32,Clay,"$1,155,000",500
+T2013_807,Mexico,"Acapulco, Mexico","213, 616.125",25.02.2013-03.03.2013,"Abierto Mexicano Telcel",32,Clay,"$1,212,750",500
+T2009_891,India,"Chennai, India","694, 626.125",05.01.2009-11.01.2009,"Aircel Chennai Open",32,Hard,"$398,250",250
+T2010_891,India,"Chennai, India","694, 626.125",04.01.2010-10.01.2010,"Aircel Chennai Open",32,Hard,"$398,250",250
+T2011_891,India,"Chennai, India","694, 626.125",03.01.2011-09.01.2011,"Aircel Chennai Open",32,Hard,"$398,250",250
+T2012_891,India,"Chennai, India","694, 626.125",02.01.2012-08.01.2012,"Aircel Chennai Open",32,Hard,"$398,250",250
+T2013_891,India,"Chennai, India","694, 626.125",31.12.2012-06.01.2013,"Aircel Chennai Open",32,Hard,"$385,150",250
+T2014_891,India,"Chennai, India","694, 626.125",30.12.2013-05.01.2014,"Aircel Chennai Open",32,Hard,"$399,985",250
+T2012_96,"Great Britain","London, Great Britain","479, 499.125",30.07.2012-05.08.2012,"London Olympics",64,Grass,"ú0",750
