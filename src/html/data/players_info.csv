@@ -1,4 +1,4 @@
-playerID,name,age,birthplace,residence,height,weight,plays,turned,coach
+id,name,age,birthplace,residence,height,weight,plays,turned,coach
 P596,"Gerry Perry","66 (01.06.1947)","Springfield, MO, USA",,"5'6\" (168 cm)","150 lbs (68 kg)","Unknown",,
 P624,"Philipp Petzschner","29 (24.03.1984)","Bayreuth, Germany","Pulheim, Germany","6'1\" (185 cm)","170 lbs (77 kg)","Right-handed","2001","Stefan Eriksson"
 Z272,"Ze Zhang","23 (04.07.1990)","Nanjing, China","Nanjing, China","6'2\" (188 cm)","183 lbs (83 kg)","Right-handed","2005","Guillaume Peyre"
