@@ -2,7 +2,8 @@
 {"name":"AusOpen", "id": "T2013_338", "type":"Hard","lat":-37.814107,"lng":144.963280,"score":250},
 {"name":"Shanghai Masters", "id": "T2013_5014", "type":"Hard","lat":31.230416, "lng":121.473701, "score":250},
 {"name":"China Open", "id": "T2013_747", "type":"Hard","lat":39.904030, "lng":116.407526, "score":2000},
-{"name":"US Open", "id": "T2013_560", "type":"Hard","lat":40.714353, "lng":-74.005973, "score":250}
+{"name":"US Open", "id": "T2013_560", "type":"Hard","lat":40.714353, "lng":-74.005973, "score":250},
+{"name":"PP", "id": "T2013_230", "type":"Hard","lat":10.714353, "lng":-34.005973, "score":500}
 ],
 "players":[
 {"name":"Rafael Nadal", "id": "N409"},
