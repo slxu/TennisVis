@@ -13,7 +13,6 @@ var formatNumber = d3.format(",d"),
   formatDate = d3.time.format("%B %d, %Y"),
   formatTime = d3.time.format("%I:%M %p");
 
-
 queue()
   .defer(d3.csv, "data/geodata.csv")
   .defer(d3.csv, "data/event_list.csv")
@@ -63,19 +62,41 @@ queue()
       return 0;
     }
 
+    function reduceSetAdd(p, v) {
+      var old = p.get(v.eventID);
+      if (old)
+        p.put(v.eventID,old+1);
+      else
+        p.put(v.eventID,1);
+        
+      return p;
+    }
+
+    function reduceSetRemove(p, v) {
+      var old = p.get(v.eventID);
+      if (old)
+        p.put(v.eventID,old-1);
+       return p;
+    }
+
+    function reduceSetInitial() {
+      return new Map;
+    }
+
+    function orderSetSize(p) {
+      return p.size;
+    }
+
+
       // Create the crossfilter for the relevant dimensions and groups.
       var eventPoints = crossfilter(points),
           all = eventPoints.groupAll(),
           date = eventPoints.dimension(function(d) { return d.endDate; }),
-          dates = date.group(),
-          date2 = eventPoints.dimension(function(d) { return d.endDate; }),
-          dates2 = date.group(),
+          dates = date.group().reduce(reduceSetAdd,reduceSetRemove,reduceSetInitial).order(orderSetSize),
           eventID = eventPoints.dimension(function(d) {return d.eventID;}),
           playerID = eventPoints.dimension(function(d) {return d.playerID;}),
           eventIDs = eventID.group(),
           playerIDs = playerID.group().reduce(reduceAdd,reduceRemove,reduceInitial);
-
-
 
 
       var charts = [
@@ -193,13 +214,14 @@ queue()
             brushDirty,
             dimension,
             group,
+            reduce,
             round;
 
         function chart(div) {
           var width = x.range()[1],
               height = y.range()[0];
 
-          y.domain([0, group.top(1)[0].value]);
+          y.domain([0, group.top(1)[0].value.size]);
 
           div.each(function() {
             var div = d3.select(this),
@@ -229,7 +251,7 @@ queue()
                   .data(["background", "foreground"])
                 .enter().append("path")
                   .attr("class", function(d) { return d + " bar"; })
-                  .datum(group.all());
+                  .datum(group.all()) ;
 
               g.selectAll(".foreground.bar")
                   .attr("clip-path", "url(#clip-" + id + ")");
@@ -272,7 +294,7 @@ queue()
                 d;
             while (++i < n) {
               d = groups[i];
-              path.push("M", x(d.key), ",", height, "V", y(d.value), "h9V", height);
+              path.push("M", x(d.key), ",", height, "V", y(d.value.size), "h9V", height);
             }
             return path.join("");
           }
