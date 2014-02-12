@@ -1,10 +1,3 @@
-var margin = {top: 0, right: 0, bottom: 0, left: 0},
-    width = 1600 - 1060,
-    height = 600;//960 - margin.top - margin.bottom;
- 
-var formatNumber = d3.format(",.0f"),    // zero decimal places
-  format = function(d) { return formatNumber(d) + " " + units; },
-  color = d3.scale.category20();
 
 
 var graph={
@@ -80,8 +73,26 @@ d3.csv("data/geodata.csv", function(error,cities){
 });
 
 
+console.log("playerID2Info: %o",playerID2Info);
+//alert(playerID2Info.size);
 
+d3.json("data/data1.json", function(error, graph) {
+  //d3.json("data/data2.json", function(error, graph) {
 
+  var toursData = graph.tournaments;
+  var playersData = graph.players;
+  var linksData = graph.links;
+
+  mapgraph.init();
+
+  /*d3.json("data/data2.json", function(error, graph) {
+    var toursData = graph.tournaments;
+    var playersData = graph.players;
+    var linksData = graph.links;
+
+    mapgraph.update();
+  });*/
+}); 
 
 //d3.json("data/data2.json", function(error, graph) {
 //
@@ -98,6 +109,7 @@ d3.csv("data/geodata.csv", function(error,cities){
 //
 //  mapgraph.update();
 //});
+
 
 // (It's CSV, but GitHub Pages only gzip's JSON at the moment.)
 d3.csv("data/points.json", function(error, points) {
