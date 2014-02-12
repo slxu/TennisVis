@@ -91,8 +91,8 @@ d3.mapgraph = function() {
         prj = latLngToXY(geo.lat, geo.lng);
         tour.cx = prj[0];
         tour.cy = prj[1];
-        // tour.r = Math.sqrt(tour.score / 250.0) * 8;
-        tour.r = 6;
+        tour.r = Math.sqrt(tour.score/250)*3+1;
+        //tour.r = 6;
         tour.links = [link];
 
         toursData.push(tour);
@@ -174,6 +174,7 @@ d3.mapgraph = function() {
         .attr('class', function(d) { return 'eventlink source-' + d.source.id + ' target-' + d.target.id; })
         .attr('d', newPath)
         //.style('stroke-width', function(d) { return Math.max(3, d.point/50); })
+        .style()
         .append("title")
         .text(function(d) {
       	return d.source.name + " → " + 
@@ -324,7 +325,7 @@ d3.mapgraph = function() {
       .style('display', 'inline');
 
     svg.selectAll('.'+d.id).select('circle')
-      .attr('r', 12)
+      .attr('r', d.r)
       .style('stroke-width', 2);
 
     svg.selectAll('.'+d.id).select('text')
@@ -339,7 +340,7 @@ d3.mapgraph = function() {
       .style('display', 'none');
     if (focusTour != d) {
       svg.selectAll('.'+d.id).select('circle')
-        .attr('r', 6)
+        .attr('r', d.r)
         .style('stroke-width', .5);
       svg.selectAll('.'+d.id).select('text')
        .attr('display', 'none');
@@ -355,7 +356,7 @@ d3.mapgraph = function() {
       svg.selectAll('path.eventlink.source-' + focusTour.id)
         .style('display', 'none');
       svg.selectAll('.'+focusTour.id).select('circle')
-        .attr('r', 6)
+        .attr('r', d.r)
         .style('stroke-width', .5);
       svg.selectAll('.'+focusTour.id).select('text')
        .attr('display', 'none');

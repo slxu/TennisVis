@@ -123,10 +123,6 @@ queue()
       var list = d3.selectAll(".list")
           .data([eventListF]);
 
-      // Render the total.
-      d3.selectAll("#total")
-          .text(formatNumber(eventPoints .size()));
-
       renderAll();
 
       // Renders the specified chart or list.
@@ -138,7 +134,6 @@ queue()
       function renderAll() {
         chart.each(render);
         list.each(render);
-        d3.select("#active").text(formatNumber(all.value()));
       }
 
       // Like d3.time.format, but faster.
@@ -222,9 +217,9 @@ queue()
       function barChart() {
         if (!barChart.id) barChart.id = 0;
 
-        var margin = {top: 10, right: 10, bottom: 20, left: 10},
+        var margin = {top: 0, right: 10, bottom: 20, left: 10},
             x,
-            y = d3.scale.linear().range([100, 0]),
+            y = d3.scale.linear().range([80, 0]),
             id = barChart.id++,
             axis = d3.svg.axis().orient("bottom"),
             brush = d3.svg.brush(),
