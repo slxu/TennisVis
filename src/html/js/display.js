@@ -11,8 +11,8 @@ queue()
   .defer(d3.csv, "data/geodata.csv")
   .defer(d3.csv, "data/event_list.csv")
   .defer(d3.csv, "data/players_info.csv")
-  .defer(d3.csv, "data/points.json")
-  .await(function(error, cities, eventList, playersInfo, points) {
+  //.defer(d3.csv, "data/points.json")
+  .await(function(error, cities, eventList, playersInfo) {
     cities.forEach(function(d, i) {
       d.index = i;
       d.lat = +d.lat;
@@ -37,7 +37,7 @@ queue()
       .globalIDToPlayer(playerID2Info)
       .cityToGeo(city2Geo);
 
-        });
+  });
 
 // (It's CSV, but GitHub Pages only gzip's JSON at the moment.)
 d3.csv("data/points.json", function(error, points) {
