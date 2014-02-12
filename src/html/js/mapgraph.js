@@ -211,6 +211,7 @@ d3.mapgraph = function() {
     players.append('circle')
       .attr('class', function(d){ return 'player ' + d.id; })
       .attr('r', function(d){ return d.r; })
+      .attr("cy", function(d){ return d.r*0.3; })
       .attr('fill', function(d){ return "url(#photo-" + d.id + ")"; })
       .attr('stroke', 'none')
       .on('mouseover', playerMouseover)
