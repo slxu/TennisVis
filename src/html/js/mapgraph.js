@@ -12,14 +12,6 @@ d3.mapgraph = function() {
       focusTour = null,
       svg = d3.select("svg"),
       color = d3.scale.category20();
-  var tours;
-
-  mapgraph.toursData = function(_) {
-    if (!arguments.length) return toursData;
-    toursData = _;
-    focusTour = null;
-    return mapgraph;
-  };
 
   mapgraph.globalIDToPlayer = function(_) {
     if (!arguments.length) return globalIDToPlayer;
@@ -39,48 +31,81 @@ d3.mapgraph = function() {
     return mapgraph;
   };
 
+  mapgraph.toursData = function(_) {
+    if (!arguments.length) return toursData;
+    toursData = _;
+    focusTour = null;
+    processTourData();
+    return mapgraph;
+  };
+
   mapgraph.playersData = function(_) {
     if (!arguments.length) return playersData;
     playersData = _;
     focusPlayer = null;
+    processPlayerData();
     return mapgraph;
   };
 
   mapgraph.linksData = function(_) {
     if (!arguments.length) return linksData;
     linksData = _;
+    processLinkData();
     return mapgraph;
   };
 
   mapgraph.init = function() {
-    processTourData();
-    processPlayerData();
-    processLinkData();
+    drawLink();
+    drawTour();
+    drawPlayer();
+    return mapgraph;
+  }
+
+  mapgraph.update = function() {
+    svg.selectAll('.tour_group')
+      .data([]).exit().remove();
+    svg.selectAll('.player_group')
+      .data([]).exit().remove();
+    svg.selectAll('.link_group')
+      .data([]).exit().remove();
 
     drawLink();
     drawTour();
     drawPlayer();
+    return mapgraph;
   }
 
-  mapgraph.update = function() {
-    processTourData();
-    updateTour();
+  mapgraph.updateTour = function() {
+    svg.selectAll('.tour_group')
+      .data([]).exit().remove();
+
+    drawTour();
+    return mapgraph;
+  };
+
+  mapgraph.updatePlayer = function() {
+    svg.selectAll('.player_group')
+      .data([]).exit().remove();
+
+    drawPlayer();
+    return mapgraph;
   };
 
   mapgraph.updateLink = function() {
-    processLinkData();
-    updateLink();
-    updatePlayer();
+    svg.selectAll('.link_group')
+      .data([]).exit().remove();
+    
+    drawLink();
+    return mapgraph;
   };
 
   function processTourData() {
     var newToursData=[];
+
     toursData.forEach(function(tourID) {
       var tour = jQuery.extend(true, {}, globalIDToTour[tourID]); 
       newToursData.push(tour);
       idToTour[tourID] = tour;
-      console.log(tour);
-      console.log(tour.city);
       geo = cityToGeo.get(tour.city);
       prj = latLngToXY(geo.lat, geo.lng);
       tour.cx = prj[0];
@@ -106,6 +131,7 @@ d3.mapgraph = function() {
   }
 
   function processLinkData() {
+
     toursData.forEach(function(tour) {
       tour.links = [];
     });
@@ -142,35 +168,33 @@ d3.mapgraph = function() {
   }
 
   function drawLink() {
-    var links = svg.append('g').selectAll('.eventlink')
+    var links = svg.append('g')
+        .attr('class', 'link_group')
+      .selectAll('.eventlink')
         .data(linksData);
 
     links.enter().append('path')
         .attr('class', function(d) { return 'eventlink source-' + d.source.id + ' target-' + d.target.id; })
         .attr('d', newPath)
         .style('stroke-width', function(d) { return d.value/10; });
-
-    links.exit().remove();
   }
 
   function drawTour() {
     // add tournaments on the map
-    tours = svg.selectAll('.tour')
+    var tours = svg.append('g')
+        .attr('class', 'tour_group')
+      .selectAll('.tour')
         .data(toursData);
 
     tours.enter().append('g')
         .attr('class', 'tour')
         .attr('transform', function(d) {
-          //console.log(d);
           return 'translate(' + d.cx + ',' + d.cy + ')';
         })
 
-
     tours.append('circle')
-      //.append('circle')
-        //.data(function(d){ return [d]; })
       .attr('class', function(d){ return d.id; })
-      .attr('r', function(d){ console.log(d); return d.r; })
+      .attr('r', function(d){ /*console.log(d);*/ return d.r; })
       .attr('fill', function(d) {
         return d.color = color(d.type.replace(/ .*/, "")); 
       })
@@ -179,48 +203,25 @@ d3.mapgraph = function() {
       .on('mouseout', tourMouseout)
       .on('click', tourClick);
 
-    /*tours.append('circle')
+    tours.append('circle')
       .attr('r', 2)
       .attr('fill', 'white')
       .attr('stroke', '#222')
-      .attr('stroke-width', 1);*/
+      .attr('stroke-width', 1);
 
     tours.append("text")
       .attr("x", function(d){ return d.r+5; })
       .attr("y", 5)
       .text(function(d){ return d.name; });
-
-    tours.exit().remove();
-  }
-
-  function updateTour() {
-    console.log('updateTour');
-    tour.data([]).exit().remove();
-    return;
-
-    console.log(toursData);
-    tours
-      .data(toursData)
-      .attr('transform', function(d) {
-          return 'translate(' + d.cx + ',' + d.cy + ')';
-        });
-    
-    console.log(tours);
-    //console.log(tours.selectAll('g'));
-    console.log(tours.selectAll('circle'));
-
-    var sel = tours.selectAll('circle')
-        .data(function(d) { return [d]; });
-    console.log(sel);
-    sel.enter().append('circle')
-        //.data(toursData)
-        .attr('r', function(d){ 
-          console.log(d); return d.r; });
   }
 
   function drawPlayer() {
     // add photos
-    var photos = svg.append('defs').selectAll('pattern')
+    var group = svg.append('g')
+        .attr('class', 'player_group');
+
+    var photos = group.append('defs')
+      .selectAll('pattern')
         .data(playersData);
 
     photos.enter().append('pattern')
@@ -231,14 +232,12 @@ d3.mapgraph = function() {
         .attr("width", function(d){ return d.r*2; })
         .attr("height", function(d){ return d.r*2/148*198; })
         .append('image')
-          //.attr("x", function(d){ return d.cx - d.r; })
-          //.attr("y", function(d){ return d.cy - d.r; })
           .attr("width", function(d){ return d.r*2; })
           .attr("height", function(d){ return d.r*2/148*198; })
           .attr("xlink:href", function(d){ return "photos/"+d.id+".jpg"; });
 
     // add players
-    var players = svg.append('g').selectAll('.player')
+    var players = group.selectAll('.player')
         .data(playersData);
 
     players.enter().append('g')
@@ -248,7 +247,7 @@ d3.mapgraph = function() {
         });
 
     players.append('circle')
-      .attr('class', function(d){ return 'player ' + d.id; })
+      .attr('class', function(d){ return d.id; })
       .attr('r', function(d){ return d.r; })
       .attr("cy", function(d){ return d.r*0.3; })
       .attr('fill', function(d){ return "url(#photo-" + d.id + ")"; })
@@ -285,9 +284,6 @@ d3.mapgraph = function() {
       .attr("y", function(d){ return d.r+25; })
       .attr("text-anchor", "middle")
       .text(function(d){ return Math.floor(d.score); });
-
-    photos.exit().remove();
-    players.exit().remove();
   }
 
   function newPath(d) {
@@ -308,7 +304,8 @@ d3.mapgraph = function() {
   function tourMouseover(d) {
     svg.selectAll('path.eventlink.source-' + d.id)
       .style('display', 'inline');
-    svg.select('circle.g.' + d.id)
+
+    svg.selectAll('circle.'+d.id)
       .style('stroke-width', 3);
   };
 
@@ -319,14 +316,14 @@ d3.mapgraph = function() {
       })
       .style('display', 'none');
     if (focusTour != d)
-      svg.select('circle.g.' + d.id)
+      svg.selectAll('circle.'+d.id)
         .style('stroke-width', 0);
   };
 
   function playerMouseover(d) {
     svg.selectAll('path.eventlink.target-' + d.id)
       .style('display', 'inline');
-    svg.selectAll('circle.player.'+d.id)
+    svg.selectAll('circle.'+d.id)
       .style('stroke-width', 3);
   };
 
@@ -337,7 +334,7 @@ d3.mapgraph = function() {
       })
       .style('display', 'none');
     if (focusPlayer != d)
-      svg.select('circle.player.' + d.id)
+      svg.select('circle.' + d.id)
         .style('stroke-width', 0);
   };
 

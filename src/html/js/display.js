@@ -25,6 +25,11 @@ d3.csv("data/geodata.csv", function(error,cities){
         d.index = i;
         playerID2Info[d.id] = d;
       });
+
+      mapgraph.globalIDToTour(eventID2Info)
+          .globalIDToPlayer(playerID2Info)
+          .cityToGeo(city2Geo);
+
       d3.json("data/data1.json", function(error, graph) {
 
         var toursData = graph.tournaments;
@@ -33,20 +38,31 @@ d3.csv("data/geodata.csv", function(error,cities){
 
         mapgraph.toursData(toursData)
           .playersData(playersData)
-          .linksData(linksData)
-          .globalIDToTour(eventID2Info)
-          .globalIDToPlayer(playerID2Info)
-          .cityToGeo(city2Geo);
-        mapgraph.update();
+          .linksData(linksData);
+
+        mapgraph.init();
+
+        d3.json("data/data2.json", function(error, graph) {
+            var toursData = graph.tournaments;
+            var playersData = graph.players;
+            var linksData = graph.links;
+            mapgraph.toursData(toursData)
+              .playersData(playersData)
+              .linksData(linksData);
+          
+            mapgraph.update();
+            //.updateTour()
+              //.updatePlayer();
+          });
       }); 
     });
   });
 });
 
 
-console.log("playerID2Info: %o",playerID2Info);
+//console.log("playerID2Info: %o",playerID2Info);
 //alert(playerID2Info.size);
-
+/*
 d3.json("data/data1.json", function(error, graph) {
   //d3.json("data/data2.json", function(error, graph) {
 
@@ -62,7 +78,7 @@ d3.json("data/data1.json", function(error, graph) {
     var linksData = graph.links;
 
     mapgraph.update();
-  });*/
+  });
 }); 
 
 //d3.json("data/data2.json", function(error, graph) {
@@ -80,7 +96,7 @@ d3.json("data/data1.json", function(error, graph) {
 //
 //  mapgraph.update();
 //});
-
+*/
 
 // (It's CSV, but GitHub Pages only gzip's JSON at the moment.)
 d3.csv("data/points.json", function(error, points) {
