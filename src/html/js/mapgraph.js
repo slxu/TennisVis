@@ -6,7 +6,12 @@ d3.mapgraph = function() {
       idToPlayer = {},
       idToTour = {},
       globalIDToPlayer = {},
+<<<<<<< HEAD
       globalIDToTour = {},      
+=======
+      globalIDToTour = {},
+      idToTour = {},
+>>>>>>> d245337774c00310d8656d29717f2807d1359ffb
       cityToGeo = {},
       focusPlayer = null,
       focusTour = null,
@@ -85,7 +90,11 @@ d3.mapgraph = function() {
       prj = latLngToXY(geo.lat, geo.lng);
       tour.cx = prj[0];
       tour.cy = prj[1];
+<<<<<<< HEAD
       tour.r = Math.sqrt(tour.score / 250.0) * 8;
+=======
+      tour.r = tour.score*1.0 / 250 *3+5;
+>>>>>>> d245337774c00310d8656d29717f2807d1359ffb
     });
     toursData = newToursData;
     //console.log("toursData: %o", toursData );
@@ -94,6 +103,7 @@ d3.mapgraph = function() {
   function processPlayerData() {
 
     var newPlayersData = [];
+
     playersData.forEach(function(playerID) {
       var player = jQuery.extend(true, {}, globalIDToPlayer[playerID]); 
       //console.log("id: %s, obj: %o",playerID,globalIDToPlayer[playerID]);
@@ -249,6 +259,7 @@ d3.mapgraph = function() {
     players.append('circle')
       .attr('class', function(d){ return 'player ' + d.id; })
       .attr('r', function(d){ return d.r; })
+      .attr("cy", function(d){ return d.r*0.3; })
       .attr('fill', function(d){ return "url(#photo-" + d.id + ")"; })
       .attr('stroke', 'none')
       .on('mouseover', playerMouseover)
