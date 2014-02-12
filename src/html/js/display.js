@@ -19,7 +19,7 @@ queue()
   .defer(d3.csv, "data/event_list.csv")
   .defer(d3.csv, "data/players_info.csv")
   .defer(d3.csv, "data/points.json")
-  .await(function(error, cities, eventList, playersInfo, points) {
+  .await(function(error, cities, eventList, playersInfo,points) {
     cities.forEach(function(d, i) {
       d.index = i;
       d.lat = +d.lat;

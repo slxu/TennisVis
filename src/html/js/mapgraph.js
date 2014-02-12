@@ -11,7 +11,7 @@ d3.mapgraph = function() {
       playerShown = 15;
 
   var svg = d3.select("svg"),
-      colorMap = {'Hard': 'steelblue', 'Clay': 'orange', 'Grass': 'green'}
+      colorMap = {'Hard': 'steelblue', 'Clay': '#ff7f0e', 'Grass': '#2ca02c'}
       color = d3.scale.category20();
 
   mapgraph.globalIDToPlayer = function(_) {
@@ -67,6 +67,8 @@ d3.mapgraph = function() {
       var tourID = link.tourID;
       var playerID = link.playerID;
       link.point = parseInt(link.point);
+      link.targetWidth = Math.max(6, link.point/25);
+      link.sourceWidth = Math.min(6, link.targetWidth);
 
       var tour;
       var player;
@@ -74,14 +76,13 @@ d3.mapgraph = function() {
         tour = idToTour[tourID];
         tour.links.push(link);
       } else {
-        // console.log(tourID);
         tour = jQuery.extend(true, {}, globalIDToTour[tourID]);
-        // console.log(tour.city);
         var geo = cityToGeo.get(tour.city);
         prj = latLngToXY(geo.lat, geo.lng);
         tour.cx = prj[0];
         tour.cy = prj[1];
-        tour.r = Math.sqrt(tour.score / 250.0) * 8;
+        // tour.r = Math.sqrt(tour.score / 250.0) * 8;
+        tour.r = 6;
         tour.links = [link];
 
         toursData.push(tour);
@@ -131,6 +132,28 @@ d3.mapgraph = function() {
   var formatNumber = d3.format(",.0f"),    // zero decimal places
     format = function(d) { return formatNumber(d) + " points"; };
 
+  function newPath(d) {
+    var curvature = .5;
+    var xs1 = d.source.cx - d.sourceWidth/2,
+        xs2 = d.source.cx + d.sourceWidth/2,
+        ys = d.source.cy,
+        xt1 = d.target.cx - d.targetWidth/2,
+        xt2 = d.target.cx + d.targetWidth/2,
+        yt = d.target.cy,
+        yi = d3.interpolateNumber(ys, yt),
+        y1 = yi(curvature),
+        y2 = yi(1 - curvature);
+    return "M" + xs2 + "," + ys
+         + "L" + xs1 + "," + ys
+         + "C" + xs1 + "," + y1
+         + " " + xt1 + "," + y2
+         + " " + xt1 + "," + yt
+         + "L" + xt2 + "," + yt
+         + "C" + xt2 + "," + y2
+         + " " + xs2 + "," + y1
+         + " " + xs2 + "," + ys;
+  }
+
   function drawLink() {
     var links = svg.append('g')
         .attr('class', 'link_group')
@@ -140,7 +163,7 @@ d3.mapgraph = function() {
     links.enter().append('path')
         .attr('class', function(d) { return 'eventlink source-' + d.source.id + ' target-' + d.target.id; })
         .attr('d', newPath)
-        .style('stroke-width', function(d) { return Math.max(3, d.point/50); })
+        //.style('stroke-width', function(d) { return Math.max(3, d.point/50); })
         .append("title")
         .text(function(d) {
       	return d.source.name + " → " + 
@@ -171,19 +194,18 @@ d3.mapgraph = function() {
         .data(toursData);
 
     tours.enter().append('g')
-        .attr('class', 'tour')
+        .attr('class', function(d){ return 'tour ' + d.id; })
         .attr('transform', function(d) {
           return 'translate(' + d.cx + ',' + d.cy + ')';
         })
 
     tours.append('circle')
-      .attr('class', function(d){ return d.id; })
       .attr('r', function(d){ return d.r; })
       .attr('fill', function(d) { 
-        //return d.color = color(d.type.replace(/ .*/, "")); 
         return d.color = colorMap[d.type];
       })
-      .attr('stroke', 'none')
+      .attr('stroke', 'white')
+      .attr('stroke-width', .5)
       .on('mouseover', tourMouseover)
       .on('mouseout', tourMouseout)
       .on('click', tourClick)
@@ -197,35 +219,16 @@ d3.mapgraph = function() {
              + "Total prize money: "+ d.prizeMoney;});
 
     tours.append('circle')
-      .attr('r', 2)
-      .attr('fill', 'white')
-      .attr('stroke', '#222')
-      .attr('stroke-width', 1);
+      .attr('r', 1)
+      .attr('fill', 'white');
 
-    /*tours.append("text")
+    tours.append("text")
       .attr("x", function(d){ return d.r+5; })
       .attr("y", 5)
-      .text(function(d){ return d.name; });*/
+      .attr("display", "none")
+      .text(function(d){ return d.name; });
 
     tours.exit().remove();
-  }
-
-  function updateTour() {
-    tour.data([]).exit().remove();
-    return;
-
-    tours
-      .data(toursData)
-      .attr('transform', function(d) {
-          return 'translate(' + d.cx + ',' + d.cy + ')';
-        });
-    
-    var sel = tours.selectAll('circle')
-        .data(function(d) { return [d]; });
-    sel.enter().append('circle')
-        //.data(toursData)
-        .attr('r', function(d){ 
-           return d.r; });
   }
 
   function drawPlayer() {
@@ -283,8 +286,7 @@ d3.mapgraph = function() {
     players.append("text")
       .attr("x", function(d){ return 0; })
       .attr("y", function(d, i) { 
-        offset = (i % 2 == 0) ? 0 : 20;
-        return -d.r-25-offset; 
+        return -d.r-25; 
       })
       .attr("text-anchor", "middle")
       .text(function(d) { 
@@ -293,8 +295,7 @@ d3.mapgraph = function() {
       });
     players.append("text")
       .attr("y", function(d, i){ 
-        offset = (i % 2 == 0) ? 0 : 20;
-        return -d.r-10-offset; 
+        return -d.r-10; 
       })
       .attr("text-anchor", "middle")
       .text(function(d) { 
@@ -303,32 +304,21 @@ d3.mapgraph = function() {
       });
 
     players.append("text")
-      .attr("y", function(d){ return d.r+25; })
+      .attr("y", function(d){ return d.r+35; })
       .attr("text-anchor", "middle")
       .text(function(d){ return Math.floor(d.score); });
-  }
-
-  function newPath(d) {
-    var curvature = .5;
-    var x0 = d.source.cx,
-        x1 = d.target.cx,
-        y0 = d.source.cy,
-        y1 = d.target.cy,
-        yi = d3.interpolateNumber(y0, y1),
-        y2 = yi(curvature),
-        y3 = yi(1 - curvature);
-    return "M" + x0 + "," + y0
-         + "C" + x0 + "," + y2
-         + " " + x1 + "," + y3
-         + " " + x1 + "," + y1;
   }
 
   function tourMouseover(d) {
     svg.selectAll('path.eventlink.source-' + d.id)
       .style('display', 'inline');
 
-    svg.selectAll('circle.'+d.id)
-      .style('stroke-width', 3);
+    svg.selectAll('.'+d.id).select('circle')
+      .attr('r', 12)
+      .style('stroke-width', 2);
+
+    svg.selectAll('.'+d.id).select('text')
+      .attr('display', 'inline');
   };
 
   function tourMouseout(d) {
@@ -337,10 +327,37 @@ d3.mapgraph = function() {
         return (d.source != focusTour && d.target != focusPlayer)
       })
       .style('display', 'none');
-    if (focusTour != d)
-      svg.selectAll('circle.'+d.id)
-        .style('stroke-width', 0);
+    if (focusTour != d) {
+      svg.selectAll('.'+d.id).select('circle')
+        .attr('r', 6)
+        .style('stroke-width', .5);
+      svg.selectAll('.'+d.id).select('text')
+       .attr('display', 'none');
+    }
   };
+
+  function tourClick(d) {
+    if (focusTour == null) {
+      focusTour = d;
+      svg.selectAll('path.eventlink.source-' + d.id)
+        .style('display', 'inline');
+    } else {
+      svg.selectAll('path.eventlink.source-' + focusTour.id)
+        .style('display', 'none');
+      svg.selectAll('.'+focusTour.id).select('circle')
+        .attr('r', 6)
+        .style('stroke-width', .5);
+      svg.selectAll('.'+focusTour.id).select('text')
+       .attr('display', 'none');
+
+      if (d != focusTour) {
+        focusTour = d;
+        svg.selectAll('path.eventlink.source-' + d.id)
+          .style('display', 'inline');
+      } else
+        focusTour = null;
+    }
+  }
 
   function playerMouseover(d) {
     svg.selectAll('path.eventlink.target-' + d.id)
@@ -378,22 +395,6 @@ d3.mapgraph = function() {
     }
   }
 
-  function tourClick(d) {
-    if (focusTour == null) {
-      focusTour = d;
-      svg.selectAll('path.eventlink.source-' + d.id)
-        .style('display', 'inline');
-    } else {
-      svg.selectAll('path.eventlink.source-' + focusTour.id)
-        .style('display', 'none');
-      if (d != focusTour) {
-        focusTour = d;
-        svg.selectAll('path.eventlink.source-' + d.id)
-          .style('display', 'inline');
-      } else
-        focusTour = null;
-    }
-  }
   
   return mapgraph;
 };
