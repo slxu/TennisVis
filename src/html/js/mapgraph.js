@@ -4,19 +4,20 @@ d3.mapgraph = function() {
       playersData = [],
       linksData = [],
       idToPlayer = {},
+      idToTour = {},
       globalIDToPlayer = {},
-      globalIDToTour = {},
-      idToTour = {}
+      globalIDToTour = {},      
       cityToGeo = {},
-      selectPlayer = null,
-      selectTour = null,
+      focusPlayer = null,
+      focusTour = null,
       svg = d3.select("svg"),
       color = d3.scale.category20();
+  var tours;
 
   mapgraph.toursData = function(_) {
     if (!arguments.length) return toursData;
     toursData = _;
-    selectTour = null;
+    focusTour = null;
     return mapgraph;
   };
 
@@ -41,7 +42,7 @@ d3.mapgraph = function() {
   mapgraph.playersData = function(_) {
     if (!arguments.length) return playersData;
     playersData = _;
-    selectPlayer = null;
+    focusPlayer = null;
     return mapgraph;
   };
 
@@ -51,14 +52,19 @@ d3.mapgraph = function() {
     return mapgraph;
   };
 
-  mapgraph.update = function() {
+  mapgraph.init = function() {
     processTourData();
     processPlayerData();
     processLinkData();
 
-    updateLink();
+    drawLink();
+    drawTour();
+    drawPlayer();
+  }
+
+  mapgraph.update = function() {
+    processTourData();
     updateTour();
-    updatePlayer();
   };
 
   mapgraph.updateLink = function() {
@@ -73,26 +79,29 @@ d3.mapgraph = function() {
       var tour = jQuery.extend(true, {}, globalIDToTour[tourID]); 
       newToursData.push(tour);
       idToTour[tourID] = tour;
+      console.log(tour);
+      console.log(tour.city);
       geo = cityToGeo.get(tour.city);
       prj = latLngToXY(geo.lat, geo.lng);
       tour.cx = prj[0];
       tour.cy = prj[1];
-      tour.r = tour.score*1.0 / 250 * 3;
+      tour.r = Math.sqrt(tour.score / 250.0) * 8;
     });
     toursData = newToursData;
-    console.log("toursData: %o", toursData );
+    //console.log("toursData: %o", toursData );
   }
 
   function processPlayerData() {
+
     var newPlayersData = [];
     playersData.forEach(function(playerID) {
       var player = jQuery.extend(true, {}, globalIDToPlayer[playerID]); 
-      console.log("id: %s, obj: %o",playerID,globalIDToPlayer[playerID]);
+      //console.log("id: %s, obj: %o",playerID,globalIDToPlayer[playerID]);
       idToPlayer[playerID] = player;
       newPlayersData.push(player);
     });
     playersData = newPlayersData;
-    console.log("playersData: %o", playersData );
+    //console.log("playersData: %o", playersData );
   }
 
   function processLinkData() {
@@ -120,7 +129,7 @@ d3.mapgraph = function() {
 
     playersData.sort(function(a, b) { return b.score - a.score; });
     playersData.forEach(function(player, index) {
-      player.r = Math.max(15, player.score / 8);
+      player.r = Math.max(15, Math.sqrt(player.score) * 2);
       if (index == 0) {
         player.cx = 10 + player.r;
         player.cy = 100;//10 + player.r;
@@ -131,7 +140,7 @@ d3.mapgraph = function() {
     });
   }
 
-  function updateLink() {
+  function drawLink() {
     var links = svg.append('g').selectAll('.eventlink')
         .data(linksData);
 
@@ -143,20 +152,24 @@ d3.mapgraph = function() {
     links.exit().remove();
   }
 
-  function updateTour() {
+  function drawTour() {
     // add tournaments on the map
-    var tours = svg.selectAll('.tour')
+    tours = svg.selectAll('.tour')
         .data(toursData);
 
     tours.enter().append('g')
         .attr('class', 'tour')
         .attr('transform', function(d) {
+          //console.log(d);
           return 'translate(' + d.cx + ',' + d.cy + ')';
-        });
+        })
+
 
     tours.append('circle')
-      .attr('class', function(d){ return 'tour ' + d.id; })
-      .attr('r', function(d){ return d.r; })
+      //.append('circle')
+        //.data(function(d){ return [d]; })
+      .attr('class', function(d){ return d.id; })
+      .attr('r', function(d){ console.log(d); return d.r; })
       .attr('fill', function(d) {
         return d.color = color(d.type.replace(/ .*/, "")); 
       })
@@ -165,11 +178,11 @@ d3.mapgraph = function() {
       .on('mouseout', tourMouseout)
       .on('click', tourClick);
 
-    tours.append('circle')
+    /*tours.append('circle')
       .attr('r', 2)
       .attr('fill', 'white')
       .attr('stroke', '#222')
-      .attr('stroke-width', 1);
+      .attr('stroke-width', 1);*/
 
     tours.append("text")
       .attr("x", function(d){ return d.r+5; })
@@ -179,7 +192,32 @@ d3.mapgraph = function() {
     tours.exit().remove();
   }
 
-  function updatePlayer() {
+  function updateTour() {
+    console.log('updateTour');
+    tour.data([]).exit().remove();
+    return;
+
+    console.log(toursData);
+    tours
+      .data(toursData)
+      .attr('transform', function(d) {
+          return 'translate(' + d.cx + ',' + d.cy + ')';
+        });
+    
+    console.log(tours);
+    //console.log(tours.selectAll('g'));
+    console.log(tours.selectAll('circle'));
+
+    var sel = tours.selectAll('circle')
+        .data(function(d) { return [d]; });
+    console.log(sel);
+    sel.enter().append('circle')
+        //.data(toursData)
+        .attr('r', function(d){ 
+          console.log(d); return d.r; });
+  }
+
+  function drawPlayer() {
     // add photos
     var photos = svg.append('defs').selectAll('pattern')
         .data(playersData);
@@ -268,18 +306,18 @@ d3.mapgraph = function() {
   function tourMouseover(d) {
     svg.selectAll('path.eventlink.source-' + d.id)
       .style('display', 'inline');
-    svg.select('circle.tour.' + d.id)
+    svg.select('circle.g.' + d.id)
       .style('stroke-width', 3);
   };
 
   function tourMouseout(d) {
     svg.selectAll('path.eventlink.source-' + d.id)
       .filter(function(d) { 
-        return (d.source != selectTour && d.target != selectPlayer)
+        return (d.source != focusTour && d.target != focusPlayer)
       })
       .style('display', 'none');
-    if (selectTour != d)
-      svg.select('circle.tour.' + d.id)
+    if (focusTour != d)
+      svg.select('circle.g.' + d.id)
         .style('stroke-width', 0);
   };
 
@@ -293,46 +331,46 @@ d3.mapgraph = function() {
   function playerMouseout(d) {
     svg.selectAll('path.eventlink.target-' + d.id)
       .filter(function(d) { 
-        return (d.source != selectTour && d.target != selectPlayer)
+        return (d.source != focusTour && d.target != focusPlayer)
       })
       .style('display', 'none');
-    if (selectPlayer != d)
+    if (focusPlayer != d)
       svg.select('circle.player.' + d.id)
         .style('stroke-width', 0);
   };
 
   //TODO: select both player and tour
   function playerClick(d) {
-    if (selectPlayer == null) {
-      selectPlayer = d;
+    if (focusPlayer == null) {
+      focusPlayer = d;
       svg.selectAll('path.eventlink.target-' + d.id)
         .style('display', 'inline');
     } else {
-      svg.selectAll('path.eventlink.target-' + selectPlayer.id)
+      svg.selectAll('path.eventlink.target-' + focusPlayer.id)
         .style('display', 'none');
-      if (d != selectPlayer) {
-        selectPlayer = d;
+      if (d != focusPlayer) {
+        focusPlayer = d;
         svg.selectAll('path.eventlink.target-' + d.id)
           .style('display', 'inline');
       } else
-        selectPlayer = null;
+        focusPlayer = null;
     }
   }
 
   function tourClick(d) {
-    if (selectTour == null) {
-      selectTour = d;
+    if (focusTour == null) {
+      focusTour = d;
       svg.selectAll('path.eventlink.source-' + d.id)
         .style('display', 'inline');
     } else {
-      svg.selectAll('path.eventlink.source-' + selectTour.id)
+      svg.selectAll('path.eventlink.source-' + focusTour.id)
         .style('display', 'none');
-      if (d != selectTour) {
-        selectTour = d;
+      if (d != focusTour) {
+        focusTour = d;
         svg.selectAll('path.eventlink.source-' + d.id)
           .style('display', 'inline');
       } else
-        selectTour = null;
+        focusTour = null;
     }
   }
   

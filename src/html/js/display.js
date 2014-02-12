@@ -36,6 +36,7 @@ console.log("playerID2Info: %o",playerID2Info);
 //alert(playerID2Info.size);
 
 d3.json("data/data1.json", function(error, graph) {
+  //d3.json("data/data2.json", function(error, graph) {
 
   var toursData = graph.tournaments;
   var playersData = graph.players;
@@ -48,7 +49,15 @@ d3.json("data/data1.json", function(error, graph) {
     .globalIDToPlayer(playerID2Info)
     .cityToGeo(city2Geo);
 
-  mapgraph.update();
+  mapgraph.init();
+
+  d3.json("data/data2.json", function(error, graph) {
+    var toursData = graph.tournaments;
+    var playersData = graph.players;
+    var linksData = graph.links;
+
+    mapgraph.update();
+  });
 }); 
 
 //d3.json("data/data2.json", function(error, graph) {
@@ -66,6 +75,7 @@ d3.json("data/data1.json", function(error, graph) {
 //
 //  mapgraph.update();
 //});
+
 
 // (It's CSV, but GitHub Pages only gzip's JSON at the moment.)
 d3.csv("data/points.json", function(error, points) {
