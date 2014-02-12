@@ -82,14 +82,6 @@ d3.csv("data/points.json", function(error, points) {
       formatDate = d3.time.format("%B %d, %Y"),
       formatTime = d3.time.format("%I:%M %p");
 
-  // A nest operator, for grouping the event list.
-  var nestByEvent = d3.nest()
-      .key(function(d) { return d.id; });
-
-  var nestByPlayer = d3.nest()
-      .key(function(d) { return d.id; });
-
-
   // A little coercion, since the CSV is untyped.
   points.forEach(function(d, i) {
     d.index = i;
@@ -101,12 +93,14 @@ d3.csv("data/points.json", function(error, points) {
   // Create the crossfilter for the relevant dimensions and groups.
   var eventPoints = crossfilter(points),
       all = eventPoints.groupAll(),
-      date = eventPoints .dimension(function(d) { return d.endDate; }),
-      dates = date.group(d3.time.day);
+      date = eventPoints.dimension(function(d) { return d.endDate; }),
+      dates = date.group(),
+      date2 = eventPoints.dimension(function(d) { return d.endDate; }),
+      dates2 = date.group(),
       eventID = eventPoints.dimension(function(d) {return d.eventID;}),
-      playerID = eventPoints.dimension(function(d) {return d.playerID;});
-  var eventIDs = eventID.group();
-  var playerIDs = playerID.group();
+      playerID = eventPoints.dimension(function(d) {return d.playerID;}),
+      eventIDs = eventID.group(),
+      playerIDs = playerID.group();
 
 
 function reduceAdd(p, v) {
@@ -199,25 +193,29 @@ function reduceInitial() {
   function eventList(div) {
     //console.log("my object: %o", eventID.top(2));
     var allGroupedPlayers = playerIDs.all();
-    var currentPlayers=[]
+    var currentPlayers=[];
     allGroupedPlayers.forEach (function(p)
       {
-        if (p.value+0>0)
+        if (p.value>0)
           currentPlayers.push(p);
       }
     );
 
     var allGroupedEvents = eventIDs.all();
-    console.log("players: %o", allPlayers );
+    console.log("players: %o", currentPlayers );
 
-    var currentEvents=[]
+    var currentEvents=[];
     allGroupedEvents.forEach ( function(p)
       {
-        if (p.value+0>0)
+        if (p.value>0)
           currentEvents.push(p);
       }
     );
     console.log("events: %o", currentEvents);
+
+    var allGroupedDates = date.top(Infinity);
+    console.log("nested dates: %o, lalla",allGroupedDates);
+    
   }
 
   function barChart() {

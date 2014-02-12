@@ -79,8 +79,6 @@ d3.mapgraph = function() {
       var tour = jQuery.extend(true, {}, globalIDToTour[tourID]); 
       newToursData.push(tour);
       idToTour[tourID] = tour;
-      console.log(tour);
-      console.log(tour.city);
       geo = cityToGeo.get(tour.city);
       prj = latLngToXY(geo.lat, geo.lng);
       tour.cx = prj[0];
@@ -88,7 +86,6 @@ d3.mapgraph = function() {
       tour.r = Math.sqrt(tour.score / 250.0) * 8;
     });
     toursData = newToursData;
-    //console.log("toursData: %o", toursData );
   }
 
   function processPlayerData() {
@@ -97,12 +94,10 @@ d3.mapgraph = function() {
 
     playersData.forEach(function(playerID) {
       var player = jQuery.extend(true, {}, globalIDToPlayer[playerID]); 
-      //console.log("id: %s, obj: %o",playerID,globalIDToPlayer[playerID]);
       idToPlayer[playerID] = player;
       newPlayersData.push(player);
     });
     playersData = newPlayersData;
-    //console.log("playersData: %o", playersData );
   }
 
   function processLinkData() {
@@ -161,7 +156,6 @@ d3.mapgraph = function() {
     tours.enter().append('g')
         .attr('class', 'tour')
         .attr('transform', function(d) {
-          //console.log(d);
           return 'translate(' + d.cx + ',' + d.cy + ')';
         })
 
@@ -170,7 +164,7 @@ d3.mapgraph = function() {
       //.append('circle')
         //.data(function(d){ return [d]; })
       .attr('class', function(d){ return d.id; })
-      .attr('r', function(d){ console.log(d); return d.r; })
+      .attr('r', function(d){  return d.r; })
       .attr('fill', function(d) {
         return d.color = color(d.type.replace(/ .*/, "")); 
       })
@@ -194,28 +188,21 @@ d3.mapgraph = function() {
   }
 
   function updateTour() {
-    console.log('updateTour');
     tour.data([]).exit().remove();
     return;
 
-    console.log(toursData);
     tours
       .data(toursData)
       .attr('transform', function(d) {
           return 'translate(' + d.cx + ',' + d.cy + ')';
         });
     
-    console.log(tours);
-    //console.log(tours.selectAll('g'));
-    console.log(tours.selectAll('circle'));
-
     var sel = tours.selectAll('circle')
         .data(function(d) { return [d]; });
-    console.log(sel);
     sel.enter().append('circle')
         //.data(toursData)
         .attr('r', function(d){ 
-          console.log(d); return d.r; });
+           return d.r; });
   }
 
   function drawPlayer() {
@@ -265,8 +252,6 @@ d3.mapgraph = function() {
       })
       .attr("text-anchor", "middle")
       .text(function(d) { 
-        if (d.name==null || d.name == undefined)
-          console.log("null d: %o", d );
         str = d.name.split(' ');
         return str[0]; 
       });
