@@ -125,8 +125,11 @@ d3.mapgraph = function() {
         });
       }
     });
-    console.log(playersData);
+    console.log("%o",playersData);
   }
+
+  var formatNumber = d3.format(",.0f"),    // zero decimal places
+    format = function(d) { return formatNumber(d) + " points"; };
 
   function drawLink() {
     var links = svg.append('g')
@@ -137,7 +140,27 @@ d3.mapgraph = function() {
     links.enter().append('path')
         .attr('class', function(d) { return 'eventlink source-' + d.source.id + ' target-' + d.target.id; })
         .attr('d', newPath)
-        .style('stroke-width', function(d) { return Math.max(3, d.point/50); });
+        .style('stroke-width', function(d) { return Math.max(3, d.point/50); })
+        .append("title")
+        .text(function(d) {
+      	return d.source.name + " → " + 
+                d.target.name + "\n" + format(d.point); });
+  }
+
+  function getType(t){
+    if (t == "2000")
+      return "Grand Slam";
+    if (t == "1000")
+      return "ATP World Tour 1000 Series";
+    if (t == "500")
+      return "ATP World Tour 500 Series";
+    if (t == "250")
+      return "ATP World Tour 250 Series";
+    if (t == "1500")
+      return "ATP World Tour Final";
+    if (t == "750")
+      return "Olympics";
+    return "Unknown match type";
   }
 
   function drawTour() {
@@ -163,7 +186,15 @@ d3.mapgraph = function() {
       .attr('stroke', 'none')
       .on('mouseover', tourMouseover)
       .on('mouseout', tourMouseout)
-      .on('click', tourClick);
+      .on('click', tourClick)
+      .append("title")
+      .text(function(d) {
+      return d.name + ":\n"
+             + getType(d.score)+"\n"
+             + "City: "+d.city + "\n"
+             + "Duration: "+d.startEndDates+"\n"
+             + "Draws: "+d.draws + "\n"
+             + "Total prize money: "+ d.prizeMoney;});
 
     tours.append('circle')
       .attr('r', 2)
@@ -236,7 +267,18 @@ d3.mapgraph = function() {
       .attr('stroke', 'none')
       .on('mouseover', playerMouseover)
       .on('mouseout', playerMouseout)
-      .on('click', playerClick);
+      .on('click', playerClick)
+      .append("title")
+      .text(function(d) {
+      return d.name + ":\n"
+             + "Age: " + d.age+"\n"
+             + "Birthday place: "+d.birthplace+"\n"
+             + "Residence: "+d.residence + "\n"
+             + "Height: "+d.height + "\n"
+             + "Weight: "+d.weight + "\n"
+             + "Plays: "+d.plays + "\n"
+             + "Turned professional: "+d.turned + "\n"
+             + "Coach: "+ d.coach;});
 
     players.append("text")
       .attr("x", function(d){ return 0; })
