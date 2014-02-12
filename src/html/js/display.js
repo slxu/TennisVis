@@ -88,6 +88,18 @@ d3.csv("data/points.json", function(error, points) {
     d.point = +d.point;
   });
 
+function reduceAdd(p, v) {
+  return p + v.point;
+}
+
+function reduceRemove(p, v) {
+  return p - v.point;
+}
+
+function reduceInitial() {
+  return 0;
+}
+
   // Create the crossfilter for the relevant dimensions and groups.
   var eventPoints = crossfilter(points),
       all = eventPoints.groupAll(),
@@ -98,20 +110,10 @@ d3.csv("data/points.json", function(error, points) {
       eventID = eventPoints.dimension(function(d) {return d.eventID;}),
       playerID = eventPoints.dimension(function(d) {return d.playerID;}),
       eventIDs = eventID.group(),
-      playerIDs = playerID.group();
+      playerIDs = playerID.group().reduce(reduceAdd,reduceRemove,reduceInitial);
 
 
-function reduceAdd(p, v) {
-  return p + 1;
-}
 
-function reduceRemove(p, v) {
-  return p - 1;
-}
-
-function reduceInitial() {
-  return 0;
-}
 
   var charts = [
 
@@ -170,12 +172,16 @@ function reduceInitial() {
   function eventList(div) {
     //console.log("my object: %o", eventID.top(2));
     var newGraph={}
-    var allGroupedPlayers = playerIDs.all();
+    var allGroupedPlayers = playerIDs.top(15);
     var currentPlayers=[];
+    var currentPlayersMap={}
     allGroupedPlayers.forEach (function(p)
       {
         if (p.value>0)
+        {
           currentPlayers.push(p.key);
+          currentPlayersMap[p.key]=1;
+        }
       }
     );
 
@@ -196,11 +202,14 @@ function reduceInitial() {
     var currentRecords = date.top(Infinity);
     var links = [];
     currentRecords.forEach(function(p){
-      var link = {};
-      link["source"] = p.eventID;
-      link["target"] = p.playerID;
-      link["value"] = p.point;
-      links.push(link);
+      if (currentPlayersMap[p.playerID]==1)
+      {
+            var link = {};
+            link["source"] = p.eventID;
+            link["target"] = p.playerID;
+            link["value"] = p.point;
+            links.push(link);
+      }
     });
     newGraph["links"] = links; 
     console.log("newGraph: %o",newGraph);
