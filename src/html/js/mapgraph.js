@@ -3,14 +3,15 @@ d3.mapgraph = function() {
       toursData = [],
       playersData = [],
       linksData = [],
-      idToPlayer = {},
-      idToTour = {},
       globalIDToPlayer = {},
       globalIDToTour = {},      
       cityToGeo = {},
       focusPlayer = null,
       focusTour = null,
-      svg = d3.select("svg"),
+      playerShown = 15;
+
+  var svg = d3.select("svg"),
+      colorMap = {'Hard': 'steelblue', 'Clay': 'orange', 'Grass': 'green'}
       color = d3.scale.category20();
 
   mapgraph.globalIDToPlayer = function(_) {
@@ -31,35 +32,12 @@ d3.mapgraph = function() {
     return mapgraph;
   };
 
-  mapgraph.toursData = function(_) {
-    if (!arguments.length) return toursData;
-    toursData = _;
-    focusTour = null;
-    processTourData();
-    return mapgraph;
-  };
-
-  mapgraph.playersData = function(_) {
-    if (!arguments.length) return playersData;
-    playersData = _;
-    focusPlayer = null;
-    processPlayerData();
-    return mapgraph;
-  };
-
   mapgraph.linksData = function(_) {
     if (!arguments.length) return linksData;
     linksData = _;
     processLinkData();
     return mapgraph;
   };
-
-  mapgraph.init = function() {
-    drawLink();
-    drawTour();
-    drawPlayer();
-    return mapgraph;
-  }
 
   mapgraph.update = function() {
     svg.selectAll('.tour_group')
@@ -75,96 +53,78 @@ d3.mapgraph = function() {
     return mapgraph;
   }
 
-  mapgraph.updateTour = function() {
-    svg.selectAll('.tour_group')
-      .data([]).exit().remove();
-
-    drawTour();
-    return mapgraph;
-  };
-
-  mapgraph.updatePlayer = function() {
-    svg.selectAll('.player_group')
-      .data([]).exit().remove();
-
-    drawPlayer();
-    return mapgraph;
-  };
-
-  mapgraph.updateLink = function() {
-    svg.selectAll('.link_group')
-      .data([]).exit().remove();
-    
-    drawLink();
-    return mapgraph;
-  };
-
-  function processTourData() {
-    var newToursData=[];
-
-    toursData.forEach(function(tourID) {
-      var tour = jQuery.extend(true, {}, globalIDToTour[tourID]); 
-      newToursData.push(tour);
-      idToTour[tourID] = tour;
-      geo = cityToGeo.get(tour.city);
-      prj = latLngToXY(geo.lat, geo.lng);
-      tour.cx = prj[0];
-      tour.cy = prj[1];
-      tour.r = Math.sqrt(tour.score / 250.0) * 8;
-    });
-    toursData = newToursData;
-    //console.log("toursData: %o", toursData );
-  }
-
-  function processPlayerData() {
-
-    var newPlayersData = [];
-
-    playersData.forEach(function(playerID) {
-      var player = jQuery.extend(true, {}, globalIDToPlayer[playerID]); 
-      //console.log("id: %s, obj: %o",playerID,globalIDToPlayer[playerID]);
-      idToPlayer[playerID] = player;
-      newPlayersData.push(player);
-    });
-    playersData = newPlayersData;
-    //console.log("playersData: %o", playersData );
-  }
-
   function processLinkData() {
 
-    toursData.forEach(function(tour) {
-      tour.links = [];
-    });
+    var idToTour = {};
+    var idToPlayer = {};
+    var totalPlayersData = [];
 
-    playersData.forEach(function(player) {
-      player.score = 0;
-      player.links = [];
-    });
+    toursData = [];
+    playersData = [];
 
     linksData.forEach(function(link) {
-      tour = idToTour[link.source];
-      if (tour == null || tour == undefined)
-        alert(link);
-      player = idToPlayer[link.target];
-      player.score += link.value;
-      tour.links.push(link)
-      player.links.push(link)
+      var tourID = link.tourID;
+      var playerID = link.playerID;
+      link.point = parseInt(link.point);
+
+      var tour;
+      var player;
+      if (tourID in idToTour) {
+        tour = idToTour[tourID];
+        tour.links.push(link);
+      } else {
+        // console.log(tourID);
+        tour = jQuery.extend(true, {}, globalIDToTour[tourID]);
+        // console.log(tour.city);
+        var geo = cityToGeo.get(tour.city);
+        prj = latLngToXY(geo.lat, geo.lng);
+        tour.cx = prj[0];
+        tour.cy = prj[1];
+        tour.r = Math.sqrt(tour.score / 250.0) * 8;
+        tour.links = [link];
+
+        toursData.push(tour);
+        idToTour[tourID] = tour;
+      }
+
+      if (playerID in idToPlayer) {
+        player = idToPlayer[playerID];
+        player.score = player.score + link.point;
+        player.links.push(link);
+      } else {
+        player = jQuery.extend(true, {}, globalIDToPlayer[playerID]);
+        player.score = link.point;
+        player.links = [link];
+
+        totalPlayersData.push(player);
+        idToPlayer[playerID] = player;
+      }
+
       link.source = tour;
       link.target = player;
-      link.display = 'none';
     });
 
-    playersData.sort(function(a, b) { return b.score - a.score; });
-    playersData.forEach(function(player, index) {
-      player.r = Math.max(15, Math.sqrt(player.score) * 2);
-      if (index == 0) {
-        player.cx = 10 + player.r;
-        player.cy = 100;//10 + player.r;
+    totalPlayersData.sort(function(a, b) { return b.score - a.score; });
+    var scale = 50.0 / Math.sqrt(totalPlayersData[0].score);
+    totalPlayersData.forEach(function(player, index) {
+      if (index < playerShown) {
+        player.r = Math.max(15, Math.sqrt(player.score) * scale);
+        if (index == 0) {
+          player.cx = 10 + player.r;
+          player.cy = 100;//10 + player.r;
+        } else {
+          player.cx = playersData[index-1].cx + playersData[index-1].r + 20 + player.r;
+          player.cy = 100; //10 + player.r;
+        }
+        playersData.push(player);
       } else {
-        player.cx = playersData[index-1].cx + playersData[index-1].r + 20 + player.r;
-        player.cy = 100; //10 + player.r;
+        player.links.forEach(function(link) {
+          var index = linksData.indexOf(link);
+          linksData.splice(index, 1);
+        });
       }
     });
+    console.log(playersData);
   }
 
   function drawLink() {
@@ -176,7 +136,7 @@ d3.mapgraph = function() {
     links.enter().append('path')
         .attr('class', function(d) { return 'eventlink source-' + d.source.id + ' target-' + d.target.id; })
         .attr('d', newPath)
-        .style('stroke-width', function(d) { return d.value/10; });
+        .style('stroke-width', function(d) { return Math.max(3, d.point/50); });
   }
 
   function drawTour() {
@@ -195,8 +155,9 @@ d3.mapgraph = function() {
     tours.append('circle')
       .attr('class', function(d){ return d.id; })
       .attr('r', function(d){ /*console.log(d);*/ return d.r; })
-      .attr('fill', function(d) {
-        return d.color = color(d.type.replace(/ .*/, "")); 
+      .attr('fill', function(d) { 
+        //return d.color = color(d.type.replace(/ .*/, "")); 
+        return d.color = colorMap[d.type];
       })
       .attr('stroke', 'none')
       .on('mouseover', tourMouseover)
@@ -209,10 +170,10 @@ d3.mapgraph = function() {
       .attr('stroke', '#222')
       .attr('stroke-width', 1);
 
-    tours.append("text")
+    /*tours.append("text")
       .attr("x", function(d){ return d.r+5; })
       .attr("y", 5)
-      .text(function(d){ return d.name; });
+      .text(function(d){ return d.name; });*/
   }
 
   function drawPlayer() {
