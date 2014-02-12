@@ -117,27 +117,6 @@ function reduceInitial() {
 
   var charts = [
 
-//    barChart()
- //       .dimension(hour)
-//        .group(hours)
-//      .x(d3.scale.linear()
-//        .domain([0, 24])
-//        .rangeRound([0, 10 * 24])),
-
-//    barChart()
-//        .dimension(delay)
-//        .group(delays)
-//      .x(d3.scale.linear()
-//        .domain([-60, 150])
-//        .rangeRound([0, 10 * 21])),
-//
-//    barChart()
-//        .dimension(distance)
-//        .group(distances)
-//      .x(d3.scale.linear()
-//        .domain([0, 2000])
-//        .rangeRound([0, 10 * 40])),
-
     barChart()
         .dimension(date)
         .group(dates)
@@ -192,30 +171,41 @@ function reduceInitial() {
 
   function eventList(div) {
     //console.log("my object: %o", eventID.top(2));
+    var newGraph={}
     var allGroupedPlayers = playerIDs.all();
     var currentPlayers=[];
     allGroupedPlayers.forEach (function(p)
       {
         if (p.value>0)
-          currentPlayers.push(p);
+          currentPlayers.push(p.key);
       }
     );
 
     var allGroupedEvents = eventIDs.all();
     console.log("players: %o", currentPlayers );
+    newGraph["players"] = currentPlayers;
 
     var currentEvents=[];
     allGroupedEvents.forEach ( function(p)
       {
         if (p.value>0)
-          currentEvents.push(p);
+          currentEvents.push(p.key);
       }
     );
     console.log("events: %o", currentEvents);
+    newGraph["tournaments"] = currentEvents;
 
-    var allGroupedDates = date.top(Infinity);
-    console.log("nested dates: %o, lalla",allGroupedDates);
-    
+    var currentRecords = date.top(Infinity);
+    var links = [];
+    currentRecords.forEach(function(p){
+      var link = {};
+      link["source"] = p.eventID;
+      link["target"] = p.playerID;
+      link["value"] = p.point;
+      links.push(link);
+    });
+    newGraph["links"] = links; 
+    console.log("newGraph: %o",newGraph);
   }
 
   function barChart() {
