@@ -1,4 +1,32 @@
 
+
+var graph={
+"tournaments":[ "T2013_338", "T2013_5014", "T2013_747", "T2013_560" ],
+"players":[ "N409", "D643", "W367", "D683", "F401", "MC10", "BA47", "F324", "G628", "T786" ],
+"links":[
+{"source":"T2013_338","target":"N409","value":124.729},
+{"source":"T2013_338","target":"D643","value":40.597},
+{"source":"T2013_5014","target":"W367","value":30.597},
+{"source":"T2013_747","target":"F401","value":20.597},
+{"source":"T2013_747","target":"MC10","value":140.597},
+{"source":"T2013_338","target":"F324","value":230.597},
+{"source":"T2013_338","target":"G628","value":300.597},
+{"source":"T2013_560","target":"BA47","value":50.597},
+{"source":"T2013_560","target":"T786","value":48.597},
+{"source":"T2013_338","target":"D643","value":24.597},
+{"source":"T2013_747","target":"F401","value":33.597},
+{"source":"T2013_747","target":"BA47","value":45.597},
+{"source":"T2013_5014","target":"F324","value":38.597},
+{"source":"T2013_5014","target":"G628","value":97.597},
+{"source":"T2013_560","target":"N409","value":29.597},
+{"source":"T2013_5014","target":"W367","value":55.597},
+{"source":"T2013_747","target":"D683","value":60.597},
+{"source":"T2013_747","target":"F401","value":44.597},
+{"source":"T2013_5014","target":"BA47","value":70.597},
+{"source":"T2013_560","target":"N409","value":10.597},
+{"source":"T2013_5014","target":"D643","value":33.597}
+]};
+
 var svg = d3.select("svg");
 var mapgraph = d3.mapgraph();
 
@@ -52,14 +80,6 @@ d3.csv("data/points.json", function(error, points) {
       formatDate = d3.time.format("%B %d, %Y"),
       formatTime = d3.time.format("%I:%M %p");
 
-  // A nest operator, for grouping the event list.
-  var nestByEvent = d3.nest()
-      .key(function(d) { return d.id; });
-
-  var nestByPlayer = d3.nest()
-      .key(function(d) { return d.id; });
-
-
   // A little coercion, since the CSV is untyped.
   points.forEach(function(d, i) {
     d.index = i;
@@ -71,20 +91,27 @@ d3.csv("data/points.json", function(error, points) {
   // Create the crossfilter for the relevant dimensions and groups.
   var eventPoints = crossfilter(points),
       all = eventPoints.groupAll(),
-      date = eventPoints .dimension(function(d) { return d.endDate; }),
-      dates = date.group(d3.time.day);
+      date = eventPoints.dimension(function(d) { return d.endDate; }),
+      dates = date.group(),
+      date2 = eventPoints.dimension(function(d) { return d.endDate; }),
+      dates2 = date.group(),
       eventID = eventPoints.dimension(function(d) {return d.eventID;}),
-      playerID = eventPoints.dimension(function(d) {return d.playerID;});
-  var eventIDs = eventID.group();
-  var playerIDs = playerID.group();
+      playerID = eventPoints.dimension(function(d) {return d.playerID;}),
+      eventIDs = eventID.group(),
+      playerIDs = playerID.group();
 
 
-//      hour = flight.dimension(function(d) { return d.date.getHours() + d.date.getMinutes() / 60; }),
-//      hours = hour.group(Math.floor),
-//      delay = flight.dimension(function(d) { return Math.max(-60, Math.min(149, d.delay)); }),
-//      delays = delay.group(function(d) { return Math.floor(d / 10) * 10; }),
-//      distance = flight.dimension(function(d) { return Math.min(1999, d.distance); }),
-//      distances = distance.group(function(d) { return Math.floor(d / 50) * 50; });
+function reduceAdd(p, v) {
+  return p + 1;
+}
+
+function reduceRemove(p, v) {
+  return p - 1;
+}
+
+function reduceInitial() {
+  return 0;
+}
 
   var charts = [
 
@@ -163,27 +190,30 @@ d3.csv("data/points.json", function(error, points) {
 
   function eventList(div) {
     //console.log("my object: %o", eventID.top(2));
-    //var eventsByEvent = nestByEvent.entries(eventID.top(40000));
     var allGroupedPlayers = playerIDs.all();
-    var allPlayers=[]
+    var currentPlayers=[];
     allGroupedPlayers.forEach (function(p)
       {
-        if (p.value+0>0)
-          allPlayers.push(p);
+        if (p.value>0)
+          currentPlayers.push(p);
       }
     );
 
     var allGroupedEvents = eventIDs.all();
+    console.log("players: %o", currentPlayers );
 
-    console.log("players: %o", allPlayers );
-    var allEvents=[]
+    var currentEvents=[];
     allGroupedEvents.forEach ( function(p)
       {
-        if (p.value+0>0)
-          allEvents.push(p);
+        if (p.value>0)
+          currentEvents.push(p);
       }
     );
-    console.log("events: %o", allEvents);
+    console.log("events: %o", currentEvents);
+
+    var allGroupedDates = date.top(Infinity);
+    console.log("nested dates: %o, lalla",allGroupedDates);
+    
   }
 
   function barChart() {

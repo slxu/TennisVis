@@ -53,6 +53,7 @@ d3.mapgraph = function() {
     return mapgraph;
   }
 
+
   function processLinkData() {
 
     var idToTour = {};
@@ -154,7 +155,7 @@ d3.mapgraph = function() {
 
     tours.append('circle')
       .attr('class', function(d){ return d.id; })
-      .attr('r', function(d){ /*console.log(d);*/ return d.r; })
+      .attr('r', function(d){ return d.r; })
       .attr('fill', function(d) { 
         //return d.color = color(d.type.replace(/ .*/, "")); 
         return d.color = colorMap[d.type];
@@ -174,6 +175,26 @@ d3.mapgraph = function() {
       .attr("x", function(d){ return d.r+5; })
       .attr("y", 5)
       .text(function(d){ return d.name; });*/
+
+    tours.exit().remove();
+  }
+
+  function updateTour() {
+    tour.data([]).exit().remove();
+    return;
+
+    tours
+      .data(toursData)
+      .attr('transform', function(d) {
+          return 'translate(' + d.cx + ',' + d.cy + ')';
+        });
+    
+    var sel = tours.selectAll('circle')
+        .data(function(d) { return [d]; });
+    sel.enter().append('circle')
+        //.data(toursData)
+        .attr('r', function(d){ 
+           return d.r; });
   }
 
   function drawPlayer() {
@@ -225,8 +246,6 @@ d3.mapgraph = function() {
       })
       .attr("text-anchor", "middle")
       .text(function(d) { 
-        if (d.name==null || d.name == undefined)
-          console.log("null d: %o", d );
         str = d.name.split(' ');
         return str[0]; 
       });
