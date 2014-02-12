@@ -44,7 +44,6 @@ d3.csv("data/geodata.csv", function(error,cities){
 });
 
 
-<<<<<<< HEAD
 console.log("playerID2Info: %o",playerID2Info);
 //alert(playerID2Info.size);
 
@@ -54,23 +53,17 @@ d3.json("data/data1.json", function(error, graph) {
   var toursData = graph.tournaments;
   var playersData = graph.players;
   var linksData = graph.links;
-=======
->>>>>>> d245337774c00310d8656d29717f2807d1359ffb
 
-
-<<<<<<< HEAD
   mapgraph.init();
 
-  d3.json("data/data2.json", function(error, graph) {
+  /*d3.json("data/data2.json", function(error, graph) {
     var toursData = graph.tournaments;
     var playersData = graph.players;
     var linksData = graph.links;
 
     mapgraph.update();
-  });
+  });*/
 }); 
-=======
->>>>>>> d245337774c00310d8656d29717f2807d1359ffb
 
 //d3.json("data/data2.json", function(error, graph) {
 //
