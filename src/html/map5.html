@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html class="ocks-org do-not-copy"><head class="datamaps-style-block">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta charset="utf-8">
+<title>Tennis Visualization</title>
+<style> .datamaps-legend dt, .datamaps-legend dd { float: left; margin: 0 3px 0 0;} .datamaps-legend dd {width: 20px; margin-right: 6px; border-radius: 3px;} .datamaps-legend {padding-bottom: 20px; z-index: 1001; position: absolute; left: 4px; font-size: 12px; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;} .datamaps-hoverover {display: none; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; } .hoverinfo {padding: 4px; border-radius: 1px; background-color: #FFF; box-shadow: 1px 1px 5px #CCC; font-size: 12px; border: 1px solid #CCC; } .hoverinfo hr {border:1px dotted #CCC; }</style>
+<style>
+body {
+  font-family: "Helvetica Neue Light";
+  background-color: #222;
+  color: #FFF;
+}
+
+.tour circle:first-child {
+  fill-opacity: .8;
+  stroke: white;
+}
+
+.tour text {
+  pointer-events: none;
+  fill: #eee;
+  font-family: "Helvetica Neue Light";
+  text-shadow: 0 1px 0 #555;
+}
+
+.player circle {
+  stroke: orange;
+  stroke-width: 0;
+}
+
+.player text {
+  pointer-events: none;
+  fill: #eee;
+  font-family: "Helvetica Neue Light";
+  text-shadow: 0 1px 0 #555;
+}
+ 
+.eventlink {
+  fill: #fff;
+  fill-opacity: .2;
+  stroke: none;
+  display: none;
+}
+
+.eventlink:hover {
+  fill-opacity: .5;
+}
+
+#charts {
+  padding: 10px 0;
+}
+
+.chart {
+  display: inline-block;
+  height: 151px;
+  margin-bottom: 20px;
+}
+
+.background.bar {
+  fill: #ccc;
+}
+
+.foreground.bar {
+  fill: steelblue;
+}
+
+.axis path, .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.axis text {
+  fill: #eee;
+  font: 10px sans-serif;
+  color: #FFF;
+}
+
+.brush rect.extent {
+  fill: steelblue;
+  fill-opacity: .125;
+}
+
+.brush .resize path {
+  fill: #eee;
+  stroke: #666;
+}
+
+#date-chart {
+  width: 1200px;
+}
+
+</style>
+
+</head><body style="fill: black;">
+<script src="js/d3.js"></script>
+<script src="js/topojson.js"></script>
+<script src="js/datamaps.js"></script>
+<script src="js/crossfilter.v1.min.js"></script>
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/hashmap.js"></script>
+<script type="text/javascript" src="js/queue.min.js"></script>
+
+<div id="container" style="position: relative; height: 700px; width: 1200px"></div>
+
+<div id="body">
+
+
+<div id="date-chart" class="chart">
+</div>
+
+<div id="lists">
+  <div id="event-list" class="list"></div>
+</div>
+</div>
+
+
+<script>
+
+d3.select(window).on("resize", throttle);
+
+var zoom = d3.behavior.zoom()
+    .scaleExtent([1, 9])
+    .on("zoom", move);
+
+
+var height = document.getElementById('container').offsetHeight;
+var width = document.getElementById('container').offsetWidth;
+
+var topo,projection,path,svg,g;
+
+var graticule = d3.geo.graticule();
+
+//var tooltip = d3.select("#container").append("div").attr("class", "tooltip hidden");
+
+setup(width,height);
+
+function setup(width,height){
+  projection = d3.geo.mercator()
+    .translate([(width/2), (height/2)])
+    .scale( width / 2 / Math.PI);
+
+  path = d3.geo.path().projection(projection);
+
+  svg = d3.select("#container").append("svg")
+      .attr("width", width)
+      .attr("height", height)
+      .call(zoom)
+      .on("click", click)
+      .append("g");
+
+  g = svg.append("g");
+
+}
+
+d3.json("data/world-topo-min.json", function(error, world) {
+
+  var countries = topojson.feature(world, world.objects.countries).features;
+
+  topo = countries;
+  draw(topo);
+
+});
+
+function draw(topo) {
+
+  svg.append("path")
+     .datum(graticule)
+     .attr("class", "graticule")
+     .attr("d", path);
+
+
+  g.append("path")
+   .datum({type: "LineString", coordinates: [[-180, 0], [-90, 0], [0, 0], [90, 0], [180, 0]]})
+   .attr("class", "equator")
+   .attr("d", path);
+
+
+  var country = g.selectAll(".country").data(topo);
+
+  country.enter().insert("path")
+      .attr("class", "country")
+      .attr("d", path)
+      .attr("id", function(d,i) { return d.id; })
+      .attr("title", function(d,i) { return d.properties.name; })
+      .style("fill", function(d, i) { return '#222'; })
+      .style("stroke", function(d, i) { return '#4A4545'; })
+      .style("stroke-width", 1);
+
+}
+
+
+function redraw() {
+  width = document.getElementById('container').offsetWidth;
+  height = width / 2;
+  d3.select('svg').remove();
+  setup(width,height);
+  draw(topo);
+}
+
+
+function move() {
+
+  var t = d3.event.translate;
+  var s = d3.event.scale; 
+  zscale = s;
+  var h = height/4;
+
+
+  t[0] = Math.min(
+    (width/height)  * (s - 1), 
+    Math.max( width * (1 - s), t[0] )
+  );
+
+  t[1] = Math.min(
+    h * (s - 1) + h * s, 
+    Math.max(height  * (1 - s) - h * s, t[1])
+  );
+
+  zoom.translate(t);
+  g.attr("transform", "translate(" + t + ")scale(" + s + ")");
+
+  //adjust the country hover stroke width based on zoom level
+  d3.selectAll(".country").style("stroke-width", 1.5 / s);
+
+}
+
+
+
+var throttleTimer;
+function throttle() {
+  window.clearTimeout(throttleTimer);
+    throttleTimer = window.setTimeout(function() {
+      redraw();
+    }, 200);
+}
+
+
+//geo translation on mouse click in map
+function click() {
+  var latlon = projection.invert(d3.mouse(this));
+  console.log(latlon);
+}
+
+
+//function to add points and text to the map (used in plotting capitals)
+function addpoint(lat,lon,text) {
+
+  var gpoint = g.append("g").attr("class", "gpoint");
+  var x = projection([lat,lon])[0];
+  var y = projection([lat,lon])[1];
+
+  gpoint.append("svg:circle")
+        .attr("cx", x)
+        .attr("cy", y)
+        .attr("class","point")
+        .attr("r", 1.5);
+
+  //conditional in case a point has no associated text
+  if(text.length>0){
+
+    gpoint.append("text")
+          .attr("x", x+2)
+          .attr("y", y+2)
+          .attr("class","text")
+          .text(text);
+  }
+
+}
+
+
+var latLngToXY = function (lat,lon) {
+  return projection([lon,lat]);
+}
+
+</script>
+
+<script type="text/javascript" src="js/mapgraph.js"></script>
+<script type="text/javascript" src="js/display.js"></script>
+
+</body></html>
