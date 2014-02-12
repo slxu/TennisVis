@@ -1,32 +1,5 @@
 
 
-var graph={
-"tournaments":[ "T2013_338", "T2013_5014", "T2013_747", "T2013_560" ],
-"players":[ "N409", "D643", "W367", "D683", "F401", "MC10", "BA47", "F324", "G628", "T786" ],
-"links":[
-{"source":"T2013_338","target":"N409","value":124.729},
-{"source":"T2013_338","target":"D643","value":40.597},
-{"source":"T2013_5014","target":"W367","value":30.597},
-{"source":"T2013_747","target":"F401","value":20.597},
-{"source":"T2013_747","target":"MC10","value":140.597},
-{"source":"T2013_338","target":"F324","value":230.597},
-{"source":"T2013_338","target":"G628","value":300.597},
-{"source":"T2013_560","target":"BA47","value":50.597},
-{"source":"T2013_560","target":"T786","value":48.597},
-{"source":"T2013_338","target":"D643","value":24.597},
-{"source":"T2013_747","target":"F401","value":33.597},
-{"source":"T2013_747","target":"BA47","value":45.597},
-{"source":"T2013_5014","target":"F324","value":38.597},
-{"source":"T2013_5014","target":"G628","value":97.597},
-{"source":"T2013_560","target":"N409","value":29.597},
-{"source":"T2013_5014","target":"W367","value":55.597},
-{"source":"T2013_747","target":"D683","value":60.597},
-{"source":"T2013_747","target":"F401","value":44.597},
-{"source":"T2013_5014","target":"BA47","value":70.597},
-{"source":"T2013_560","target":"N409","value":10.597},
-{"source":"T2013_5014","target":"D643","value":33.597}
-]};
-
 var svg = d3.select("svg");
 var mapgraph = d3.mapgraph();
 
@@ -64,12 +37,7 @@ queue()
       .globalIDToPlayer(playerID2Info)
       .cityToGeo(city2Geo);
 
-    d3.csv("data/test.csv", function(error, graph) {
-      console.log(graph);
-      mapgraph.linksData(graph);
-      mapgraph.update();
-    });
-  });
+        });
 
 // (It's CSV, but GitHub Pages only gzip's JSON at the moment.)
 d3.csv("data/points.json", function(error, points) {
@@ -205,13 +173,16 @@ function reduceInitial() {
       if (currentPlayersMap[p.playerID]==1)
       {
             var link = {};
-            link["source"] = p.eventID;
-            link["target"] = p.playerID;
-            link["value"] = p.point;
+            link["tourID"] = p.eventID;
+            link["playerID"] = p.playerID;
+            link["point"] = p.point;
             links.push(link);
       }
     });
     newGraph["links"] = links; 
+    mapgraph.linksData(links);
+    mapgraph.update();
+
     console.log("newGraph: %o",newGraph);
   }
 
