@@ -91,8 +91,8 @@ d3.mapgraph = function() {
         prj = latLngToXY(geo.lat, geo.lng);
         tour.cx = prj[0];
         tour.cy = prj[1];
-        // tour.r = Math.sqrt(tour.score / 250.0) * 8;
-        tour.r = 6;
+        tour.r = Math.sqrt(tour.score / 250.0) * 8;
+        // tour.r = 6;
         tour.links = [link];
 
         toursData.push(tour);
@@ -210,7 +210,7 @@ d3.mapgraph = function() {
         })
 
     tours.append('circle')
-      .attr('r', function(d){ return d.r; })
+      .attr('r', 6)
       .attr('fill', function(d) { 
         return d.color = colorMap[d.type];
       })
@@ -324,7 +324,7 @@ d3.mapgraph = function() {
       .style('display', 'inline');
 
     svg.selectAll('.'+d.id).select('circle')
-      .attr('r', 12)
+      .attr('r', function(d){ return d.r; })
       .style('stroke-width', 2);
 
     svg.selectAll('.'+d.id).select('text')
