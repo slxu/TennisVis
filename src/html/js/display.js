@@ -23,8 +23,7 @@ queue()
       d.index = i;
       d.lat = +d.lat;
       d.lng = +d.lng;
-      city2Geo.put(d.city,d);
-    });
+      city2Geo.put(d.city,d); });
   
     eventList.forEach(function(d, i) {
       d.draws = +d.draws;
@@ -107,7 +106,7 @@ queue()
             .round(d3.time.day.round)
           .x(d3.time.scale()
             .domain([new Date(2009, 0, 1), new Date(2013, 11, 31)])
-            .rangeRound([0, 10 * 90]))
+            .rangeRound([0, width]))
             .filter([new Date(2013, 0, 1), new Date(2013, 11, 31)])
 
       ];
