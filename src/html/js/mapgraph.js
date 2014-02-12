@@ -3,6 +3,9 @@ d3.mapgraph = function() {
       toursData = [],
       playersData = [],
       linksData = [],
+      idToTour = {},
+      idToPlayer = {},
+      initialTour = null,
       globalIDToPlayer = {},
       globalIDToTour = {},      
       cityToGeo = {},
@@ -39,6 +42,12 @@ d3.mapgraph = function() {
     return mapgraph;
   };
 
+  mapgraph.initialTour = function(_) {
+    if (!arguments.length) return initialTour;
+    initialTour = _;
+    return mapgraph;
+  };
+
   mapgraph.update = function() {
     svg.selectAll('.tour_group')
       .data([]).exit().remove();
@@ -50,14 +59,15 @@ d3.mapgraph = function() {
     drawLink();
     drawTour();
     drawPlayer();
+    tourClick(idToTour[initialTour]);
     return mapgraph;
   }
 
 
   function processLinkData() {
 
-    var idToTour = {};
-    var idToPlayer = {};
+    idToTour = {};
+    idToPlayer = {};
     var totalPlayersData = [];
 
     toursData = [];

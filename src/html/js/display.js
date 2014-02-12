@@ -185,6 +185,7 @@ queue()
 
         var currentRecords = date.top(Infinity);
         var links = [];
+        var eventSumPoints={};
         currentRecords.forEach(function(p){
           if (currentPlayersMap[p.playerID]==1)
           {
@@ -193,11 +194,27 @@ queue()
                 link["playerID"] = p.playerID;
                 link["point"] = p.point;
                 links.push(link);
+                var old = eventSumPoints[p.eventID]
+                if (old)
+                  eventSumPoints[p.eventID]=old+p.point;
+                else
+                  eventSumPoints[p.eventID]=p.point;
           }
         });
+
+        var maxSumPoint = 0;
+        var maxKey;
+        for (var key in eventSumPoints)
+          if (eventSumPoints[key]>maxSumPoint)
+          {
+            maxSumPoint = eventSumPoints[key];
+            maxKey = key;
+          }
         newGraph["links"] = links; 
-        mapgraph.linksData(links);
-        mapgraph.update();
+        mapgraph
+        .linksData(links)
+        .initialTour(maxKey)
+        .update();
 
         console.log("newGraph: %o",newGraph);
       }
