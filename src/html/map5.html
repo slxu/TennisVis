@@ -126,11 +126,9 @@ var zoom = d3.behavior.zoom()
 var height = document.getElementById('container').offsetHeight;
 var width = document.getElementById('container').offsetWidth;
 
-var topo,projection,path,svg,g;
+var topo,projection,path,svg,mapG;
 
 var graticule = d3.geo.graticule();
-
-//var tooltip = d3.select("#container").append("div").attr("class", "tooltip hidden");
 
 setup(width,height);
 
@@ -148,7 +146,7 @@ function setup(width,height){
       .on("click", click)
       .append("g");
 
-  g = svg.append("g");
+  mapG = svg.append("g");
 
 }
 
@@ -169,13 +167,13 @@ function draw(topo) {
      .attr("d", path);
 
 
-  g.append("path")
+  mapG.append("path")
    .datum({type: "LineString", coordinates: [[-180, 0], [-90, 0], [0, 0], [90, 0], [180, 0]]})
    .attr("class", "equator")
    .attr("d", path);
 
 
-  var country = g.selectAll(".country").data(topo);
+  var country = mapG.selectAll(".country").data(topo);
 
   country.enter().insert("path")
       .attr("class", "country")
@@ -217,7 +215,7 @@ function move() {
   );
 
   zoom.translate(t);
-  g.attr("transform", "translate(" + t + ")scale(" + s + ")");
+  mapG.attr("transform", "translate(" + t + ")scale(" + s + ")");
 
   //adjust the country hover stroke width based on zoom level
   d3.selectAll(".country").style("stroke-width", 1.5 / s);
@@ -245,7 +243,7 @@ function click() {
 //function to add points and text to the map (used in plotting capitals)
 function addpoint(lat,lon,text) {
 
-  var gpoint = g.append("g").attr("class", "gpoint");
+  var gpoint = mapG.append("g").attr("class", "gpoint");
   var x = projection([lat,lon])[0];
   var y = projection([lat,lon])[1];
 

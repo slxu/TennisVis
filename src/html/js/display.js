@@ -1,6 +1,4 @@
 
-
-var svg = d3.select("svg");
 var mapgraph = d3.mapgraph();
 
 var city2Geo = new Map;
