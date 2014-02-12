@@ -6,7 +6,7 @@ d3.mapgraph = function() {
       idToPlayer = {},
       globalIDToPlayer = {},
       globalIDToTour = {},
-      idToTour = {}
+      idToTour = {},
       cityToGeo = {},
       selectPlayer = null,
       selectTour = null,
@@ -76,7 +76,7 @@ d3.mapgraph = function() {
       prj = latLngToXY(geo.lat, geo.lng);
       tour.cx = prj[0];
       tour.cy = prj[1];
-      tour.r = tour.score*1.0 / 250 * 3;
+      tour.r = tour.score*1.0 / 250 *3+5;
     });
     toursData = newToursData;
     console.log("toursData: %o", toursData );
@@ -84,6 +84,7 @@ d3.mapgraph = function() {
 
   function processPlayerData() {
     var newPlayersData = [];
+
     playersData.forEach(function(playerID) {
       var player = jQuery.extend(true, {}, globalIDToPlayer[playerID]); 
       console.log("id: %s, obj: %o",playerID,globalIDToPlayer[playerID]);

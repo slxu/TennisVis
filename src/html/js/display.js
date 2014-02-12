@@ -10,6 +10,8 @@ var svg = d3.select("svg");
 var mapgraph = d3.mapgraph();
 
 var city2Geo=new Map;
+var eventID2Info ={};
+var playerID2Info ={};
 d3.csv("data/geodata.csv", function(error,cities){
   cities.forEach(function(d, i) {
     d.index = i;
@@ -17,46 +19,40 @@ d3.csv("data/geodata.csv", function(error,cities){
     d.lng = +d.lng;
     city2Geo.put(d.city,d);
   });
-});
+  d3.csv("data/event_list.csv", function(error,events){
+    events.forEach(function(d, i) {
+      d.draws = +d.draws;
+      d.index = i;
+      d.score = +d.score;
+      eventID2Info[d.id] = d;
+    });
+    d3.csv("data/players_info.csv", function(error,players){
+      players.forEach(function(d, i) {
+        d.age = +d.age;
+        d.index = i;
+        playerID2Info[d.id] = d;
+      });
+      d3.json("data/data1.json", function(error, graph) {
 
-var eventID2Info ={};
-d3.csv("data/event_list.csv", function(error,events){
-  events.forEach(function(d, i) {
-    d.draws = +d.draws;
-    d.index = i;
-    d.score = +d.score;
-    eventID2Info[d.id] = d;
+        var toursData = graph.tournaments;
+        var playersData = graph.players;
+        var linksData = graph.links;
+
+        mapgraph.toursData(toursData)
+          .playersData(playersData)
+          .linksData(linksData)
+          .globalIDToTour(eventID2Info)
+          .globalIDToPlayer(playerID2Info)
+          .cityToGeo(city2Geo);
+        mapgraph.update();
+      }); 
+    });
   });
 });
 
-var playerID2Info ={};
-d3.csv("data/players_info.csv", function(error,players){
-  players.forEach(function(d, i) {
-    d.age = +d.age;
-    d.index = i;
-    playerID2Info[d.id] = d;
-  });
-});
 
 
-console.log("playerID2Info: %o",playerID2Info);
-//alert(playerID2Info.size);
 
-d3.json("data/data1.json", function(error, graph) {
-
-  var toursData = graph.tournaments;
-  var playersData = graph.players;
-  var linksData = graph.links;
-
-  mapgraph.toursData(toursData)
-    .playersData(playersData)
-    .linksData(linksData)
-    .globalIDToTour(eventID2Info)
-    .globalIDToPlayer(playerID2Info)
-    .cityToGeo(city2Geo);
-
-  mapgraph.update();
-}); 
 
 //d3.json("data/data2.json", function(error, graph) {
 //
