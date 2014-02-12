@@ -91,8 +91,8 @@ d3.mapgraph = function() {
         prj = latLngToXY(geo.lat, geo.lng);
         tour.cx = prj[0];
         tour.cy = prj[1];
+        // tour.r = Math.sqrt(tour.score / 250.0) * 8;
         tour.r = Math.sqrt(tour.score/250)*3+1;
-        //tour.r = 6;
         tour.links = [link];
 
         toursData.push(tour);
@@ -211,7 +211,7 @@ d3.mapgraph = function() {
         })
 
     tours.append('circle')
-      .attr('r', function(d){ return d.r; })
+      .attr('r', 6)
       .attr('fill', function(d) { 
         return d.color = colorMap[d.type];
       })
