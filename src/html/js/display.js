@@ -65,50 +65,12 @@ d3.csv("data/geodata.csv", function(error,cities){
           .globalIDToTour(eventID2Info)
           .globalIDToPlayer(playerID2Info)
           .cityToGeo(city2Geo);
-        mapgraph.update();
+        mapgraph.init();
       }
 //); 
     });
   });
 });
-
-
-console.log("playerID2Info: %o",playerID2Info);
-//alert(playerID2Info.size);
-
-d3.json("data/data1.json", function(error, graph) {
-  //d3.json("data/data2.json", function(error, graph) {
-
-  var toursData = graph.tournaments;
-  var playersData = graph.players;
-  var linksData = graph.links;
-
-  mapgraph.init();
-
-  /*d3.json("data/data2.json", function(error, graph) {
-    var toursData = graph.tournaments;
-    var playersData = graph.players;
-    var linksData = graph.links;
-
-    mapgraph.update();
-  });*/
-}); 
-
-//d3.json("data/data2.json", function(error, graph) {
-//
-//  var toursData = graph.tournaments;
-//  var playersData = graph.players;
-//  var linksData = graph.links;
-//
-//  mapgraph.toursData(toursData)
-//    .playersData(playersData)
-//    .linksData(linksData)
-//    .globalIDToTour(eventID2Info)
-//    .globalIDToPlayer(playerID2Info)
-//    .cityToGeo(city2Geo);
-//
-//  mapgraph.update();
-//});
 
 
 // (It's CSV, but GitHub Pages only gzip's JSON at the moment.)
@@ -146,13 +108,6 @@ d3.csv("data/points.json", function(error, points) {
   var eventIDs = eventID.group();
   var playerIDs = playerID.group();
 
-
-//      hour = flight.dimension(function(d) { return d.date.getHours() + d.date.getMinutes() / 60; }),
-//      hours = hour.group(Math.floor),
-//      delay = flight.dimension(function(d) { return Math.max(-60, Math.min(149, d.delay)); }),
-//      delays = delay.group(function(d) { return Math.floor(d / 10) * 10; }),
-//      distance = flight.dimension(function(d) { return Math.min(1999, d.distance); }),
-//      distances = distance.group(function(d) { return Math.floor(d / 50) * 50; });
 
 function reduceAdd(p, v) {
   return p + 1;
@@ -243,27 +198,26 @@ function reduceInitial() {
 
   function eventList(div) {
     //console.log("my object: %o", eventID.top(2));
-    //var eventsByEvent = nestByEvent.entries(eventID.top(40000));
     var allGroupedPlayers = playerIDs.all();
-    var allPlayers=[]
+    var currentPlayers=[]
     allGroupedPlayers.forEach (function(p)
       {
         if (p.value+0>0)
-          allPlayers.push(p);
+          currentPlayers.push(p);
       }
     );
 
     var allGroupedEvents = eventIDs.all();
-
     console.log("players: %o", allPlayers );
-    var allEvents=[]
+
+    var currentEvents=[]
     allGroupedEvents.forEach ( function(p)
       {
         if (p.value+0>0)
-          allEvents.push(p);
+          currentEvents.push(p);
       }
     );
-    console.log("events: %o", allEvents);
+    console.log("events: %o", currentEvents);
   }
 
   function barChart() {
