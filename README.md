@@ -198,6 +198,9 @@ further. Currently we are planing on the following:
    zoomed.  map5.html is a very first step. But currently it's not yet
    done.
  
+ * Add transition to the web page. In such way, we can show how then
+   ranks of players change over the time.
+   
  * Implement multi filter. For example, we want to support filtering
    by the types of the court.
 
@@ -218,13 +221,14 @@ further. Currently we are planing on the following:
 ### Roughly how much time did you spend developing your application?
 
     Shengliang Xu: two weeks.
-	Haichen Shen: 1.5 weeks.
+	  Haichen Shen: 1.5 weeks.
 
 ### What aspects took the most time?
 
     Shengliang Xu: Learning D3.js and the plugins, including
     understanding how D3 works, the SVG, and the plugin APIs
-	Haichen Shen: Learning D3.js. It took me the most time
-	to figure how selection works in D3 when we have the nested
-	group and classes.
+
+	  Haichen Shen: Learning D3.js. It took me the most time
+	  to figure how selection works in D3 when we have the nested
+	  group and classes.
 
