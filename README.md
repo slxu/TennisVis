@@ -83,8 +83,144 @@ Finally, we aggregate all the required data into 3 files and a folder:
 
 ## 4. The final visualization
 
-    An explanation of changes between the storyboard and the final implementation.
-    The development process–include a breakdown of how the work was split among the group members. Include a commentary on the development process, including answers to the following questions: Roughly how much time did you spend developing your application? What aspects took the most time?
-    The source code for your application. Please ensure that the software submitted is in working order. If any special instructions are needed for building or running your software, please include them in the writeup too.
+The final visualization consists of several components:
 
+* The time line has a list of bars, one bar per day. The height of a bar is the number
+  of tournament events on that day.
+
+* There's a slider on the timeline. It can both be slided and also be
+  expanded and shrinked. The width of the slider represents the
+  time span. The position of the slider represents the start/end
+  dates.
+
+* After a time span is selected from the timeline, a new set of data
+  will be generated.
+  
+ * The points of each player earned during the selected time span are
+  summed. 
+
+   * The top 15 players's photos ordered by the earned points are
+     shown on the top of the page. 
+  
+   * Each photo is rounded by a circle, of which the radius also
+     reveal the points of the owner player.
+
+ * The tournament events held during the selected time span are placed
+   on the world map by circles.
+
+   * There are several types of tournaments in ATP World Tour Series
+     in terms of importance (i.e. number of points of the final
+     winners): Grand Slam, ATP World Tour Finals, ATP World Tour 1000
+     Series, Olympics, ATP World Tour 500 Series, and ATP World Tour 250
+     Series. The radius of each circle reflects the different types.
+     The larger the radius, the more important a tournament event is.
+
+   * In addition, as aforementioned, there are three types of
+     tournament events in terms of court type, i.e. clay, grass and
+     hard. This type information is reflected by the color of the
+     tournament event circles. Yellow denotes clay; green denotes
+     grass; and blue denotes hard.
+
+ * The number of points earned by a player in a tournament event is
+   illustrated by a path from the tournament event circle to the
+   player cirlce. 
+
+   * The width of a path at the player circle side reflects the number
+     of points
+
+   * The color of a path is the same as the color of the source
+     tournament event circle, i.e. reflects the court type of the
+     tournament event.
+
+   * Intially only the paths of a tournament event, which is the one
+     contributes the maximum points to the top 15 players, are shown.
+     We do not show all the paths because if the selected time span is
+     very large, there may be hundreds of paths. All the paths will
+     overlap to each other such that no usefull information can be
+     shown.
+
+   * Users can move mouse to a player circle to show all the paths to the
+     player. Mouse move out will hide the paths again. A click on the
+     circle will make the paths visible when mouse move out.
+
+   * Users can move mouse to a tournament event circle to show all the
+     paths from the tournament event cirlce. Mouse move out will hide
+     the paths again. A click on the circle will make the paths
+     visible when mouse move out.
+
+
+## History
+
+   We tried a lot of different techniques during the development of
+   the current final submission. The whole history is captured by git
+   and also by the differnt versions of the experimental html files
+   under src/html. Here are the list:
+   
+   * index.html: experiment the sankey diagram. We initially planed to
+     use sankey diagram to illustrate the points flow from the
+     tournament events to the players. But finally we abandoned this
+     idea because it cannot be easily and elagantly extended to our needs
+     that the tournament events are placed by their city coordinates
+     on the world map.  But we learned how to draw flow-like paths
+     in D3. In the final visualization, the paths are drawn by the
+     simlar way in sankey diagram.
+   
+   * map.html, test.html: experiment the Datamap world map and the geo
+     coordinates on the map.
+
+   * map_sankey.html, and map_sankey2.html:  experiment combining the
+     world map and sankey diagram. 
+
+   * map_sankey3.html: implemented a simple combination of sankey
+     diagram and world map. A test data set is displayed on the map.
+
+   * mouse-pos.html: together with console, it's the initial way we
+     record the positions of the cities on the map, i.e. move mouse to
+     the position of a city, recording the mouse x,y as the
+     coordinates of the city on the map. Later we find out that the
+     Datamap itself actually provides the projection of (lat,log) pair
+     to coordinates.
+
+   * crossfilter.html: experiment the crossfilter 
+
+   * map4.html: the current submitted version
+
+## Future work
+
+This is a fun small project (assignment). We are going to work on this project
+further. Currently we are planing on the following:
+
+ * Implement zoomable world map. Sometimes there may be a lot of near
+   by tournament events happen in the same time period. In this
+   situation, current version of visualization may place a lot of
+   overlapped circles on a small map area, making it very hard to
+   distinguish each other. It may be much better if the map can be
+   zoomed.  map5.html is a very first step. But currently it's not yet
+   done.
+ 
+ * Implement multi filter. For example, we want to support filtering
+   by the types of the court.
+
+ * Support head to head comparison of players. A user can select two
+   players and we want to show the various comparisons of the two
+   players.
+
+
+## Work split among the members
+
+  * Data preparation: Mainly Shengliang Xu
+  * World map: Mainly Haichen Shen
+  * Flow map: Mainly Haichen Shen
+  * Timeline: Mainly Shengliang Xu
+
+## Questionare
+
+### Roughly how much time did you spend developing your application?
+
+    Shengliang Xu: two weeks. 
+
+### What aspects took the most time?
+
+    Shengliang Xu: Learning D3.js and the plugins, including
+    understanding how D3 works, the SVG, and the plugin APIs
 
