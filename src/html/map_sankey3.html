@@ -88,7 +88,7 @@ var path = sankey.link();
 var eventMyPath=null;
  
 // load the data
-d3.json("data.json", function(error, graph) {
+d3.json("data/data.json", function(error, graph) {
  
     var nodeMap = {};
     graph.nodes.forEach(function(x) { nodeMap[x.name] = x; });
