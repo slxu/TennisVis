@@ -1,3 +1,7 @@
+var courtType2Color = {'Hard': 'steelblue', 'Clay': '#ff7f0e', 'Grass': '#2ca02c'}
+      color = d3.scale.category20();
+
+
 d3.mapgraph = function() {
   var mapgraph = {},
       toursData = [],
@@ -12,9 +16,6 @@ d3.mapgraph = function() {
       focusPlayer = null,
       focusTour = null,
       playerShown = 15;
-
-  var colorMap = {'Hard': 'steelblue', 'Clay': '#ff7f0e', 'Grass': '#2ca02c'}
-      color = d3.scale.category20();
 
   mapgraph.globalIDToPlayer = function(_) {
     if (!arguments.length) return globalIDToPlayer;
@@ -170,10 +171,10 @@ d3.mapgraph = function() {
         .data(linksData);
 
     links.enter().append('path')
-        .attr('class', function(d) { return 'eventlink source-' + d.source.id + ' target-' + d.target.id; })
+        .attr('fill', function(d){ return courtType2Color[d.source.type]; })
+        .attr('class', function(d) { return 'eventlink source-' + d.source.id + ' target-' + d.target.id;  })
         .attr('d', newPath)
         //.style('stroke-width', function(d) { return Math.max(3, d.point/50); })
-        .style()
         .append("title")
         .text(function(d) {
       	return d.source.name + " → " + 
@@ -212,7 +213,7 @@ d3.mapgraph = function() {
     tours.append('circle')
       .attr('r', function(d){return d.r;})
       .attr('fill', function(d) { 
-        return d.color = colorMap[d.type];
+        return d.color = courtType2Color[d.type];
       })
       .attr('stroke', 'white')
       .attr('stroke-width', .5)
