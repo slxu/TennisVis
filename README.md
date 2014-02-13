@@ -217,10 +217,14 @@ further. Currently we are planing on the following:
 
 ### Roughly how much time did you spend developing your application?
 
-    Shengliang Xu: two weeks. 
+    Shengliang Xu: two weeks.
+	Haichen Shen: 1.5 weeks.
 
 ### What aspects took the most time?
 
     Shengliang Xu: Learning D3.js and the plugins, including
     understanding how D3 works, the SVG, and the plugin APIs
+	Haichen Shen: Learning D3.js. It took me the most time
+	to figure how selection works in D3 when we have the nested
+	group and classes.
 
