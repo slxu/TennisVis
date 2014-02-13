@@ -92,7 +92,7 @@ d3.mapgraph = function() {
         tour.cx = prj[0];
         tour.cy = prj[1];
         // tour.r = Math.sqrt(tour.score / 250.0) * 8;
-        tour.r = Math.sqrt(tour.score/250)*3+1;
+        tour.r = Math.sqrt(tour.score/250)*5;
         tour.links = [link];
 
         toursData.push(tour);
@@ -340,7 +340,7 @@ d3.mapgraph = function() {
       .style('display', 'none');
     if (focusTour != d) {
       svg.selectAll('.'+d.id).select('circle')
-        .attr('r', d.r)
+        .attr('r', 6)
         .style('stroke-width', .5);
       svg.selectAll('.'+d.id).select('text')
        .attr('display', 'none');
